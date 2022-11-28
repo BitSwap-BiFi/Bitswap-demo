@@ -8,7 +8,7 @@ Exchange fro RGB assets
 - [ ] Mainnet
 - [ ] Fees
 - [ ] UI via web browser
-- [ ] Using Contractrum
+- [ ] Using Contractum
 
 
 # Product
