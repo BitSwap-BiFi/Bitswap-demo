@@ -2,6 +2,8 @@
 
 Exchange fro RGB assets
 
+# How Works?
+
 ## To-Do
 - [ ] Testnet
 - [ ] Integration with RGB Node
