@@ -5,7 +5,9 @@ Exchange fro RGB assets
 # How Works?
 
 -Create token using UTXO
+
 -Sell token
+
 -Buy token
 
 We'll use RGB-21 as base first;
