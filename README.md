@@ -1,6 +1,6 @@
 # RGBdex❤️💚💙
 
-Exchange fro RGB assets
+Exchange for RGB assets
 
 # How Works?
 
