@@ -12,6 +12,16 @@ Exchange for RGB assets
 
 We'll use RGB-21 as base first;
 
+# Feature
+
+We'll use AMM (Automed Market Maker) on Exchange
+
+-Alice create invoice for B
+
+-Bob receive of Alice tokens 
+
+-Alice receive new tokens of swap
+
 ## To-Do
 - [ ] Testnet
 - [ ] Integration with RGB Node
