@@ -10,7 +10,7 @@ Exchange for RGB assets
 
 -Buy token
 
-We'll use RGB-21 as base first;
+We'll use RGB-20 as base first;
 
 # Feature
 
