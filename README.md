@@ -1,4 +1,4 @@
-# RGBdex❤️💚💙
+# BitDex❤️💚💙
 
 Exchange for RGB assets
 
