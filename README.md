@@ -1,6 +1,6 @@
 # BitDex❤️💚💙
 
-![image](https://user-images.githubusercontent.com/83122757/216992270-6496f46b-65f4-4101-b1ad-ca6157332b81.png)
+![image](https://user-images.githubusercontent.com/83122757/216992922-86d2c936-41b3-4c72-b1c7-202582f4287b.png)
 
 Exchange for RGB assets
 
