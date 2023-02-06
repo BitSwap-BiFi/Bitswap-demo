@@ -1,5 +1,7 @@
 # BitDex❤️💚💙
 
+![image](https://user-images.githubusercontent.com/83122757/216992270-6496f46b-65f4-4101-b1ad-ca6157332b81.png)
+
 Exchange for RGB assets
 
 # How Works?
