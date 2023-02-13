@@ -9,7 +9,7 @@ keywords = ["bitcoin", "lightning", "rgb", "smart-contracts", "lnp-bp"]
 categories = ["cryptography::cryptocurrencies"]
 readme = "README.md"
 license = "MIT"
-edition = "2023"
+edition = "2021"
 rust-version = "1.66.0"
 exclude = [".github"]
 
