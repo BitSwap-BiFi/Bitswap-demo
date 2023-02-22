@@ -5,7 +5,6 @@ use std::sync::{Mutex, MutexGuard, RwLock, RwLockReadGuard};
 
 uniffi_macros::include_scaffolding!("rgb-lib");
 
-type AssetRgb121 = rgb_lib::wallet::AssetRgb121;
 type AssetRgb20 = rgb_lib::wallet::AssetRgb20;
 type AssetType = rgb_lib::wallet::AssetType;
 type Assets = rgb_lib::wallet::Assets;
