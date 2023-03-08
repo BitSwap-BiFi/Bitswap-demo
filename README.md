@@ -37,10 +37,11 @@ Official design [BitDEX paper](https://arealayer.gitbook.io/bitdex/)
 - [ ] Using Contractum
 - [ ] BTC/USDT pair
 
+# Run Bitdex
+
+
 # Product
 
 -The product is in development
 
 -Based on RGB Protocol (RGB-WG) by LNP/BP
-
-# Run Bitdex
