@@ -30,7 +30,7 @@ Official design [BitDEX paper](https://arealayer.gitbook.io/bitdex/)
 
 ## To-Do
 - [ ] Testnet
-- [ ] Integration with RGB Node/Bitguardd/DLCs
+- [ ] Integration with RGB Node/Bitguard/DLCs
 - [ ] Mainnet
 - [ ] Fees
 - [ ] UI via web browser
