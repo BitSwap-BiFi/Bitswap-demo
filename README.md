@@ -35,7 +35,7 @@ Official design [BitDEX paper](https://arealayer.gitbook.io/bitdex/)
 - [ ] Fees
 - [ ] UI via web browser
 - [ ] Using Contractum
-
+- [ ] BTC/USDT pair
 
 # Product
 
