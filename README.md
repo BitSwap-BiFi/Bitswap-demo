@@ -12,7 +12,7 @@ Exchange for RGB assets
 
 -Buy token
 
-We'll use RGB-20 as base first;
+We'll use RGB-20 as base first.
 
 # Feature
 
@@ -30,7 +30,7 @@ Official design [BitDEX paper](https://arealayer.gitbook.io/bitdex/)
 
 ## To-Do
 - [ ] Testnet
-- [ ] Integration with RGB Node/Bitgaurd/DLCs
+- [ ] Integration with RGB Node/Bitguardd/DLCs
 - [ ] Mainnet
 - [ ] Fees
 - [ ] UI via web browser
@@ -42,3 +42,5 @@ Official design [BitDEX paper](https://arealayer.gitbook.io/bitdex/)
 -The product is in development
 
 -Based on RGB Protocol (RGB-WG) by LNP/BP
+
+# Run Bitdex
