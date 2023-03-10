@@ -33,9 +33,10 @@ Official design [BitDEX paper](https://arealayer.gitbook.io/bitdex/)
 - [ ] Integration with RGB Node/Bitguard/DLCs
 - [ ] Mainnet
 - [ ] Fees
-- [ ] UI via web browser
+- [X] UI via web browser (Github pages)
 - [ ] Using Contractum
 - [ ] BTC/USDT pair
+- [ ] Open source code
 
 # Run Bitdex
 
