@@ -1,17 +1,3 @@
-[package]
-name = "Bitdex"
-version = "1.0.0"
-authors = ["Rsync"]
-description = "Exchange decentralized on RGB"
-repository = "https://github.com/AreaLayer/Bitdex"
-homepage = ""
-keywords = ["bitcoin", "lightning", "rgb", "smart-contracts", "lnp-bp"]
-categories = ["cryptography::cryptocurrencies"]
-readme = "README.md"
-license = "MIT"
-edition = "2021"
-rust-version = "1.66.0"
-exclude = [".github"]
 
 [lib]
 name = "rgb"
@@ -28,6 +14,7 @@ secp256k1-zkp = { version = "0.7.0", features = ["use-rand", "rand-std", "global
 baid58 = "~0.2.0"
 mime = "0.3.16"
 serde_crate = { package = "serde", version = "1", features = ["derive"], optional = true }
+rgb-core = "0.10"
 
 [features]
 default = []
