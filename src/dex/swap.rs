@@ -1,7 +1,7 @@
 use std::rgb-core
 
 use rgb::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value};
-use secp256k1::rand::rngs::OsRng;
+use secp256k1-zkp::rand::rngs::OsRng;
 use std::str::FromStr;
 
 fn create_swap () {
