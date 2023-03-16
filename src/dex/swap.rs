@@ -21,3 +21,6 @@ let fee_spread
 let dlc
 
 fn swp_out
+//swap completed between parties
+  
+fn secp256k1-zkp
