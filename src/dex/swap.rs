@@ -20,8 +20,13 @@ let swap_fee
 let fee_spread
 let dlc
 
-fn swp_out
+fn swp_out ()
 //swap completed between parties
+ let amount
+ let dlc
+ let swap_fee
+ 
+fn dlc () {
   
-fn secp256k1-zkp
-//Epliptic Curve for swaps
+fn secp256k1-zkp ()
+//Epliptic Curve for swap
