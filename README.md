@@ -34,7 +34,7 @@ Official design [BitDEX paper](https://arealayer.gitbook.io/bitdex/)
 - [ ] Mainnet
 - [x] Fees
 - [X] UI via web browser (Github pages)
-- [ ] Using Contractum
+- [X] Using Contractum
 - [ ] BTC/USDT pair
 - [ ] Open source code
 
