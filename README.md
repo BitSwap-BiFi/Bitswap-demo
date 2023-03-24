@@ -31,7 +31,7 @@ Official design [BitDEX paper](https://arealayer.gitbook.io/bitdex/)
 # Roadmap
 
 - [X] Testnet
-- [ ] Integration with RGB Node/Bitguard/DLCs
+- [ ] Integration with RGB Node/Bitguard/DLCs/LDK
 - [ ] Mainnet
 - [x] Fees
 - [X] UI via web browser (Github pages)
