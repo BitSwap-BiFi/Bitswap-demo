@@ -2,7 +2,11 @@
 
 members = ["rgb-core", "rust-dlc", "bitdex"]
 
-[dependencies]
+[package]
 rgb-core = "0.10"
 rust-dlc = "0.4"
 bitdex = "1.0.1"
+
+
+
+
