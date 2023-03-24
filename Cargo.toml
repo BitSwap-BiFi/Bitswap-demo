@@ -1,5 +1,7 @@
 [wokspace]
 
+members = ["rgb-core", "rust-dlc", "bitdex"]
+
 [dependencies]
 rgb-core = "0.10"
 rust-dlc = "0.4"
