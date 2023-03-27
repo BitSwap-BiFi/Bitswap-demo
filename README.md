@@ -28,7 +28,7 @@ We'll use the model as like on [OBD](https://github.com/omnilaboratory/OmniBOLT-
 
 Official design [BitDEX paper](https://arealayer.gitbook.io/bitdex/)
 
-# Demo Sap
+# Demo Swap
 
 Simple Swap with UI on BitDEX
 
