@@ -28,6 +28,13 @@ We'll use the model as like on [OBD](https://github.com/omnilaboratory/OmniBOLT-
 
 Official design [BitDEX paper](https://arealayer.gitbook.io/bitdex/)
 
+# Demo SWap
+
+Simple Swap with UI on BitDEX
+
+![image](https://user-images.githubusercontent.com/83122757/227921507-7d2f8fb5-5d03-4720-9c89-867ce010f857.png)
+
+
 # Roadmap
 
 - [X] Testnet
