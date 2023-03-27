@@ -1,32 +1,44 @@
-use std::rgb-core
-
 use rgb::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value};
-use secp256k1-zkp::rand::rngs::OsRng;
+use secp256k1_zkp::rand::rngs::OsRng;
 use std::str::FromStr;
 
-fn create_swap () {
-//parameters for swap happen
-let amount = 1
-let value = 1000
-let swap_fee = 0.05
-let fee_spread = 0.1
+fn create_swap() {
+    // Parameters for swap
+    let amount = 1;
+    let value = 1000;
+    let swap_fee = 0.05;
+    let fee_spread = 0.1;
+}
 
-fn swap_accepted () {
-//swap accepted by conterparty
-let amount
-let value
-let fee
-let swap_fee
-let fee_spread
-let dlc
+fn swap_accepted() {
+    // Swap accepted by counterparty
+    let amount_accepted = 1;
+    let value_accepted = 1000;
+    let fee_accepted = 0.01;
+    let swap_fee_accepted = 0.05;
+    let fee_spread_accepted = 0.1;
+    let dlc_accepted = secp256k1_zkp();
+}
 
-fn swp_out ()
-//swap completed between parties
- let amount
- let dlc
- let swap_fee
- 
-fn dlc () {
-  
-fn secp256k1-zkp ()
-//Epliptic Curve for swap
+fn swp_out() {
+    // Swap completed between parties
+    let amount_out = 1;
+    let dlc_out = dlc();
+    let swap_fee_out = 0.05;
+}
+
+fn dlc() {
+    // DLC implementation for swap
+    let secp256k1_zkp = secp256k1_zkp::Secp256k1::new();
+    let rng = &mut OsRng::new().unwrap();
+    let private_key = secp256k1_zkp::SecretKey::random(rng);
+    let public_key = secp256k1_zkp::PublicKey::from_secret_key(&secp256k1_zkp, &private_key);
+    let message = secp256k1_zkp::Message::from_slice(&[0u8; 32]).unwrap();
+    let sig = secp256k1_zkp::sign(&message, &private_key);
+    let verification = secp256k1_zkp::verify(&message, &sig, &public_key).unwrap();
+}
+
+fn secp256k1_zkp() -> secp256k1_zkp::Secp256k1<secp256k1_zkp::All> {
+    // Elliptic Curve for swap
+    secp256k1_zkp::Secp256k1::new()
+}
