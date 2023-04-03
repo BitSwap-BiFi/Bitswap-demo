@@ -1,6 +1,6 @@
 // Import the necessary dependencies
-use std::io::{self, Write};
-use rgb::{RGB, RGBError};
+use std::rgb-core
+use rgb::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value}
 use liquidity_provider_pool::{LiquidityProviderPool, PoolError};
 
 // Define a struct for the liquidity provider pool
