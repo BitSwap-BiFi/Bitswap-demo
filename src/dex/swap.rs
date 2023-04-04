@@ -4,6 +4,16 @@ use std::str::FromStr;
 
 fn testnet()
 let network = bitcoin::network::constants::Network::Testnet;
+/ Example usage of the imported libraries
+    let mut rng = OsRng::default();
+    let private_key = bitcoin::secp256k1::Secp256k1::new();
+    let public_key = bitcoin::util::key::PublicKey::from_secret_key(
+        &private_key,
+        &private_key.generate_keypair(&mut rng).1,
+    );
+    let address = bitcoin::util::address::Address::p2pkh(&public_key, network);
+
+    println!("Testnet address: {}", address);
 
 fn create_swap() {
     // Parameters for swap
