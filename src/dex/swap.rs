@@ -2,6 +2,9 @@ use rgb::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util
 use secp256k1_zkp::rand::rngs::OsRng;
 use std::str::FromStr;
 
+fn testnet()
+let network = bitcoin::network::constants::Network::Testnet;
+
 fn create_swap() {
     // Parameters for swap
     let amount = 1;
