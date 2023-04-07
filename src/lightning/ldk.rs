@@ -1,5 +1,5 @@
 use rgb-core::{Contract}
-use rgb-lightning-sample::rgb_utils
+use rgb-lightning-sample::{PaymentInfo, TypeAssignments , PeerManager}
 
 impl TypedAssignments {
     pub fn zero_balanced_static(
