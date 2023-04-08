@@ -43,7 +43,7 @@ Simple Swap with UI on BitDEX
 - [x] Fees
 - [X] UI via web browser (Github pages)
 - [X] Using Contractum
-- [ ] BTC/USDT pair
+- [X] BTC/USDT pair
 - [ ] Open source code
 
 # Run Bitdex
