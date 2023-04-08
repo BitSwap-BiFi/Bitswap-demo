@@ -1,92 +1,116 @@
-use rgb::contract::Contract;
-use rgb::contract::OwnedState;
-use rgb::contract::OutpointCoins;
-use rgb::contract::OutpointHash;
-use rgb::contract::Transition;
-use rgb::contract::TransitionArgument;
-use rgb::contract::TransitionType;
+use rgb::{
+    contract::{
+        Contract, Node, Output, Transition, TransitionType,
+        Variables,
+    },
+    proof::Proof,
+    schema::{
+        AssetId, ContractId, NodeId, OutputId,
+        FieldType, GenesisSchema, Schema,
+        TransitionSchema,
+    },
+    validation::{TxBuilder, TxValidator},
+    Value,
+};
+use std::convert::TryFrom;
 
-// Define the contract state
-#[derive(Clone, Debug, Eq, PartialEq)]
-struct SwapContractState {
-    btc_input: Option<OutpointCoins>,
-    usdt_input: Option<OutpointCoins>,
+// Define the schema for the BTC/USDT swap contract
+#[derive(Clone, Debug, PartialEq, Eq)]
+struct SwapSchema {
+    btc_input: FieldType,
+    usdt_input: FieldType,
+    btc_output: FieldType,
+    usdt_output: FieldType,
+    rate: FieldType,
 }
 
-// Implement the owned state trait for the contract state
-impl OwnedState for SwapContractState {
-    fn owner(&self) -> Option<OutpointHash> {
-        // The owner of the contract is the owner of the BTC input
-        self.btc_input.as_ref().map(|input| input.owner.clone())
+impl SwapSchema {
+    fn new() -> Self {
+        Self {
+            btc_input: "btc_input".into(),
+            usdt_input: "usdt_input".into(),
+            btc_output: "btc_output".into(),
+            usdt_output: "usdt_output".into(),
+            rate: "rate".into(),
+        }
     }
 }
 
 // Define the swap contract
-struct SwapContract;
+#[derive(Clone, Debug, PartialEq, Eq)]
+struct SwapContract {}
 
-// Implement the contract trait for the swap contract
-impl Contract for SwapContract {
-    type State = SwapContractState;
-
-    fn validate_transition(&self, transition: &Transition<Self::State>) -> Result<(), String> {
-        // Check that the transition type is valid
-        if transition.transition_type != TransitionType::Direct {
-            return Err("Invalid transition type".to_string());
-        }
-
-        // Check that the BTC and USDT inputs are present
-        let btc_input = transition
-            .input_states
-            .get(0)
-            .ok_or_else(|| "BTC input not found".to_string())?;
-        let usdt_input = transition
-            .input_states
-            .get(1)
-            .ok_or_else(|| "USDT input not found".to_string())?;
-
-        // Check that the BTC input amount is greater than 0
-        if btc_input.coins.amount == 0 {
-            return Err("BTC input amount must be greater than 0".to_string());
-        }
-
-        // Check that the USDT input amount is greater than 0
-        if usdt_input.coins.amount == 0 {
-            return Err("USDT input amount must be greater than 0".to_string());
-        }
-
-        // Check that the BTC and USDT inputs have the same issuer
-        if btc_input.coins.issuer != usdt_input.coins.issuer {
-            return Err("BTC and USDT inputs have different issuers".to_string());
-        }
-
-        // Check that the BTC and USDT inputs have different owners
-        if btc_input.owner == usdt_input.owner {
-            return Err("BTC and USDT inputs have the same owner".to_string());
-        }
-
-        // Store the BTC and USDT inputs in the contract state
-        let state = Self::State {
-            btc_input: Some(btc_input.coins),
-            usdt_input: Some(usdt_input.coins),
-        };
-        transition.output_state = state.clone();
-
-        Ok(())
-    }
-
-    fn validate_transition_argument(
+impl Contract<SwapSchema> for SwapContract {
+    fn transition(
         &self,
-        _state: &Self::State,
-        _transition_type: &TransitionType,
-        _argument: &TransitionArgument,
-    ) -> Result<(), String> {
-        // There are no arguments to validate for this contract
-        Ok(())
-    }
+        _input_ids: Vec<OutputId>,
+        inputs: Vec<Node>,
+        _variables: &Variables,
+        transition: &Transition,
+        _schema: &SwapSchema,
+    ) -> Result<Vec<Output>, String> {
+        match transition.transition_type {
+            TransitionType::Custom(ref action) => match action.as_str() {
+                "swap" => {
+                    // Get the BTC and USDT inputs
+                    let btc_input = inputs
+                        .iter()
+                        .find(|n| n.field_type == "btc_input")
+                        .ok_or("BTC input not found")?;
+                    let usdt_input = inputs
+                        .iter()
+                        .find(|n| n.field_type == "usdt_input")
+                        .ok_or("USDT input not found")?;
 
-    fn get_owned_state(&self, state: &Self::State) -> Option<OwnedState> {
-        // Return the contract state as the owned state
-        Some(state.clone())
+                    // Check that the inputs are valid
+                    if btc_input.amount == Value::from(0)
+                        || usdt_input.amount == Value::from(0)
+                        || btc_input.issuer != usdt_input.issuer
+                        || btc_input.owner == usdt_input.owner
+                    {
+                        return Err("Invalid inputs".into());
+                    }
+
+                    // Calculate the exchange rate
+                    let rate = usdt_input.amount / btc_input.amount;
+
+                    // Create BTC and USDT outputs with swapped amounts
+                    let btc_output = Node {
+                        field_type: "btc_output".into(),
+                        value: Value::from(usdt_input.amount),
+                        issuer: btc_input.issuer.clone(),
+                        owner: btc_input.owner.clone(),
+                    };
+                    let usdt_output = Node {
+                        field_type: "usdt_output".into(),
+                        value: Value::from(btc_input.amount),
+                        issuer: usdt_input.issuer.clone(),
+                        owner: usdt_input.owner.clone(),
+                    };
+
+                    // Return the outputs and the exchange rate
+                    Ok(vec![
+                        Output::new(btc_output.clone()),
+                        Output::new(usdt_output.clone()),
+                        Output::new(Node {
+                            field_type: "rate".into(),
+                            value: Value::from(rate),
+                            issuer: btc_input.issuer.clone(),
+                            owner: btc_input.owner.clone(),
+                        }),
+                    ])
+                }
+                _ => Err("Invalid action".into()),
+            },
+            _ => Err("Invalid transition type".into()),
+        }
     }
 }
+
+// Define the schema for the liquidity pool contract
+#[derive(Clone, Debug, PartialEq, Eq)]
+struct PoolSchema {
+    btc_pool_addr: FieldType,
+    usdt_pool
+
 
