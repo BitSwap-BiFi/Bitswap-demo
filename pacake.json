@@ -9,7 +9,6 @@
 "rust-dlc": "v0.4.0"
 },
 "pairs"
-{
   "ticker": "BTC",
   "name": "Bitcoin",
   "precision": 8,
