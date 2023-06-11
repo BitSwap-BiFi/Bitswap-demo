@@ -1,6 +1,6 @@
 [wokspace]
 
-members = ["rgb-core", "rust-dlc", "bitdex"]
+members = ["rgb-core", "rust-dlc", "bitswap"]
 
 [package]
 rgb-core = "0.10"
