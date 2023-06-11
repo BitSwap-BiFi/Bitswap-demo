@@ -5,9 +5,8 @@ members = ["rgb-core", "rust-dlc", "bitdex"]
 [package]
 rgb-core = "0.10"
 rust-dlc = "0.4"
-lnd = 
-bldk-rgb-sample = 
-bitdex = "1.0.2"
+ldk-rgb-sample = 
+bitdex = "1.0.3"
 
 
 
