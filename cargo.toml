@@ -5,7 +5,6 @@ members = ["rgb-core", "rust-dlc", "bitswap"]
 [package]
 rgb-core = "0.10"
 rust-dlc = "0.4"
-ldk-rgb-sample = 
 bitdex = "1.0.3"
 name = "ldk-sample"
 version = "0.1.0"
