@@ -46,8 +46,5 @@ You can in your cargo.toml
 rgb-core = "0.10"
 rust-dlc = "0.4"
 bitdex = "1.0.3"
-name = "ldk-sample"
-version = "0.1.0"
-authors = ["Valentine Wallace <vwallace@protonmail.com>"]
-license = "MIT OR Apache-2.0"
-edition = "2018"
+rgb-lighting-sample= "0.1.0"
+
