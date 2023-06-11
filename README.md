@@ -37,7 +37,7 @@ We'll use the model as like on [OBD](https://github.com/omnilaboratory/OmniBOLT-
 - [X] BTC/USDT pair
 - [ ] Open source code
 
-## Run Bitdex
+## Run BitSwap
 
 You can in your cargo.toml
 
