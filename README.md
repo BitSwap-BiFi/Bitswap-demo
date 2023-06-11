@@ -1,6 +1,6 @@
-# BitDex❤️💚💙
+# BitSwap❤️💚💙
 
-![image](https://user-images.githubusercontent.com/83122757/216992922-86d2c936-41b3-4c72-b1c7-202582f4287b.png)
+
 
 Exchange for RGB assets
 
@@ -26,11 +26,11 @@ We'll use AMM (Automed Market Maker) on Exchange
 
 We'll use the model as like on [OBD](https://github.com/omnilaboratory/OmniBOLT-spec/blob/master/OmniBOLT-06-Automatic-Market-Maker-and-DEX.md)
 
-Official design [BitDEX paper](https://arealayer.gitbook.io/bitdex/)
+
 
 # Demo Swap
 
-Simple Swap with UI on BitDEX
+Simple Swap with UI on BitSwap
 
 ![image](https://user-images.githubusercontent.com/83122757/227921507-7d2f8fb5-5d03-4720-9c89-867ce010f857.png)
 
