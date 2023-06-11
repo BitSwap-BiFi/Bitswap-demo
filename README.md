@@ -4,7 +4,7 @@
 
 Exchange for RGB assets
 
-# How Works?
+## How Works?
 
 -Create token using UTXO
 
@@ -14,7 +14,7 @@ Exchange for RGB assets
 
 We'll use RGB-20 as base first.
 
-# Feature
+## Feature
 
 We'll use AMM (Automed Market Maker) on Exchange
 
@@ -26,7 +26,7 @@ We'll use AMM (Automed Market Maker) on Exchange
 
 We'll use the model as like on [OBD](https://github.com/omnilaboratory/OmniBOLT-spec/blob/master/OmniBOLT-06-Automatic-Market-Maker-and-DEX.md)
 
-# Roadmap
+## Roadmap
 
 - [X] Testnet
 - [ ] Integration with RGB Node/Bitguard/DLCs/LDK
@@ -37,11 +37,4 @@ We'll use the model as like on [OBD](https://github.com/omnilaboratory/OmniBOLT-
 - [X] BTC/USDT pair
 - [ ] Open source code
 
-# Run Bitdex
-
-
-# Product
-
--The product is in development
-
--Based on RGB Protocol (RGB-WG) by LNP/BP
+## Run Bitdex
