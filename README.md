@@ -45,6 +45,6 @@ You can in your cargo.toml
 
 rgb-core = "0.10"
 rust-dlc = "0.4"
-bitdex = "1.0.3"
+bitswap = "1.0.3"
 rgb-lighting-sample= "0.1.0"
 
