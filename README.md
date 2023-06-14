@@ -32,7 +32,7 @@ We'll use the model as like on [OBD](https://github.com/omnilaboratory/OmniBOLT-
 - [x] Fees
 - [X] Using Contractum
 - [X] BTC/USDT pair
-- [ ] Open source code
+- [x] Open source code
 
 ### Run BitSwap
 
