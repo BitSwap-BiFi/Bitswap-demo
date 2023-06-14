@@ -27,7 +27,7 @@ We'll use the model as like on [OBD](https://github.com/omnilaboratory/OmniBOLT-
 ### Roadmap
 
 - [X] Testnet
-- [ ] Integration with RGB Node/Bitguard/DLCs/LDK
+- [ ] Integration with LDK
 - [ ] Mainnet
 - [x] Fees
 - [X] Using Contractum
