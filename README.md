@@ -39,7 +39,7 @@ We'll use the model as like on [OBD](https://github.com/omnilaboratory/OmniBOLT-
 You can in your cargo.toml
 
 ```cargo.toml
-
+[package]
 rgb-core = "0.10"
 rust-dlc = "0.4"
 bitswap = "1.0.3"
