@@ -10,13 +10,11 @@ The user can create a assets based on UTXO and after buy/sell this asset
 
 We use AMM (Automed Market Maker)
 
--Alice create invoice for B
+- Alice create invoice for B
 
--Bob receive of Alice tokens 
+- Bob receive of Alice tokens 
 
--Alice receive new tokens of swap
-
-We use the model as on [OBD](https://github.com/omnilaboratory/OmniBOLT-spec/blob/master/OmniBOLT-06-Automatic-Market-Maker-and-DEX.md)
+- Alice receive new tokens of swap
 
 ### Roadmap
 
