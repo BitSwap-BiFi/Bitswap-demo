@@ -8,7 +8,7 @@ The user can create a assets based on UTXO and after buy/sell this asset
 
 ### Feature
 
-We'll use AMM (Automed Market Maker) on Exchange
+We use AMM (Automed Market Maker)
 
 -Alice create invoice for B
 
