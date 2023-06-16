@@ -5,8 +5,8 @@
 "tag": "assets, rgb , lightning network"
 },
 "package"
-"rgb-core": "v0.10.3"
-"rust-dlc": "v0.4.0"
+"rgb-core": "0.10.4"
+"rust-dlc": "0.4.0"
 
 "pairs"
   "ticker": "BTC",
