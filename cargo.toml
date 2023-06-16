@@ -10,6 +10,11 @@ rgb-lighting-sample = "0.1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+
+[[bin]]
+name = "rgbcore-stl"
+required-features = ["stl"]
+
 [dependencies]
 lightning = { version = "0.0.115", features = ["max_level_trace"], path = "./rust-lightning/lightning" }
 lightning-block-sync = { version = "0.0.115", features = [ "rpc-client" ] }
@@ -18,6 +23,17 @@ lightning-net-tokio = { version = "0.0.115" }
 lightning-persister = { version = "0.0.115", path = "./rust-lightning/lightning-persister" }
 lightning-background-processor = { version = "0.0.115", features = [ "futures" ] }
 lightning-rapid-gossip-sync = { version = "0.0.115" }
+mplify = "~4.0.0"
+strict_encoding = "~2.2.0"
+strict_types = "~1.2.0"
+aluvm = { version = "~0.10.2", features = ["std"] }
+commit_verify = { version = "~0.10.2", features = ["rand", "derive"] }
+single_use_seals = "~0.10.0"
+bp-core = { version = "~0.10.3" }
+secp256k1-zkp = { version = "0.8.0", features = ["use-rand", "rand-std", "global-context"] }
+baid58 = "~0.3.1"
+mime = "~0.3.16"
+serde_crate = { package = "serde", version = "1", features = ["derive"], optional = true }
 
 base64 = "0.13.0"
 bitcoin = "0.29.2"
