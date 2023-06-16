@@ -3,7 +3,8 @@
 members = ["rgb-core", "rust-dlc", "bitswap"]
 
 [package]
-rgb-core = "0.10.3"
+rgb-core = "0.10.4"
+ main
 rust-dlc = "0.4"
 bitswap = "1.0.3"
 rgb-lighting-sample = "0.1.0"
@@ -14,6 +15,20 @@ rgb-lighting-sample = "0.1.0"
 [[bin]]
 name = "rgbcore-stl"
 required-features = ["stl"]
+
+[dependencies]
+strict_encoding = "~2.2.0"
+strict_encoding = "~2.3.0"
+strict_types = "~1.2.0"
+strict_types = "~1.3.0"
+aluvm = { version = "~0.10.2", features = ["std"] }
+aluvm = { version = "~0.10.3", features = ["std"] }
+commit_verify = { version = "~0.10.2", features = ["rand", "derive"] }
+commit_verify = { version = "~0.10.3", features = ["rand", "derive"] }
+single_use_seals = "~0.10.0"
+single_use_seals = "~0.10.0"
+bp-core = { version = "~0.10.3" }
+bp-core = { version = "~0.10.4" }
 
 [dependencies]
 lightning = { version = "0.0.115", features = ["max_level_trace"], path = "./rust-lightning/lightning" }
