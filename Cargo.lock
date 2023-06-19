@@ -1,6 +1,6 @@
 [root]
-name = "cargo-lock-example"
-version = "0.1.0"
+name = "Bitswap-core"
+version = "1.0.3-alpha"
 
 [[package]]
 name = "bitswap"
