@@ -22,7 +22,6 @@ We use AMM (Automed Market Maker)
 - [ ] Integration with LDK
 - [ ] Mainnet
 - [x] Fees
-- [X] Using Contractum
 - [X] BTC/USDT pair
 - [x] Open source code
 
