@@ -19,7 +19,7 @@ We use AMM (Automed Market Maker)
 ### Roadmap
 
 - [X] Testnet
-- [ ] Integration with LDK
+- [x] Integration with LDK
 - [ ] Mainnet
 - [x] Fees
 - [X] BTC/USDT pair
