@@ -1,76 +1,59 @@
-use rgb-core::{Contract}
-use rgb-lightning-sample::{PaymentInfo, TypeAssignments , PeerManager}
+use ldk::lightning::chain::keysinterface::Sign;
+use ldk::lightning::ln::channelmanager::ChannelManager;
+use ldk::lightning::ln::channelmanager::ChannelManager as LdkChannelManager;
+use ldk::lightning::ln::msgs::{ChannelMessageHandler, RoutingMessageHandler};
+use ldk::lightning::ln::peer_handler::{MessageHandler, PeerManager};
+use ldk::lightning::ln::router::Router;
+use ldk::lightning::util::config::UserConfig;
+use ldk::ln::msgs::ChannelMessage;
+use ldk::ln::msgs::RoutingMessage;
+use ldk::util::events::EventsProvider;
+use ldk::util::logger::Logger;
+use rgb::service::RGB20;
 
-impl TypedAssignments {
-    pub fn zero_balanced_static(
-        inputs: Vec<value::Revealed>,
-        allocations_ours: BTreeMap<seal::Revealed, AtomicValue>,
-        allocations_theirs: BTreeMap<SealEndpoint, AtomicValue>,
-    ) -> Self {
-        if allocations_ours.len() + allocations_theirs.len() == 0 {
-            return Self::Value(vec![]);
-        }
+fn main() {
+    // Initialize LDK components
+    let logger = Logger::new();
+    let events_provider = EventsProvider::new();
+    let user_config = UserConfig::default();
+    let channel_manager = ChannelManager::new();
+    let peer_manager = PeerManager::new();
+    let router = Router::new();
+    let message_handler = MessageHandler::new();
+    let channel_message_handler = ChannelMessageHandler::new();
+    let routing_message_handler = RoutingMessageHandler::new();
 
-        let count = allocations_theirs.len() + allocations_ours.len();
-        let secret_key = SecretKey([
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            1, 1, 0,
-        ]);
-        let mut blinding_factors = vec![secret_key; count];
+    // Connect to the Bitcoin network via LDK
+    let _bitcoin_network = ldk::bitcoin::network::constants::Network::Testnet;
 
-        let mut blinding_inputs: Vec<_> = inputs.iter().map(|inp| inp.blinding.into()).collect();
-        if blinding_inputs.is_empty() {
-            blinding_inputs.push(secp256k1zkp::key::ONE_KEY);
-        }
+    // Initialize RGB20 service for BTC asset
+    let btc_service = RGB20::new("BTC");
 
-        if !blinding_factors.is_empty() {
-            blinding_factors.pop();
-            let blinding_correction = SECP256K1_ZKP
-                .blind_sum(blinding_inputs.clone(), blinding_factors.clone())
-                .expect("SECP256K1_ZKP failure has negligible probability");
-            blinding_factors.push(blinding_correction);
-        }
+    // Initialize RGB20 service for USDT asset
+    let usdt_service = RGB20::new("USDT");
 
-        let mut blinding_iter = blinding_factors.into_iter();
+    // Register BTC and USDT services with LDK channel manager
+    let mut ldk_channel_manager = LdkChannelManager::new(
+        logger,
+        events_provider,
+        user_config,
+        channel_manager,
+        peer_manager,
+        router,
+        message_handler,
+        channel_message_handler,
+        routing_message_handler,
+    );
 
-        let mut set: Vec<Assignment<_>> = allocations_ours
-            .into_iter()
-            .map(|(seal, amount)| Assignment::Revealed {
-                seal,
-                state: value::Revealed {
-                    value: amount,
-                    blinding: blinding_iter
-                        .next()
-                        .expect("Internal inconsistency in `AssignmentsVariant::zero_balanced`")
-                        .into(),
-                },
-            })
-            .collect();
-        set.extend(allocations_theirs.into_iter().map(|(seal_proto, amount)| {
-            let state = value::Revealed {
-                value: amount,
-                blinding: blinding_iter
-                    .next()
-                    .expect("Internal inconsistency in `AssignmentsVariant::zero_balanced`")
-                    .into(),
-            };
-            match seal_proto {
-                SealEndpoint::ConcealedUtxo(seal) => Assignment::ConfidentialSeal { seal, state },
-                SealEndpoint::WitnessVout {
-                    method,
-                    vout,
-                    blinding,
-                } => Assignment::Revealed {
-                    seal: seal::Revealed {
-                        method,
-                        txid: None,
-                        vout,
-                        blinding,
-                    },
-                    state,
-                },
-            }
-        }));
+    ldk_channel_manager.register_channel_message_handler(btc_service);
+    ldk_channel_manager.register_channel_message_handler(usdt_service);
 
-        Self::Value(set)
-    }
+    // Start LDK channel manager
+    ldk_channel_manager.start();
+
+    // Perform asset transfers, channel management, etc. using LDK and RGB Core
+
+    // Clean up and gracefully shut down the LDK channel manager
+    ldk_channel_manager.stop();
+}
+
