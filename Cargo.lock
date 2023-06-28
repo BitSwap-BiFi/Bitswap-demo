@@ -1,11 +1,11 @@
 [root]
 name = "Bitswap-core"
-version = "1.0.3-alpha"
+version = "1.0.4-alpha"
 
 [[package]]
 name = "bitswap"
-version = "1.0.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
+version = "1.0.4"
+source = "registry+https://github.com/BitSwap-BiFi/Bitswap-core"
 checksum = "sha256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 dependencies = [
   "futures 0.3.17 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -15,21 +15,29 @@ dependencies = [
 [[package]]
 name = "rgb-core"
 version = "0.10.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
+source = "registry+https://github.com/RGB-WG/rgb-core"
 checksum = "sha256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 [[package]]
 name = "rgb-lighting-sample"
 version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
+source = "registry+https://github.com/RGB-Tools/rgb-lightning-sample"
 checksum = "sha256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 dependencies = [
-  "bitswap 1.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
-  "rgb-core 0.10.4 (registry+https://github.com/rust-lang/crates.io-index)",
+  "bitswap 1.0.3 (registry+https://github.com/RGB-WG/rgb-core)",
+  "rgb-core 0.10.4 (registry+https://github.com/RGB-WG/rgb-core)",
 ]
 
 [[package]]
 name = "rust-dlc"
 version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
+source = "registry+https://github.com/p2pderivatives/rust-dlc"
+checksum = "sha256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+]
+
+[[package]]
+name = "AluVM"
+version = "0.10.3"
+source = "registry+https://github.com/AluVM/rust-aluvm"
 checksum = "sha256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
