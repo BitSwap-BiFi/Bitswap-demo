@@ -8,13 +8,15 @@ Exchange for RGB assets
 
 The user can participate of Pools and earn BTC or USDT like on Uniswap
 
-How there's no lunch free, you can loose sats in this scenario:
+How there's no lunch free, you can lose seats in this scenario:
 
 - Illiquid asset
 
 - Stop Loss
 
 - Channel Liquidity on Lightning Network
+
+- DLC fail
 
 ### Swaps
 
