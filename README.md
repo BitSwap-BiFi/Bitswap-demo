@@ -2,15 +2,25 @@
 
 Exchange for RGB assets
 
+**Disclaimer**: Alpha Software
+
 ### How Works?
 
-The user can create a assets based on UTXO and after buy/sell this asset
+The user can participate of Pools and earn BTC or USDT like on Uniswap
 
-### Feature
+How there's no lunch free, you can loose sats in this scenario:
+
+- Illiquid asset
+
+- Stop Loss
+
+- Channel Liquidity on Lightning Network
+
+### Swaps
 
 We use AMM (Automed Market Maker)
 
-- Alice create invoice for B
+- Alice create invoice (RGB) for B
 
 - Bob receive of Alice tokens 
 
@@ -24,6 +34,7 @@ We use AMM (Automed Market Maker)
 - [x] Fees
 - [ ] Beta app
 - [ ] UI/UX
+- [ ] Stop Loss
 - [ ] Payjoin
 - [X] BTC/USDT pair
 - [x] Open source code
