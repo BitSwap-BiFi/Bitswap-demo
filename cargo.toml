@@ -29,6 +29,7 @@ single_use_seals = "~0.10.0"
 single_use_seals = "~0.10.0"
 bp-core = { version = "~0.10.3" }
 bp-core = { version = "~0.10.4" }
+aluvm =  {version = "~0.10.4" }
 
 [dependencies]
 lightning = { version = "0.0.115", features = ["max_level_trace"], path = "./rust-lightning/lightning" }
@@ -41,7 +42,7 @@ lightning-rapid-gossip-sync = { version = "0.0.115" }
 mplify = "~4.0.0"
 strict_encoding = "~2.2.0"
 strict_types = "~1.2.0"
-aluvm = { version = "~0.10.2", features = ["std"] }
+aluvm = { version = "~0.10.4", features = ["std"] }
 commit_verify = { version = "~0.10.2", features = ["rand", "derive"] }
 single_use_seals = "~0.10.0"
 bp-core = { version = "~0.10.3" }
