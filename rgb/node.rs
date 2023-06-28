@@ -1,6 +1,6 @@
-use rgb_node::RGBNode;
-use bitswap_core::AutomatedMarketMaker;
-use rust_dlc::DiscreetLogContracts;
+use rgb_node::{Contract, Schema};
+use bitswap_core::{Pool, Swap};
+use rust_dlc::{Manager, Message};
 
 fn main() {
     // Initialize RGB Node
