@@ -20,11 +20,20 @@ impl AmmContract {
         ExecutionResult::None
     }
 
-    fn swap(&mut self, btc_amount: u64) -> ExecutionResult {
+    fn swap(&mut self, btc_amount: u64, slippage: f64) -> ExecutionResult {
         let usdt_amount = self.calculate_swap(btc_amount);
-        self.btc_balance += btc_amount;
-        self.usdt_balance -= usdt_amount;
-        ExecutionResult::Value(Value::U64(usdt_amount))
+
+        let max_slippage = (usdt_amount as f64) * slippage;
+        let actual_slippage = (usdt_amount as f64) - ((btc_amount as f64) * (self.usdt_balance as f64) / (self.btc_balance as f64));
+
+        if actual_slippage > max_slippage {
+            // Revert the swap due to slippage exceeding the specified percentage
+            ExecutionResult::None
+        } else {
+            self.btc_balance += btc_amount;
+            self.usdt_balance -= usdt_amount;
+            ExecutionResult::Value(Value::U64(usdt_amount))
+        }
     }
 
     fn calculate_swap(&self, btc_amount: u64) -> u64 {
@@ -48,7 +57,9 @@ fn main() {
 
     // Simulate token swap
     let btc_to_swap = 5;
-    let result = amm_contract.swap(btc_to_swap);
+    let slippage = 0.02; // 2% maximum allowable slippage
+
+    let result = amm_contract.swap(btc_to_swap, slippage);
 
     match result {
         ExecutionResult::Value(value) => {
@@ -56,9 +67,10 @@ fn main() {
             println!("Received USDT: {}", value);
         }
         ExecutionResult::None => {
-            // Invalid swap or insufficient liquidity
-            println!("Invalid swap");
+            // Swap reverted due to slippage exceeding the specified percentage
+            println!("Swap reverted due to slippage exceeding the specified percentage");
         }
     }
 }
+
 
