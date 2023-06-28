@@ -22,6 +22,9 @@ We use AMM (Automed Market Maker)
 - [x] Integration with LDK
 - [ ] Mainnet
 - [x] Fees
+- [ ] Beta app
+- [ ] UI/UX
+- [ ] Payjoin
 - [X] BTC/USDT pair
 - [x] Open source code
 
