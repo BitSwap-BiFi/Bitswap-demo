@@ -30,7 +30,7 @@ We use AMM (Automed Market Maker)
 
 ### Run BitSwap
 
-You can in your cargo.toml
+You can add in your cargo.toml
 
 ```cargo.toml
 [package]
