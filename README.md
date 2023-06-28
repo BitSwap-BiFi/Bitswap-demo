@@ -20,13 +20,11 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 ### Swaps
 
-We use AMM (Automed Market Maker)
+- Alice create invoice (RGB or LN) for Bob receive USDT
 
-- Alice create invoice (RGB) for B
+- Bob receive USDT tokens of Alice
 
-- Bob receive of Alice tokens 
-
-- Alice receive new tokens of swap
+- Alice receive BTC of Bob
 
 ### Roadmap
 
@@ -38,6 +36,7 @@ We use AMM (Automed Market Maker)
 - [ ] UI/UX
 - [ ] Stop Loss
 - [ ] Payjoin
+- [ ] Official USDT implementation
 - [X] BTC/USDT pair
 - [x] Open source code
 
