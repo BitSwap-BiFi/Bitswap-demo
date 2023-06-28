@@ -8,7 +8,7 @@ Exchange for RGB assets
 
 The user can participate of Pools and earn BTC or USDT like on Uniswap
 
-How there's no lunch free, you can lose seats in this scenario:
+How there's no lunch free, you can lose sats in these scenarios:
 
 - Illiquid asset
 
