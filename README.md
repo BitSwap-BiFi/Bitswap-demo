@@ -35,7 +35,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Beta app
 - [ ] UI/UX
 - [x] Stop Loss
-- [ ] Payjoin
+- [x] Payjoin
 - [ ] Official USDT implementation
 - [X] BTC/USDT pair
 - [x] Open source code
