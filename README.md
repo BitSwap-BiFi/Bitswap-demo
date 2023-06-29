@@ -50,5 +50,5 @@ rgb-core = "0.10.4"
 rust-dlc = "0.4"
 bitswap = "1.0.4"
 aluvm= "0.10.3"
-rgb-lighting-sample = "0.1.0"
+rust-lightning = "0.0.115"
 
