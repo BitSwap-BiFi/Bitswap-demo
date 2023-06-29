@@ -34,6 +34,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Fees
 - [ ] Beta app
 - [ ] UI/UX
+- [x] P2TR
 - [x] Stop Loss
 - [x] Payjoin
 - [ ] Official USDT implementation
