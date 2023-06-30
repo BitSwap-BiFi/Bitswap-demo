@@ -1,10 +1,10 @@
 // Rust code for integrating Taproot (P2TR) with RGB Node, AMM algorithm, DLCs, and Payjoin
 
-use rgb_node::RGBNode;
-use rust_amm::AutomatedMarketMaker;
-use rust_dlc::DiscreetLogContracts;
-use rust_payjoin::Payjoin;
-use rust_taproot::Taproot;
+use rgb_node::{Daemon, Mod, Opts, Service};
+use bitswap_core::{Aluvm,PayJoin,Swap};
+use rust_dlc::{Message};
+use rust_payjoin::{Sender, Receiver, Input, Output};
+use rust_p2tr::{Input, Output},
 
 fn main() {
     // Initialize RGB Node
