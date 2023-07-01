@@ -1,10 +1,12 @@
 // Rust code for integrating Payjoin with RGB Node, AMM algorithm, and DLCs
 
-use rgb_node::RGBNode;
-use rust_amm::AutomatedMarketMaker;
-use rust_dlc::DiscreetLogContracts;
-use rust_payjoin::Payjoin;
 
+use rgb_node::{Daemon, Mod, Opts, Service};
+use bitswap_core::{Aluvm,PayJoin,Swap};
+use rust_dlc::{Message};
+use rust_payjoin::{Sender, Receiver, Input, Output};
+use rust_p2tr::{Input, Output};
+    
 fn main() {
     // Initialize RGB Node
     let rgb_node = RGBNode::new("your_rgb_node_settings");
