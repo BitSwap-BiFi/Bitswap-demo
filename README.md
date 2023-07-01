@@ -26,6 +26,12 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 - Alice receive BTC of Bob
 
+## Demo and PoC
+
+We create our demo around DEX
+
+[Demo video](https://github.com/BitSwap-BiFi/Bitswap-PoC/)
+
 ### Roadmap
 
 - [X] Testnet
