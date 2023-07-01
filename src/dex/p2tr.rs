@@ -4,7 +4,7 @@ use rgb_node::{Daemon, Mod, Opts, Service};
 use bitswap_core::{Aluvm,PayJoin,Swap};
 use rust_dlc::{Message};
 use rust_payjoin::{Sender, Receiver, Input, Output};
-use rust_p2tr::{Input, Output},
+use rust_p2tr::{Input, Output};
 
 fn main() {
     // Initialize RGB Node
