@@ -5,7 +5,7 @@
 
 version: 2
 updates:
-  - package-ecosystem: "cargo" # See documentation for possible values
-    directory: "/RGB-WG/rgb-core"" # Location of package manifests
+  - package-ecosystem: "cargo"
+    directory: ""/RGB-WG/rgb-core""
     schedule:
       interval: "weekly"
