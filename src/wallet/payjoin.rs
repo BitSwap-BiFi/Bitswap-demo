@@ -12,10 +12,10 @@ fn main() {
     let rgb_node = RGBNode::new("your_rgb_node_settings");
 
     // Initialize AMM algorithm
-    let amm_algorithm = AutomatedMarketMaker::new("your_amm_algorithm_settings");
+    let amm_algorithm = AutomatedMarketMaker::new
 
     // Initialize DLCs
-    let dlcs = DiscreetLogContracts::new("your_dlcs_settings");
+    let dlcs = DiscreetLogContracts::new
 
     // Initialize Payjoin
     let payjoin = Payjoin::new("your_payjoin_settings");
