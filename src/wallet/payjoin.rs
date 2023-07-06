@@ -9,16 +9,16 @@ use rust_p2tr::{Input, Output};
     
 fn main() {
     // Initialize RGB Node
-    let rgb_node = RGBNode::new("your_rgb_node_settings");
+    let rgb_node = RGBNode::new("Daemon");
 
     // Initialize AMM algorithm
-    let amm_algorithm = AutomatedMarketMaker::new
+    let amm_algorithm = AutomatedMarketMaker::new:("Algorithm");
 
     // Initialize DLCs
-    let dlcs = DiscreetLogContracts::new
+    let dlcs = DiscreetLogContracts::new("message");
 
     // Initialize Payjoin
-    let payjoin = Payjoin::new("your_payjoin_settings");
+    let payjoin = Payjoin::new("Input");
 
     // Connect AMM algorithm to RGB Node
     amm_algorithm.connect_to_rgb_node(&rgb_node);
