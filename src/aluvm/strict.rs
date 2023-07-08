@@ -36,3 +36,5 @@ mod test {
         let lib = rgb_core_stl();
         assert_eq!(lib.id().to_string(), LIB_ID_RGB);
     }
+}
+
