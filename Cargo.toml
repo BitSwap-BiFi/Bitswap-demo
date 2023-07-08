@@ -6,7 +6,7 @@ members = ["rgb-core", "rust-dlc", "bitswap"]
 rgb-core = "0.10.4"
 rust-dlc = "0.4"
 bitswap = "1.0.4"
-aluvm= "0.10.3"
+rust=aluvm= "0.10.3"
 rust-lighting = "0.0.115"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
