@@ -6,9 +6,8 @@ use std::error::Error;
 use std::io::{self, Write};
 
 fn main() -> Result<(), Box<dyn Error>> {
-    // Initialize RGB Core and LDK
-
-    // Your code here
+     let rgb = RGB::new();
+     let ldk = LDK::new():
 
     // Create a new RGB contract instance
     let contract = Contract::new();
