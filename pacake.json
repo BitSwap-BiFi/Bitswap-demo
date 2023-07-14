@@ -1,7 +1,7 @@
 {
 "name": "BitSwap"
 "description": "DEX for assets RGB"
-"version": "alpha 1.0.4"
+"version": "alpha 1.0.5"
 "tag": "assets, rgb , lightning network"
 },
 "package"
