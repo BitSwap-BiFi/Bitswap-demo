@@ -1,13 +1,13 @@
 {
 "name": "BitSwap"
 "description": "DEX for assets RGB"
-"version": "alpha 1.0.3"
+"version": "alpha 1.0.4"
 "tag": "assets, rgb , lightning network"
 },
 "package"
 "rgb-core": "0.10.4"
 "rust-dlc": "0.4.0"
-
+"rust-aluvm":"0.10.4"
 "pairs"
   "ticker": "BTC",
   "name": "Bitcoin",
