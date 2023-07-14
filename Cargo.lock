@@ -38,6 +38,6 @@ checksum = "sha256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 [[package]]
 name = "AluVM"
-version = "0.10.3"
+version = "0.10.4"
 source = "registry+https://github.com/AluVM/rust-aluvm"
 checksum = "sha256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
