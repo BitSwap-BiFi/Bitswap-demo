@@ -1,14 +1,14 @@
-use aluvm::stl::aluvm_stl;
-use bp::bc::stl::bitcoin_stl;
-use bp::stl::bp_core_stl;
-use strict_types::stl::strict_types_stl;
-use strict_types::typelib::{LibBuilder, TranslateError};
-use strict_types::TypeLib;
+pub use aluvm::stl::aluvm_stl;
+pub use bp::bc::stl::bitcoin_stl;
+pub use bp::stl::bp_core_stl;
+pub use strict_types::stl::{std_stl, strict_types_stl;
+pub use strict_types::typelib::{LibBuilder, TranslateError};
+pub use strict_types::TypeLib;
 
 use crate::{Extension, Genesis, SubSchema, TransitionBundle, LIB_NAME_RGB};
 
 /// Strict types id for the library providing data types for RGB consensus.
-pub const LIB_ID_RGB: &str = "xray_susan_reward_Fvh85VcsTSb2zmdwT13q32Rv9M14nvMaGvCT3JMtRQWf";
+pub const LIB_ID_RGB: &str = "sultan_banana_henry_DDKh5Jk4DCqxiWZNyHnkCbq68nV8fsfWuA9cPhUAcvgz";
 
 fn _rgb_core_stl() -> Result<TypeLib, TranslateError> {
     LibBuilder::new(libname!(LIB_NAME_RGB))
@@ -17,6 +17,7 @@ fn _rgb_core_stl() -> Result<TypeLib, TranslateError> {
         .transpile::<TransitionBundle>()
         .transpile::<Extension>()
         .compile(bset! {
+            td_stl().to_dependency(),
             strict_types_stl().to_dependency(),
             bitcoin_stl().to_dependency(),
             bp_core_stl().to_dependency(),
