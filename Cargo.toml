@@ -5,7 +5,7 @@ members = ["rgb-core", "rust-dlc", "bitswap"]
 [package]
 rgb-core = "0.10.5" 
 rust-dlc = "0.4"
-bitswap = "1.0.4"
+bitswap = "1.0.6"
 rust-aluvm= "0.10.4"
 rust-lighting = "0.0.115"
 
