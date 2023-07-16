@@ -66,3 +66,12 @@ rust-lightning = "0.0.115"
 
 Soon
 
+## License
+
+Licensed under either:
+
+-  Apache License, Version 2.0 
+-  MIT License
+-  GNU General Public License v3.0
+
+
