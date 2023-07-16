@@ -47,16 +47,18 @@ We create our demo around DEX
 - [X] BTC/USDT pair
 - [x] Open source code
 
-### Run BitSwap
+## Run BitSwap
+
+### Add to the your Cargo
 
 You can add in your cargo.toml
 
 ```cargo.toml
 [package]
-rgb-core = "0.10.4"
+rgb-core = "0.10.5"
 rust-dlc = "0.4"
-bitswap = "1.0.4"
-rust-aluvm = "0.10.3"
+bitswap = "1.0.6"
+rust-aluvm = "0.10.4"
 rust-baid58 = "0.1.0"
 rust-lightning = "0.0.115"
 
