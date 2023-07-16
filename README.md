@@ -32,7 +32,7 @@ We create our demo around DEX
 
 [Demo video](https://github.com/BitSwap-BiFi/Bitswap-PoC/)
 
-### Roadmap
+## Roadmap
 
 - [X] Testnet
 - [x] Integration with LDK
@@ -61,4 +61,8 @@ bitswap = "1.0.6"
 rust-aluvm = "0.10.4"
 rust-baid58 = "0.1.0"
 rust-lightning = "0.0.115"
+```
+### Via CLI Command
+
+Soon
 
