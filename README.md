@@ -46,6 +46,7 @@ We create our demo around DEX
 - [ ] Official USDT implementation
 - [X] BTC/USDT pair
 - [x] Open source code
+- [ ] Integration with APIs from [RGBex](https://rgbex.io/)
 
 ## Run BitSwap
 
