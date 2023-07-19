@@ -7,5 +7,5 @@ version: 2
 updates:
   - package-ecosystem: "Cargo"
   - directory:"./RGB-WG/rgb-core"
-    schedule:
-      interval: "monthly"
+ - schedule: 
+ -  interval: "monthly"
