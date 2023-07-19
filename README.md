@@ -1,5 +1,7 @@
 # BitSwap (Core) ⚡
 
+[![.github/workflows/dependabot.yml](https://github.com/BitSwap-BiFi/Bitswap-core/actions/workflows/dependabot.yml/badge.svg)](https://github.com/BitSwap-BiFi/Bitswap-core/actions/workflows/dependabot.yml)
+
 Exchange for RGB assets
 
 **Disclaimer**: Alpha Software
