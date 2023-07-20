@@ -38,6 +38,7 @@ We create our demo around DEX
 
 - [X] Testnet
 - [x] Integration with LDK
+- [ ] Add new pais for dCHF, RGBTC and RGBEX tokens
 - [ ] Mainnet
 - [x] Fees
 - [ ] Beta app
