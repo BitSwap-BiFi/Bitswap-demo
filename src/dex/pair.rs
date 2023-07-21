@@ -7,7 +7,7 @@ enum Asset {
     BTC,
     USDT,
     RGBTC,
-    dCHF,
+    DCHF,
     RGBEX,      
 }
 
