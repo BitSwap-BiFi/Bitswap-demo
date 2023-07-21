@@ -6,6 +6,9 @@ use rgb::{ContractId, Consignment, Genesis, Node, NodeId};
 enum Asset {
     BTC,
     USDT,
+    RGBTC,
+    dCHF,
+    RGBEX,      
 }
 
 impl Validate for Asset {
