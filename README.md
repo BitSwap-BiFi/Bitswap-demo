@@ -34,19 +34,11 @@ We create our demo around DEX
 
 ## Roadmap
 
-- [X] Testnet
-- [x] Integration with LDK
 - [ ] Add new pairs for dCHF, RGBTC and RGBEX tokens
 - [ ] Mainnet
-- [x] Fees
 - [ ] Beta app
 - [ ] UI/UX
-- [x] P2TR
-- [x] Stop Loss
-- [x] Payjoin
 - [ ] Official USDT implementation
-- [X] BTC/USDT pair
-- [x] Open source code
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
 
 ## Run BitSwap
