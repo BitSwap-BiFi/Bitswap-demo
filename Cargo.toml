@@ -7,7 +7,7 @@ rgb-core = "0.10.5"
 rust-dlc = "0.4"
 bitswap = "1.0.6"
 rust-aluvm= "0.10.4"
-rust-lighting = "0.0.115"
+rust-lighting = "0.0.116"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -33,7 +33,7 @@ aluvm =  {version = "~0.10.4" }
 
 [dependencies]
 lightning = { version = "0.0.115", features = ["max_level_trace"], path = "./rust-lightning/lightning" }
-lightning-block-sync = { version = "0.0.115", features = [ "rpc-client" ] }
+lightning-block-sync = { version = "0.0.116", features = [ "rpc-client" ] }
 lightning-invoice = { version = "0.23", path = "./rust-lightning/lightning-invoice" }
 lightning-net-tokio = { version = "0.0.115" }
 lightning-persister = { version = "0.0.115", path = "./rust-lightning/lightning-persister" }
