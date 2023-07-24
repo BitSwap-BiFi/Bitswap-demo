@@ -4,6 +4,7 @@ use std::str::FromStr;
 
 fn testnet()
 let network = bitcoin::network::constants::Network::Testnet;
+let network = bitcoin::network::constants::Network::Mainnet;
 / Example usage of the imported libraries
     let mut rng = OsRng::default();
     let private_key = bitcoin::secp256k1::Secp256k1::new();
