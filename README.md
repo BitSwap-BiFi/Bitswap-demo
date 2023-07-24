@@ -54,7 +54,7 @@ rust-dlc = "0.4"
 bitswap = "1.0.6"
 rust-aluvm = "0.10.4"
 rust-baid58 = "0.1.0"
-rust-lightning = "0.0.115"
+rust-lightning = "0.0.116"
 ```
 ### Via CLI Command
 
