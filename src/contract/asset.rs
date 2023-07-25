@@ -1,4 +1,5 @@
 use rgb_core::{Consignment, Contract, Error, ExecutionResult, Schema, Value};
+use baid58::{Baid58ParseError, Chunking, FromBaid58, ToBaid58, CHUNKING_32};
 use std::collections::HashMap;
 
 struct RGB20Asset {
