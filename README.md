@@ -49,7 +49,7 @@ You can add in your cargo.toml
 
 ```cargo.toml
 [package]
-rgb-core = "0.10.6"
+rgb-core = "0.10.7"
 rust-dlc = "0.4"
 bitswap = "1.0.7"
 rust-aluvm = "0.10.5"
