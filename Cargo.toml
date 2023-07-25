@@ -3,9 +3,16 @@
 members = ["rgb-core", "rust-dlc", "bitswap"]
 
 [package]
+name = "Bitswap-Core"
+version = "1.0.7-alpha"
+edition = "2023"
+description = "AMM DEX on RGB Porotocol."
+license = "MIT OR Apache-2.0"
+
+[package]
 rgb-core = "0.10.6" 
 rust-dlc = "0.4"
-bitswap = "1.0.6"
+bitswap = "1.0.7"
 rust-aluvm= "0.10.5"
 rust-lighting = "0.0.116"
 rust-baid58 = "0.4.0"
