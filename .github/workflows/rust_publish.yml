@@ -1,0 +1,2 @@
+- name: Bitswap Core
+  uses: katyo/publish-crates@v2
