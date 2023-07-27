@@ -69,4 +69,10 @@ Licensed under either:
 -  MIT License
 -  GNU General Public License v3.0
 
+## FAQ
+
+- **Bitswap have any $BIT token from DEX?**
+
+No, our token is only Bitcoin
+
 
