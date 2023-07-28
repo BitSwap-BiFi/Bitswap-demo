@@ -25,4 +25,8 @@
         "type": "once",
         "amount": 10000000000,
         "asset": "USDT"
- 
+ "ticker":"RBBTC",
+ "name": "RGB Bitcoin",
+  "precision":"",
+  "unit":"satoshi",
+  "policy":"issuance",
