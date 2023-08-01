@@ -41,6 +41,7 @@ We create our demo around DEX
 - [ ] Beta app
 - [ ] UI/UX
 - [ ] CLI
+- [ ] Payjoin full implementation
 - [ ] Official USDT implementation
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
 
