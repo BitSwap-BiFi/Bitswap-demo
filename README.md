@@ -41,6 +41,7 @@ We create our demo around DEX
 - [ ] Beta app
 - [ ] UI/UX
 - [x] CLI
+- [ ] LNP
 - [ ] Payjoin full implementation
 - [ ] Official USDT implementation
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
@@ -63,8 +64,11 @@ payjoin = { version = {"0.9.0"}, features = ["send", "receive"] }
 ```
 ### Via CLI Command
 
-Soon
+```cli
+$ bit--help
+A CLI for manage channels, swaps and liquidity around RGB andLightning Network
 
+```
 ## License
 
 Licensed under either:
@@ -78,5 +82,22 @@ Licensed under either:
 - **Bitswap have any $BIT token from DEX?**
 
     No, our token is only Bitcoin
+  
+- **It is compatible with Lightning Network?**
+  
+    Yes, we use LDK as main base
 
 
+- **The DEX already is ready?**
+
+    No, we're stiil with R&D around product and is Alpha software
+
+  
+- **LNP from RGB will be implementaded?**
+
+    Yes, we'll implementation soon
+
+
+- **You've CLI?**
+
+    Yes, you can check above
