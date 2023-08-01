@@ -35,28 +35,31 @@ fn main() -> Result<(), Box<dyn Error>> {
         // Check the command and execute the corresponding action
         match args[0] {
             "swaps" => {
-                // Perform swaps
-                // Your code here
+           let swap = swap::BTC();
+           let swap = swap::USDT();
             }
             "mint" => {
-                // Mint new RGB assets
-                // Your code here
+              let mint = mint::USDT();
             }
             "enable_channel" => {
-                // Enable an open channel
-                // Your code here
+                 let channel = open::new();
+               
             }
             "disable_channel" => {
-                // Disable a close channel
-                // Your code here
+               let channel = close::new();
+
+               
             }
             "enter_liquidity" => {
-                // Enter liquidity for RGB assets or Bitcoin
-                // Your code here
+               let mut input = String::new();
+               let input = asset::BTC:();
+               let input = asset::USDT();
+               
             }
             "exit_liquidity" => {
-                // Exit liquidity for RGB assets or Bitcoin
-                // Your code here
+               let mut output = String::new();
+               let output = asset::BTC:();
+               let output = asset::USDT();
             }
             "exit" => {
                 // Exit the program
