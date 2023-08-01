@@ -15,6 +15,11 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Create a new wallet instance
     let mut wallet = Wallet::new();
 
+     
+    /// Network to use
+    #[arg(short, long, default_value = "mainnet")]
+    network: String;
+
     loop {
         // Display the command prompt
         print!("> ");
