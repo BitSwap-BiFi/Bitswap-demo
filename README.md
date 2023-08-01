@@ -40,6 +40,7 @@ We create our demo around DEX
 - [ ] Mainnet
 - [ ] Beta app
 - [ ] UI/UX
+- [ ] CLI
 - [ ] Official USDT implementation
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
 
