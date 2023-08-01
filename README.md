@@ -66,7 +66,18 @@ payjoin = { version = {"0.9.0"}, features = ["send", "receive"] }
 
 ```cli
 $ bit--help
-A CLI for manage channels, swaps and liquidity around RGB andLightning Network
+A CLI for manage channels, swaps and liquidity around RGB and Lightning Network
+
+[arguments]
+
+$bit - for bitswap management
+
+-contract
+-wallet
+-swap
+-mint
+-let_channel
+-close_channel
 
 ```
 ## License
