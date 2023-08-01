@@ -17,7 +17,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
      
     /// Network to use
-    #[arg(short, long, default_value = "mainnet")]
+    #[arg(short, long, default_value = "testnet")]
     network: String;
 
     loop {
