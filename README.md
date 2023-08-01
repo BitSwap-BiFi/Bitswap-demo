@@ -75,6 +75,6 @@ Licensed under either:
 
 - **Bitswap have any $BIT token from DEX?**
 
-No, our token is only Bitcoin
+    No, our token is only Bitcoin
 
 
