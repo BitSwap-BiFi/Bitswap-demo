@@ -76,3 +76,7 @@ Licensed under either:
 -  Apache License, Version 2.0 
 -  MIT License
 -  GNU General Public License v3.0
+
+## FAQ
+
+Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
