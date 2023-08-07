@@ -23,6 +23,10 @@ fn main() {
             ("open", Some(_)) => {
                 // Logic to open a Lightning Network channel
                 println!("Opening a new channel...");
+               let mut input = String::new();
+               let input = asset::BTC:();
+               let input = asset::USDT();
+                  
             }
             ("close", Some(_)) => {
                 // Logic to close a Lightning Network channel
