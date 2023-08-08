@@ -28,6 +28,13 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 - Alice receive BTC of Bob
 
+### Features
+
+- Payjoin
+- Swaps between BTC/USDT
+- Taproot
+- LDK/RGB Lightning Node/LNP
+
 ## Demo and PoC
 
 We create our demo around DEX
@@ -42,6 +49,7 @@ We create our demo around DEX
 - [ ] UI/UX
 - [x] CLI
 - [ ] LNP
+- [ ] RGB Lightning Network
 - [ ] Payjoin full implementation
 - [ ] Official USDT implementation
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
