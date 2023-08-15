@@ -48,6 +48,7 @@ We create our demo around DEX
 - [ ] Beta app
 - [ ] UI/UX
 - [x] CLI
+- [ ] On-Chain RGB Assets with Swap
 - [ ] LNP
 - [ ] RGB Lightning Network
 - [ ] Payjoin full implementation
