@@ -6,6 +6,8 @@ Exchange for RGB assets
 
 ⚠️**Disclaimer 2**: Unstable Software
 
+**Contributions are welcome**
+
 ### How Works?
 
 The user can participate of Pools and earn BTC or USDT like on Uniswap
