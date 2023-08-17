@@ -50,7 +50,7 @@ We create our demo around DEX
 - [ ] Beta app
 - [ ] UI/UX
 - [x] CLI
-- [ ] On-Chain RGB Assets with Swap
+- [ ] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
 - [ ] LNP
 - [ ] RGB Lightning Network
 - [ ] Payjoin full implementation
