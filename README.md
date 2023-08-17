@@ -52,7 +52,6 @@ We create our demo around DEX
 - [x] CLI
 - [ ] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
 - [ ] LNP
-- [ ] RGB Lightning Network
 - [ ] Payjoin full implementation
 - [ ] Official USDT implementation
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
