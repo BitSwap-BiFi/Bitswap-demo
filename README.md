@@ -51,6 +51,7 @@ We create our demo around DEX
 - [ ] UI/UX
 - [x] CLI
 - [ ] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
+- [ ] Carbonado
 - [ ] LNP
 - [ ] Payjoin full implementation
 - [ ] Official USDT implementation
