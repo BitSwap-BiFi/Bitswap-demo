@@ -45,7 +45,7 @@ We create our demo around DEX
 
 ## Roadmap
 
-- [ ] Add new pairs for dCHF, RGBTC and RGBEX tokens
+- [x] Add new pairs for dCHF, RGBTC and RGBEX tokens
 - [ ] Mainnet
 - [ ] Beta app
 - [ ] UI/UX
