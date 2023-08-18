@@ -52,6 +52,7 @@ We create our demo around DEX
 - [x] CLI
 - [ ] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
 - [ ] Carbonado
+- [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
 - [ ] LNP
 - [ ] Payjoin full implementation
 - [ ] Official USDT implementation
