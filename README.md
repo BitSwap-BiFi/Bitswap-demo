@@ -56,6 +56,7 @@ We create our demo around DEX
 - [ ] LNP
 - [ ] Payjoin and Taproot full implementation
 - [ ] Official USDT implementation
+- [ ] Integration with BitMask and MyCitadel
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
 
 ## Run BitSwap
