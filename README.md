@@ -54,7 +54,7 @@ We create our demo around DEX
 - [ ] Carbonado
 - [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
 - [ ] LNP
-- [ ] Payjoin and Taproot full implementation
+- [ ] Payjoin and Taproot full implementation (WIP)
 - [ ] Official USDT implementation
 - [ ] Integration with BitMask, MyCitadel, Shiro, Wallby and COSM wallet
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
