@@ -105,8 +105,6 @@ Licensed under either:
 
 In this Core, we'll not integrate with Sidechains or shitcoins beyond RGB, Bitcoin and Lightning Network.
 
-We accept PR and Issues.
-
 ## FAQ
 
 Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
