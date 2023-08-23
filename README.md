@@ -1,4 +1,4 @@
-# BitSwap (Core) ⚡ 💱
+# Bitswap (Core) ⚡ 💱
 
 Exchange for RGB assets
 
