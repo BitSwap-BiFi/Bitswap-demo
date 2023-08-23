@@ -21,29 +21,6 @@ payjoin = { version = {"0.9.0"}, features = ["send", "receive", "rand"] }
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
-anyhow = "1.0.70"
-base64 = "0.21.2"
-bip21 = "0.3.1"
-bitcoincore-rpc = "0.17.0"
-clap = "4.1.4"
-config = "0.13.3"
-env_logger = "0.10.0"
-log = "0.4.7"
-reqwest = { version = "0.11.4", features = ["blocking"] }
-rcgen = { version = "0.11.1", optional = true }
-serde = { version = "1.0.160", features = ["derive"] }
-payjoin = { version = "0.9.0", features = ["send", "receive", "rand"] }
-bitcoin = "0.30.1"
-
-[profile.release]
-panic = "abort"
-
-[profile.dev]
-panic = "abort"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 
 [[bin]]
 name = "rgbcore-stl"
@@ -82,6 +59,19 @@ secp256k1-zkp = { version = "0.8.0", features = ["use-rand", "rand-std", "global
 baid58 = "~0.3.1"
 mime = "~0.3.16"
 serde_crate = { package = "serde", version = "1", features = ["derive"], optional = true }
+anyhow = "1.0.70"
+base64 = "0.21.2"
+bip21 = "0.3.1"
+bitcoincore-rpc = "0.17.0"
+clap = "4.1.4"
+config = "0.13.3"
+env_logger = "0.10.0"
+log = "0.4.7"
+reqwest = { version = "0.11.4", features = ["blocking"] }
+rcgen = { version = "0.11.1", optional = true }
+serde = { version = "1.0.160", features = ["derive"] }
+payjoin = { version = "0.9.0", features = ["send", "receive", "rand"] }
+bitcoin = "0.30.1"
 
 base64 = "0.13.0"
 bitcoin = "0.29.2"
