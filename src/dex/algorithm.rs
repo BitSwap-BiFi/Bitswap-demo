@@ -53,7 +53,8 @@ fn main() {
     // Simulate liquidity provision
     let btc_liquidity = 10;
     let usdt_liquidity = 100;
-    amm_contract.add_liquidity(btc_liquidity, usdt_liquidity);
+    let fee_liquidity= 0.3;
+    amm_contract.add_liquidity(btc_liquidity, usdt_liquidity, fee_liquidity);
 
     // Simulate token swap
     let btc_to_swap = 5;
