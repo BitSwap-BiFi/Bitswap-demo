@@ -73,7 +73,6 @@ bitswap = "1.0.8"
 rust-aluvm = "0.10.5"
 rust-baid58 = "0.4.4"
 rust-lightning = "0.0.116"
-payjoin = { version = {"0.9.0"}, features = ["send", "receive"] }
 ```
 ### Via CLI Command
 
