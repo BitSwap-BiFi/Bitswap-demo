@@ -1,1 +1,1 @@
-use payjoin::send::{Uri, Adresss, PSBT};            
+use payjoin::receive{Uri, Adresss, PSBT};            
