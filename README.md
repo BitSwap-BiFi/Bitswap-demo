@@ -49,6 +49,7 @@ We create our demo around DEX
 - [ ] Mainnet
 - [ ] Beta app
 - [ ] UI/UX
+- [ ] Web server and domain
 - [x] CLI
 - [ ] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
 - [ ] Carbonado
