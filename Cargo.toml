@@ -4,7 +4,7 @@ members = ["rgb-core", "rust-dlc", "bitswap", "payjoin", "aluvm", "baid58"]
 
 [package]
 name = "Bitswap-Core"
-version = "1.0.8-alpha"
+version = "1.0.9-alpha"
 edition = "2023"
 description = "AMM DEX on RGB Porotocol."
 license = "MIT OR Apache-2.0"
