@@ -95,7 +95,7 @@ $bit - for bitswap management
 ```
 ## License
 
-Licensed under either:
+The code is licensed under either:
 
 -  Apache License, Version 2.0 
 -  MIT License
