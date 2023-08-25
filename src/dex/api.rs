@@ -20,7 +20,7 @@ impl Bitfinex {
     }
 
     pub fn new() -> Bitfinex {
-        Bitfinex::new_with_endpoint("https://api-pub.bitfinex.com")
+        Bitfinex::new_with_endpoint("https://api.bitfinex.com/v1/pubticker/btcust")
     }
 }
 
@@ -34,6 +34,26 @@ fn parse_pair(s: &str) -> Result<Pair> {
     let c2 = str::parse(&s[4..7])?;
 
     Ok(Pair::new(c1, c2))
+}
+/// Return the price in msats/asset
+async fn fetch_price(asset_id: &ContractId) -> Result<u64, Box<dyn std::error::Error>> {
+	#[derive(Debug, serde::Deserialize)]
+	struct BitfinexPrice {
+		last_price: String,
+	}
+
+	// TODO: map the asset to the right ticker. here we assume it's always USDt
+	let body = reqwest::get("https://api.bitfinex.com/v1/pubticker/btcust")
+		.await?
+		.json::<BitfinexPrice>()
+		.await?;
+
+	let last_price = body.last_price.parse::<f64>()?;
+	let price = (1.0 / last_price * 1e11) as u64;
+
+	println!("Using price from Bitfinex: {} mSAT = 1 {}", price, asset_id);
+
+	Ok(price)
 }
 
 // on trading pairs (ex. tBTCUSD)
