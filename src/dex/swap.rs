@@ -1,5 +1,6 @@
 use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value};
 use secp256k1_zkp::rand::rngs::OsRng;
+use bp::{Bytes32, Wrapper}
 use std::str::FromStr;
 
 fn testnet()
