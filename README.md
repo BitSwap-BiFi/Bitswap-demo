@@ -51,7 +51,7 @@ We create our demo around DEX
 - [ ] UI/UX
 - [ ] Web server and domain
 - [x] CLI
-- [ ] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
+- [x] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core) (WIP)
 - [ ] Carbonado
 - [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
 - [ ] LNP
