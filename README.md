@@ -71,7 +71,7 @@ You can add in your cargo.toml
 [package]
 rgb-core = "0.10.7"
 rust-dlc = "0.4"
-bitswap = "1.0.8"
+bitswap = "1.0.9"
 rust-aluvm = "0.10.5"
 rust-baid58 = "0.4.4"
 rust-lightning = "0.0.116"
