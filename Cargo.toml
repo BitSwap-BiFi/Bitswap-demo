@@ -74,7 +74,7 @@ tokio = { version = "1", features = [ "io-util", "macros", "rt", "rt-multi-threa
 amplify = "3.13.0"
 amplify_num = "0.4.1"
 bdk = { version = "0.27", features = ["electrum", "keys-bip39", "sqlite-bundled"] }
-bp-core = { version = "0.9.0", features = ["psbt", "wallet"], path = "./bp-core" }
+bp-core = { version = "0.10.u", features = ["psbt", "wallet"], path = "./bp-core" }
 futures = "0.3"
 internet2 = "0.9.0"
 lnpbp = "0.9.0"
@@ -83,7 +83,7 @@ miniscript = { version = "8.0", features = ["serde"] }
 psbt = "0.9.0"
 reqwest = { version = "0.11", default-features = false, features = ["json", "multipart", "native-tls", "stream"] }
 rgb-std = "0.9.0"
-rgb20 = { version = "0.9.0", path = "./rust-rgb20" }
+rgb20 = { version = "0.10.7", path = "./rust-rgb20" }
 rgb_rpc = { version = "0.9.1", path = "./rgb-node/rpc" }
 serde = { version = "^1.0", features = ["derive"] }
 stens = "0.9.0"
@@ -114,6 +114,14 @@ lightning-background-processor = { path = "./rust-lightning/lightning-background
 rgb20 = { path = "./rust-rgb20" }
 rgb_core = { package = "rgb-core", path = "./rgb-core" }
 rgb_rpc = { path = "./rgb-node/rpc" }
+
+[bp dependencies]
+amplify = "4.0.1"
+bitcoin_hashes = "0.12.0"
+bech32 = "0.9.1"
+bp-primitives = "0.10.7"
+serde_crate = { package = "serde", version = "1", features = ["derive"] }
+serde_with = "3.1.0"
 
 [profile.release]
 panic = "abort"
