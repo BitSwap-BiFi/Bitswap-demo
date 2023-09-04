@@ -37,12 +37,6 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Taproot
 - LDK/RGB Lightning Node/LNP
 
-## Demo and PoC
-
-We create our demo around DEX
-
-[Demo video](https://github.com/BitSwap-BiFi/Bitswap-PoC/)
-
 ## Roadmap
 
 - [x] Add new pairs for dCHF, RGBTC and RGBEX tokens
