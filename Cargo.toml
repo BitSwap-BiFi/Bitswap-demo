@@ -173,6 +173,15 @@ curve25519-dalek = { version = "3.2", optional = true }
 half = "~2.2.0" # Required to maintain MSRV
 serde_crate = { package = "serde", version = "1", optional = true }
 
+[bp-std dependencies]
+
+amplify = "4.0.1"
+bitcoin_hashes = "0.12.0"
+bech32 = "0.9.1"
+bp-primitives = "0.10.7"
+serde_crate = { package = "serde", version = "1", features = ["derive"] }
+serde_with = "3.1.0"
+
 [payjoin dependencies]
 anyhow = "1.0.70"
 base64 = "0.21.2"
