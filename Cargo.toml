@@ -105,6 +105,21 @@ rcgen = { version = "0.11.1", optional = true }
 serde = { version = "1.0.160", features = ["derive"] }
 payjoin = { version = "0.9.0", features = ["send", "receive", "rand"] }
 
+[lnp dependencies]
+
+amplify = "3.13.0"
+strict_encoding = "0.9.0"
+lightning_encoding = "0.9.3"
+bitcoin_scripts = "0.9.0"
+descriptor-wallet = { version = "0.9.0", features = ["keygen"] }
+lnp2p = { version = "0.9.1", path = "lnp2p", default-features = false }
+lnpbp = "0.9.0"
+bitcoin = { version = "0.29.2", features = ["rand"] }
+secp256k1 = { version = "0.24.2", features = ["global-context-less-secure"] }
+internet2 = { version = "0.9.0-rc.1", default-features = false, features = ["keygen"] }
+serde_crate = { package = "serde", version = "1", features = ["derive"], optional = true }
+serde_with = { version = "1.14", features = ["hex"], optional = true }
+
 [patch.crates-io]
 bp-core = {  path = "./bp-core" }
 bp-seals = { path = "./bp-core/seals" }
