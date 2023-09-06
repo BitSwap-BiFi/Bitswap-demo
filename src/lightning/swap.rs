@@ -3,6 +3,7 @@ use std::convert::TryInto;
 
 use lightning::ln::PaymentHash;
 use rgb::contract::ContractId;
+use bp::psbt::
 
 use crate::hex_utils;
 
