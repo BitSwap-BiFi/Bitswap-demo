@@ -48,7 +48,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core) (WIP)
 - [x] Carbonado (WIP)
 - [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
-- [ ] LNP
+- [x] LNP (WIP)
 - [ ] Taproot Channels by LDK
 - [x] Payjoin and Taproot full implementation (WIP)
 - [ ] Official USDT implementation by Bitifinex
