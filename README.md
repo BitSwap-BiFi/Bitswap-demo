@@ -50,7 +50,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
 - [ ] LNP
 - [ ] Taproot Channels by LDK
-- [ ] Payjoin and Taproot full implementation (WIP)
+- [x] Payjoin and Taproot full implementation (WIP)
 - [ ] Official USDT implementation by Bitifinex
 - [ ] Integration with BitMask, MyCitadel, Shiro, Wallby and COSM wallet
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
