@@ -51,7 +51,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] LNP
 - [ ] Taproot Channels by LDK
 - [ ] Payjoin and Taproot full implementation (WIP)
-- [ ] Official USDT implementation
+- [ ] Official USDT implementation by Bitifinex an Tether 
 - [ ] Integration with BitMask, MyCitadel, Shiro, Wallby and COSM wallet
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
 
