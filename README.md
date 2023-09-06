@@ -1,6 +1,6 @@
 # Bitswap (Core) ⚡ 💱
 
-Exchange for RGB assets
+*Decentralized Exchange for RGB assets*
 
 ⚠️**Disclaimer 1**: Alpha Software
 
