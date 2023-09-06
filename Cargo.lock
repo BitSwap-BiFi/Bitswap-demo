@@ -1,10 +1,10 @@
 [root]
 name = "Bitswap-core"
-version = "1.0.6-alpha"
+version = "1.0.9-alpha"
 
 [[package]]
 name = "bitswap"
-version = "1.0.4"
+version = "1.0.9"
 source = "registry+https://github.com/BitSwap-BiFi/Bitswap-core"
 checksum = "sha256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 dependencies = [
@@ -14,7 +14,7 @@ dependencies = [
 
 [[package]]
 name = "rgb-core"
-version = "0.10.4"
+version = "0.10.7"
 source = "registry+https://github.com/RGB-WG/rgb-core"
 checksum = "sha256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
