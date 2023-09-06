@@ -1,6 +1,9 @@
 use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value};
 use secp256k1_zkp::rand::rngs::OsRng;
 use bp::{Bytes32, Wrapper};
+use bp::psbt
+use bp::opret
+use bp::tapret
 use std::str::FromStr;
 use std::str::bp;
 
@@ -24,6 +27,7 @@ fn create_swap() {
     let value = 1000;
     let swap_fee = 0.05;
     let fee_spread = 0.1;
+    let psbt = psbt();
 }
 
 fn swap_accepted() {
@@ -34,6 +38,7 @@ fn swap_accepted() {
     let swap_fee_accepted = 0.05;
     let fee_spread_accepted = 0.1;
     let dlc_accepted = secp256k1_zkp();
+    let psbt = psbt();
 }
 
 fn swp_out() {
@@ -58,3 +63,7 @@ fn secp256k1_zkp() -> secp256k1_zkp::Secp256k1<secp256k1_zkp::All> {
     // Elliptic Curve for swap
     secp256k1_zkp::Secp256k1::new()
 }
+fn psbt ()
+
+ }
+fn taprep()
