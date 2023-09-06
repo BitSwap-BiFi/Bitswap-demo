@@ -1,9 +1,11 @@
 use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value};
 use secp256k1_zkp::rand::rngs::OsRng;
 use bp::{Bytes32, Wrapper};
-use bp::psbt
-use bp::opret
-use bp::tapret
+use bp::psbt::dbc::tapret::opret;
+use bp::opret::psbt::raw::ProprietaryKey;
+use bp::tapret:psbt::Output;
+use bp::dbc::tapret::TapretPathProof;
+use strict_encoding::{StrictDeserialize, StrictSerialize};
 use std::str::FromStr;
 use std::str::bp;
 
