@@ -65,7 +65,8 @@ fn secp256k1_zkp() -> secp256k1_zkp::Secp256k1<secp256k1_zkp::All> {
 }
 // PSBT implementation for atomic swaps on-chain
 fn psbt () {
-    
+  let psbt = ANYONECANPAY::SIGHASH_DEFAULT::new();
+  let rng = &mut OsRng::new().unwrap();
 
  }
 fn taprep()
