@@ -63,7 +63,9 @@ fn secp256k1_zkp() -> secp256k1_zkp::Secp256k1<secp256k1_zkp::All> {
     // Elliptic Curve for swap
     secp256k1_zkp::Secp256k1::new()
 }
-fn psbt ()
+// PSBT implementation for atomic swaps on-chain
+fn psbt () {
+    
 
  }
 fn taprep()
