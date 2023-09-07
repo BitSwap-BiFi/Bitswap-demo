@@ -1,4 +1,6 @@
 use rgb_wallet::Wallet;
+use rgb_wallet::Chain;
+use rgb_wallet::Invoice::InvoiceState;
 use ldk::lightning::chain::keysinterface::Sign;
 use ldk::lightning::ln::channelmanager::ChannelManager;
 use ldk::lightning::ln::channelmanager::ChannelManager as LdkChannelManager;
@@ -18,6 +20,8 @@ fn initialize_rgb_wallet() {
     // ...
 }
 
+    }
+}
 // LDK integration
 fn initialize_ldk() {
     // Initialize LDK components
