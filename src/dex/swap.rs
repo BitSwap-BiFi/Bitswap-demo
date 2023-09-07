@@ -69,6 +69,8 @@ fn secp256k1_zkp() -> secp256k1_zkp::Secp256k1<secp256k1_zkp::All> {
 fn psbt () {
   let psbt = ANYONECANPAY::SIGHASH_DEFAULT::new();
   let rng = &mut OsRng::new().unwrap();
+  let private_key = 
+  let public_key = 
 
  }
 fn taprep()
