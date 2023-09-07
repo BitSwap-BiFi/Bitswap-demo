@@ -1,6 +1,6 @@
 
-
 TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
 1. Definitions.
 
 “License” shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
@@ -56,7 +56,7 @@ While redistributing the Work or Derivative Works thereof, You may choose to off
 
 END OF TERMS AND CONDITIONS
 
-Copyright 2023 Bitswap by Portico Labs
+Copyright 2023 Bitswap 
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
