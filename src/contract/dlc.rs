@@ -12,17 +12,4 @@ fn main() {
     let mut dlc = ContractDescriptor::new();
     dlc.set_oracle(&node);
 
-    // Set contract terms and other necessary details
-    // ...
-
-    // Respond to Oracle queries
-    // ...
-
-    // Initiate negotiation and finalize the contract
-    // ...
-
-    // Execute the contract and handle outcomes
-    // ...
-}
-
 
