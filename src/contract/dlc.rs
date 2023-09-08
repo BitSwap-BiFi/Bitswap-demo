@@ -12,4 +12,10 @@ fn main() {
     let mut dlc = ContractDescriptor::new();
     dlc.set_oracle(&node);
 
+fn oracle
 
+fn swap
+
+fn lp
+
+fn price
