@@ -1,5 +1,7 @@
 use rgb_wallet::Wallet;
 use rgb_wallet::Chain;
+use rgb_core::ContractID;
+
 use rgb_wallet::Invoice::InvoiceState;
 use ldk::lightning::chain::keysinterface::Sign;
 use ldk::lightning::ln::channelmanager::ChannelManager;
@@ -13,11 +15,10 @@ fn initialize_rgb_wallet() {
     // Initialize the RGB wallet
     let wallet = Wallet::new();
 
-    // Connect to the RGB network
-    wallet.connect_to_rgb_network();
+    // Connect to the RGB 
+    wallet.connect_rgb();
 
-    // Manage RGB asset transfers
-    // ...
+    
 }
 
     }
