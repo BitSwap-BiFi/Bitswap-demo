@@ -40,7 +40,7 @@ fn swap_accepted() {
     let swap_fee_accepted = 0.05;
     let fee_spread_accepted = 0.1;
     let dlc_accepted = secp256k1_zkp();
-    let psbt = psbt();
+    let psbt_accepted = psbt();
 }
 
 fn swp_out() {
