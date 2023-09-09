@@ -6,6 +6,8 @@
 
 ⚠️**Disclaimer 2**: Unstable Software
 
+⚠️**Disclaimer 3**: Isn't ready to compile via Cargo.lock for while
+
 **Contributions are welcome**
 
 ### How Works?
