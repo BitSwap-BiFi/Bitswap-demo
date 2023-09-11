@@ -14,10 +14,9 @@ use ldk::lightning::ln::router::Router;
 fn initialize_rgb_wallet() {
     // Initialize the RGB wallet
     let wallet = Wallet::new();
-
-    // Connect to the RGB 
-    wallet.connect_rgb();
-
+// RGB wallet functions
+fn initialize_rgb_wallet();
+  
     
 }
 
