@@ -91,6 +91,11 @@ $bit - for bitswap management
 -close_channel
 
 ```
+
+### Documentation
+
+Soon
+
 ## License
 
 The code is licensed under either:
