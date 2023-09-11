@@ -6,6 +6,7 @@ use bp::opret::psbt::raw::ProprietaryKey;
 use bp::tapret:psbt::Output;
 use bp::dbc::tapret::TapretPathProof;
 use strict_encoding::{StrictDeserialize, StrictSerialize};
+use payjoin::
 use std::str::FromStr;
 use std::str::bp;
 
