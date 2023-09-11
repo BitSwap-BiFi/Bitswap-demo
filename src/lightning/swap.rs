@@ -1,7 +1,7 @@
 use std::convert::TryInto;
 use std::str::FromStr;
-use dlc::message:Oracle;
-use bp::psbt
+use dlc::message::Oracle;
+use bp::psbt;
 use lightning::ln::PaymentHash;
 use rgb::contract::ContractId;
 
