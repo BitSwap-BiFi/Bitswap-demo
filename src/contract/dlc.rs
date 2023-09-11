@@ -2,7 +2,7 @@ use std::rgb_core
 use std::rust_dlc
 
 use rgb_core::Node;
-use rust_dlc::{ContractOracle, ContractDescriptor};
+use dlc::{ContractOracle, ContractDescriptor};
 
 fn main() {
     // Establish connection with RGB Node
