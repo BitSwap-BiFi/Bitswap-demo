@@ -41,14 +41,12 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 ## Roadmap
 
-- [x] Add new pairs for dCHF, RGBTC and RGBEX tokens
 - [ ] Mainnet
 - [ ] Beta app
 - [ ] UI/UX
 - [ ] Web server and domain
 - [x] CLI
 - [x] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core) (WIP)
-- [x] Carbonado (WIP)
 - [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
 - [ ] Taproot Channels by LDK
 - [ ] RGB wallet (new version stable)
