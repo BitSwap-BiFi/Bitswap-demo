@@ -75,6 +75,9 @@ fn psbt () {
   let rng = &mut OsRng::new().unwrap();
   let private_key = 
   let public_key = 
+  let message =
+  let sig =
+      
 
  }
 fn taprep()
