@@ -37,7 +37,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Payjoin
 - Swaps between BTC/USDT
 - Taproot
-- LDK/RGB Lightning Node/LNP
+- LDK/RGB Lightning Node
 
 ## Roadmap
 
