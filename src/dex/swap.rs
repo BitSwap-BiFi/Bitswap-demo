@@ -80,4 +80,10 @@ fn psbt () {
       
 
  }
-fn taprep()
+fn taprep() {
+  let taprep = 
+  let rng = &mut OsRng::new().unwrap();
+  let private_key = 
+  let public_key = 
+  let message =
+  let sig =
