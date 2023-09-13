@@ -50,15 +50,16 @@ lightning-net-tokio = { version = "0.0.115" }
 lightning-persister = { version = "0.0.115", path = "./rust-lightning/lightning-persister" }
 lightning-background-processor = { version = "0.0.115", features = [ "futures" ] }
 lightning-rapid-gossip-sync = { version = "0.0.115" }
-mplify = "~4.0.0"
-strict_encoding = "~2.2.0"
-strict_types = "~1.2.0"
-aluvm = { version = "~0.10.4", features = ["std"] }
-commit_verify = { version = "~0.10.2", features = ["rand", "derive"] }
+
+amplify = "~4.0.0"
+strict_encoding = "~2.5.0"
+strict_types = "~1.6.0"
+aluvm = { version = "~0.10.5", features = ["std"] }
+commit_verify = { version = "~0.10.5", features = ["rand", "derive"] }
 single_use_seals = "~0.10.0"
-bp-core = { version = "~0.10.3" }
+bp-core = { version = "~0.10.7" }
 secp256k1-zkp = { version = "0.8.0", features = ["use-rand", "rand-std", "global-context"] }
-baid58 = "~0.3.1"
+baid58 = "~0.4.4"
 mime = "~0.3.16"
 serde_crate = { package = "serde", version = "1", features = ["derive"], optional = true }
 base64 = "0.13.0"
@@ -73,11 +74,27 @@ rand = "0.4"
 serde_json = { version = "1.0" }
 tokio = { version = "1", features = [ "io-util", "macros", "rt", "rt-multi-thread", "sync", "net", "time" ] }
 
+
+[features]
+default = []
+all = ["stl", "serde"]
+stl = ["commit_verify/stl", "bp-core/stl", "aluvm/stl"]
+serde = [
+    "serde_crate",
+    "amplify/serde",
+    "strict_encoding/serde",
+    "strict_types/serde",
+    "commit_verify/serde",
+    "bp-core/serde",
+    "aluvm/serde",
+    "secp256k1-zkp/use-serde"
+]
+
 # RGB and related
 amplify = "3.13.0"
 amplify_num = "0.4.1"
 bdk = { version = "0.27", features = ["electrum", "keys-bip39", "sqlite-bundled"] }
-bp-core = { version = "0.10.u", features = ["psbt", "wallet"], path = "./bp-core" }
+bp-core = { version = "0.10.7", features = ["psbt", "wallet"], path = "./bp-core" }
 futures = "0.3"
 internet2 = "0.9.0"
 lnpbp = "0.9.0"
