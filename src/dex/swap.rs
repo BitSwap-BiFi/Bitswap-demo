@@ -80,6 +80,7 @@ fn psbt () {
       
 
  }
+// Taproot implementation
 fn taprep() {
   let taprep = 
   let rng = &mut OsRng::new().unwrap();
