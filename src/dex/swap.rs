@@ -6,7 +6,6 @@ use bp::opret::psbt::raw::ProprietaryKey;
 use bp::tapret:psbt::Output;
 use bp::dbc::tapret::TapretPathProof;
 use strict_encoding::{StrictDeserialize, StrictSerialize};
-use payjoin::
 use std::str::FromStr;
 use std::str::bp;
 
@@ -81,10 +80,30 @@ fn psbt () {
 
  }
 // Taproot implementation
-fn taprep() {
-  let taprep = 
-  let rng = &mut OsRng::new().unwrap();
-  let private_key = 
-  let public_key = 
-  let message =
-  let sig =
+fn taproot() {
+    // Create a new Taproot keypair
+    let rng = &mut OsRng::new().unwrap();
+    let private_key = bp::tapret::PrivateKey::new(rng);
+    let public_key = private_key.public_key();
+
+    // Create a message (you should define your own message)
+    let message = "Your message goes here";
+
+    // Sign the message using the private key
+    let signature = private_key.sign(message.as_bytes());
+
+    // Verify the signature
+    let is_valid = public_key.verify(message.as_bytes(), &signature);
+
+    if is_valid {
+        println!("Signature is valid");
+    } else {
+        println!("Signature is invalid");
+    }
+}
+
+fn main() {
+    // Call the PSBT and Taproot functions here
+    psbt();
+    taproot();
+}
