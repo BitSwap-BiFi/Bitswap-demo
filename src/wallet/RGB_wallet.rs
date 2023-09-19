@@ -16,7 +16,8 @@ fn initialize_rgb_wallet() {
     let wallet = Wallet::new();
 // RGB wallet functions
 fn initialize_rgb_wallet();
-  
+let rgb_assets =
+let invoice =
     
 }
 
