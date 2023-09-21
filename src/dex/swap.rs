@@ -86,9 +86,6 @@ fn taproot() {
     let private_key = bp::tapret::PrivateKey::new(rng);
     let public_key = private_key.public_key();
 
-    // Create a message (you should define your own message)
-    let message = "Your message goes here";
-
     // Sign the message using the private key
     let signature = private_key.sign(message.as_bytes());
 
