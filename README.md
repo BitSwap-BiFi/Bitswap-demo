@@ -45,11 +45,11 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Beta app
 - [ ] UI/UX
 - [ ] Web server and domain
-- [x] CLI
+- [x] CLI (WIP)
 - [x] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core) (WIP)
 - [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
 - [ ] Taproot Channels by LDK
-- [ ] RGB wallet (new version stable)
+- [ ] RGB wallet (new version stable) [WIP]
 - [x] Payjoin and Taproot full implementation (WIP)
 - [ ] Official USDT implementation by Bitifinex
 - [ ] Integration with BitMask, MyCitadel, Shiro, Wallby and COSM wallet
