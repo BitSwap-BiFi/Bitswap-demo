@@ -11,6 +11,10 @@ license = "MIT OR Apache-2.0"
 
 [dex dependencies]
 
+swap
+bp-core
+
+
 [package]
 rgb-core = "0.10.7" 
 rust-dlc = "0.4"
