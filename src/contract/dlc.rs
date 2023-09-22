@@ -17,8 +17,8 @@ fn main() {
     dlc.set_oracle(&node);
 
 fn oracle() {
-    let orcale_info =
-    let oracle_message =
+    let orcale_info = ContractInfo::
+    let oracle_message = Message::
     let oracle_pairs =
         
     
