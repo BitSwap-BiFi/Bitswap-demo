@@ -1,23 +1,23 @@
 use payjoin::send{Uri, Adresss, PSBT};
 use rgb::send{UTXO, Invoice, Address, PSBT};
 
-let link = payjoin::Uri::try_from(bip21)
+fn link = payjoin::Uri::try_from(bip21)
     .map_err(|e| anyhow!("Failed to create URI from BIP21: {}", e))?;
 };
-let link = link
+fn link = link
     .check_pj_supported()
     .map_err(|e| anyhow!("The provided URI doesn't support payjoin (BIP78): {}", e))?;
 };
-let mut outputs = HashMap::with_capacity(1);
+fn mut outputs = HashMap::with_capacity(1);
 outputs.insert(link.address.to_string(), amount);
 
-let options = bitcoincore_rpc::json::WalletCreateFundedPsbtOptions {
+fn options = bitcoincore_rpc::json::WalletCreateFundedPsbtOptions {
     lock_unspent: Some(true),
     fee_rate: Some(Amount::from_sat(2000)), // SPECIFY YOUR USER'S FEE RATE
     ..Default::default()
 };
 // in payjoin-cli, bitcoind is set up as a client from the config file
-let psbt = bitcoind
+fn psbt = bitcoind
     .wallet_create_funded_psbt(
         &[], // inputs
         &outputs,
