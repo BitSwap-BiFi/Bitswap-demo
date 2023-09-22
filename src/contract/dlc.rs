@@ -19,7 +19,7 @@ fn main() {
 fn oracle() {
     let orcale_info = ContractInfo::
     let oracle_message = Message::
-    let oracle_pairs =
+    let oracle_pairs = ContractInfo:new:Pairs::BTC::USDT;
         
     
 async fn main() {
