@@ -9,6 +9,12 @@ edition = "2023"
 description = "AMM DEX on RGB Porotocol."
 license = "Apache-2.0"
 
+[dex dependencies]
+
+swap = "pairs, ldk"
+bp-core = "tapret, op"
+
+
 [package]
 rgb-core = "0.10.7" 
 rust-dlc = "0.4"
