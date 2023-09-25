@@ -72,10 +72,10 @@ fn secp256k1_zkp() -> secp256k1_zkp::Secp256k1<secp256k1_zkp::All> {
 fn psbt () {
   let psbt = ANYONECANPAY::SIGHASH_DEFAULT::new();
   let rng = &mut OsRng::new().unwrap();
-  let private_key = 
-  let public_key = 
-  let message =
-  let sig =
+  let private_key =  ANYONECANPAY::SIGHASH_DEFAULT::SecretKey::random(rng);
+  let public_key = ANYONECANPAY::SIGHASH_DEFAULT::PublicKey::from_secret_key(&ANYONECANPAY::SIGHASH_DEFAULT, &privatekey);
+  let message =ANYONECANPAY::SIGHASH_DEFAULT::message::from_slice.unwrap();
+  let sig = ANYONECANPAY::SIGHASH_DEFAULT::sign(&message, &privatekey);
       
 
  }
