@@ -11,8 +11,8 @@ license = "MIT OR Apache-2.0"
 
 [dex dependencies]
 
-swap
-bp-core
+swap = "pairs, ldk"
+bp-core = "tapret, op"
 
 
 [package]
