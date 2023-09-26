@@ -91,7 +91,7 @@ $bit - for bitswap management
 
 ### Documentation
 
-Soon
+[Soon](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/doc)
 
 ## License
 
