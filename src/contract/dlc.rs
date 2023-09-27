@@ -55,5 +55,3 @@ async fn main() {
         &party_b_contract_tx,
         oracle_sig,
         &secp,
-
-fn price
