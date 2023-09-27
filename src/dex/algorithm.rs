@@ -23,21 +23,21 @@ use rgb_core::{Contract, ExecutionResult};
 use aluvm::{Executor, Value};
 
 struct AmmContract {
-    btc_balance: u64,
-    usdt_balance: u64,
+    rgb_asset_balance: u64,
+    rgb_asset_balance: u64,
 }
 
 impl AmmContract {
     fn new() -> Self {
         AmmContract {
-            btc_balance: 0,
-            usdt_balance: 0,
+           rgb_asset_balance: 0,
+            rgb_asset_balance: 0,
         }
     }
 
-    fn add_liquidity(&mut self, btc_amount: u64, usdt_amount: u64) -> ExecutionResult {
-        self.btc_balance += btc_amount;
-        self.usdt_balance += usdt_amount;
+    fn add_liquidity(&mut self, rgb_asset_amount: u64, rgb_asset_amount: u64) -> ExecutionResult {
+        self.rgb_asset_balance += rgb_asset_amount;
+        self.rgb_asset_balance += rgb_asset_amount;
         ExecutionResult::None
     }
 
