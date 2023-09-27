@@ -18,7 +18,7 @@ fn main() {
 
 fn oracle() {
     let orcale_info = ContractInfo::rgb_assets;
-    let oracle_message = Message::Price;
+    let oracle_message = Message::price;
     let oracle_pairs = ContractInfo:new:pairs::rgb_assets;
     let swap_pairs = ContractInfo::new::pairs:rgb_assets;
         
