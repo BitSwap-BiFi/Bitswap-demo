@@ -53,5 +53,7 @@ async fn main() {
         &contract,
         &party_a_contract_tx,
         &party_b_contract_tx,
+        &swap,
+        &pairs,
         oracle_sig,
         &secp,
