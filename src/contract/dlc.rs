@@ -20,6 +20,7 @@ fn oracle() {
     let orcale_info = ContractInfo::rgb_assets;
     let oracle_message = Message::Price;
     let oracle_pairs = ContractInfo:new:pairs::rgb_assets;
+    let swap_pairs = ContractInfo::new::pairs:rgb_assets;
         
     
 async fn main() {
@@ -54,8 +55,5 @@ async fn main() {
         &party_b_contract_tx,
         oracle_sig,
         &secp,
-fn swap
-
-fn lp
 
 fn price
