@@ -48,7 +48,7 @@ async fn main() {
 
     // Execute the Contract
     let secp = Secp256k1::new();
-    let oracle_sig = oracle_info.sign(/* Oracle specific data */, &secp);
+    let oracle_sig = oracle_info.sign(&pairs, &swap, &secp);
     let (party_a_sig, party_b_sig) = party_a.execute(
         &contract,
         &party_a_contract_tx,
