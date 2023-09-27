@@ -27,8 +27,8 @@ async fn main() {
     let oracle_info = OracleInfo::new(/Price/);
 
     // Create a Contract
-    let party_a = Party::new(/* Party A's details */);
-    let party_b = Party::new(/* Party B's details */);
+    let party_a = Party::new(/rgb_assets/);
+    let party_b = Party::new(/rgb_assets/);
     let contract = Contract::new(party_a.clone(), party_b.clone(), oracle_info);
 
     // Generate Contract Offer
@@ -41,6 +41,7 @@ async fn main() {
     let funding_tx = party_a.fund(&party_a_contract_tx, &party_b_contract_tx);
 
     // Broadcast the Funding Transaction
+    let transaction = paryt_a.fund(&party_a_contract_tz, &party_b_contract_tx);
 
     // Wait for confirmation
 
