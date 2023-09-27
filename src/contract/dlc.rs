@@ -17,14 +17,14 @@ fn main() {
     dlc.set_oracle(&node);
 
 fn oracle() {
-    let orcale_info = ContractInfo::
-    let oracle_message = Message::
+    let orcale_info = ContractInfo::rgb_assets;
+    let oracle_message = Message::Price;
     let oracle_pairs = ContractInfo:new:pairs::rgb_assets;
         
     
 async fn main() {
     // Initialize your Oracle
-    let oracle_info = OracleInfo::new(/* Oracle specific details */);
+    let oracle_info = OracleInfo::new(/Price/);
 
     // Create a Contract
     let party_a = Party::new(/* Party A's details */);
