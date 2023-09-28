@@ -59,19 +59,46 @@ impl AmmContract {
 
     fn calculate_swap(&self, btc_amount: u64) -> u64 {
         //Logic AMM
-        fn main() {
-    // Define the constant 'k'
-    let k = 1000000;
+       struct AMM{
+    k: u64,
+    x: u64,
+    y: u64,
+}
 
-    // Given 'x', calculate 'y'
-    let x = 100;
-    let y = k / x;
-    println!("Given x = {}, y = {}", x, y);
+impl AMM {
+    fn new(k: u64, x: u64, y: u64) -> Self {
+        ConstantProduct { k, x, y }
+    }
 
-    // Given 'y', calculate 'x'
-    let y = 200;
-    let x = k / y;
-    println!("Given y = {}, x = {}", y, x);
+    fn set_x(&mut self, x: u64) {
+        self.x = x;
+        self.y = self.k / self.x;
+    }
+
+    fn set_y(&mut self, y: u64) {
+        self.y = y;
+        self.x = self.k / self.y;
+    }
+
+    fn get_x(&self) -> u64 {
+        self.x
+    }
+
+    fn get_y(&self) -> u64 {
+        self.y
+    }
+}
+
+fn logic() {
+    let mut amm = ConstantProduct::new(1000000, 100, 0);
+
+    println!("Initial x: {}, y: {}", amm.get_x(), amm.get_y());
+
+    amm.set_x(200);
+    println!("Given x, calculated y: x: {}, y: {}", amm.get_x(), amm.get_y());
+
+    amm.set_y(300);
+    println!("Given y, calculated x: x: {}, y: {}", amm.get_x(), amm.get_y());
 }
 
         // This example uses a simple constant ratio
