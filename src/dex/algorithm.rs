@@ -68,7 +68,7 @@ impl AmmContract {
 
 impl AMM {
     fn new(k: u64, x: u64, y: u64) -> Self {
-        ConstantProduct { k, x, y }
+        ConstantAmm { k, x, y }
     }
 
     fn set_x(&mut self, x: u64) {
@@ -91,7 +91,7 @@ impl AMM {
 }
 
 fn logic() {
-    let mut amm = ConstantProduct::new(1000000, 100, 0);
+    let mut amm = ConstantAmm::new(1000000, 100, 0);
 
     println!("Initial x: {}, y: {}", amm.get_x(), amm.get_y());
 
