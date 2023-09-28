@@ -41,8 +41,8 @@ impl AmmContract {
         ExecutionResult::None
     }
 
-    fn swap(&mut self, btc_amount: u64, slippage: f64) -> ExecutionResult {
-        let usdt_amount = self.calculate_swap(btc_amount);
+    fn swap(&mut self, rgb_assetamount: u64, slippage: f64) -> ExecutionResult {
+        let usdt_amount = self.calculate_swap(rgb_asset_amount);
 
         let max_slippage = (usdt_amount as f64) * slippage;
         let actual_slippage = (usdt_amount as f64) - ((btc_amount as f64) * (self.usdt_balance as f64) / (self.btc_balance as f64));
@@ -76,8 +76,7 @@ fn main() {
     let usdt_liquidity = 100;
     let fee_liquidity= 0.3;
     amm_contract.add_liquidity(btc_liquidity, usdt_liquidity, fee_liquidity);
-
-    // Simulate token swap
+   // Simulate token swap
     let btc_to_swap = 5;
     let slippage = 0.02; // 2% maximum allowable slippage
 
