@@ -21,6 +21,7 @@
 
 use rgb_core::{Contract, ExecutionResult};
 use aluvm::{Executor, Value};
+use strict_type::{Map};
 
 struct AmmContract {
     rgb_asset_balance: u64,
