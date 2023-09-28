@@ -58,11 +58,27 @@ impl AmmContract {
     }
 
     fn calculate_swap(&self, btc_amount: u64) -> u64 {
+        //Logic AMM
+        fn main() {
+    // Define the constant 'k'
+    let k = 1000000;
+
+    // Given 'x', calculate 'y'
+    let x = 100;
+    let y = k / x;
+    println!("Given x = {}, y = {}", x, y);
+
+    // Given 'y', calculate 'x'
+    let y = 200;
+    let x = k / y;
+    println!("Given y = {}, x = {}", y, x);
+}
+
         // This example uses a simple constant ratio
-        if self.btc_balance == 0 || self.usdt_balance == 0 {
+        if self.rgb_asset_balance == 0 || self.rgb_asset_balance == 0 {
             0
         } else {
-            (btc_amount * self.usdt_balance) / self.btc_balance
+            (rgb_asset_amount * self.rgb_asset_balance) / self.rgb_asset_balance
         }
     }
 }
@@ -70,21 +86,21 @@ impl AmmContract {
 fn main() {
     let mut amm_contract = AmmContract::new();
 
-    // Simulate liquidity provision
-    let btc_liquidity = 10;
-    let usdt_liquidity = 100;
+    // l iquidit provision
+    let rgb_asset_liquidity = 10;
+    let rgb_asset_liquidity = 100;
     let fee_liquidity= 0.3;
-    amm_contract.add_liquidity(btc_liquidity, usdt_liquidity, fee_liquidity);
-   // Simulate token swap
-    let btc_to_swap = 5;
+    amm_contract.add_liquidity(rgb_asset_liquidity, rgb_asset_liquidity, fee_liquidity);
+   // token swap
+    let rgb_asset_to_swap = 1
     let slippage = 0.02; // 2% maximum allowable slippage
 
     let result = amm_contract.swap(btc_to_swap, slippage);
 
     match result {
         ExecutionResult::Value(value) => {
-            // User received USDT in exchange for BTC
-            println!("Received USDT: {}", value);
+            // User received RGB in exchange for other token
+            println!("Received RGB token: {}", value);
         }
         ExecutionResult::None => {
             // Swap reverted due to slippage exceeding the specified percentage
