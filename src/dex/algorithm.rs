@@ -22,6 +22,8 @@
 use rgb_core::{Contract, ExecutionResult};
 use aluvm::{Executor, Value};
 use strict_type::{Map};
+use dlc::{Message, OracleInfo, ContractInfo};
+use lightning::{Message, HashPayment, Invoice};
 
 struct AmmContract {
     rgb_asset_balance: u64,
