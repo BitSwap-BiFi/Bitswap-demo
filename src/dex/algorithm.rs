@@ -44,21 +44,20 @@ impl AmmContract {
     fn swap(&mut self, rgb_assetamount: u64, slippage: f64) -> ExecutionResult {
         let usdt_amount = self.calculate_swap(rgb_asset_amount);
 
-        let max_slippage = (usdt_amount as f64) * slippage;
-        let actual_slippage = (usdt_amount as f64) - ((btc_amount as f64) * (self.usdt_balance as f64) / (self.btc_balance as f64));
+        let max_slippage = (rgb_asset_amount as f64) * slippage;
+        let actual_slippage = (rgb_asset_amount as f64) - ((rgb_asset_amount as f64) * (self.rgb_asset_balance as f64) / (self.rgb_asset_balance as f64));
 
         if actual_slippage > max_slippage {
             // Revert the swap due to slippage exceeding the specified percentage
             ExecutionResult::None
         } else {
-            self.btc_balance += btc_amount;
-            self.usdt_balance -= usdt_amount;
-            ExecutionResult::Value(Value::U64(usdt_amount))
+            self.rgb_asset_balance += rgb_asset_amount;
+            self.rgb_asset_balance += rgb_asset_amount;
+            ExecutionResult::Value(Value::U64(rgb_asset_amount))
         }
     }
 
     fn calculate_swap(&self, btc_amount: u64) -> u64 {
-        // Implement your specific AMM algorithm here to calculate the USDT amount for a given BTC amount
         // This example uses a simple constant ratio
         if self.btc_balance == 0 || self.usdt_balance == 0 {
             0
