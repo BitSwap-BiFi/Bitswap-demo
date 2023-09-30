@@ -21,5 +21,9 @@ use strict_encoding::{StrictDecode, StrictEncode}
 use crate::types::IntoNodeHash;
 use crate::{LeafScript, TapNodeHash, TapScript};
 
-impl TaprootScriptTree
+impl TaprootScriptTree {
+
+fn taproot
+fn bitswap
+fn bitcoin
 
