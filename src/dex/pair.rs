@@ -4,11 +4,8 @@ use rgb::{ContractId, Consignment, Genesis, Node, NodeId};
 
 #[derive(Clone, Debug, Eq, PartialEq)]
 enum Asset {
-    BTC,
-    USDT,
-    RGBTC,
-    DCHF,
-    RGBEX,      
+    btc,
+    rgb_assets
 }
 
 impl Validate for Asset {
