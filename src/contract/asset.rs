@@ -5,6 +5,8 @@ use std::collections::HashMap;
 struct RGB20Asset {
     name: String,
     symbol: String,
+    swap: String,
+    lp: String,
     total_supply: u64,
     balances: HashMap<String, u64>,
 }
