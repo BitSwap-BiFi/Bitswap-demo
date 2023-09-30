@@ -1,11 +1,13 @@
+use std::rgb_core;
+
 use rgb::traits::Validate;
 use rgb::value::Value;
-use rgb::{ContractId, Consignment, Genesis, Node, NodeId};
+use rgb::{ContractId, Consignment, Schema , Genesis, Node, NodeId};
 
 #[derive(Clone, Debug, Eq, PartialEq)]
 enum Asset {
-    btc,
-    rgb_assets
+    BTC,
+    RGB_Assets,
 }
 
 impl Validate for Asset {
