@@ -1,13 +1,14 @@
-// Import the necessary dependencies
-use std::rgb-core
+use std::rgb_core
+use std::lightning
+
 use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value}
 use liquidity_provider_pool::{LiquidityProviderPool, PoolError};
 
 // Define a struct for the liquidity provider pool
 struct MyPool {
-    // Define any necessary parameters for your pool
-    // ...
-}
+    let pool =
+    let rgb_asset =
+    let liquidity
 
 impl LiquidityProviderPool for MyPool {
     // Implement the methods defined in the LiquidityProviderPool trait
