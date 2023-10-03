@@ -2,7 +2,7 @@ use std::rgb_core;
 
 use rgb::traits::Validate;
 use rgb::value::Value;
-use rgb::{ContractId, Consignment, Schema , Genesis, Node, NodeId};
+use rgb::{ContractId, Consignment, Schema , Genesis};
 
 #[derive(Clone, Debug, Eq, PartialEq)]
 enum Asset {
@@ -23,9 +23,4 @@ impl Genesis for Asset {
             inflation_keys: vec![],
         }
     }
-}
-fn main() {
-    let node_id = NodeId::from_hex("YOUR_NODE_ID").expect("Invalid node ID");
-    let mut node = Node::new(node_id);
-}
 
