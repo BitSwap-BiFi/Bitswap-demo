@@ -98,7 +98,6 @@ $bit - for bitswap management
 The code is licensed under either:
 
 -  Apache License, Version 2.0 
--  GNU General Public License v3.0
 -  Business Source License 1.1
 
 
