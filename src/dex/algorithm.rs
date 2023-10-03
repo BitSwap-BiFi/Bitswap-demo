@@ -20,7 +20,7 @@
 // limitations under the License.
 
 use rgb_core::{Contract, ExecutionResult};
-use aluvm::{Executor, Value};
+use aluvm::{Executor, Value, Baid68};
 use strict_type::{Map};
 use dlc::{Message, OracleInfo, ContractInfo};
 use lightning::{Message, HashPayment, Invoice};
@@ -29,6 +29,8 @@ struct AmmContract {
     rgb_asset_balance: u64,
     rgb_asset_balance: u64,
     dlc_contract_balance: u64,
+    lightning_balance: u64
+    
 }
 
 impl AmmContract {
