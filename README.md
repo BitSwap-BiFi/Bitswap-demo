@@ -97,8 +97,7 @@ $bit - for bitswap management
 
 The code is licensed under either:
 
--  Apache License, Version 2.0 
--  Business Source License 1.1
+-  [Business Source License 1.1](https://github.com/BitSwap-BiFi/Bitswap-core/blob/main/LICENSE.md)
 
 
 ## Ossification DEX
