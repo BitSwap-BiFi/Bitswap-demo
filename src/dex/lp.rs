@@ -3,16 +3,19 @@ use std::lightning
 
 use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value}
 use liquidity_provider_pool::{LiquidityProviderPool, PoolError};
+use lightning::{PaymentHash, OpenChannel, CloseChannel};
 
 // Define a struct for the liquidity provider pool
 struct MyPool {
     let pool =
     let rgb_asset =
-    let liquidity
+    let liquidity=
 
 impl LiquidityProviderPool for MyPool {
-    // Implement the methods defined in the LiquidityProviderPool trait
-    // ...
+    let pool =
+    let rgb_asset =
+    let liquidity =
+    
 }
 
 // Define a function for interacting with the RGB Core library
