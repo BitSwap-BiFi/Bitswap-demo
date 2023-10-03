@@ -10,10 +10,10 @@ description = "AMM DEX on RGB Porotocol."
 license = "Apache-2.0"
 
 [memmbers]
-"swap"
-"dlc"
-"algorithm"
-"ldk"
+swap
+dlc
+algorithm
+ldk
 
 [dex dependencies]
 
