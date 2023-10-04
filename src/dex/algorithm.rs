@@ -8,7 +8,6 @@ Business Source License 1.1
 // Copyright (C) 2023 Bitswap. All rights reserved.
 // Copyright (C) 2023 22388O. All rights reserved.
 // Copyright (C) 2023 Rsync. All rights reserved.
-
 //
 // Licensed under the 
 Business Source License, 1.1(the "License");
@@ -38,6 +37,8 @@ impl AmmContract {
         AmmContract {
            rgb_asset_balance: 0,
             rgb_asset_balance: 0,
+            dlc_contract_balance: 0,
+            lightning_balance: 0,
         }
     }
 
