@@ -7,13 +7,13 @@ name = "Bitswap-Core"
 version = "1.0.10-alpha"
 edition = "2023"
 description = "AMM DEX on RGB Porotocol."
-license = "Apache-2.0"
+license = "Business Source License 1.1"
 
 [memmbers]
-swap
-dlc"
-algorithm
-ldk
+swap = "algorithm, dlc"
+dlc = "message"
+algorithm = "amm contract"
+ldk = "invoice"
 
 [dex dependencies]
 
