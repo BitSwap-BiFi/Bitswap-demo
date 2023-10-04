@@ -10,10 +10,10 @@ description = "AMM DEX on RGB Porotocol."
 license = "Apache-2.0"
 
 [memmbers]
-"swap"
-"dlc"
-"algorithm"
-"ldk"
+swap
+dlc"
+algorithm
+ldk
 
 [dex dependencies]
 
@@ -26,7 +26,7 @@ rgb-core = "0.10.7"
 rust-dlc = "0.4"
 bitswap = "1.0.9"
 rust-aluvm = "0.10.5"
-rust-lighting = "0.0.116"
+rust-lighting = "0.0.117"
 rust-baid58 = "0.4.0"
 rgb-wallet = "0.10.8"
 carbonado ="0.3.3"
@@ -55,7 +55,9 @@ bp-core = { version = "~0.10.4" }
 baid58 = "0.4.0"
 
 [dependencies]
-lightning = { version = "0.0.115", features = ["max_level_trace"], path = "./rust-lightning/lightning" }
+lightning = { version = "0.0.117", path = "../lightning", features = ["_test_utils"] }
+lightning-invoice = { version = "0.25.0", path = "../lightning-invoice" }
+lightning-persister = { version = "0.0.117", path = "../lightning-persister" }
 lightning-block-sync = { version = "0.0.116", features = [ "rpc-client" ] }
 lightning-invoice = { version = "0.23", path = "./rust-lightning/lightning-invoice" }
 lightning-net-tokio = { version = "0.0.115" }
