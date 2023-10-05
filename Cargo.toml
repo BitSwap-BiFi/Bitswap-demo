@@ -10,16 +10,11 @@ description = "AMM DEX on RGB Porotocol."
 license = "Business Source License 1.1"
 
 [memmbers]
- 22388o-patch-9
-swap
-dlc
-algorithm
-ldk
+
 swap = "algorithm, dlc"
 dlc = "message"
 algorithm = "amm contract"
 ldk = "invoice"
-main
 
 [dex dependencies]
 
