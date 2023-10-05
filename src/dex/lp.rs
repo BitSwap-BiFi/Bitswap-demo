@@ -3,7 +3,7 @@ use std::lightning
 
 use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value}
 use liquidity_provider_pool::{LiquidityProviderPool, PoolError};
-use lightning::{PaymentHash, OpenChannel, CloseChannel};
+use lightning::{PaymentHash};
 
 // Define a struct for the liquidity provider pool
 struct MyPool {
