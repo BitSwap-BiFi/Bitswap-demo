@@ -42,9 +42,10 @@ impl AmmContract {
         }
     }
 
-    fn add_liquidity(&mut self, rgb_asset_amount: u64, rgb_asset_amount: u64) -> ExecutionResult {
+    fn add_liquidity(&mut self, rgb_asset_amount: u64, rgb_asset_amount: u64, lightning_balance: u64) -> ExecutionResult {
         self.rgb_asset_balance += rgb_asset_amount;
         self.rgb_asset_balance += rgb_asset_amount;
+        self.lightning_balance += lightning_balance;
         ExecutionResult::None
     }
 
