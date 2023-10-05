@@ -68,7 +68,7 @@ rust-dlc = "0.4"
 bitswap = "1.0.9"
 rust-aluvm = "0.10.5"
 rust-baid58 = "0.4.4"
-rust-lightning = "0.0.116"
+rust-lightning = "0.0.117"
 ```
 ### Via CLI Command
 
@@ -97,8 +97,8 @@ $bit - for bitswap management
 
 The code is licensed under either:
 
--  Apache License, Version 2.0 
--  GNU General Public License v3.0
+-  [Business Source License 1.1](https://github.com/BitSwap-BiFi/Bitswap-core/blob/main/LICENSE.md)
+
 
 ## Ossification DEX
 
