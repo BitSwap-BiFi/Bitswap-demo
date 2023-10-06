@@ -1,9 +1,12 @@
+use std::rgb_core;
+use std::lightning;
+
 use clap::{App, Arg, SubCommand};
 
 fn main() {
     let matches = App::new("DEX CLI")
-        .version("1.0")
-        .author("Your Name")
+        .version("1.11.0-alpha")
+        .author("Bitswap")
         .about("CLI for interacting with DEX on RGB Core and Lightning Network")
         .subcommand(
             SubCommand::with_name("channel")
