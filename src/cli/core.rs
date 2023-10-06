@@ -25,7 +25,7 @@ fn main() {
                 println!("Opening a new channel...");
                let mut input = String::new();
                let input = asset::BTC:();
-               let input = asset::USDT();
+               let input = asset::RGB_ASSET();
                   
             }
             ("close", Some(_)) => {
