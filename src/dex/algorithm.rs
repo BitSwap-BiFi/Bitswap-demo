@@ -61,6 +61,7 @@ impl AmmContract {
         } else {
             self.rgb_asset_balance += rgb_asset_amount;
             self.rgb_asset_balance += rgb_asset_amount;
+            self.lightning_balance += lightning_balance;
             ExecutionResult::Value(Value::U64(rgb_asset_amount))
         }
     }
