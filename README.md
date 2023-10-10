@@ -35,7 +35,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 ### Features
 
 - Payjoin
-- Swaps between BTC/USDT
+- Universal swaps, atomic swaps via on-chain and Lightning Network
 - Taproot
 - LDK/RGB Lightning Node
 
