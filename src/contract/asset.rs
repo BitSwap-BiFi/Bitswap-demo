@@ -1,5 +1,6 @@
 use std::rgb_core;
 use std::baid58;
+use std::amplify;
 
 
 use rgb_core::{Consignment, Contract, Error, ExecutionResult, Schema, Value};
