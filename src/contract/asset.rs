@@ -3,7 +3,7 @@ use std::baid58;
 use std::amplify;
 
 
-use rgb_core::{Consignment, Contract, Error, ExecutionResult, Schema, Value};
+use rgb_core::{Consignment, Contract, Error, ExecutionResult, Schema, Value, State};
 use baid58::{Baid58ParseError, Chunking, FromBaid58, ToBaid58, CHUNKING_32};
 use amplify::{ByteArray, Bytes32};
 use std::collections::HashMap;
