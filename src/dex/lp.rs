@@ -7,9 +7,9 @@ use lightning::{PaymentHash};
 
 // Define a struct for the liquidity provider pool
 struct MyPool {
-    let pool =
-    let rgb_asset =
-    let liquidity=
+    let pool = let rgb_asset_pool;
+    let rgb_asset = let rgb_asset_pool;
+    let liquidity= let liquiditity;
 
 impl LiquidityProviderPool for MyPool {
     let pool =
