@@ -49,8 +49,8 @@ impl AmmContract {
         ExecutionResult::None
     }
 
-    fn swap(&mut self, rgb_assetamount: u64, slippage: f64) -> ExecutionResult {
-        let usdt_amount = self.calculate_swap(rgb_asset_amount);
+    fn swap(&mut self, rgb_asset_amount: u64, slippage: f64, lightning_balance: u64) -> ExecutionResult {
+        let rgb_asset_amount = self.calculate_swap(rgb_asset_amount);
 
         let max_slippage = (rgb_asset_amount as f64) * slippage;
         let actual_slippage = (rgb_asset_amount as f64) - ((rgb_asset_amount as f64) * (self.rgb_asset_balance as f64) / (self.rgb_asset_balance as f64));
