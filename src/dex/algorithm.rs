@@ -131,7 +131,7 @@ fn main() {
     let rgb_asset_to_swap = 1
     let slippage = 0.02; // 2% maximum allowable slippage
 
-    let result = amm_contract.swap(btc_to_swap, slippage);
+    let result = amm_contract.swap(gb_asset_to_swap, slippage);
 
     match result {
         ExecutionResult::Value(value) => {
