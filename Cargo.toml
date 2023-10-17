@@ -57,7 +57,7 @@ lightning-net-tokio = { version = "0.0.115" }
 lightning-background-processor = { version = "0.0.115", features = [ "futures" ] }
 lightning-rapid-gossip-sync = { version = "0.0.115" }
 
-[rgb core]
+[rgb_core]
 amplify = "~4.5.0"
 strict_encoding = "~2.6.1"
 strict_types = "~1.6.3"
@@ -118,7 +118,7 @@ strict_encoding = "0.9.0"
 thiserror = "1.0"
 tokio-util = { version = "0.7.4", features = ["codec"] }
 
-[rgb wallet]
+[rgb_wallet]
 
 amplify = "4.0.1"
 baid58 = "0.4.4"
@@ -145,7 +145,7 @@ hashbrown = { version = "0.8", optional = true }
 serde = { version = "1.0.118", optional = true }
 bitcoin = { version = "0.29.0", default-features = false }
 
-[dlc manager]
+[dlc_manager]
 
 async-trait = "0.1.50"
 bitcoin = {version = "0.29.2"}
@@ -174,7 +174,7 @@ serde = "1.0"
 serde_json = "1.0"
 simple-wallet = {path = "../simple-wallet"}
 
-[dlc message]
+[dlc_message]
 
 
 bitcoin = {version = "0.29.2"}
@@ -189,7 +189,7 @@ blake3 = "1.4.1"
 mnemonic = "1.0.1"
 sha2 = "0.10.7"
 
-[strict encoding]
+[strict_encoding]
 
 amplify = { version = "4.0.0", features = ["proc_attr"] }
 strict_encoding_derive = { version = "2.0.0", path = "derive" }
@@ -197,7 +197,7 @@ half = { version = "~2.2.0", optional = true } # Required to maintain MSRV
 serde_crate = { package = "serde", version = "1", features = ["derive"], optional = true }
 
 
-[aluvm dependencies]
+[aluvm]
 amplify = { version = "4.0.0", default-features = false, features = ["apfloat", "derive", "hex"] }
 paste = "1"
 strict_encoding = { version = "2.5.0", default-features = false, features = ["float", "derive"] }
@@ -210,7 +210,7 @@ curve25519-dalek = { version = "3.2", optional = true }
 half = "~2.2.0" # Required to maintain MSRV
 serde_crate = { package = "serde", version = "1", optional = true }
 
-[bp-std dependencies]
+[bp_std]
 
 amplify = "4.0.1"
 bitcoin_hashes = "0.12.0"
@@ -219,7 +219,7 @@ bp-primitives = "0.10.7"
 serde_crate = { package = "serde", version = "1", features = ["derive"] }
 serde_with = "3.1.0"
 
-[payjoin dependencies]
+[payjoin]
 anyhow = "1.0.70"
 base64 = "0.21.2"
 bip21 = "0.3.1"
@@ -233,7 +233,7 @@ rcgen = { version = "0.11.1", optional = true }
 serde = { version = "1.0.160", features = ["derive"] }
 payjoin = { version = "0.9.0", features = ["send", "receive", "rand"] }
 
-[lnp dependencies]
+[lnp]
 
 amplify = "3.13.0"
 strict_encoding = "0.9.0"
