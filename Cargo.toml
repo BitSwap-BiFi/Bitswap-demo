@@ -53,7 +53,6 @@ lightning = { version = "0.0.117", path = "../lightning", features = ["_test_uti
 lightning-invoice = { version = "0.25.0", path = "../lightning-invoice" }
 lightning-persister = { version = "0.0.117", path = "../lightning-persister" }
 lightning-block-sync = { version = "0.0.116", features = [ "rpc-client" ] }
-lightning-invoice = { version = "0.23", path = "./rust-lightning/lightning-invoice" }
 lightning-net-tokio = { version = "0.0.115" }
 lightning-persister = { version = "0.0.115", path = "./rust-lightning/lightning-persister" }
 lightning-background-processor = { version = "0.0.115", features = [ "futures" ] }
