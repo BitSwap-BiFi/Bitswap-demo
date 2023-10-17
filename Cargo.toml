@@ -15,8 +15,7 @@ dlc = "message"
 algorithm = "amm contract"
 ldk = "invoice"
 
-[dex dependencies]
-
+[dex.dependencies]
 swap = "pairs, ldk"
 bp-core = "tapret, op"
 
