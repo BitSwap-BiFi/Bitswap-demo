@@ -107,9 +107,9 @@ features.internet2 = ["0.9.0"]
 festures.lnpbp = ["0.9.0"]
 features.lnpbp-invoice = { version = "0.9.0", features = ["rgb"] }
 features.miniscript = { version = "8.0", features = ["serde"] }
-features.psbt =  "0.9.0"]
+features.psbt = [ "0.9.0"]
 features.reqwest = { version = "0.11", default-features = false, features = ["json", "multipart", "native-tls", "stream"] }
-features.rgb-std = "0.9.0"
+features.rgb-std = ["0.9.0"]
 features.rgb20 = { version = "0.10.7", path = "./rust-rgb20" }
 features.rgb_rpc = { version = "0.9.1", path = "./rgb-node/rpc" }
 features.stens = ["0.9.0"]
