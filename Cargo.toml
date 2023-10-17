@@ -253,7 +253,7 @@ rgb20 = { path = "./rust-rgb20" }
 rgb_core = { package = "rgb-core", path = "./rgb-core" }
 rgb_rpc = { path = "./rgb-node/rpc" }
 
-[bp dependencies]
+[bp_dependencies]
 amplify = "4.0.1"
 bitcoin_hashes = "0.12.0"
 bech32 = "0.9.1"
