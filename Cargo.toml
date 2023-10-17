@@ -166,7 +166,6 @@ electrs-blockchain-provider = {path = "../electrs-blockchain-provider"}
 env_logger = "0.9.1"
 mocks = {path = "../mocks"}
 secp256k1-zkp = {version = "0.7.0", features = ["bitcoin_hashes", "rand", "rand-std", "global-context", "use-serde"]}
-serde = "1.0"
 serde_json = "1.0"
 simple-wallet = {path = "../simple-wallet"}
 
