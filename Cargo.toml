@@ -163,7 +163,6 @@ bitcoincore-rpc = {version = "0.16.0"}
 bitcoincore-rpc-json = {version = "0.16.0"}
 criterion = "0.4.0"
 dlc-manager = {path = ".", features = ["use-serde"]}
-dlc-messages = {path = "../dlc-messages", features = ["serde"]}
 electrs-blockchain-provider = {path = "../electrs-blockchain-provider"}
 env_logger = "0.9.1"
 mocks = {path = "../mocks"}
