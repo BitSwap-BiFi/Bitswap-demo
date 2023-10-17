@@ -130,13 +130,12 @@ rgb-core = { version = "0.10.7", features = ["stl"] }
 [ldk]
 
 tokio = { version = "1.14", features = [ "macros", "rt", "rt-multi-thread", "sync", "time" ] }
-lightning = { version = "0.0.116", path = "../lightning", features = ["_test_utils"] }
+lightning = { version = "0.0.117", path = "../lightning", features = ["_test_utils"] }
 lightning-invoice = { version = "0.24.0", path = "../lightning-invoice" }
 lightning-persister = { version = "0.0.116", path = "../lightning-persister" }
 
 
 bech32 = { version = "0.9.0", default-features = false }
-lightning = { version = "0.0.116", path = "../lightning", default-features = false }
 secp256k1 = { version = "0.24.0", default-features = false, features = ["recovery", "alloc"] }
 num-traits = { version = "0.2.8", default-features = false }
 bitcoin_hashes = { version = "0.11", default-features = false }
