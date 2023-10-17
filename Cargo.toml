@@ -247,7 +247,7 @@ serde_with = { version = "1.14", features = ["hex"], optional = true }
 bp-core = {  path = "./bp-core" }
 bp-seals = { path = "./bp-core/seals" }
 bp-dbc = { path ="./bp-core/dbc" }
-bp-consensus = { path "./bp-core/consenus"}
+bp-consensus = { path = "./bp-core/consensus" }
 commit_verify = { path = "./client_side_validation/commit_verify" }
 lightning = { path = "./rust-lightning/lightning" }
 lightning-background-processor = { path = "./rust-lightning/lightning-background-processor"}
