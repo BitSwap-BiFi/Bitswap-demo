@@ -99,7 +99,7 @@ serde = [
 
 # RGB and related
 features.amplify = ["3.13.0"]
-amplify_num = "0.4.1"
+features.amplify_num = "0.4.1"
 bdk = { version = "0.27", features = ["electrum", "keys-bip39", "sqlite-bundled"] }
 bp-core = { version = "0.10.7", features = ["psbt", "wallet"], path = "./bp-core" }
 futures = "0.3"
