@@ -38,7 +38,7 @@ bp-std = "0.11.0"
 rgb_binary = "src/bin/rgbcore-stl.rs"
 
 [features]
-RGB_feature = ["rgb_related"]
+RGB_related = ["rgb_related"]
 
 [[bin]]
 name = "rgbcore-stl"
