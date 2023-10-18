@@ -34,6 +34,8 @@ bp-std = "0.11.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[features]
+RGB_feature = ["rgb_related"]
 
 [[bin]]
 name = "rgbcore-stl"
