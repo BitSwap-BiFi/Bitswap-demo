@@ -53,6 +53,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Payjoin and Taproot full implementation (WIP)
 - [ ] Official USDT implementation by Bitifinex
 - [ ] Integration with BitMask and COSM wallet
+- [ ] Bifrost
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
 
 ## Run BitSwap
