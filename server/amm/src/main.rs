@@ -13,7 +13,7 @@ pub(crate) type DlcManager = dlc_manager::manager::Manager<
     Arc<BitcoinCoreProvider>,
     // Add RGB-related fields here
     schema::Schema,
-    schema::SchemaId,
+    schema::Schema,
     schema::Genesis,
     schema::SchemaAnchor,
     Amount,
