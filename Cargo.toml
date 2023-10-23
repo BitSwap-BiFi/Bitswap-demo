@@ -84,7 +84,7 @@ serde_json = { version = "1.0" }
 tokio = { version = "1", features = [ "io-util", "macros", "rt", "rt-multi-thread", "sync", "net", "time" ] }
 
 
-[rgb_core_features]
+[rgb_core_complement]
 default = []
 all = ["stl", "serde"]
 stl = ["commit_verify/stl", "bp-core/stl", "aluvm/stl"]
