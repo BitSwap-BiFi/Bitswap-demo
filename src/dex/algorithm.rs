@@ -29,7 +29,8 @@ struct AmmContract {
     rgb_asset_balance: u64,
     dlc_contract_balance: u64,
     lightning_balance: u64,
-    dlc_oracle: u64,
+    oracle_info: u64,
+    contract_info: u64,
     
 }
 
@@ -40,6 +41,7 @@ impl AmmContract {
             rgb_asset_balance: 0,
             dlc_contract_balance: 0,
             lightning_balance: 0,
+            
         }
     }
 
