@@ -43,7 +43,7 @@ async fn fetch_price(asset_id: &ContractId) -> Result<u64, Box<dyn std::error::E
 	}
 
 	// TODO: map the asset to the right ticker. here we assume it's always USDt
-	let body = reqwest::get("https://api.bitfinex.com/v1/pubticker/btcust")
+	let body = reqwest::get("https://api.bitfinex.com/v1/pubticker/btcusdt")
 		.await?
 		.json::<BitfinexPrice>()
 		.await?;
