@@ -39,7 +39,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Taproot
 - LDK and RGB Lightning Node
 
-## Documentation 
+## Documentation about DEX
 
 [Official Documentation](https://github.com/BitSwap-BiFi/bitswap-docs)
 
@@ -94,7 +94,7 @@ $bit - for bitswap management
 
 ```
 
-### Documentation
+### Documentation for run DEX
 
 [Soon](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/doc)
 
