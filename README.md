@@ -39,6 +39,10 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Taproot
 - LDK and RGB Lightning Node
 
+## Documentation 
+
+[Official Documentation](https://github.com/BitSwap-BiFi/bitswap-docs)
+
 ## Roadmap
 
 - [ ] Mainnet
