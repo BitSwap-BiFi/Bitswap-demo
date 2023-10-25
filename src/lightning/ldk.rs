@@ -29,7 +29,7 @@ fn main() {
     // Initialize RGB20 service for BTC asset
     let btc_service = RGB20::new("BTC");
 
-    // Initialize RGB20 service for USDT asset
+    // Initialize RGB20 service for RGB asset
     let usdt_service = RGB20::new("USDT");
 
     // Register BTC and USDT services with LDK channel manager
