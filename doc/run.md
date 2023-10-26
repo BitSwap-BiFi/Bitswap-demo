@@ -2,18 +2,18 @@
 
 Welcome to the Documentation around Bitswap
 
-# Clone the Git repository
+### Clone the Git repository
 
 ```git
 git clone https://github.com/Bitswap-BiFi/Bitswap-core.git
 ```
 
-# Navigate to the project directory
+### Navigate to the project directory
 ```cd
 cd Bitswapcore
 ```
 
-# Build the project to generate/update Cargo.lock
+### Build the project to generate/update Cargo.lock
 ```cargo
 cargo build
 ```
