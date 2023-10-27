@@ -1,7 +1,6 @@
 use rgb_wallet::Wallet;
 use rgb_wallet::Chain;
 use rgb_core::ContractID;
-
 use rgb_wallet::Invoice::InvoiceState;
 use ldk::lightning::chain::keysinterface::Sign;
 use ldk::lightning::ln::channelmanager::ChannelManager;
@@ -18,6 +17,11 @@ fn initialize_rgb_wallet() {
 fn initialize_rgb_wallet();
 let rgb_assets =
 let invoice =
+let contractID =
+let peer =
+let channel =
+let genesis = 
+let schema =
     
 }
 
