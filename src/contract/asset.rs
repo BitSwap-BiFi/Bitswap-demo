@@ -7,6 +7,8 @@ struct RGB20Asset {
     symbol: String,
     swap: String,
     lp: String,
+    decimal: Number,
+    txid: String,
     total_supply: u64,
     balances: HashMap<String, u64>,
 }
@@ -17,6 +19,7 @@ impl RGB20Asset {
             name,
             symbol,
             total_supply,
+            decimal,
             balances: HashMap::new(),
         }
     }
