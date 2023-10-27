@@ -54,6 +54,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Official USDT implementation by Bitifinex
 - [ ] Integration with [BitMask](https://bitmask.app/) and [COSM wallet](http://www.cosminmart.com/#/Wallet)
 - [ ] Bifrost
+- [ ] Prime
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
 - [ ] RGB Node
 - [ ] Complete PRs pendents
