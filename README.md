@@ -55,6 +55,8 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Integration with [BitMask](https://bitmask.app/) and [COSM wallet](http://www.cosminmart.com/#/Wallet)
 - [ ] Bifrost
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
+- [ ] RGB Node
+- [ ] Complete PRs pendents
 
 ## Run BitSwap
 
