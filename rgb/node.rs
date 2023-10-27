@@ -4,7 +4,7 @@ use rust_dlc::{Manager, Message};
 
 fn main() {
     // Initialize RGB Node
-    let rgb_node = RGBNode::new("your_rgb_node_settings");
+    let rgb_node = RGBNode::new("https://");
 
     // Initialize AMM algorithm
     let amm_algorithm = AutomatedMarketMaker::new("your_amm_algorithm_settings");
