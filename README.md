@@ -38,6 +38,9 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Universal swaps, atomic swaps via on-chain and Lightning Network
 - Taproot
 - LDK and RGB Lightning Node
+- Prime
+- Bifrost
+- CLI
 
 ## Roadmap
 
