@@ -110,6 +110,7 @@ $bit - for bitswap management
 The code is licensed under either:
 
 -  [Business Source License 1.1](https://github.com/BitSwap-BiFi/Bitswap-core/blob/main/LICENSE.md)
+-  This licensed under [BSL 1.1](https://mariadb.com/bsl11/), a "source available" license which automatically turns into an open source license after 4 years, see [LICENSE](LICENSE) and [BSL FAQs](https://mariadb.com/bsl-faq-mariadb/) for details. 
 
 
 ## Ossification DEX
