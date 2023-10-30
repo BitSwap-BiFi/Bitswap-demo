@@ -44,6 +44,7 @@ fn main() {
         message_handler,
         channel_message_handler,
         routing_message_handler,
+        onion_message
     );
 
     ldk_channel_manager.register_channel_message_handler(btc_service);
@@ -53,9 +54,9 @@ fn main() {
     ldk_channel_manager.start();
 
     // Perform asset transfers, channel management, etc. using LDK and RGB Core
-    let mut transfers =
-    let mut channel_management =
-    let rgb_channel = 
+    let mut transfers = ChannelTrasnfer::new;
+    let mut channel_management = ChannelMangament::new;
+    let rgb_channel = RGBChannel::new;
     
 
     // Clean up and gracefully shut down the LDK channel manager
