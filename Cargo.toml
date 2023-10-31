@@ -21,7 +21,7 @@ bp-core = "tapret, op"
 
 
 [core_functions]
-rgb-core = "0.11.0-beta" 
+rgb-core = "0.11.0-beta.1" 
 rust-dlc = "0.4"
 bitswap = "1.0.12"
 rust-aluvm = "0.10.5"
