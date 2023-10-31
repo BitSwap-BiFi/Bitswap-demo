@@ -21,7 +21,7 @@ bp-core = "tapret, op"
 
 
 [core_functions]
-rgb-core = "0.11.0" 
+rgb-core = "0.11.0-beta" 
 rust-dlc = "0.4"
 bitswap = "1.0.12"
 rust-aluvm = "0.10.5"
@@ -43,7 +43,7 @@ required-features = ["stl"]
 [dependencies]
 strict_encoding = "~2.3.1"
 strict_types = "~1.2.0"
-bp-core = { version = "~0.10.7" }
+bp-core = { version = "~0.11.0" }
 aluvm = { version = "~0.10.5", features = ["std"] }
 commit_verify = { version = "~0.10.3", features = ["rand", "derive"] }
 single_use_seals = "~0.10.0"
@@ -66,7 +66,7 @@ aluvm = { version = "~0.10.6", features = ["std"] }
 commit_verify = { version = "~0.10.6", features = ["rand", "derive"] }
 single_use_seals = "~0.10.1"
 bp-core = { version = "~0.10.10" }
-secp256k1-zkp = { version = "0.9.2", features = ["rand", "rand-std", "global-context"] }
+secp256k1-zkp = { version = "0.28.0", features = ["rand", "rand-std", "global-context"] }
 baid58 = "~0.4.4"
 mime = "~0.3.17"
 serde_crate = { package = "serde", version = "1", features = ["derive"], optional = true }
@@ -125,8 +125,8 @@ baid58 = "0.4.4"
 strict_encoding = "2.5.0"
 strict_types = "1.6.0"
 commit_verify = { version = "0.10.5", features = ["stl"] }
-bp-core = { version = "0.10.8", features = ["stl"] }
-rgb-core = { version = "0.10.7", features = ["stl"] }
+bp-core = { version = "0.11.0", features = ["stl"] }
+rgb-core = { version = "0.11.0", features = ["stl"] }
 
 [ldk]
 
@@ -137,7 +137,7 @@ lightning-persister = { version = "0.0.116", path = "../lightning-persister" }
 
 
 bech32 = { version = "0.9.0", default-features = false }
-secp256k1 = { version = "0.24.0", default-features = false, features = ["recovery", "alloc"] }
+secp256k1 = { version = "0.28.0", default-features = false, features = ["recovery", "alloc"] }
 num-traits = { version = "0.2.8", default-features = false }
 bitcoin_hashes = { version = "0.11", default-features = false }
 hashbrown = { version = "0.8", optional = true }
