@@ -21,14 +21,13 @@ bp-core = "tapret, op"
 
 
 [core_functions]
-rgb-core = "0.10.8" 
+rgb-core = "0.11.0" 
 rust-dlc = "0.4"
-bitswap = "1.0.11"
+bitswap = "1.0.12"
 rust-aluvm = "0.10.5"
 rust-lighting = "0.0.118"
 rust-baid58 = "0.4.0"
 rgb-wallet = "0.10.8"
-carbonado ="0.3.3"
 bp-std = "0.11.0"
 
 
