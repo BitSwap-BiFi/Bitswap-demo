@@ -159,7 +159,7 @@ impl lnpbp::bech32::Strategy for ContractId {
     type Strategy = lnpbp::bech32::strategies::UsingStrictEncoding;
 }
 
-// TODO: Make this part of `lnpbp::bech32`
+// Make this part of `lnpbp::bech32`
 #[cfg(feature = "serde")]
 impl serde::Serialize for ContractId {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
