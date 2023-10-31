@@ -70,12 +70,13 @@ You can add in your cargo.toml
 
 ```cargo.toml
 [package]
-rgb-core = "0.10.8"
+rgb-core = "0.11.0"
 rust-dlc = "0.4"
 bitswap = "1.0.9"
 rust-aluvm = "0.10.5"
 rust-baid58 = "0.4.4"
 rust-lightning = "0.0.118"
+bp-core = "0.11.0"
 ```
 ### Via CLI Command
 
