@@ -24,13 +24,9 @@ Explain how to set up and get your project running, covering both the CLI and th
 
 List the prerequisites for both the CLI and the RGB Lightning Node, including software, tools, and dependencies.
 
-- For the CLI:
-  - [Node.js](https://nodejs.org/)
-  - [npm](https://www.npmjs.com/)
-
-- For the RGB Lightning Node:
-  - [Rust](https://www.rust-lang.org/)
-  - [Cargo](https://crates.io/)
+- For the CLI, Bitswap and RGB lightning Node
+- [Rust](https://www.rust-lang.org/)
+- [Cargo](https://crates.io/)
 
 ### 2.2 Installation <a name="installation"></a>
 
@@ -40,13 +36,13 @@ Provide detailed installation instructions for both the CLI and the RGB Lightnin
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/bitswap-cli.git
+git clone https://github.com/BitSwap-BiFi/Bitswap-c0re.git
 
 # Change to the CLI project directory
-cd bitswap-cli
+cd bitswapcore
 
-# Install CLI dependencies
-npm install
+# Install RGB, Bitswap dependencies
+cargo.toml
 ```
 
 #### RGB Lightning Node Installation
