@@ -97,7 +97,7 @@ $bit - for bitswap management
 
 ```
 
-## Documentation for run DEX
+## Documentation for run DEX 
 
 [Soon](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/doc)
 
@@ -106,7 +106,7 @@ $bit - for bitswap management
 
 [Official Documentation](https://github.com/BitSwap-BiFi/bitswap-docs)
 
-## License
+## License ⚠️
 
 The code is licensed under either:
 
