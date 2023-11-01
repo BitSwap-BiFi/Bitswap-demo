@@ -55,12 +55,13 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] RGB wallet (new version stable) [WIP]
 - [x] Payjoin and Taproot full implementation (WIP)
 - [ ] Official USDT implementation by Bitifinex
-- [ ] Integration with [BitMask](https://bitmask.app/) and [COSM wallet](http://www.cosminmart.com/#/Wallet)
-- [ ] Bifrost
-- [ ] Prime
+- [x] Integration with [COSM wallet](http://www.cosminmart.com/#/Wallet) [WIP]
+- [x] Bifrost (WIP)
+- [x] Prime (WIP)
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
-- [ ] RGB Node
-- [ ] Complete PRs pendents
+- [x] RGB Node (WIP)
+- [x] Complete PRs pendents (WIP)
+- [ ] [BitMask](https://bitmask.app/) 
 
 ## Run BitSwap
 
