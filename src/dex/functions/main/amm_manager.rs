@@ -1,13 +1,13 @@
-use std::u64
+use std::u64;
 
 
 use super::{AMMError, CostFunctionMarketMaker};
 
 /// `b` value must have certain amount for sane numerical computing
-pub const MINIMAL_LIQUIDITY_B: f64 = 0.0001;
+pub const MINIMAL_LIQUIDITY_B: u64 = 0.0001;
 
 /// Multi dimensional cost function
-pub(crate) fn cost_function_md(total_security: &[f64], b: f64) -> f64 {
+pub(crate) fn cost_function_md(total_security: &[u64], b: u64) -> u64 {
     b * total_security
         .into_iter()
         .map(|q| E.powf(q / b))
@@ -15,7 +15,7 @@ pub(crate) fn cost_function_md(total_security: &[f64], b: f64) -> f64 {
         .ln()
 }
 
-pub(crate) fn price_for_purchase(total_security: &[f64], purchase_vector: &[f64], b: f64) -> f64 {
+pub(crate) fn price_for_purchase(total_security: &[f64], purchase_vector: &[u64], b: u64) -> u64 {
     let mut total_security_after = Vec::with_capacity(total_security.len());
     for (i, q) in total_security.iter().enumerate() {
         total_security_after[i] = *q + purchase_vector[i];
