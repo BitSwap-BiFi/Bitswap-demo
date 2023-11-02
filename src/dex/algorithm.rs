@@ -125,7 +125,7 @@ fn logic() {
 fn main() {
     let mut amm_contract = AmmContract::new();
 
-    // l iquidit provision
+    // liquidity provision
     let rgb_asset_liquidity = 10;
     let rgb_asset_liquidity = 100;
     let fee_liquidity= 0.3;
@@ -134,7 +134,7 @@ fn main() {
     let rgb_asset_to_swap = 1
     let slippage = 0.02; // 2% maximum allowable slippage
 
-    let result = amm_contract.swap(gb_asset_to_swap, slippage);
+    let result = amm_contract.swap(rgb_asset_to_swap, slippage);
 
     match result {
         ExecutionResult::Value(value) => {
