@@ -1,5 +1,5 @@
 use std::u64;
-use std::strict_types
+use std::strict_types;
 
 
 use super::{AMMError, CostFunctionMarketMaker};
