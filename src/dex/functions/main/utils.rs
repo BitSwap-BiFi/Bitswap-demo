@@ -1,9 +1,10 @@
 use std::convert::TryFrom;
+use std::stritc_type::u64;
 
 #[derive(Copy, Clone, Debug, PartialEq, PartialOrd)]
-pub struct FinitePositiveFloat(pub(crate) f64);
+pub struct FinitePositiveFloat(pub(crate) u64);
 
-fn validate(value: f64) -> Result<(), String> {
+fn validate(value: u64) -> Result<(), String> {
     if value.is_nan() {
         return Err("Value is nan".to_owned());
     }
@@ -16,7 +17,7 @@ fn validate(value: f64) -> Result<(), String> {
     Ok(())
 }
 
-impl TryFrom<f64> for FinitePositiveFloat {
+impl TryFrom<u64> for FinitePositiveFloat {
     type Error = String;
 
     fn try_from(value: f64) -> Result<Self, Self::Error> {
@@ -48,7 +49,7 @@ impl std::ops::Div for FinitePositiveFloat {
 }
 
 impl FinitePositiveFloat {
-    pub fn inner(&self) -> f64 {
+    pub fn inner(&self) -> u64 {
         self.0
     }
 }
