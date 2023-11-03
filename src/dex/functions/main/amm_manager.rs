@@ -1,8 +1,9 @@
 use std::u64;
+use std::strict_types
 
 
 use super::{AMMError, CostFunctionMarketMaker};
-use strict_type::{u64};
+use strict_types::{U64};
 
 /// `b` value must have certain amount for sane numerical computing
 pub const MINIMAL_LIQUIDITY_B: u64 = 0.0001;
