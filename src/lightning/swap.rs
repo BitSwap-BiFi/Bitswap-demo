@@ -3,6 +3,7 @@ use std::str::FromStr;
 use dlc::message::Oracle;
 use bp::psbt;
 use lightning::ln::PaymentHash;
+use lightning::OnionMessage;
 use rgb::contract::ContractId;
 
 
@@ -58,6 +59,7 @@ pub struct SwapString {
     pub swap_type: SwapType,
     pub expiry: u64,
     pub payment_hash: PaymentHash,
+    pub onion_message: OnionMessage,
 }
 
 impl FromStr for SwapString {
