@@ -67,7 +67,7 @@ strict_types = "~1.6.3"
 aluvm = { version = "~0.10.6", features = ["std"] }
 commit_verify = { version = "~0.10.6", features = ["rand", "derive"] }
 single_use_seals = "~0.10.1"
-#bp-core = { version = "~0.10.10" }
+bp-core = { version = "~0.10.10" }
 secp256k1-zkp = { version = "0.9.2", features = ["rand", "rand-std", "global-context"] }
 baid58 = "~0.4.4"
 mime = "~0.3.17"
@@ -127,7 +127,7 @@ baid58 = "0.4.4"
 strict_encoding = "2.5.0"
 strict_types = "1.6.0"
 commit_verify = { version = "0.10.5", features = ["stl"] }
-# bp-core = { version = "0.10.8", features = ["stl"] }
+bp-core = { version = "0.10.8", features = ["stl"] }
 rgb-core = { version = "0.10.7", features = ["stl"] }
 
 [ldk]
@@ -265,6 +265,18 @@ bech32 = "0.9.1"
 bp-primitives = "0.10.7"
 serde_crate = { package = "serde", version = "1", features = ["derive"] }
 serde_with = "3.1.0"
+
+[bp_consensus]
+
+amplify = { workspace = true }
+strict_encoding = { workspace = true }
+strict_types = { workspace = true, optional = true }
+commit_verify = { workspace = true }
+single_use_seals = { workspace = true }
+bp-consensus = { workspace = true }
+bp-dbc = { workspace = true }
+bp-seals = { workspace = true }
+serde_crate = { workspace = true, optional = true }
 
 [rgb_schemata]
 amplify = "4.5.0"
