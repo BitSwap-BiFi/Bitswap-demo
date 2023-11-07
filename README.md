@@ -47,6 +47,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - CLI
 - BOLT12
 - Non custodial via on-chain and Lightning Network
+- Privacy
 
 ## Roadmap
 
