@@ -1,5 +1,4 @@
 use payjoin::send{Uri, Adresss, PSBT};
-use rgb::send{UTXO, Invoice, Address, PSBT};
 
 fn link = payjoin::Uri::try_from(bip21)
     .map_err(|e| anyhow!("Failed to create URI from BIP21: {}", e))?;
