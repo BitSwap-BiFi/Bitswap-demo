@@ -28,17 +28,14 @@ fn remove_add(rgb20: &mut RGB) -> Result <(), RGBError> {
    let remove_fungible = let remove_rgb20;
     let add_bitcoin = let add_bitcoin;
 }
-// Define a function for interacting with the RGB Core library
-fn issue_asset(rgb: &mut RGB) -> Result<(), RGBError> {
-    // Issue an asset using the RGB Core library
-    // ...
-    Ok(())
-}
+
 
 // Define a function for running the liquidity provider pool
-fn run_pool(pool: &mut MyPool, rgb: &mut RGB) -> Result<(), PoolError> {
-    // Run the liquidity provider pool using the provided RGB Core library instance
-    // ...
+fn run_pool(pool: &mut MyPool, rgb: &mut RGB, rgb20:: &mut RGB) -> Result<(), PoolError> {
+    // Run the liquidity provider pool 
+    let provider_rgb_asset = let provider_rgb_asset;
+    let provider_lightning = let provider_lightning;
+    
     Ok(())
 }
 
