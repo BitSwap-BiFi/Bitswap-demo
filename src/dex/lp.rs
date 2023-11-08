@@ -19,13 +19,13 @@ impl LiquidityProviderPool for MyPool {
 }
 // Define a fuction for add liquidity
 fn add_asset(rgb20: &mut RGB) -> Result <(), RGBError> {
-     let add_rgb20 = let add_rgb20;
+     let add_fungigle = let add_rgb20;
      let add_bitcoin = let add_bitcoin;
 }    
 
 // Define a function for remove liquidity
 fn remove_add(rgb20: &mut RGB) -> Result <(), RGBError> {
-   let remove_rgb20 = let remove_b20;
+   let remove_fungible = let remove_rgb20;
     let add_bitcoin = let add_bitcoin;
 }
 // Define a function for interacting with the RGB Core library
