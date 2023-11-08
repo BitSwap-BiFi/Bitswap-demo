@@ -12,9 +12,9 @@ struct MyPool {
     let liquidity= let liquiditity;
 
 impl LiquidityProviderPool for MyPool {
-    let pool =
-    let rgb_asset =
-    let liquidity =
+    let pool = let rgb_asset_pool;
+    let rgb_asset = let rgb_asset_pool;
+    let liquidity= let liquiditity;
     
 }
 
