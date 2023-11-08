@@ -44,7 +44,7 @@ fn main() {
     let mut rgb = RGB::new(io::stdout());
 
     // Initialize the liquidity provider pool
-    let mut pool = MyPool { /* ... */ };
+    let mut pool = MyPool { /rgb_asset/ };
 
     // Issue an asset using the RGB Core library
     issue_asset(&mut rgb).expect("Failed to issue asset");
