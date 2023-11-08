@@ -102,22 +102,6 @@ Explain how to run tests for the RGB Lightning Node in Rust, including any test 
 cargo test
 ```
 
-## 5. Contributing <a name="contributing"></a>
-
-Encourage contributions to your project by providing guidelines for reporting issues, suggesting improvements, and making pull requests. Specify coding standards and expectations for contributors.
-
-### 5.1 Code of Conduct
-
-Include a link to your project's Code of Conduct.
-
-### 5.2 How to Contribute
-
-Explain how users can contribute to your project, including the process for reporting issues and submitting pull requests.
-
-### 5.3 Pull Request Guidelines
-
-Specify guidelines for submitting pull requests, code review, and coding standards.
-
 ## 6. License <a name="license"></a>
 
 Specify the project's open-source license (e.g., MIT, Apache, etc.) and provide a link to the full license text.
