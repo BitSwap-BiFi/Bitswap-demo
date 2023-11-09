@@ -36,7 +36,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         match args[0] {
             "swaps" => {
            let swap = swap::BTC();
-           let swap = swap::USDT();
+           let swap = swap::RGB20();
             }
             "mint" => {
               let mint = mint::USDT();
