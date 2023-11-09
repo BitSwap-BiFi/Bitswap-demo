@@ -19,7 +19,6 @@ fn main() {
         .subcommand(SubCommand::with_name("contract").about("Interact with contracts on RGB"))
         .subcommand(SubCommand::with_name("wallet").about("Manage your wallet"))
         .subcommand(SubCommand::with_name("swap").about("Perform swaps"))
-        .subcommand(SubCommand::with_name("mint").about("Mint new tokens"))
         .subcommand(SubCommand::with_name("oracle").about("See Oracle prices"))
         .get_matches();
 
@@ -51,6 +50,8 @@ fn main() {
         },
         ("contract", Some(_)) => {
             // Logic to interact with RGB Core contracts
+            let input = asset::CONTRACTID;
+            let input = uxto::UXTO;
             println!("Interacting with contracts...");
         }
         ("wallet", Some(_)) => {
@@ -66,18 +67,17 @@ fn main() {
             let input = asset::BTC;
             let input = asset::BTC::LIGHTNING;
             let input = asset::RGB_ASSET::LIGHTNING;
+            let input = asset::ContractID;
             println!("Performing swaps...");
         }
-        ("mint", Some(_)) => {
-            // Logic to mint new tokens
-            println!("Minting new tokens...");
-        }
-        _ => unreachable!(),
     }
     ("orcale", Some(_)) => {
      //Logic for DLCs oracles
     let input = asset::dlc_message;
     let input = asset::RGB_ASSET;
+    let input = asset::CONTRACTID;
+    let input = uxto::UXTO;
+
     println!("Checking prices...");
 
 }
