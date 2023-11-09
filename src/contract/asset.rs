@@ -15,6 +15,7 @@ struct RGB20Asset {
     name: String,
     symbol: String,
     swap: String,
+    uxto: String
     lp: String,
     decimal: Number,
     txid: String,
@@ -29,6 +30,7 @@ impl RGB20Asset {
             symbol,
             total_supply,
             decimal,
+            utxo
             balances: HashMap::new(),
         }
     }
