@@ -33,6 +33,9 @@ fn main() {
             }
             ("close", Some(_)) => {
                 // Logic to close a Lightning Network channel
+                let mut output = String::new();
+                let output = asset::BTC:();
+                let output = asset::RGB_ASSET();
                 println!("Closing a channel...");
             }
             ("rebalance", Some(_)) => {
