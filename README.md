@@ -99,8 +99,7 @@ $bit - for bitswap management
 -contract
 -wallet
 -swap
--mint
--let_channel
+-opeen_channel
 -close_channel
 
 ```
