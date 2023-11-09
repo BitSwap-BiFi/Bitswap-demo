@@ -56,7 +56,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Beta app
 - [ ] UI/UX
 - [ ] Web server and domain
-- [x] CLI (WIP)
+- [x] CLI 
 - [x] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
 - [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
 - [ ] Taproot Channels by LDK
