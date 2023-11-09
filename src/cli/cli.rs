@@ -38,9 +38,6 @@ fn main() -> Result<(), Box<dyn Error>> {
            let swap = swap::BTC();
            let swap = swap::RGB20();
             }
-            "mint" => {
-              let mint = mint::USDT();
-            }
             "enable_channel" => {
                  let channel = open::new();
                
