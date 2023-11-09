@@ -6,12 +6,6 @@ function perform_swaps() {
     echo "Performing swaps..."
 }
 
-# Function to mint new RGB assets
-function mint_assets() {
-    # Your code here
-    echo "Minting assets..."
-}
-
 # Function to enable an open channel
 function enable_channel() {
     # Your code here
