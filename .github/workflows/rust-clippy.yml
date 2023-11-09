@@ -48,6 +48,19 @@ jobs:
           --message-format=json | clippy-sarif | tee rust-clippy-results.sarif | sarif-fmt
         continue-on-error: true
 
+        - name: Save state
+        run: 
+        echo "{name}={value}" >> $GITHUB_STATE
+
+       - name: Set output
+      run:
+      echo "{name}={value}" >> $GITHUB_OUTPUT
+
+      runs:
+     using: 'node20'
+     main: 'main.js'
+
+
       - name: Upload analysis results to GitHub
         uses: github/codeql-action/upload-sarif@v2
         with:
