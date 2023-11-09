@@ -28,4 +28,19 @@ cargo run
 
 ## Use CLI
 
-Use ``bitswapcli`` for see options and run DEX
+Use ``bit`` for see options and run DEX
+```cli
+$ bit--help
+A CLI for manage channels, swaps and liquidity around RGB and Lightning Network
+
+[arguments]
+
+$bit - for bitswap management
+
+-contract
+-wallet
+-swap
+-opeen_channel
+-close_channel
+
+```
