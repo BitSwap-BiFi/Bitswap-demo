@@ -37,14 +37,14 @@ fn main() {
                 // Logic to close a Lightning Network channel
                 let mut output = String::new();
                 let output = asset::BTC::LIGHTNING();
-                let output = asset::RGB_ASSET();
+                let output = asset::RGB_ASSET::LIGHTNING();
                 println!("Closing a channel...");
             }
             ("rebalance", Some(_)) => {
                 // Logic to rebalance a Lightning Network channel
              let mut input = String::new();
                let input = asset::BTC::LIGHTNING();
-               let input = asset::RGB_ASSET()
+               let input = asset::RGB_ASSET::LIGHTNING()
                 println!("Rebalancing a channel...");
             }
             _ => unreachable!(),
@@ -63,7 +63,7 @@ fn main() {
         ("swap", Some(_)) => {
             // Logic to perform swaps
             let input = asset::RGB_ASSET;
-            let input = assset::BTC;
+            let input = asset::BTC;
             let input = asset::BTC::LIGHTNING;
             let input = asset::RGB_ASSET::LIGHTNING;
             println!("Performing swaps...");
@@ -76,6 +76,8 @@ fn main() {
     }
     ("orcale", Some(_)) => {
      //Logic for DLCs oracles
+    let input = asset::dlc_message;
+    let input = asset::RGB_ASSET;
     println!("Checking prices...");
 
 }
