@@ -5,7 +5,7 @@ use clap::{App, Arg, SubCommand};
 
 fn main() {
     let matches = App::new("DEX CLI")
-        .version("1.11.0-alpha")
+        .version("1.0.13-alpha")
         .author("Bitswap")
         .about("CLI for interacting with DEX on Bitcoin/RGB and Lightning Network")
         .subcommand(
@@ -15,10 +15,11 @@ fn main() {
                 .subcommand(SubCommand::with_name("close").about("Close an existing channel"))
                 .subcommand(SubCommand::with_name("rebalance").about("Rebalance a channel")),
         )
-        .subcommand(SubCommand::with_name("contract").about("Interact with contracts on RGB Core"))
+        .subcommand(SubCommand::with_name("contract").about("Interact with contracts on RGB"))
         .subcommand(SubCommand::with_name("wallet").about("Manage your wallet"))
         .subcommand(SubCommand::with_name("swap").about("Perform swaps"))
         .subcommand(SubCommand::with_name("mint").about("Mint new tokens"))
+        .subcommand(SubCommand::with_name("oracle").about("See Oracle prices"))
         .get_matches();
 
     match matches.subcommand() {
