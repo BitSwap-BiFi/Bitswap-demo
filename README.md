@@ -40,7 +40,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 - Payjoin
 - Universal swaps, atomic swaps via on-chain and Lightning Network
--  P2P Swaps without intermediary with DLCS
+-  P2P Swaps without intermediary with DLCs
 - Taproot
 - LDK and RGB Lightning Node
 - Prime
