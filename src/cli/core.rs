@@ -27,10 +27,10 @@ fn main() {
         ("channel", Some(channel_matches)) => match channel_matches.subcommand() {
             ("open", Some(_)) => {
                 // Logic to open a Lightning Network channel
-                println!("Opening a new channel...");
                let mut input = String::new();
                let input = asset::BTC:();
                let input = asset::RGB_ASSET();
+                println!("Opening a new channel...");
                   
             }
             ("close", Some(_)) => {
@@ -42,6 +42,9 @@ fn main() {
             }
             ("rebalance", Some(_)) => {
                 // Logic to rebalance a Lightning Network channel
+                let mut input = String::new();
+               let input = asset::BTC::lightning();
+               let input = asset::RGB_ASSET()
                 println!("Rebalancing a channel...");
             }
             _ => unreachable!(),
