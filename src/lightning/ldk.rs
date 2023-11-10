@@ -9,6 +9,7 @@ use ldk::ln::msgs::ChannelMessage;
 use ldk::ln::msgs::RoutingMessage;
 use ldk::util::events::EventsProvider;
 use ldk::util::logger::Logger;
+use ldk::ligthning::OnionMessage;
 use rgb::service::RGB20;
 
 fn main() {
@@ -29,8 +30,8 @@ fn main() {
     // Initialize RGB20 service for BTC asset
     let btc_service = RGB20::new("BTC");
 
-    // Initialize RGB20 service for USDT asset
-    let usdt_service = RGB20::new("USDT");
+    // Initialize RGB20 service for RGB asset
+    let usdt_service = RGB20::new("RGB");
 
     // Register BTC and USDT services with LDK channel manager
     let mut ldk_channel_manager = LdkChannelManager::new(
@@ -43,15 +44,20 @@ fn main() {
         message_handler,
         channel_message_handler,
         routing_message_handler,
+        onion_message,
     );
 
     ldk_channel_manager.register_channel_message_handler(btc_service);
-    ldk_channel_manager.register_channel_message_handler(usdt_service);
+    ldk_channel_manager.register_channel_message_handler(rgb_asset_service);
 
     // Start LDK channel manager
     ldk_channel_manager.start();
 
     // Perform asset transfers, channel management, etc. using LDK and RGB Core
+    let mut transfers = ChannelTrasnfer::new;
+    let mut channel_management = ChannelMangament::new;
+    let rgb_channel = RGBChannel::new;
+    
 
     // Clean up and gracefully shut down the LDK channel manager
     ldk_channel_manager.stop();

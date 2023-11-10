@@ -1,0 +1,23 @@
+[package]
+name = "amm_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+config = { version = "1", features = ["full"] }
+lib  = { version = "1", features = ["full"] }
+api = { vesion ="1", features = ["full] }
+
+[[bin]]
+name = "config"
+path = "src/config.rs"
+
+[[bin]]
+name = "api"
+path = "src/api.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+

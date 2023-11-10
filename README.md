@@ -1,12 +1,16 @@
 # Bitswap (Core) ⚡ 💱
 
+[![LN](https://img.shields.io/badge/lightning-792EE5?logo=lightning)](https://mempool.space/lightning)
+
+
 *Decentralized Exchange for RGB assets*
 
-⚠️**Disclaimer 1**: Alpha Software
+⚠️**Alpha Software and WIP**
 
-⚠️**Disclaimer 2**: Unstable Software
+⚠️**Unstable Software**
 
-⚠️**Disclaimer 3**: Isn't ready to compile via Cargo.lock for while
+⚠️**Isn't ready to compile via Cargo.lock for while**
+
 
 **Contributions are welcome**
 
@@ -35,9 +39,16 @@ How there's no lunch free, you can lose sats in these scenarios:
 ### Features
 
 - Payjoin
-- Swaps between BTC/USDT
+- Universal swaps, atomic swaps via on-chain and Lightning Network
+-  P2P Swaps without intermediary with DLCs
 - Taproot
-- LDK/RGB Lightning Node
+- LDK and RGB Lightning Node
+- Prime
+- Bifrost
+- CLI
+- BOLT12
+- Non custodial via on-chain and Lightning Network
+- Privacy
 
 ## Roadmap
 
@@ -45,15 +56,20 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Beta app
 - [ ] UI/UX
 - [ ] Web server and domain
-- [x] CLI (WIP)
+- [x] CLI 
 - [x] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
 - [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
 - [ ] Taproot Channels by LDK
 - [x] RGB wallet (new version stable) [WIP]
 - [x] Payjoin and Taproot full implementation (WIP)
 - [ ] Official USDT implementation by Bitifinex
-- [ ] Integration with BitMask and COSM wallet
+- [x] Integration with [COSM wallet](http://www.cosminmart.com/#/Wallet) [WIP]
+- [x] Bifrost (WIP)
+- [x] Prime (WIP)
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
+- [x] RGB Node (WIP)
+- [x] Complete PRs pendents (WIP)
+- [ ] [BitMask](https://bitmask.app/) 
 
 ## Run BitSwap
 
@@ -63,12 +79,12 @@ You can add in your cargo.toml
 
 ```cargo.toml
 [package]
-rgb-core = "0.10.7"
+rgb-core = "0.10.8"
 rust-dlc = "0.4"
 bitswap = "1.0.9"
 rust-aluvm = "0.10.5"
 rust-baid58 = "0.4.4"
-rust-lightning = "0.0.116"
+rust-lightning = "0.0.118"
 ```
 ### Via CLI Command
 
@@ -83,26 +99,31 @@ $bit - for bitswap management
 -contract
 -wallet
 -swap
--mint
--let_channel
+-opeen_channel
 -close_channel
 
 ```
 
-### Documentation
+## Documentation for run DEX 
 
 [Soon](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/doc)
 
-## License
+
+## Documentation about DEX
+
+[Official Documentation](https://github.com/BitSwap-BiFi/bitswap-docs)
+
+## License ⚠️
 
 The code is licensed under either:
 
--  Apache License, Version 2.0 
--  GNU General Public License v3.0
+-  [Business Source License 1.1](https://github.com/BitSwap-BiFi/Bitswap-core/blob/main/LICENSE.md)
+-  This licensed under [BSL 1.1](https://mariadb.com/bsl11/), a "source available" license which automatically turns into an open source license after 4 years, see [LICENSE](https://github.com/BitSwap-BiFi/Bitswap-core/blob/main/LICENSE.md) and [BSL FAQs](https://mariadb.com/bsl-faq-mariadb/) for details. 
+
 
 ## Ossification DEX
 
-In this Core, we'll not integrate with Sidechains or shitcoins (altcoins) beyond RGB, Bitcoin and Lightning Network.
+In this Core, we'll not integrate with Sidechains non built on RGB and altcoins beyond RGB, Bitcoin, Prime, Bifrost, RGB wallets and Lightning Network.
 
 ## FAQ
 
