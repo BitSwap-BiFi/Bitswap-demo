@@ -5,11 +5,11 @@
 
 *Decentralized Exchange for RGB assets*
 
-⚠️**Disclaimer 1**: Alpha Software and WIP
+⚠️**Alpha Software and WIP**
 
-⚠️**Disclaimer 2**: Unstable Software
+⚠️**Unstable Software**
 
-⚠️**Disclaimer 3**: Isn't ready to compile via Cargo.lock for while
+⚠️**Isn't ready to compile via Cargo.lock for while**
 
 
 **Contributions are welcome**
