@@ -30,6 +30,10 @@ function exit_liquidity() {
     echo "Exiting liquidity..."
 }
 
+# Function to check DLCs prices
+
+function oracle_price() {
+
 while true; do
     # Display the command prompt
     read -p "> " input
@@ -42,9 +46,7 @@ while true; do
         "swaps")
             perform_swaps
             ;;
-        "mint")
-            mint_assets
-            ;;
+        
         "enable_channel")
             enable_channel
             ;;
