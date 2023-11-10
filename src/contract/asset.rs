@@ -15,8 +15,9 @@ struct RGB20Asset {
     name: String,
     symbol: String,
     swap: String,
-    uxto: String
+    uxto: String,
     lp: String,
+    schema
     decimal: Number,
     txid: String,
     total_supply: u64,
@@ -30,7 +31,7 @@ impl RGB20Asset {
             symbol,
             total_supply,
             decimal,
-            utxo
+            utxo,
             balances: HashMap::new(),
         }
     }
@@ -112,87 +113,5 @@ impl RGB20Contract {
 
 fn main() {
     let mut rgb20_contract = RGB20Contract::new();
-
-    // Create a new RGB20 asset
-    let asset_name = "Tether".to_string();
-    let asset_symbol = "USDT".to_string();
-    let total_supply = 1000000;
-    let asset_creation_result = rgb20_contract.create_asset(asset_name, asset_symbol, total_supply);
-    println!("Asset creation result: {:?}", asset_creation_result);
-
-    // Transfer the asset from one account to another
-    let consignment = Consignment::from_state_json(r#"{"amount": 100}"#).unwrap();
-    let sender = "account1";
-    let receiver = "account2";
-    let transfer_result = rgb20_contract.transfer_asset(&consignment, sender, receiver);
-    println!("Asset transfer result: {:?}", transfer_result);
-
-    // Get the balance of an account for a specific asset
-    let balance_result = rgb20_contract.get_asset_balance("USDT", "account2");
-    println!("Asset balance result: {:?}", balance_result);
 }
 
-fn main() {
-    let mut rgb20_contract = RGB20Contract::new();
-
-    // Create a new RGB20 asset
-    let asset_name = "Wrapped Native BTC".to_string();
-    let asset_symbol = "RGBTC".to_string();
-    let total_supply = 0;
-    let asset_creation_result = rgb20_contract.create_asset(asset_name, asset_symbol, total_supply);
-    println!("Asset creation result: {:?}", asset_creation_result);
-
-    // Transfer the asset from one account to another
-    let consignment = Consignment::from_state_json(r#"{"amount": 0}"#).unwrap();
-    let sender = "account1";
-    let receiver = "account2";
-    let transfer_result = rgb20_contract.transfer_asset(&consignment, sender, receiver);
-    println!("Asset transfer result: {:?}", transfer_result);
-
-    // Get the balance of an account for a specific asset
-    let balance_result = rgb20_contract.get_asset_balance("RGBTC", "account2");
-    println!("Asset balance result: {:?}", balance_result);
-}
-fn main() {
-    let mut rgb20_contract = RGB20Contract::new();
-
-    // Create a new RGB20 asset
-    let asset_name = "Digital Swiss Franc".to_string();
-    let asset_symbol = "dCHF".to_string();
-    let total_supply = 0;
-    let asset_creation_result = rgb20_contract.create_asset(asset_name, asset_symbol, total_supply);
-    println!("Asset creation result: {:?}", asset_creation_result);
-
-    // Transfer the asset from one account to another
-    let consignment = Consignment::from_state_json(r#"{"amount": 0}"#).unwrap();
-    let sender = "account1";
-    let receiver = "account2";
-    let transfer_result = rgb20_contract.transfer_asset(&consignment, sender, receiver);
-    println!("Asset transfer result: {:?}", transfer_result);
-
-    // Get the balance of an account for a specific asset
-    let balance_result = rgb20_contract.get_asset_balance("dCHF", "account2");
-    println!("Asset balance result: {:?}", balance_result);
-}
-
-fn main() {
-    let mut rgb20_contract = RGB20Contract::new();
-
-    // Create a new RGB20 asset
-    let asset_name = " RGBexDAO token".to_string();
-    let asset_symbol = "RGBEX".to_string();
-    let total_supply = 0;
-    let asset_creation_result = rgb20_contract.create_asset(asset_name, asset_symbol, total_supply);
-    println!("Asset creation result: {:?}", asset_creation_result);
-
-    // Transfer the asset from one account to another
-    let consignment = Consignment::from_state_json(r#"{"amount": 0}"#).unwrap();
-    let sender = "account1";
-    let receiver = "account2";
-    let transfer_result = rgb20_contract.transfer_asset(&consignment, sender, receiver);
-    println!("Asset transfer result: {:?}", transfer_result);
-
-    // Get the balance of an account for a specific asset
-    let balance_result = rgb20_contract.get_asset_balance("RGBEX", "account2");
-    println!("Asset balance result: {:?}", balance_result);
-}
