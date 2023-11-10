@@ -1,5 +1,7 @@
 # Versions
 
+See last versions around Bitswap development
+
 ## Alpha v1.0.13
 
 **Highlights**
@@ -25,3 +27,17 @@
 * Add consensus by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/33
 * Functions for allow add and remove LP on DEX by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/22
 
+## Alpha - v1.0.12 (Pre Beta)
+
+**Highlights**
+
+- Endpoints and APIs for DEX
+- Server
+- RGB Core v0.10.8
+- Contribution upgrade
+
+## What's Changed
+* Add endpoints, APIs for DEX by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/27
+* Add Server  and upgrade around RGB Node for DEX by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/29
+* Add RGB Core v0.10.8 by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/28
+* Update CONTRIBUTING.md by @Rsync25 in https://github.com/BitSwap-BiFi/Bitswap-core/pull/34
