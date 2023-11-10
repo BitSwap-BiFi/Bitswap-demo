@@ -2,7 +2,19 @@
 
 # Function to perform swaps
 function perform_swaps() {
-    # Your code here
+    # Two variables to swap
+    var1="Value1"
+    var2="Value2"
+
+    echo "Before swapping: var1=$var1, var2=$var2"
+
+    # Swapping logic
+    temp=$var1
+    var1=$var2
+    var2=$temp
+
+    echo "After swapping: var1=$var1, var2=$var2"
+}
     echo "Performing swaps..."
 }
 
