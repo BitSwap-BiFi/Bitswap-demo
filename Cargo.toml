@@ -24,7 +24,7 @@ bp-core = "tapret, op"
 rgb-core = "0.11.0-beta.1" 
 rust-dlc = "0.4"
 bitswap = "1.0.12"
-rust-aluvm = "0.10.5"
+rust-aluvm = "0.11.0-beta1"
 rust-lighting = "0.0.118"
 rust-baid58 = "0.4.0"
 rgb-wallet = "0.10.8"
@@ -214,6 +214,11 @@ bech32 = "0.9.1"
 bp-primitives = "0.10.7"
 serde_crate = { package = "serde", version = "1", features = ["derive"] }
 serde_with = "3.1.0"
+
+bp-consensus = { version = "0.11.0-beta.1", path = "consensus" }
+bp-dbc = { version = "0.11.0-beta.1", path = "./dbc" }
+bp-seals = { version = "0.11.0-beta.1", path = "./seals" }
+secp256k1 = { version = "0.28.0", features = ["global-context"] }
 
 [payjoin]
 anyhow = "1.0.70"
