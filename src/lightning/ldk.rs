@@ -44,7 +44,7 @@ fn main() {
         message_handler,
         channel_message_handler,
         routing_message_handler,
-        onion_message
+        onion_message,
     );
 
     ldk_channel_manager.register_channel_message_handler(btc_service);

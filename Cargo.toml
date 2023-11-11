@@ -29,6 +29,10 @@ rust-lighting = "0.0.118"
 rust-baid58 = "0.4.0"
 rgb-wallet = "0.10.8"
 bp-std = "0.11.0-beta.1"
+=======
+carbonado ="0.3.3"
+bp-std = "0.11.0"
+rgb-schemata = "0.10.0"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -268,6 +272,29 @@ bech32 = "0.9.1"
 bp-primitives = "0.10.7"
 serde_crate = { package = "serde", version = "1", features = ["derive"] }
 serde_with = "3.1.0"
+
+[bp_consensus]
+
+amplify = { workspace = true }
+strict_encoding = { workspace = true }
+strict_types = { workspace = true, optional = true }
+commit_verify = { workspace = true }
+single_use_seals = { workspace = true }
+bp-consensus = { workspace = true }
+bp-dbc = { workspace = true }
+bp-seals = { workspace = true }
+serde_crate = { workspace = true, optional = true }
+
+[rgb_schemata]
+amplify = "4.5.0"
+strict_encoding = "2.6.1"
+strict_types = "1.6.3"
+aluvm = "0.10.6"
+bp-core = "0.10.11"
+rgb-std = { version = "0.10.9", features = ["serde", "fs"] }
+serde = "1.0"
+serde_json = "1.0"
+sha2 = "0.10.7"
 
 [profile.release]
 panic = "abort"

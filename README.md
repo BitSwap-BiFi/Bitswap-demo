@@ -1,12 +1,16 @@
 # Bitswap (Core) ⚡ 💱
 
+[![LN](https://img.shields.io/badge/lightning-792EE5?logo=lightning)](https://mempool.space/lightning)
+
+
 *Decentralized Exchange for RGB assets*
 
-⚠️**Disclaimer 1**: Alpha Software
+⚠️**Alpha Software and WIP**
 
-⚠️**Disclaimer 2**: Unstable Software
+⚠️**Unstable Software**
 
-⚠️**Disclaimer 3**: Isn't ready to compile via Cargo.lock for while
+⚠️**Isn't ready to compile via Cargo.lock for while**
+
 
 **Contributions are welcome**
 
@@ -36,11 +40,15 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 - Payjoin
 - Universal swaps, atomic swaps via on-chain and Lightning Network
+-  P2P Swaps without intermediary with DLCs
 - Taproot
 - LDK and RGB Lightning Node
 - Prime
 - Bifrost
 - CLI
+- BOLT12
+- Non custodial via on-chain and Lightning Network
+- Privacy
 
 ## Roadmap
 
@@ -48,19 +56,20 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Beta app
 - [ ] UI/UX
 - [ ] Web server and domain
-- [x] CLI (WIP)
+- [x] CLI 
 - [x] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
 - [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
 - [ ] Taproot Channels by LDK
 - [x] RGB wallet (new version stable) [WIP]
 - [x] Payjoin and Taproot full implementation (WIP)
 - [ ] Official USDT implementation by Bitifinex
-- [ ] Integration with [BitMask](https://bitmask.app/) and [COSM wallet](http://www.cosminmart.com/#/Wallet)
-- [ ] Bifrost
-- [ ] Prime
+- [x] Integration with [COSM wallet](http://www.cosminmart.com/#/Wallet) [WIP]
+- [x] Bifrost (WIP)
+- [x] Prime (WIP)
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
-- [ ] RGB Node
-- [ ] Complete PRs pendents
+- [x] RGB Node (WIP)
+- [x] Complete PRs pendents (WIP)
+- [ ] [BitMask](https://bitmask.app/) 
 
 ## Run BitSwap
 
@@ -91,13 +100,12 @@ $bit - for bitswap management
 -contract
 -wallet
 -swap
--mint
--let_channel
+-opeen_channel
 -close_channel
 
 ```
 
-## Documentation for run DEX
+## Documentation for run DEX 
 
 [Soon](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/doc)
 
@@ -106,7 +114,7 @@ $bit - for bitswap management
 
 [Official Documentation](https://github.com/BitSwap-BiFi/bitswap-docs)
 
-## License
+## License ⚠️
 
 The code is licensed under either:
 
@@ -116,7 +124,7 @@ The code is licensed under either:
 
 ## Ossification DEX
 
-In this Core, we'll not integrate with Sidechains or shitcoins (altcoins) beyond RGB, Bitcoin and Lightning Network.
+In this Core, we'll not integrate with Sidechains non built on RGB and altcoins beyond RGB, Bitcoin, Prime, Bifrost, RGB wallets and Lightning Network.
 
 ## FAQ
 
