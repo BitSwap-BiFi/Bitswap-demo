@@ -8,7 +8,7 @@ fn main() {
     let matches = App::new("DEX CLI")
         .version("1.0.13-alpha")
         .author("Bitswap")
-        .about("CLI for interacting with DEX on Bitcoin/RGB and Lightning Network")
+        .about("CLI for interacting with DEX on RGB and Lightning Network")
         .subcommand(
             SubCommand::with_name("channel")
                 .about("Manage Lightning Network channels")
