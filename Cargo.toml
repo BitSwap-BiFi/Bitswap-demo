@@ -30,6 +30,8 @@ rust-baid58 = "0.4.0"
 rgb-wallet = "0.10.8"
 bp-std = "0.11.0-beta.1"
 rgb-schemata = "0.10.0"
+strict_types = "~1.6.3"
+
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -43,9 +45,9 @@ required-features = ["stl"]
 
 [dependencies]
 strict_encoding = "~2.3.1"
-strict_types = "~1.2.0"
+strict_types = "~1.6.3"
 bp-core = { version = "~0.11.0" }
-aluvm = { version = "~0.10.5", features = ["std"] }
+aluvm = { version = "~0.11.0-alpha.1", features = ["std"] }
 commit_verify = { version = "~0.10.3", features = ["rand", "derive"] }
 single_use_seals = "~0.10.0"
 baid58 = "0.4.0"
