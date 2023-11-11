@@ -284,6 +284,11 @@ bp-dbc = { workspace = true }
 bp-seals = { workspace = true }
 serde_crate = { workspace = true, optional = true }
 
+[strict_type]
+strict_encoding = { version = "2.6.1", features = ["derive", "float"] }
+sha2 = "0.10.8"
+base64 = { version = "0.21.4", optional = true }
+
 [rgb_schemata]
 amplify = "4.5.0"
 strict_encoding = "2.6.1"
@@ -294,6 +299,9 @@ rgb-std = { version = "0.10.9", features = ["serde", "fs"] }
 serde = "1.0"
 serde_json = "1.0"
 sha2 = "0.10.7"
+
+[bifrost]
+
 
 [profile.release]
 panic = "abort"
