@@ -51,6 +51,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - BOLT12
 - Non custodial via on-chain and Lightning Network
 - Privacy
+- Non KYC
 
 ## Roadmap
 
