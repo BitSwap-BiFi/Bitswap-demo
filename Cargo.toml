@@ -10,6 +10,7 @@ description = "AMM DEX on RGB Porotocol."
 license = "Business Source License 1.1"
 
 [memmbers]
+
 swap = "algorithm, dlc"
 dlc = "message"
 algorithm = "amm contract"
