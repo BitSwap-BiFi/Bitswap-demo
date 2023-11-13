@@ -20,7 +20,7 @@ Business Source License, 1.1(the "License");
 
 use rgb_core::{Contract, ExecutionResult};
 use aluvm::{Executor, Value, Baid68,Set_Failure};
-use strict_type::{Map};
+use strict_type::{Map, Base58};
 use dlc::{Message, OracleInfo, ContractInfo};
 use lightning::{HashPayment, Invoice};
 
