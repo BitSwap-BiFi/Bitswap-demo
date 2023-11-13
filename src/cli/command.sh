@@ -16,6 +16,13 @@ function perform_swaps() {
     echo "After swapping: var1=$var1, var2=$var2"
 }
     echo "Performing swaps..."
+
+    # Swapping assets
+
+    tem=$var1
+    var1=$var2
+    var2=$temp
+    price=$temp
 }
 
 # Function to enable an open channel
