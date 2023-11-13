@@ -36,6 +36,8 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 - Alice receive BTC of Bob
 
+- DLCs verify price settled and solve 2-of-2 pairs
+
 ### Features
 
 - Payjoin
