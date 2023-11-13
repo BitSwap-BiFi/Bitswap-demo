@@ -3,7 +3,7 @@ use std::baid58;
 use std::amplify;
 
 
-use rgb_core::{Consignment, Contract, Error, ExecutionResult, Schema, Value, State};
+use rgb_core::{Consignment, Contract, Error, ExecutionResult, Schema, Value, State, Tag};
 use baid58::{Baid58ParseError, Chunking, FromBaid58, ToBaid58, CHUNKING_32};
 use aluvm::library::{Lib, LibSite};
 use rgbstd::interface::{rgb20, rgb20_stl, IfaceImpl, NamedField, NamedType, VerNo};
@@ -15,6 +15,10 @@ use rgbstd::stl::StandardTypes;
 use rgbstd::vm::{AluScript, ContractOp, EntryPoint, RgbIsa};
 use strict_types::{SemId, Ty};
 use amplify::{ByteArray, Bytes32};
+use commit_verify::{CommitEncode, CommitVerify, CommitmentProtocol, Conceal, UntaggedProtocol};
+use rgb::{U8, Bytes32};
+use rgb::{ContractSchema};
+use rgb::mod::{ContractSubSchema};
 use std::collections::HashMap;
 
 struct RGB20Asset {
