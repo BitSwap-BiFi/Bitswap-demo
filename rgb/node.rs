@@ -1,6 +1,7 @@
 use rgb_node::{Contract, Schema};
 use bitswap_core::{Pool, Swap};
 use rust_dlc::{Manager, Message};
+use rgb_node::{Fungible, Asset};
 
 fn main() {
     // Initialize RGB Node
