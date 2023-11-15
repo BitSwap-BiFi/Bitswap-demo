@@ -72,7 +72,8 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
 - [x] RGB Node (WIP)
 - [x] Complete PRs pendents (WIP)
-- [ ] [BitMask](https://bitmask.app/) 
+- [ ] [BitMask](https://bitmask.app/)
+- [x] RGB Proxy (WIP)
 
 ## Run BitSwap
 
