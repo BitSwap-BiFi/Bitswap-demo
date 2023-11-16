@@ -27,7 +27,7 @@ struct RGB20Asset {
     swap: String,
     uxto: String,
     lp: String,
-    schema
+    schema: String,
     decimal: Number,
     txid: String,
     total_supply: u64,
