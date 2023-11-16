@@ -16,7 +16,7 @@ fn initialize_rgb_wallet() {
 // RGB wallet functions
 fn initialize_rgb_wallet();
 let rgb_assets =
-let invoice =
+let invoice = invoice_state::new();
 let contractID =
 let peer =
 let channel =
