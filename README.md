@@ -74,6 +74,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Complete PRs pendents (WIP)
 - [ ] [BitMask](https://bitmask.app/)
 - [x] RGB Proxy (WIP)
+- [ ] Add [RGB CLI](https://github.com/RGB-WG/rgb) as tool complementary for CLI from DEX
 
 ## Run BitSwap
 
