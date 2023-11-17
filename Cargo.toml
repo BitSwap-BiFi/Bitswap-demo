@@ -318,6 +318,16 @@ serde_with = { version = "1.14", features = ["hex"], optional = true }
 once_cell = "1.12.0"
 chrono = "0.4"
 
+[rust_bitcoin]
+[patch.crates-io.bitcoin]
+path = "bitcoin"
+
+[patch.crates-io.bitcoin_hashes]
+path = "hashes"
+
+[patch.crates-io.bitcoin-internals]
+path = "internals"
+
 
 default = ["bolt", "strict_encoding"]
 all = ['bifrost', "serde"]
