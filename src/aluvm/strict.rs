@@ -1,6 +1,7 @@
 pub use aluvm::stl::aluvm_stl;
 pub use bp::bc::stl::bitcoin_stl;
 pub use bp::stl::bp_core_stl;
+pub use rgb_core::fungible::StrictDumb;
 pub use strict_types::stl::{std_stl, strict_types_stl;
 pub use strict_types::typelib::{LibBuilder, TranslateError};
 pub use strict_types::TypeLib;
