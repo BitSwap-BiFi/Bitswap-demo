@@ -3,6 +3,12 @@
 Welcome to the Documentation around Bitswap
 
 **DEX running on Testnet**
+## Pre Requisite
+
+- RGB CLI
+- RGB Core
+- Rust
+- Rust Lightning
 
 ### Clone the Git repository
 
