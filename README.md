@@ -70,7 +70,6 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Bifrost (WIP)
 - [x] Prime (WIP)
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
-- [x] RGB Node (WIP)
 - [x] Complete PRs pendents (WIP)
 - [ ] [BitMask](https://bitmask.app/)
 - [x] RGB Proxy (WIP)
