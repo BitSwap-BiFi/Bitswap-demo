@@ -1,4 +1,5 @@
 pub use aluvm::stl::aluvm_stl;
+pub use aluvm::vm::{AluScript, EntryPoint, RgbIsa};
 pub use bp::bc::stl::bitcoin_stl;
 pub use bp::stl::bp_core_stl;
 pub use rgb_core::fungible::StrictDumb;
@@ -28,6 +29,7 @@ fn _rgb_core_stl() -> Result<TypeLib, TranslateError> {
 
 /// Generates strict type library providing data types for RGB consensus.
 pub fn rgb_core_stl() -> TypeLib { _rgb_core_stl().expect("invalid strict type RGB library") }
+let mut vm = Vm::<Instr<RgbIsa>>::new();
 
 #[cfg(test)]
 mod test {
