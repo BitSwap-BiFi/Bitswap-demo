@@ -21,6 +21,7 @@ use rgb::{ContractSchema};
 use rgb::mod::{ContractSubSchema};
 use std::collections::HashMap;
 
+// Struct for support RGB20 assets on DEX
 struct RGB20Asset {
     name: String,
     symbol: String,
@@ -33,7 +34,7 @@ struct RGB20Asset {
     total_supply: u64,
     balances: HashMap<String, u64>,
 }
-
+// Implementation around RGB20
 impl RGB20Asset {
     fn new(name: String, symbol: String, total_supply: u64) -> Self {
         RGB20Asset {
