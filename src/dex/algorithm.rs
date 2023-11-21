@@ -1,69 +1,123 @@
 // Bitswap Core
 //
-// SPDX-License-Identifier: Apache-2.0, MIT LICENSE, GNU General Public License version 3
+// SPDX-License-Identifier: 
+Business Source License 1.1
 //
-// Written in 2023 by 22388O
+// Written in 2023 by 22388O and Rsync25
 //
 // Copyright (C) 2023 Bitswap. All rights reserved.
 // Copyright (C) 2023 22388O. All rights reserved.
+// Copyright (C) 2023 Rsync. All rights reserved.
 //
-// Licensed under the Apache License, Version 2.0 (the "License");
+// Licensed under the 
+Business Source License, 1.1(the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 //
-//     http://www.apache.org/licenses/LICENSE-2.0
+//   https://mariadb.com/bsl11/
 //
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+// This License does not grant you any right in any trademark or logo of Licensor or its affiliates (provided that you may use a trademark or logo of Licensor as expressly required by this License).TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE. MariaDB hereby grants you permission to use this License’s text to license your works, and to refer to it using the trademark “Business Source License”, as long as you comply with the Covenants of Licensor below
 
 use rgb_core::{Contract, ExecutionResult};
-use aluvm::{Executor, Value};
+use aluvm::{Executor, Value, Baid68,Set_Failure};
+use strict_type::{Map, Base64, Base58};
+use dlc::{Message, OracleInfo, ContractInfo};
+use lightning::{HashPayment, Invoice};
 
 struct AmmContract {
-    btc_balance: u64,
-    usdt_balance: u64,
+    rgb_asset_balance: u64,
+    rgb_asset_balance: u64,
+    dlc_contract_balance: u64,
+    lightning_balance: u64,
+    oracle_info: u64,
+    contract_info: u64,
+    
 }
 
 impl AmmContract {
     fn new() -> Self {
         AmmContract {
-            btc_balance: 0,
-            usdt_balance: 0,
+           rgb_asset_balance: 0,
+            rgb_asset_balance: 0,
+            dlc_contract_balance: 0,
+            lightning_balance: 0,
+            
         }
     }
 
-    fn add_liquidity(&mut self, btc_amount: u64, usdt_amount: u64) -> ExecutionResult {
-        self.btc_balance += btc_amount;
-        self.usdt_balance += usdt_amount;
+    fn add_liquidity(&mut self, rgb_asset_amount: u64, rgb_asset_amount: u64, lightning_balance: u64) -> ExecutionResult {
+        self.rgb_asset_balance += rgb_asset_amount;
+        self.rgb_asset_balance += rgb_asset_amount;
+        self.lightning_balance += lightning_balance;
         ExecutionResult::None
     }
 
-    fn swap(&mut self, btc_amount: u64, slippage: f64) -> ExecutionResult {
-        let usdt_amount = self.calculate_swap(btc_amount);
+    fn swap(&mut self, rgb_asset_amount: u64, slippage: f64, lightning_balance: u64) -> ExecutionResult {
+        let rgb_asset_amount = self.calculate_swap(rgb_asset_amount);
 
-        let max_slippage = (usdt_amount as f64) * slippage;
-        let actual_slippage = (usdt_amount as f64) - ((btc_amount as f64) * (self.usdt_balance as f64) / (self.btc_balance as f64));
+        let max_slippage = (rgb_asset_amount as f64) * slippage;
+        let actual_slippage = (rgb_asset_amount as f64) - ((rgb_asset_amount as f64) * (self.rgb_asset_balance as f64) / (self.rgb_asset_balance as f64));
 
         if actual_slippage > max_slippage {
             // Revert the swap due to slippage exceeding the specified percentage
             ExecutionResult::None
         } else {
-            self.btc_balance += btc_amount;
-            self.usdt_balance -= usdt_amount;
-            ExecutionResult::Value(Value::U64(usdt_amount))
+            self.rgb_asset_balance += rgb_asset_amount;
+            self.rgb_asset_balance += rgb_asset_amount;
+            self.lightning_balance += lightning_balance;
+            ExecutionResult::Value(Value::U64(rgb_asset_amount))
         }
     }
 
     fn calculate_swap(&self, btc_amount: u64) -> u64 {
-        // Implement your specific AMM algorithm here to calculate the USDT amount for a given BTC amount
+        //Logic AMM
+       struct AMM{
+    k: u64,
+    x: u64,
+    y: u64,
+}
+
+impl AMM {
+    fn new(k: u64, x: u64, y: u64) -> Self {
+        ConstantAmm { k, x, y }
+    }
+
+    fn set_x(&mut self, x: u64) {
+        self.x = x;
+        self.y = self.k / self.x;
+    }
+
+    fn set_y(&mut self, y: u64) {
+        self.y = y;
+        self.x = self.k / self.y;
+    }
+
+    fn get_x(&self) -> u64 {
+        self.x
+    }
+
+    fn get_y(&self) -> u64 {
+        self.y
+    }
+}
+
+fn logic() {
+    let mut amm = ConstantAmm::new(1000000, 100, 0);
+
+    println!("Initial x: {}, y: {}", amm.get_x(), amm.get_y());
+
+    amm.set_x(200);
+    println!("Given x, calculated y: x: {}, y: {}", amm.get_x(), amm.get_y());
+
+    amm.set_y(300);
+    println!("Given y, calculated x: x: {}, y: {}", amm.get_x(), amm.get_y());
+}
+
         // This example uses a simple constant ratio
-        if self.btc_balance == 0 || self.usdt_balance == 0 {
+        if self.rgb_asset_balance == 0 || self.rgb_asset_balance == 0 {
             0
         } else {
-            (btc_amount * self.usdt_balance) / self.btc_balance
+            (rgb_asset_amount * self.rgb_asset_balance) / self.rgb_asset_balance
         }
     }
 }
@@ -71,22 +125,21 @@ impl AmmContract {
 fn main() {
     let mut amm_contract = AmmContract::new();
 
-    // Simulate liquidity provision
-    let btc_liquidity = 10;
-    let usdt_liquidity = 100;
+    // liquidity provision
+    let rgb_asset_liquidity = 10;
+    let rgb_asset_liquidity = 100;
     let fee_liquidity= 0.3;
-    amm_contract.add_liquidity(btc_liquidity, usdt_liquidity, fee_liquidity);
-
-    // Simulate token swap
-    let btc_to_swap = 5;
+    amm_contract.add_liquidity(rgb_asset_liquidity, rgb_asset_liquidity, fee_liquidity);
+   // token swap
+    let rgb_asset_to_swap = 1
     let slippage = 0.02; // 2% maximum allowable slippage
 
-    let result = amm_contract.swap(btc_to_swap, slippage);
+    let result = amm_contract.swap(rgb_asset_to_swap, slippage);
 
     match result {
         ExecutionResult::Value(value) => {
-            // User received USDT in exchange for BTC
-            println!("Received USDT: {}", value);
+            // User received RGB in exchange for other token
+            println!("Received RGB token: {}", value);
         }
         ExecutionResult::None => {
             // Swap reverted due to slippage exceeding the specified percentage
