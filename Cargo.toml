@@ -96,15 +96,15 @@ strict_encoding = "0.9.0"
 thiserror = "1.0"
 tokio-util = { version = "0.7.4", features = ["codec"] }
 
-[rgb wallet]
+[rgb std]
 
 amplify = "4.0.1"
 baid58 = "0.4.4"
 strict_encoding = "2.5.0"
 strict_types = "1.6.0"
 commit_verify = { version = "0.10.5", features = ["stl"] }
-bp-core = { version = "0.10.8", features = ["stl"] }
-rgb-core = { version = "0.10.7", features = ["stl"] }
+bp-core = { version = "0.11.0", features = ["stl"] }
+rgb-core = { version = "0.11.0", features = ["stl"] }
 
 [carbonado]
 
