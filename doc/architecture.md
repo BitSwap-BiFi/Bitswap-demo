@@ -13,3 +13,5 @@ Discover architecture reposity about Bitswap
 - CLI: CLI core commands for DEX
 - Wallet: Compatible sections for allow wallets works with DEX
 - Web: Compatible senctions for allow works frontend with backend
+- Prime: TBD
+- Bifrost: TBD
