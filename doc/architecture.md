@@ -12,6 +12,7 @@ Discover architecture reposity about Bitswap
 - Bin: Binary functions
 - CLI: CLI core commands for DEX
 - Wallet: Compatible sections for allow wallets works with DEX
+- Payjoin: Integration section for input and output into PJ
 - Web: Compatible senctions for allow works frontend with backend
 - Prime: TBD
 - Bifrost: TBD
