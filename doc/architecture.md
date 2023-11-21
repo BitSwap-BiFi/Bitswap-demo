@@ -10,7 +10,7 @@ Discover architecture reposity about Bitswap
 - Lightning: Main functions for allow Lightning into DEX
 - AluVM: Main functions for allow works with DEX
 - Bin: Binary functions
-- CLI: CLI core commands for DEX
+- CLI: CLI core commands for DEX by Bitswap team 
 - Wallet: Compatible sections for allow wallets works with DEX
 - Payjoin: Integration section for input and output into PJ
 - Web: Compatible senctions for allow works frontend with backend
