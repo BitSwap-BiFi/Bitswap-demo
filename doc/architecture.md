@@ -8,3 +8,8 @@ Discover architecture reposity about Bitswap
 - Contract: Main functions for contracts on DEX
 - DEX: Main fuctions for make DEX works
 - Lightning: Main functions for allow Lightning into DEX
+- AluVM: Main functions for allow works with DEX
+- Bin: Binary functions
+- CLI: CLI core commands for DEX
+- Wallet: Compatible sections for allow wallets works with DEX
+- Web: Compatible senctions for allow works frontend with backend
