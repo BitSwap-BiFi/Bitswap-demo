@@ -1,4 +1,7 @@
 use rgb_wallet::Wallet;
+use rgb_wallet::Chain;
+use rgb_core::ContractID;
+use rgb_wallet::Invoice::InvoiceState;
 use ldk::lightning::chain::keysinterface::Sign;
 use ldk::lightning::ln::channelmanager::ChannelManager;
 use ldk::lightning::ln::channelmanager::ChannelManager as LdkChannelManager;
@@ -10,14 +13,20 @@ use ldk::lightning::ln::router::Router;
 fn initialize_rgb_wallet() {
     // Initialize the RGB wallet
     let wallet = Wallet::new();
-
-    // Connect to the RGB network
-    wallet.connect_to_rgb_network();
-
-    // Manage RGB asset transfers
-    // ...
+// RGB wallet functions
+fn initialize_rgb_wallet();
+let rgb_assets = let rgb_assets::fungible::new();
+let invoice = let invoice_state::new();
+let contractID = let  contractID::fungible::new();
+let peer =  let peer::fungible::new();
+let channel = let lightning::channel_manager::new();
+let genesis = let rgb_assets::fungible::genesis::new();
+let schema = let gb_assets::fungible::schema::new();
+    
 }
 
+    }
+}
 // LDK integration
 fn initialize_ldk() {
     // Initialize LDK components
