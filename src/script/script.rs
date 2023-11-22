@@ -5,7 +5,7 @@ use rgb::{
     },
     proof::Proof,
     schema::{
-        AssetId, ContractId, NodeId, OutputId,
+        AssetId, ContractId, OutputId,
         FieldType, GenesisSchema, Schema,
         TransitionSchema,
     },
