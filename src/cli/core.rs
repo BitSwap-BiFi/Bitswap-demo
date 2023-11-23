@@ -18,6 +18,7 @@ fn main() {
                 .subcommand(SubCommand::with_name("rebalance").about("Rebalance a channel")),
         )
         .subcommand(SubCommand::with_name("contract").about("Interact with contracts on RGB"))
+        .subcommand(SubCommand::with_name("rgb_contract").about("Interact with RGB"))
         .subcommand(SubCommand::with_name("wallet").about("Manage your wallet"))
         .subcommand(SubCommand::with_name("swap").about("Perform swaps"))
         .subcommand(SubCommand::with_name("oracle").about("See Oracle prices"))
