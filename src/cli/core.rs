@@ -1,7 +1,7 @@
 use std::rgb_core;
 use std::lightning;
 use std::dlc;
-use std::rgb;
+use std::rgb_contract;
 
 use clap::{App, Arg, SubCommand};
 
