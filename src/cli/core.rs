@@ -2,6 +2,7 @@ use std::rgb_core;
 use std::lightning;
 use std::dlc;
 use std::rgb_contract;
+use std::rgbstd;
 
 use clap::{App, Arg, SubCommand};
 
