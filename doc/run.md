@@ -9,6 +9,10 @@ Welcome to the Documentation around Bitswap
 - RGB Core
 - Rust
 - Rust Lightning
+- Bitcoin Core Node
+- Electrum Node
+- Lightning Node (testnet)
+- Sats for fund wallet allow send, receive and swap RGB Assets
 
 ### Clone the Git repository
 
