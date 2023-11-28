@@ -59,6 +59,8 @@ fn main() {
         }
         ("rgb_contract", Some(_) = > {
         //logic to manage contract 
+        let input = asset::funglible::CONTRACTID;
+        let input = asset::UTXO;
 
         ("wallet", Some(_)) => {
             // Logic to manage wallet
