@@ -24,7 +24,8 @@ Explain how to set up and get your project running, covering both the CLI and th
 
 List the prerequisites for both the CLI and the RGB Lightning Node, including software, tools, and dependencies.
 
-- For the CLI, Bitswap and RGB lightning Node
+- RGB CLI
+- RGB Lightning Node
 - [Rust](https://www.rust-lang.org/)
 - [Cargo](https://crates.io/)
 
