@@ -57,6 +57,9 @@ fn main() {
             let input = uxto::UXTO;
             println!("Interacting with contracts...");
         }
+        ("rgb_contract", Some(_) = > {
+        //logic to manage contract 
+
         ("wallet", Some(_)) => {
             // Logic to manage wallet
             let input = asset::RGB_ASSET;
