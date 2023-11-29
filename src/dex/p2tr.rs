@@ -25,6 +25,6 @@ impl TaprootScriptTree {
 
 fn taproot = {
   let leafversion =
-fn bitswap
-fn bitcoin
+fn bitcoin = {
+  let leafversion = 
 
