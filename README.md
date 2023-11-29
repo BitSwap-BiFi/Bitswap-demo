@@ -52,6 +52,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Non custodial via on-chain and Lightning Network
 - Privacy
 - Non KYC
+- Multipeer channel 
 
 ## Roadmap
 
