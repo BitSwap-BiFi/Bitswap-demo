@@ -1,1 +1,1 @@
-use rgb_lightning_node;
+use rgb_lightning_node::
