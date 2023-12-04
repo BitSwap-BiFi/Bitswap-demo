@@ -4,6 +4,14 @@ See last versions around Bitswap development
 
 ## Alpha v1.0.15
 
+**Highlights**
+
+- Removed RGB Node
+- Fixed AluVM
+- Add RGBstd as RGB wallet stable version 
+- RGB CLI for DEX
+- Documentation for development
+
 ## Alpha v1.0.14
 
 
