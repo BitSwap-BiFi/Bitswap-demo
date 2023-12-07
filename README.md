@@ -53,7 +53,8 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Privacy
 - Non KYC
 - Multipeer channel
-- Taproot Channels 
+- Taproot Channels
+- DLC Off chain thought Lightning swaps
 
 ## Roadmap
 
