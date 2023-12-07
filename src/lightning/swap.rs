@@ -23,6 +23,12 @@ impl SwapType {
             SwapType::SellAsset { amount_rgb, amount_msats } => {
                 SwapType::BuyAsset { amount_rgb, amount_msats }
             }
+            SwapType::OracleAsset { amount_rgb, amount_msats } => {
+                SwapType::BuyAsset { amount_rgb, amount_msats }
+            }
+            SwapType::OracleAsset { amount_rgb, amount_msats } => {
+                SwapType::SellAsset { amount_rgb, amount_msats }
+            
         }
     }
 
