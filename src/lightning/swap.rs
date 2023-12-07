@@ -60,7 +60,7 @@ pub struct SwapString {
     pub swap_type: SwapType,
     pub expiry: u64,
     pub payment_hash: PaymentHash,
-    pub onion_message: OnionMessage,
+    pub onion_message: OnionMessage,                pub oracle_message: OracleMessage,          
 }
 
 impl FromStr for SwapString {
