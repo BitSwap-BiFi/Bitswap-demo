@@ -47,7 +47,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - LDK and RGB Lightning Node
 - Prime
 - Bifrost
-- CLI
+- CLI powered by RGB CLI 
 - BOLT12
 - Non custodial via on-chain and Lightning Network
 - Privacy
