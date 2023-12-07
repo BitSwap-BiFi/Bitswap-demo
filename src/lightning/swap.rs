@@ -56,6 +56,7 @@ impl SwapType {
         match self {
             SwapType::BuyAsset { .. } => "buy",
             SwapType::SellAsset { .. } => "sell",
+            SwapType::OralceAsset { ..} => "oracle";
         }
     }
 }
