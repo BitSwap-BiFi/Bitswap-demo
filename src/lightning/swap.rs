@@ -36,6 +36,14 @@ impl SwapType {
         matches!(self, SwapType::BuyAsset { .. })
     }
 
+    pub fn is_sell(&self) -> bool {
+        matches!(self, SwapType::SellAsset { .. } )
+    }
+
+    pub fn is_oracle(&self) -> bool {
+        matches!(self, SwapType::OracleAsset { .. } )
+    }
+        
     pub fn amount_msats(&self) -> u64 {
         match self {
             SwapType::BuyAsset { amount_msats, .. } | SwapType::SellAsset { amount_msats, .. } => {
