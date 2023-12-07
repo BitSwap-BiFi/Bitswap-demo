@@ -11,6 +11,7 @@ use rgb::contract::ContractId;
 pub enum SwapType {
     BuyAsset { amount_rgb: u64, amount_msats: u64 },
     SellAsset { amount_rgb: u64, amount_msats: u64 },
+    OracleAsset { amount_rgb: u64, amount_msats: u64 },
 }
 
 impl SwapType {
