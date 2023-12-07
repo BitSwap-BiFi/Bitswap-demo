@@ -93,6 +93,7 @@ impl FromStr for SwapString {
         let asset_id = iter.next();
         let side = iter.next();
         let price = iter.next();
+        let oralce = inter.next();
         let expiry = iter.next();
         let payment_hash = iter.next();
 
@@ -104,6 +105,7 @@ impl FromStr for SwapString {
         let asset_id = ContractId::from_str(asset_id.unwrap());
         let price = price.unwrap().parse::<u64>();
         let expiry = expiry.unwrap().parse::<u64>();
+        let oracle = oracle.unwrap().parse::<u64>();
         let payment_hash = hex_utils::to_vec(payment_hash.unwrap())
             .and_then(|vec| vec.try_into().ok())
             .map(|slice| PaymentHash(slice));
@@ -112,6 +114,7 @@ impl FromStr for SwapString {
             || asset_id.is_err()
             || price.is_err()
             || expiry.is_err()
+            || oracle.is_err()
             || payment_hash.is_none()
         {
             return Err("Unable to parse parts");
@@ -121,16 +124,19 @@ impl FromStr for SwapString {
         let asset_id = asset_id.unwrap();
         let price = price.unwrap();
         let expiry = expiry.unwrap();
+        let oracle = oracle.unwrap();
         let payment_hash = payment_hash.unwrap();
 
         let swap_type = match side {
             Some("buy") => SwapType::BuyAsset {
                 amount_rgb: amount,
                 amount_msats: amount * price,
+                oracle: amount * price,
             },
             Some("sell") => SwapType::SellAsset {
                 amount_rgb: amount,
                 amount_msats: amount * price,
+                oracle: amount * price,
             },
             _ => {
                 return Err("Invalid swap type");
@@ -141,6 +147,7 @@ impl FromStr for SwapString {
             asset_id,
             swap_type,
             expiry,
+            oracle,
             payment_hash,
         })
     }
