@@ -131,12 +131,12 @@ impl FromStr for SwapString {
             Some("buy") => SwapType::BuyAsset {
                 amount_rgb: amount,
                 amount_msats: amount * price,
-                oracle: amount * price,
+                oracle: amount * price * peer,
             },
             Some("sell") => SwapType::SellAsset {
                 amount_rgb: amount,
                 amount_msats: amount * price,
-                oracle: amount * price,
+                oracle: amount * price * peer,
             },
             _ => {
                 return Err("Invalid swap type");
