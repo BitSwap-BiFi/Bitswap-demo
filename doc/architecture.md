@@ -15,6 +15,8 @@ Discover architecture reposity about Bitswap
 - [Payjoin](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/wallet/payjoin): Integration section for input and output into PJ
 - [Web](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/web): Compatible senctions for allow works frontend with backend
 - [Script](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/script): Scripts based on RGB for DEX
+- Oracle: Main functions of DLCs for DEX
+- OP: Main OP_RETURN functions for DEX
 - Prime: TBD
 - Bifrost: TBD
 
