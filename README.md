@@ -117,7 +117,7 @@ $bit - for bitswap management
 
 ## Documentation for run DEX 
 
-[Soon](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/doc)
+[Coming soon](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/doc)
 
 
 ## Documentation about DEX
