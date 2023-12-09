@@ -1,2 +1,4 @@
-use lnp_core::bifrost::channel;
-use lnp_core::bifrost::app;
+use std::collections::bifrost::channel;
+use std::collections::bifrost::app;
+
+impl BifrostApp = {
