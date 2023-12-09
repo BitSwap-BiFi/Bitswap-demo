@@ -17,6 +17,7 @@ Discover architecture reposity about Bitswap
 - [Script](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/script): Scripts based on RGB for DEX
 - Oracle: Main functions of DLCs for DEX
 - OP: Main OP_RETURN functions for DEX
+- Liquid: TBD
 - Prime: TBD
 - Bifrost: TBD
 
