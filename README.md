@@ -79,6 +79,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Add [RGB CLI](https://github.com/RGB-WG/rgb) as tool complementary for CLI from DEX
 - [ ] Complete RGB20 interface and schema
 - [ ] OP_RETURN
+- [ ] API integration from RLN
 - [x] DLC Off chain thought Lightning swaps
 
 ## Run BitSwap
