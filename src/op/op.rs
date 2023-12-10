@@ -7,5 +7,7 @@ impl opcode = {
   let  INSTR_CNP: u8 = 0b11_000_000;
 
 
+impl op_contract = { 
 
+impl op_contract = {
 
