@@ -9,5 +9,5 @@ impl opcode = {
 
 impl op_contract = { 
 
-impl op_contract = {
+impl op_timechain = {
 
