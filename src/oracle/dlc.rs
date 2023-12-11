@@ -6,3 +6,7 @@ use bitcoin::hashes::hex::ToHex;
 use dlc::secp256k1_zkp::PublicKey;
 use dlc_messages::message_handler::read_dlc_message;
 use dlc_messages::{Message, WireMessage};
+
+impl dlc
+
+impl dlc 
