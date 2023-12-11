@@ -1,3 +1,4 @@
+use create::asset::BitswapAsset;
 use std::rgb_core;
 use std::baid58;
 use std::amplify;
