@@ -1,3 +1,5 @@
+use create::swap::swap;
+
 use std::convert::TryInto;
 use std::str::FromStr;
 use dlc::message::Oracle;
