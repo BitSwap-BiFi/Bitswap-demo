@@ -2,6 +2,11 @@
 
 See last versions around Bitswap development
 
+
+## Alpha v1.0.16
+
+TBD
+
 ## Alpha v1.0.15
 
 **Highlights**
