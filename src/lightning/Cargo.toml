@@ -6,6 +6,10 @@ edition = "2023"
 [dependencies]
 
 [features]
-members = ["swap", "ldk"]
+members = ["swap", "initial_node"]
 
+
+[dependencies]
+ldk = "0.3"
+rgb-core = "0.5"
 
