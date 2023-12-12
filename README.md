@@ -80,6 +80,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Complete RGB20 interface and schema
 - [x] OP_RETURN (WIP)
 - [x] API integration from RLN (WIP)
+- [ ] Mempool
 - [x] DLC Off chain thought Lightning swaps
 
 ## Run BitSwap
