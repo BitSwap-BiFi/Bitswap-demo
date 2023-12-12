@@ -2,7 +2,7 @@ use lightning::chain::keysinterface::KeysInterface;
 use lightning::ln::chan_utils::ChannelPublicKeys;
 use lightning::ln::channelmanager::ChannelManager;
 use lightning::ln::msgs::ChannelMessageHandler;
-use rgb_core::rgb::RgbMessageHandler;
+use rgb_core::fungible;
 
 struct MyKeysInterface;
 
