@@ -10,3 +10,6 @@
 - Twitter: @Rsync25
 
 #### Bitlight Labs
+
+- Gihtub: @BitlightLabs
+- Twitter: @BitlightLabs / @Bitlight_Wallet
