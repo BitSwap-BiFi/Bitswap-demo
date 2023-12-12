@@ -56,6 +56,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Taproot Channels
 - DLC Off chain thought Lightning swaps
 - AMM like Uniswap
+- LSP for RGB20 Assets
 
 ## Roadmap
 
@@ -83,6 +84,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] API integration from RLN (WIP)
 - [ ] Mempool
 - [x] DLC Off chain thought Lightning swaps
+- [ ] LSP
 
 ## Run BitSwap
 
