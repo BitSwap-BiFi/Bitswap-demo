@@ -55,6 +55,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Multipeer channel
 - Taproot Channels
 - DLC Off chain thought Lightning swaps
+- AMM like Uniswap
 
 ## Roadmap
 
