@@ -1,6 +1,6 @@
 [package]
 name = "Bitswap"
-version = "1.14.0-Alpha"
+version = "1.16.0-Alpha"
 edition = "2023"
 
 [dependencies]
