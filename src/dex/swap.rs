@@ -13,6 +13,7 @@ use bpstd::secp256k1::serde::{Deserialize, Serialize};
 use strict_encoding::{StrictDeserialize, StrictSerialize};
 use std::str::FromStr;
 use std::str::bp;
+use dlc::DLCMessage;
 
 
 
@@ -25,6 +26,7 @@ let network = bitcoin::network::constants::Network::Testnet;
     let psbt = rgbpsbt::psbt::self::batch::AnchorBundle::ContractID::Contract_inputs::new();
     let psbt = rgbextract::batch::result::new();
     let psbt = rgbembed::self::result::new();
+    let dlc = dlc::message::new();
     let private_key = bitcoin::secp256k1::Secp256k1::new();
     let public_key = bitcoin::util::key::PublicKey::from_secret_key(
         &private_key,
@@ -114,5 +116,6 @@ fn main() {
     // Call the PSBT and Taproot functions here
     psbt();
     rgbpsbt();
+    dlc();
     taproot();
 }
