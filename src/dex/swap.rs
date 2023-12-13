@@ -17,7 +17,7 @@ use std::str::bp;
 // Testnet function
 fn testnet()
 let network = bitcoin::network::constants::Network::Testnet;
-/ Example usage of the imported libraries
+// Main functions
     let mut rng = OsRng::default();
     let psbt = bitcoin::psbt::tapre::new();
     let psbt = rgbpsbt::psbt::self::batch::AnchorBundle::ContractID::Contract_inputs::new();
@@ -111,5 +111,6 @@ fn taproot() {
 fn main() {
     // Call the PSBT and Taproot functions here
     psbt();
+    rgbpsbt();
     taproot();
 }
