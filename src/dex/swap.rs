@@ -1,14 +1,20 @@
 use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value};
+use psbt::Psbt;
+use rgbstd::{AnchoredBundle, ContractId, Outpoint, Transition};
 use secp256k1_zkp::rand::rngs::OsRng;
 use bp::{Bytes32, Wrapper};
 use bp::psbt::dbc::tapret::opret;
 use bp::opret::psbt::raw::ProprietaryKey;
 use bp::tapret:psbt::Output;
 use bp::dbc::tapret::TapretPathProof;
+use bpstd::secp256k1::serde::{Deserialize, Serialize};
 use strict_encoding::{StrictDeserialize, StrictSerialize};
 use std::str::FromStr;
 use std::str::bp;
 
+
+
+// Testnet function
 fn testnet()
 let network = bitcoin::network::constants::Network::Testnet;
 / Example usage of the imported libraries
