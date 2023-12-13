@@ -37,6 +37,7 @@ let network = bitcoin::network::constants::Network::Testnet;
 
     println!("Testnet address: {}", address);
 
+// Intial swap
 fn create_swap() {
     // Parameters for swap
     let amount = 1;
@@ -47,7 +48,7 @@ fn create_swap() {
     let tapr_accepted = tapr();
 
 }
-
+// Swap accepted
 fn swap_accepted() {
     // Swap accepted by counterparty
     let amount_accepted = 1;
@@ -59,11 +60,12 @@ fn swap_accepted() {
     let psbt_accepted = psbt();
     let tapr_accepted = tapr();
 }
-
+// Swap complete
 fn swp_out() {
     // Swap completed between parties
     let amount_out = 1;
     let dlc_out = dlc();
+    let invoice_out = invoice();
     let swap_fee_out = 0.05;
 }
 
