@@ -27,6 +27,7 @@ let network = bitcoin::network::constants::Network::Testnet;
     let psbt = rgbextract::batch::result::new();
     let psbt = rgbembed::self::result::new();
     let dlc = dlc::message::new();
+    let invoice = rgbinvoice::beneficiary::new();
     let private_key = bitcoin::secp256k1::Secp256k1::new();
     let public_key = bitcoin::util::key::PublicKey::from_secret_key(
         &private_key,
