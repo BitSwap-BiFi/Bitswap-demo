@@ -20,9 +20,9 @@ let network = bitcoin::network::constants::Network::Testnet;
 / Example usage of the imported libraries
     let mut rng = OsRng::default();
     let psbt = bitcoin::psbt::tapre::new();
-    let psbt = rgbpsbt::psbt::self::batch::AnchorBundle::ContractID::Contract_inputs;
-    let psbt = rgbstract::batch::result;
-    let psbt = rgbembed::self::result;
+    let psbt = rgbpsbt::psbt::self::batch::AnchorBundle::ContractID::Contract_inputs::new();
+    let psbt = rgbstract::batch::result::new();
+    let psbt = rgbembed::self::result::new();
     let private_key = bitcoin::secp256k1::Secp256k1::new();
     let public_key = bitcoin::util::key::PublicKey::from_secret_key(
         &private_key,
