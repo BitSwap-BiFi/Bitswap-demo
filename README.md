@@ -85,7 +85,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Mempool
 - [x] DLC Off chain thought Lightning swaps
 - [ ] LSP
-- [ ] RGB PSBT
+- [x] RGB PSBT
 
 ## Run BitSwap
 
