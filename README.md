@@ -57,6 +57,8 @@ How there's no lunch free, you can lose sats in these scenarios:
 - DLC Off chain thought Lightning swaps
 - AMM like Uniswap
 - LSP for RGB20 Assets
+- PTLCs
+- Musig2
 
 ## Roadmap
 
