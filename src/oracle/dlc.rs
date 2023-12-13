@@ -7,6 +7,6 @@ use dlc::secp256k1_zkp::PublicKey;
 use dlc_messages::message_handler::read_dlc_message;
 use dlc_messages::{Message, WireMessage};
 
-impl dlc
+impl dlc_message = {
 
-impl dlc 
+impl dlc = {
