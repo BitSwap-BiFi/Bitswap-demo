@@ -5,7 +5,10 @@ See last versions around Bitswap development
 
 ## Alpha v1.0.16
 
-TBD
+**Highlights**
+
+- Deleted package-lock.json
+- DLC Off-chain for Lightning swaps
 
 ## Alpha v1.0.15
 
