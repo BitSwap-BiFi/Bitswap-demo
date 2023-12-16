@@ -37,7 +37,7 @@ Provide detailed installation instructions for both the CLI and the RGB Lightnin
 
 ```bash
 # Clone the repository
-git clone https://github.com/BitSwap-BiFi/Bitswap-c0re.git
+git clone https://github.com/BitSwap-BiFi/Bitswap-core.git
 
 # Change to the CLI project directory
 cd bitswapcore
