@@ -89,6 +89,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] LSP
 - [ ] Miniscript
 - [ ] Musig2
+- [ ] Storm 
 - [x] RGB PSBT
 
 ## Run BitSwap
