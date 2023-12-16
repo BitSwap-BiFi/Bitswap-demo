@@ -91,37 +91,11 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 ## Run BitSwap
 
-### Add to the your Cargo
+Soon
 
-You can add in your cargo.toml
+## Developement
 
-```cargo.toml
-[package]
-rgb-core = "0.11.0"
-rust-dlc = "0.4"
-bitswap = "1.0.16-alpha"
-rust-aluvm = "0.10.5"
-rust-baid58 = "0.4.4"
-rust-lightning = "0.0.118"
-bp-core = "0.11.0"
-```
-### Via CLI Command
-
-```cli
-$ bit--help
-A CLI for manage channels, swaps and liquidity around RGB and Lightning Network
-
-[arguments]
-
-$bit - for bitswap management
-
--contract
--wallet
--swap
--opeen_channel
--close_channel
-
-```
+Soon
 
 ## Documentation for run DEX 
 
