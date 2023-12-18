@@ -1,4 +1,5 @@
-use create::asset::BitswapAsset;
+use create::Contract::Asset;
+
 use std::rgb_core;
 use std::baid58;
 use std::amplify;
