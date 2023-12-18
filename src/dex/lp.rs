@@ -1,6 +1,8 @@
 use std::rgb_core
 use std::lightning
 
+use crate::LIB_LP;
+
 use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value}
 use liquidity_provider_pool::{LiquidityProviderPool, PoolError};
 use lightning::{PaymentHash};
