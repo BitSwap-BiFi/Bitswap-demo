@@ -10,4 +10,5 @@ impl opcode = {
 impl op_contract = { 
 
 impl op_timechain = {
-
+let timechainOp = let timechainOp;
+let ByteCode = let ByteCode;
