@@ -1,8 +1,10 @@
 use std::rgb_core;
 
+use create::PAIR;
+
 use rgb::traits::Validate;
 use rgb::value::Value;
-use rgb::{ContractId, Consignment, Schema , Genesis};
+use rgbstd:::{ContractId, Consignment, Schema , Genesis};
 
 #[derive(Clone, Debug, Eq, PartialEq)]
 enum Asset {
