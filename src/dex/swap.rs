@@ -37,7 +37,7 @@ let network = bitcoin::network::constants::Network::Testnet;
 
     println!("Testnet address: {}", address);
 
-// Intial swap
+// Initial swap
 fn create_swap() {
     // Parameters for swap
     let amount = 1;

@@ -1,12 +1,12 @@
 # Bitswap architecture repository
 
-Discover architecture reposity about Bitswap
+Discover architecture repository about Bitswap
 
 ## Files
 
 - [Server AMM](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/server/amm): Main server for allow AMM works
 - [Contract](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/contract): Main functions for contracts on DEX
-- [DEX](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/dex): Main fuctions for make DEX works
+- [DEX](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/dex): Main functions for make DEX works
 - [Lightning](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/lightning): Main functions for allow Lightning into DEX
 - [AluVM](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/aluvm): Main functions for allow works with DEX
 - [Bin](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/bin): Binary functions

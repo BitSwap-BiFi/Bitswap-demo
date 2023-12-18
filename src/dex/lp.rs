@@ -17,7 +17,7 @@ impl LiquidityProviderPool for MyPool {
     let liquidity= let liquiditity;
     
 }
-// Define a fuction for add liquidity
+// Define a function for add liquidity
 fn add_asset(rgb20: &mut RGB) -> Result <(), RGBError> {
      let add_fungigle = let add_rgb20;
      let add_bitcoin = let add_bitcoin;

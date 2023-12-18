@@ -9,7 +9,7 @@ use ldk::ln::msgs::ChannelMessage;
 use ldk::ln::msgs::RoutingMessage;
 use ldk::util::events::EventsProvider;
 use ldk::util::logger::Logger;
-use ldk::ligthning::OnionMessage;
+use ldk::lightning::OnionMessage;
 use rgb::service::RGB20;
 
 fn main() {
@@ -54,7 +54,7 @@ fn main() {
     ldk_channel_manager.start();
 
     // Perform asset transfers, channel management, etc. using LDK and RGB Core
-    let mut transfers = ChannelTrasnfer::new;
+    let mut transfers = ChannelTransfer::new;
     let mut channel_management = ChannelMangament::new;
     let rgb_channel = RGBChannel::new;
     

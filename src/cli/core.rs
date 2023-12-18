@@ -79,7 +79,7 @@ fn main() {
             println!("Performing swaps...");
         }
     }
-    ("orcale", Some(_)) => {
+    ("oracle", Some(_)) => {
      //Logic for DLCs oracles
     let input = asset::dlc_message;
     let input = asset::RGB_ASSET;

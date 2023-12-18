@@ -33,7 +33,7 @@ See last versions around Bitswap development
 * Add swap for RGB contracts by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/25
 * Add RGB Core v0.11.0, Bitcoin protocol and many more upgrades by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/57
 * Upgrade algorithm around AMM by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/21
-* Add testnet depedencies by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/75
+* Add testnet dependencies by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/75
 lgorithm
 - Added testnet dependencies
 
