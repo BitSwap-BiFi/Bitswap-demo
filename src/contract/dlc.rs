@@ -1,5 +1,7 @@
-use std::rgb_core
-use std::rust_dlc
+use std::rgb_core;
+use std::rust_dlc;
+
+use create::DLCAsset;
 
 use rgb_core::Node;
 use dlc::{ContractOracle, ContractDescriptor};
