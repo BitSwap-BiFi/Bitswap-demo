@@ -6,7 +6,7 @@ use lightning::ln::peer_handler::{MessageHandler, PeerManager};
 use lightning::ln::router::Router;
 use lightning::util::config::UserConfig;
 use lightning::ln::msgs::ChannelMessage;
-use ldk::ln::msgs::RoutingMessage;
+use lighting::ln::msgs::RoutingMessage;
 use lightning:util::events::EventsProvider;
 use lightning::util::logger::Logger;
 use lightning::lightning::OnionMessage;
