@@ -18,7 +18,8 @@ Business Source License, 1.1(the "License");
 //
 // This License does not grant you any right in any trademark or logo of Licensor or its affiliates (provided that you may use a trademark or logo of Licensor as expressly required by this License).TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE. MariaDB hereby grants you permission to use this License’s text to license your works, and to refer to it using the trademark “Business Source License”, as long as you comply with the Covenants of Licensor below
 
-use create::amm_function::amm_function;
+use create::LIB_AMM_FUNCTION;
+
 use rgb_core::{Contract, ExecutionResult};
 use aluvm::{Executor, Value, Baid68,Set_Failure};
 use strict_type::{Map, Base64, Base58};
