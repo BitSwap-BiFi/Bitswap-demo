@@ -1,13 +1,13 @@
-use rgb_wallet::Wallet;
-use rgb_wallet::Chain;
+use rgbstd::Wallet;
+use rgbstd::Chain;
 use rgb_core::ContractID;
-use rgb_wallet::Invoice::InvoiceState;
-use ldk::lightning::chain::keysinterface::Sign;
-use ldk::lightning::ln::channelmanager::ChannelManager;
-use ldk::lightning::ln::channelmanager::ChannelManager as LdkChannelManager;
-use ldk::lightning::ln::msgs::{ChannelMessageHandler, RoutingMessageHandler};
-use ldk::lightning::ln::peer_handler::{MessageHandler, PeerManager};
-use ldk::lightning::ln::router::Router;
+use rgbstd::Invoice::InvoiceState;
+use lightning::chain::keysinterface::Sign;
+use lightning::ln::channelmanager::ChannelManager;
+use lightning::ln::channelmanager::ChannelManager as LdkChannelManager;
+use lightning::ln::msgs::{ChannelMessageHandler, RoutingMessageHandler};
+use lightning::ln::peer_handler::{MessageHandler, PeerManager};
+use lightning::ln::router::Router;
 
 // RGB Wallet integration
 fn initialize_rgb_wallet() {
