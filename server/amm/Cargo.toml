@@ -10,8 +10,8 @@ lib  = { version = "1", features = ["full"] }
 api = { version ="1", features = ["full] }
 
 [[bin]]
-name = "config"
-path = "src/config.rs"
+name = { "config" }
+path = { version = "1" , features = ["src/config.rs"] }
 
 [[bin]]
 name = "api"
