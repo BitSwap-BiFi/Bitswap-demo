@@ -1,6 +1,6 @@
-use rgb_schemata;
-use rgb_interface::rgb20;
+use rgbstd::interface::rgb20;
+use rgbstd::interface::{Amount, ContractID, Fungible, Divisible};
 
 impl rgb20interface = {
 
-impl rgbscehemate = {
+impl rgbscehemata = {
