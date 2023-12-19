@@ -1,3 +1,5 @@
+use create::Contract::Asset;
+
 use std::rgb_core;
 use std::baid58;
 use std::amplify;
@@ -21,19 +23,20 @@ use rgb::{ContractSchema};
 use rgb::mod::{ContractSubSchema};
 use std::collections::HashMap;
 
+// Struct for support RGB20 assets on DEX
 struct RGB20Asset {
     name: String,
     symbol: String,
     swap: String,
     uxto: String,
     lp: String,
-    schema
+    schema: String,
     decimal: Number,
     txid: String,
     total_supply: u64,
     balances: HashMap<String, u64>,
 }
-
+// Implementation around RGB20
 impl RGB20Asset {
     fn new(name: String, symbol: String, total_supply: u64) -> Self {
         RGB20Asset {

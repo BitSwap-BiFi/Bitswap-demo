@@ -1,6 +1,41 @@
 # Versions
 
-See last versions around Bitswap development
+See last versions and releases around Bitswap development
+
+
+## Alpha v1.0.16
+
+**Highlights**
+
+- Deleted package-lock.json
+- DLC Off-chain for Lightning swaps
+
+## Alpha v1.0.15
+
+**Highlights**
+
+- Removed RGB Node
+- Fixed AluVM
+- Add RGBstd as RGB wallet stable version 
+- RGB CLI for DEX
+- Documentation for development
+
+## Alpha v1.0.14
+
+
+- CLI functions with upgrade
+- Upgrade around swap with RGB contracts
+- Upgrade about AMM algorithm
+- Added testnet dependencies
+
+## What's Changed
+* Add new functions for CLI (Command Line Interface) for DEX by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/26
+* Add swap for RGB contracts by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/25
+* Add RGB Core v0.11.0, Bitcoin protocol and many more upgrades by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/57
+* Upgrade algorithm around AMM by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/21
+* Add testnet dependencies by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/75
+lgorithm
+- Added testnet dependencies
 
 ## Alpha v1.0.13
 
@@ -27,7 +62,7 @@ See last versions around Bitswap development
 * Add consensus by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/33
 * Functions for allow add and remove LP on DEX by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/22
 
-## Alpha - v1.0.12 (Pre Beta)
+## Alpha - v1.0.12 
 
 **Highlights**
 

@@ -1,0 +1,9 @@
+Name: bitswap core
+Type: Binary
+Kind: Source Available
+Version: 1.0.16-alpha
+License: Business Source License 1.1
+Language: Rust
+Compiler: 1.67
+Author: 22388o, Rsync25 and Bitlight Labs
+Maintained: Bitlight Labs
