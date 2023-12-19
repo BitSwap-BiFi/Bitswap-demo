@@ -1,6 +1,6 @@
 # Versions
 
-See last versions around Bitswap development
+See last versions and releases around Bitswap development
 
 
 ## Alpha v1.0.16
