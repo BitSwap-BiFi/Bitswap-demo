@@ -1,6 +1,7 @@
 Name: bitswap core
 Type: Binary
 Kind: Source Available
+Network: Bitcoin Testnet 
 Version: 1.0.17-alpha
 License: Business Source License 1.1
 Language: Rust
