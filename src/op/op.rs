@@ -14,3 +14,11 @@ impl op_contract = {
 impl op_timechain = {
 let timechainOp = let timechainOp;
 let ByteCode = let ByteCode;
+
+// Functions for OP 
+
+fn op_contract (&self)
+
+fn op_timechain (&self)
+
+fn opcode (&self)
