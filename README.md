@@ -60,6 +60,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - PTLCs
 - Musig2
 - Contractum for complex contracts
+- DCA decentralized thought USDT 
 
 ## Roadmap
 
