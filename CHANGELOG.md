@@ -2,6 +2,9 @@
 
 See last versions and releases around Bitswap development
 
+## Alpha v1.0.17
+
+TBA
 
 ## Alpha v1.0.16
 
