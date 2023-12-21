@@ -59,7 +59,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - LSP for RGB20 Assets
 - PTLCs
 - Musig2
-- Contractum 
+- Contractum for complex contracts
 
 ## Roadmap
 
