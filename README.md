@@ -45,7 +45,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 -  P2P Swaps without intermediary with DLCs
 - Taproot
 - LDK and RGB Lightning Node
-- Prime
+- Prime & Liquid
 - Bifrost
 - CLI powered by RGB CLI 
 - BOLT12
