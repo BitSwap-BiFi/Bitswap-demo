@@ -28,7 +28,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 - DLC fail
 
-### Swaps
+### Swaps (On-chain and Off-chain)
 
 - Alice create invoice (RGB or LN) for Bob receive USDT
 
