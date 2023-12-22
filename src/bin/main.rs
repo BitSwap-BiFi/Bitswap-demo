@@ -7,3 +7,7 @@ use std::rgb_core;
 
 use rgbstd::{Genesis, Schema, ContractID};
 use lightning::{PaymenetHash, ChannelManger};
+
+fn swap
+
+fn dlc
