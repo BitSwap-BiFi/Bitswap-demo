@@ -100,10 +100,6 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Storm
 - [ ] Contractrum
 
-## Run BitSwap
-
-Soon
-
 ## Development
 
 Soon
