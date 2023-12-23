@@ -1,1 +1,5 @@
+[package]
 
+name = "Core"
+version = "1.0.17-alpha"
+edition: "2021"
