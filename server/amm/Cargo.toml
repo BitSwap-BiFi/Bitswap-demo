@@ -14,10 +14,10 @@ name = { "config" }
 path = { version = "1" , features = ["src/config.rs"] }
 
 [[bin]]
-name = "api"
-path = "src/api.rs"
+name = { "api" }
+path = { version = "1" , features = ["src/api.rs"] }
 
 [[bin]]
-name = "main"
-path = "src/main.rs"
+name = { "main" }
+path = { version = "1" , features = ["src/main.s"] }
 
