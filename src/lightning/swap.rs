@@ -4,8 +4,9 @@ use std::convert::TryInto;
 use std::str::FromStr;
 use dlc::message::Oracle;
 use bp::psbt;
-use lightning::ln::PaymentHash;
+use lightning:::PaymentHash;
 use lightning::OnionMessage;
+use lightning::ChannelManger::BOLT12;
 use rgb::contract::ContractId;
 
 
