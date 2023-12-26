@@ -59,13 +59,13 @@ rgb-std = { version = "0.11.0", optional = true }
 psbt = { workspace = true }
 
 [lihghtning]
-lightning = { version = "0.0.117", path = "../lightning", features = ["_test_utils"] }
-lightning-invoice = { version = "0.25.0", path = "../lightning-invoice" }
-lightning-persister = { version = "0.0.117", path = "../lightning-persister" }
-lightning-block-sync = { version = "0.0.116", features = [ "rpc-client" ] }
-lightning-net-tokio = { version = "0.0.115" }
-lightning-background-processor = { version = "0.0.115", features = [ "futures" ] }
-lightning-rapid-gossip-sync = { version = "0.0.115" }
+lightning = { version = "0.0.118", path = "../lightning", features = ["_test_utils"] }
+lightning-invoice = { version = "0.27.0", path = "../lightning-invoice" }
+lightning-persister = { version = "0.0.119", path = "../lightning-persister" }
+lightning-block-sync = { version = "0.0.119", features = [ "rpc-client" ] }
+lightning-net-tokio = { version = "0.0.119" }
+lightning-background-processor = { version = "0.0.119", features = [ "futures" ] }
+lightning-rapid-gossip-sync = { version = "0.0.119" }
 
 [rgb_core]
 amplify = "~4.5.0"
