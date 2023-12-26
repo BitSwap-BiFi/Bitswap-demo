@@ -9,6 +9,8 @@ use bp::opret::psbt::raw::ProprietaryKey;
 use bp::tapret:psbt::Output;
 use bp:Vout;
 use bp::dbc::tapret::TapretPathProof;
+use bp::dbc::psbt;
+use bp::mbdc::psbt;
 use bpstd::secp256k1::serde::{Deserialize, Serialize};
 use strict_encoding::{StrictDeserialize, StrictSerialize};
 use std::str::FromStr;
