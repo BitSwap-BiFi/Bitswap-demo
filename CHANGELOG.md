@@ -25,19 +25,11 @@ TBA
 
 ## Alpha v1.0.14
 
+**Highlights**
 
 - CLI functions with upgrade
 - Upgrade around swap with RGB contracts
 - Upgrade about AMM algorithm
-- Added testnet dependencies
-
-## What's Changed
-* Add new functions for CLI (Command Line Interface) for DEX by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/26
-* Add swap for RGB contracts by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/25
-* Add RGB Core v0.11.0, Bitcoin protocol and many more upgrades by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/57
-* Upgrade algorithm around AMM by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/21
-* Add testnet dependencies by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/75
-lgorithm
 - Added testnet dependencies
 
 ## Alpha v1.0.13
@@ -52,19 +44,6 @@ lgorithm
 - Removed consensus
 - Add and remove LPs 
 
-
-
-## What's Changed
-* Add Docs by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/50
-* Update README by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/55
-* Add BOLT12, LDK upgrade and Universal RGB Assets by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/49
-* Fix API and typo by @Rsync25 in https://github.com/BitSwap-BiFi/Bitswap-core/pull/47
-* Add AMM manger by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/61
-* Add functions for AMM server by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/30
-* Fix BOLT12  by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/64
-* Add consensus by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/33
-* Functions for allow add and remove LP on DEX by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/22
-
 ## Alpha - v1.0.12 
 
 **Highlights**
@@ -74,8 +53,57 @@ lgorithm
 - RGB Core v0.10.8
 - Contribution upgrade
 
-## What's Changed
-* Add endpoints, APIs for DEX by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/27
-* Add Server  and upgrade around RGB Node for DEX by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/29
-* Add RGB Core v0.10.8 by @22388o in https://github.com/BitSwap-BiFi/Bitswap-core/pull/28
-* Update CONTRIBUTING.md by @Rsync25 in https://github.com/BitSwap-BiFi/Bitswap-core/pull/34
+## Alpha -v1.0.11
+
+**Highlights**
+
+- Atomic swaps via PSBT between RGB20 tokens
+- Swap via Lightning Network
+- License upgrade
+- Added Universal RGB assets
+- Upgrade DLCs and contracts
+
+## Alpha - v1.0.10
+
+**Highlights**
+
+- Taproot (WIP)
+- PayJoin (WIP)
+- RGB walllets (WIP)
+- Swap onchain and LN (WIP)
+- API explorer
+- Added BTC/USDT API price
+
+## Alpha - v1.0.9
+
+**Highlights**
+
+ - Payjoin new update (WIP)
+ - Taproot (WIP)
+
+## Alpha - v1.0.8
+
+**Highlights**
+
+- CLI command
+- New tokens added
+
+## Alpha - v1.0.7
+
+**Highlights**
+
+- RGB Core v0.10.6/0.10.7
+- New tokens dCHF, RGBTC and RGBEX added (WIP)
+- Update LDK v0.0.116
+- AluVM v0.10.5
+- Baid58 v0.4.0/0.4.4
+
+## Alpha - v1.0.6
+
+**Highlights**
+
+- Payjoin
+- Stop Loss
+- RGB Core v0.10.5
+- CLI command initial
+- Taproot
