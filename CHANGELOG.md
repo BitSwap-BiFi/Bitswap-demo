@@ -107,3 +107,71 @@ TBA
 - RGB Core v0.10.5
 - CLI command initial
 - Taproot
+
+## Alpha - v1.0.5
+
+**Highlights**
+
+- Swap, LP, AMM and stop loss completed
+- DLCs integration complete
+- RGB wallet integration complete
+- LDK integration complete
+- [Website](https://bitswap-bifi.github.io/)
+- Soon Mainnet, UI/UX, web application, tests, Payjoin
+  
+## Alpha - v1.0.4
+
+**Highlights**
+
+- RGB v0.10.4
+- Update README
+- Update Package.json
+- LDK (WIP)
+- Bitmask (WIP)
+- DLC (WIP)
+- Soon Mainnet
+
+## Alpha - v1.0.3
+
+**Higlights**
+
+- Web Rocket
+- Initial script
+- LDK integration
+
+## Alpha - v1.0.2
+
+**Highlights**
+
+- Mempool Testnet
+- Apache License
+- API
+- DLC
+
+## Alpha -v1.0.1
+
+**Highlights**
+
+- Wallets: Bitguard(WIP), MyCitadel, Bitmask, Iris and Lightning wallet (soon available);
+
+- Contract for Nodes and DLCs soon;
+
+- UI/UX added
+
+- Soon Pool, LP and Swap;
+
+- RGB v0.10-beta added
+
+## Alpha - v1.0.0
+
+**Highlights**
+
+*Wallets: Bitguard(WIP), MyCitadel, Bitmask and Iris (soon available);
+
+*Contract for Nodes and DLCs soon;
+
+*Soon UI/UX;
+
+*Soon Pool, LP and Swap;
+
+*RGB v0.9 and v0.10 soon
