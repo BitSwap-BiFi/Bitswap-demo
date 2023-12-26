@@ -6,7 +6,7 @@ members = ["rgb-core", "rust-dlc", "bitswap", "payjoin", "aluvm", "baid58"]
 name = "Bitswap-Core"
 version = "1.0.17-alpha"
 edition = "2021"
-description = "AMM DEX on RGB Protocol."
+description = "AMM DEX on RGB Protocol"
 license = "Business Source License 1.1"
 
 [memmbers]
