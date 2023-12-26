@@ -92,7 +92,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Mainnet
 - [ ] Beta app
 - [ ] UI/UX
-- [ ] Web server and domain
+- [x] Web server and domain
 - [ ] Official USDT implementation by Bitifinex
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
 - [ ] Bitlight Wallet
