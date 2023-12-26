@@ -166,12 +166,12 @@ TBA
 
 **Highlights**
 
-*Wallets: Bitguard(WIP), MyCitadel, Bitmask and Iris (soon available);
+- Wallets: Bitguard(WIP), MyCitadel, Bitmask and Iris (soon available);
 
-*Contract for Nodes and DLCs soon;
+- Contract for Nodes and DLCs soon;
 
-*Soon UI/UX;
+- Soon UI/UX;
 
-*Soon Pool, LP and Swap;
+- Soon Pool, LP and Swap;
 
-*RGB v0.9 and v0.10 soon
+- RGB v0.9 and v0.10 soon
