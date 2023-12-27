@@ -6,6 +6,7 @@ use dlc::message::Oracle;
 use bp::psbt;
 use lightning:::PaymentHash;
 use lightning::OnionMessage;
+use lightning::OnChainSweep;
 use lightning::ChannelManger::BOLT12;
 use rgb::contract::ContractId;
 
