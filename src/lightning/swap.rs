@@ -8,6 +8,7 @@ use lightning:::PaymentHash;
 use lightning::OnionMessage;
 use lightning::OnChainSweep;
 use lightning::ChainHash;
+use lightning::Deref;
 use lightning::ChannelManger::BOLT12;
 use rgb::contract::ContractId;
 
