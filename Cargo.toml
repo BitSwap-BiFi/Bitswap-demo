@@ -50,12 +50,12 @@ required-features = ["stl"]
 [dependencies]
 strict_encoding = "~2.3.1"
 strict_types = "~1.6.3"
-bp-core = { version = "~0.11.0" }
-aluvm = { version = "~0.11.0-alpha.1", features = ["std"] }
+bp-core = { version = "~0.11.0-alpha.3 }
+aluvm = { version = "~0.11.0-beta.3", features = ["std"] }
 commit_verify = { version = "~0.10.3", features = ["rand", "derive"] }
 single_use_seals = "~0.10.0"
 baid58 = "0.4.0"
-rgb-std = { version = "0.11.0", optional = true }
+rgb-std = { version = "0.11.0-beta.3", optional = true }
 psbt = { workspace = true }
 
 [lihghtning]
