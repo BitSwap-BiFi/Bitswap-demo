@@ -7,6 +7,7 @@ use bp::psbt;
 use lightning:::PaymentHash;
 use lightning::OnionMessage;
 use lightning::OnChainSweep;
+use lightning::ChainHash;
 use lightning::ChannelManger::BOLT12;
 use rgb::contract::ContractId;
 
