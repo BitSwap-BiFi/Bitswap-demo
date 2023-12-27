@@ -152,7 +152,7 @@ TBA
 
 **Highlights**
 
-- Wallets: Bitguard(WIP), MyCitadel, Bitmask, Iris and Lightning wallet (soon available);
+- Wallets: MyCitadel, Bitmask, Iris
 
 - Contract for Nodes and DLCs soon;
 
@@ -166,7 +166,7 @@ TBA
 
 **Highlights**
 
-- Wallets: Bitguard(WIP), MyCitadel, Bitmask and Iris (soon available);
+- Wallets: MyCitadel, Bitmask and Iris (soon available);
 
 - Contract for Nodes and DLCs soon;
 
