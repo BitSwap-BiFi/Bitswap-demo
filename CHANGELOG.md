@@ -133,7 +133,7 @@ TBA
 
 ## Alpha - v1.0.3
 
-**Higlights**
+**"Highlights**
 
 - Web Rocket
 - Initial script
