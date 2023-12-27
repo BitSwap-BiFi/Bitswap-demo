@@ -165,7 +165,8 @@ pub fn get_current_timestamp() -> u64 {
         .unwrap()
         .as_secs()
 }
-
+pub fn from_be_bytes(mut flags: Vec<u8>) -> Features<T> {
+        
 fn main() {
     // Example usage of SwapString parsing
     let swap_string = "123:abc:buy:456:789:def";
