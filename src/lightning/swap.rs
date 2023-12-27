@@ -169,7 +169,14 @@ pub fn get_current_timestamp() -> u64 {
         .as_secs()
 }
 pub fn from_be_bytes(mut flags: Vec<u8>) -> Features<T> {
-        
+
+
+impl core::fmt::Display for OutPoint {
+	fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
+		write!(f, "{}:{}", self.txid, self.index)
+	}
+}
+    
 fn main() {
     // Example usage of SwapString parsing
     let swap_string = "123:abc:buy:456:789:def";
