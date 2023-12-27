@@ -1,5 +1,6 @@
 use aluvm::stl::aluvm_stl;
 use bp::bc::stl::bitcoin_stl;
+use aluvm::byte;
 use bp::stl::bp_core_stl;
 use strict_types::stl::strict_types_stl;
 use strict_types::typelib::{LibBuilder, TranslateError};
