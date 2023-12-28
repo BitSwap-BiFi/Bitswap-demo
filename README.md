@@ -85,7 +85,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Prime (WIP)
 - [x] Complete PRs pendents (WIP)
 - [x] WASM (WIP)
-- [ ] RGB Core, STD, BP, AluVM and many more to v0.11 - Part.2
+- [x] RGB Core, STD, BP, AluVM and many more to v0.11 - Part.2 (WIP)
 - [ ] Liquid integration
 - [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
 - [ ] Taproot Channels by LDK
