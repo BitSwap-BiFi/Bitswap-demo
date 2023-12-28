@@ -8,6 +8,7 @@ Welcome to the Documentation around Bitswap
 - RGB CLI
 - RGB Core
 - RGB STD
+- RGB Schemata
 - Rust
 - Rust Lightning
 - Bitcoin Core Node
