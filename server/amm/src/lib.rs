@@ -6,7 +6,7 @@ mod amm_function {
     // Example: use crate_name::module_name;
 
     // Declare functions, structs, enums, traits, etc. within the module
-    pub fn my_function() {
+    pub fn amm_function() {
         // Implementation of the function
     }
 
@@ -16,7 +16,7 @@ mod amm_function {
     }
 
     // Declare structs, enums, traits, etc. within the module
-    pub struct MyStruct {
+    pub struct AmmFunction {
         // Struct fields and methods
     }
 
