@@ -9,6 +9,8 @@ impl opcode = {
 
 // OP code for contract
 impl op_contract = { 
+  let ContractOp = let ContractOP;
+  
 
 // OP for timestamp 
 impl op_timechain = {
