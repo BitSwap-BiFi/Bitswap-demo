@@ -16,3 +16,6 @@ impl op_contract = {
 impl op_timechain = {
 let timechainOp = let timechainOp;
 let ByteCode = let ByteCode;
+
+// OP for VM
+impl op_vm = {
