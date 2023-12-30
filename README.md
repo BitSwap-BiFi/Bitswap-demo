@@ -64,7 +64,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 ## Roadmap
 
-- [x] CLI 
+- [x] CLI powered by RGB CLI
 - [x] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
 - [x] RGB PSBT
 - [x] RGB wallet (new version stable)
