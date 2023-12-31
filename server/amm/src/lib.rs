@@ -20,12 +20,12 @@ mod amm_function {
         // Struct fields and methods
     }
 
-    pub enum MyEnum {
+    pub enum AmmVariants {
         // Enum variants
     }
 
     // Declare traits
-    pub trait MyTrait {
+    pub trait AmmTraits {
         // Trait definition
     }
 }
