@@ -35,6 +35,8 @@ use my_library::my_function;
 use my_library::MyStruct;
 use my_library::MyEnum;
 use my_library::MyTrait;
+use pool::LiquidityPool;
+use swap::RGB20::ContractID;
 
 // Entry point for the library
 // If the library is meant to be a binary crate, use fn main() instead
