@@ -96,7 +96,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] UI/UX
 - [ ] Official USDT implementation by Bitifinex
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
-- [ ] Bitlight Wallet
+- [ ] [Bitlight Wallet](https://bitlightlabs.com)
 - [ ] [BitMask](https://bitmask.app/)
 - [ ] Storm
 - [ ] Contractrum
