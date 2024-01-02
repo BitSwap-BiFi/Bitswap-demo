@@ -2,6 +2,17 @@
 
 name = "Src_core"
 version = "1.0.17-alpha"
-lib 
-bifrost
-lightning
+lib  =
+bifrost = 
+lightning =
+bitcoin =
+error =
+proxy =
+rgb =
+testnet =
+validators =
+util = 
+web =
+struct = 
+constants = 
+
