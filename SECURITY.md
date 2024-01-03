@@ -8,3 +8,8 @@ currently being supported with security updates.
 | Version | Supported          |
 | ------- | ------------------ |
 | Alpha-v1.0.12 | :white_check_mark: |
+| Alpha-v1.0.13 | ✅ |
+| Alpha-v1.0.14 | ✅ |
+| Alpha-v1.0.15 | ✅ |
+| Alpha-v1.0.16 | ✅ |
+| Alpha-v1.0.17 | ✅ |

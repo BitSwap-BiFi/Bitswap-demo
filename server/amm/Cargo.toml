@@ -7,17 +7,17 @@ edition = "2021"
 
 config = { version = "1", features = ["full"] }
 lib  = { version = "1", features = ["full"] }
-api = { vesion ="1", features = ["full] }
+api = { version ="1", features = ["full"] }
 
 [[bin]]
-name = "config"
-path = "src/config.rs"
+name = { "config" }
+path = { version = "1" , features = ["src/config.rs"] }
 
 [[bin]]
-name = "api"
-path = "src/api.rs"
+name = { "api" }
+path = { version = "1" , features = ["src/api.rs"] }
 
 [[bin]]
-name = "main"
-path = "src/main.rs"
+name = { "main" }
+path = { version = "1" , features = ["src/main.s"] }
 

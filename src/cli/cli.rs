@@ -3,6 +3,8 @@ use rgb::core::contract::Contract;
 use rgb::core::fungible::{Mint, OutpointValue, ValueSum};
 use rgb::core::issue::Amount;
 use rgb_contract::cli;
+use lightning::wallet::Wallet;
+use rgbstd::interface::{Mint, OutpointValue, ValueSum, Amount, ContractID};
 use std::error::Error;
 use std::io::{self, Write};
 

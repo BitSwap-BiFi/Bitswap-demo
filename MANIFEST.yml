@@ -1,0 +1,10 @@
+Name: bitswap core
+Type: Binary
+Kind: Source Available
+Network: Bitcoin Testnet 
+Version: 1.0.17-alpha
+License: Business Source License 1.1
+Language: Rust
+Compiler: 1.67
+Author: 22388o, Rsync25 and Bitlight Labs
+Maintained: Bitlight Labs
