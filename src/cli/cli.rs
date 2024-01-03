@@ -51,13 +51,13 @@ fn main() -> Result<(), Box<dyn Error>> {
             "enter_liquidity" => {
                let mut input = String::new();
                let input = asset::BTC:();
-               let input = asset::USDT();
+               let input = asset::RGB20();
                
             }
             "exit_liquidity" => {
                let mut output = String::new();
                let output = asset::BTC:();
-               let output = asset::USDT();
+               let output = asset::RGB20();
             }
             "exit" => {
                 // Exit the program
