@@ -2,14 +2,27 @@
 
 # Function to perform swaps
 function perform_swaps() {
-    # Your code here
-    echo "Performing swaps..."
-}
+    # Two variables to swap
+    var1="Value1"
+    var2="Value2"
 
-# Function to mint new RGB assets
-function mint_assets() {
-    # Your code here
-    echo "Minting assets..."
+    echo "Before swapping: var1=$var1, var2=$var2"
+
+    # Swapping logic
+    temp=$var1
+    var1=$var2
+    var2=$temp
+
+    echo "After swapping: var1=$var1, var2=$var2"
+}
+    echo "Performing swaps..."
+
+    # Swapping assets
+
+    tem=$var1
+    var1=$var2
+    var2=$temp
+    price=$temp
 }
 
 # Function to enable an open channel
@@ -36,6 +49,10 @@ function exit_liquidity() {
     echo "Exiting liquidity..."
 }
 
+# Function to check DLCs prices
+
+function oracle_price() {
+
 while true; do
     # Display the command prompt
     read -p "> " input
@@ -48,9 +65,7 @@ while true; do
         "swaps")
             perform_swaps
             ;;
-        "mint")
-            mint_assets
-            ;;
+        
         "enable_channel")
             enable_channel
             ;;
