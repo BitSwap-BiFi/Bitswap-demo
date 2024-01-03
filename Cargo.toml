@@ -14,7 +14,7 @@ license = "Business Source License 1.1"
 swap = "amm, dlc"
 dlc = "message"
 amm_contract = "amm contract"
-ldk = "invoice"
+ldk = "invoice, paymenthash, rgb_assets"
 
 [dex.dependencies]
 swap = "pairs, ldk"
