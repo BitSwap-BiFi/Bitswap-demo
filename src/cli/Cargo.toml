@@ -1,1 +1,3 @@
+[workspace]
 
+cli = "1.0.17-alpha"
