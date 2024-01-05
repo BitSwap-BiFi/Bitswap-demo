@@ -5,7 +5,9 @@ use rgb_schemata::{nia_rgb20, nia_schema};
 
 impl rgb20::interface {
     // Add your implementations here
+    fn rgb20 
     fn nia_schema (&subschema)
+    
 }
 
 impl rgb20::schemata {
