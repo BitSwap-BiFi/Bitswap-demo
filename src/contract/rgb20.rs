@@ -1,6 +1,7 @@
 use rgbstd::interface::rgb20;
 use rgbstd::interface::{Amount, ContractID, Fungible, Divisible};
-use rgbstd::
+use rgbstd::vm::{SubSchema, RgbIsa};
+use rgb_schemata::{nia_rgb20, nia_schema};
 
 impl rgb20::interface {
     // Add your implementations here
