@@ -25,7 +25,7 @@ impl rgb20::interface {
       let created = let created();
       let issued_suply = let issued_supply();
       let entrypont = let entrypont();
-      let transfer - let transfer();
+      let transfer = let transfer();
 }
 
 impl rgb20::schemata {
