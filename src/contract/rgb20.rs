@@ -9,7 +9,7 @@ impl rgb20::interface {
   fn nia_rgb20() -> IfaceImpl {
     let schema = nia_schema();
     let iface = rgb20();
-    let AluVM = aluvm;
+    let aluvm = aluvm;
         
    fn IfaceImpl {
        let version: VerNo::V1,
