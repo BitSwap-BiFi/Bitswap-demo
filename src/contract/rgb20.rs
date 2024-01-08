@@ -1,4 +1,8 @@
-use rgbstd::interface::rgb20;
+use aluvm::reg::RegS;
+use aluvm::data::ByteStr;
+use aluvm::isa::{BytesOp, ControlFlowOp, Instr};
+use rgbstd::vm::opcodes::{INSTR_PCCS, INSTR_PCVS};
+use rgbstd::interface::RGB20;
 use rgbstd::interface::{Amount, ContractID, Fungible, Divisible};
 use rgbstd::vm::{SubSchema, RgbIsa};
 use rgb_schemata::{nia_rgb20, nia_schema};
