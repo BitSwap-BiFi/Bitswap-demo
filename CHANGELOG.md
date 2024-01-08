@@ -4,7 +4,12 @@ See last versions and releases around Bitswap development
 
 ## Alpha v1.0.17
 
-TBA
+**Highlights**
+
+- Fixed Cargo.toml with LDK and RGB
+- RGB PSBT
+- OP_RETURN
+- Fixed typos
 
 ## Alpha v1.0.16
 

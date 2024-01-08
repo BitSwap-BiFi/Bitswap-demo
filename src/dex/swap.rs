@@ -13,6 +13,7 @@ use bpstd::secp256k1::serde::{Deserialize, Serialize};
 use strict_encoding::{StrictDeserialize, StrictSerialize};
 use std::str::FromStr;
 use std::str::bp;
+use lightning::ChannelManager::BOLT12;
 use dlc::DLCMessage;
 
 

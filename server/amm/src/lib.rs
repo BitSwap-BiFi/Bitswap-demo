@@ -1,58 +1,16 @@
-// lib.rs
 
-// Declare a module for the library
-mod amm_function {
-    // Import necessary external crates or modules
-    // Example: use crate_name::module_name;
+// Bitswap core
 
-    // Declare functions, structs, enums, traits, etc. within the module
-    pub fn amm_function() {
-        // Implementation of the function
-    }
+#[macro_use]
+extern crate api;
+#[macro_use]
+extern crate config;
+#[macro_use]
+extern crate main;
+#[macro_use]
+extern crate lib;
 
-    // You can have more modules within the library
-    mod sub_module {
-        // Implementation of sub-module content
-    }
-
-    // Declare structs, enums, traits, etc. within the module
-    pub struct AmmFunction {
-        // Struct fields and methods
-    }
-
-    pub enum AmmVariants {
-        // Enum variants
-    }
-
-    // Declare traits
-    pub trait AmmTraits {
-        // Trait definition
-    }
-}
-
-// You can have more top-level declarations outside the module
-use my_library::my_function;
-use my_library::MyStruct;
-use my_library::MyEnum;
-use my_library::MyTrait;
-use pool::LiquidityPool;
-use swap::RGB20::ContractID;
-
-// Entry point for the library
-// If the library is meant to be a binary crate, use fn main() instead
-fn main() {
-    // Implementation for the entry point if necessary
-}
-
-// Unit tests or integration tests can be added at the end of the file
-#[cfg(test)]
-mod tests {
-    // Test cases go here
-    #[test]
-    fn test_my_function() {
-        // Test implementation
-    }
-
-    // Add more test functions as needed
-}
-
+mod api;
+mod config;
+mod main;
+mod lib;
