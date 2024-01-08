@@ -1,4 +1,3 @@
-// Bitswap
 
 // Bitswap core
 
