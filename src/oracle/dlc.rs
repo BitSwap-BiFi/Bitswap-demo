@@ -7,8 +7,10 @@ use dlc::secp256k1_zkp::PublicKey;
 use dlc_messages::message_handler::read_dlc_message;
 use dlc_messages::{Message, WireMessage};
 
-impl dlc_message(&message) 
+impl dlc_message {
+  fn message_handle = {
 
-impl dlc_read(&message)
+impl dlc_read_message {
+  fn message = {
 
 
