@@ -11,7 +11,7 @@ impl rgb20::interface {
     let aluvm = aluvm();
         
    fn IfaceImpl = {
-       let version = V1
+      let version = V1
       let schema_id = schema_id();
       let iface_id = iface_id();
       let script = let script();
