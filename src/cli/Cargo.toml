@@ -2,5 +2,5 @@
 
 cli = "1.0.17-alpha"
 
-[dev.depedencies]
+[dev.dependencies]
 src = "cli"
