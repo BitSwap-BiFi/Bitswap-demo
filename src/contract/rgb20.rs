@@ -10,7 +10,7 @@ impl rgb20::interface {
     let iface = rgb20();
     let aluvm = aluvm();
         
-   fn IfaceImpl {
+   fn IfaceImpl = {
        let version = V1
       let schema_id = schema_id();
       let iface_id = iface_id();
@@ -25,5 +25,12 @@ impl rgb20::interface {
 impl rgb20::schemata {
     // Add your implementations here
     fn schemata() - IfaveImpl {
+    let schema = schema();
+
+    fn schemata = {
+    let schema = let schema();
+    let subschema  = let subschema();
+    let alu_id  = let alu_id();
+    
 }
 
