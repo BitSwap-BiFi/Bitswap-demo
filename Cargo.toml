@@ -4,62 +4,80 @@ members = ["rgb-core", "rust-dlc", "bitswap", "payjoin", "aluvm", "baid58"]
 
 [package]
 name = "Bitswap-Core"
-version = "1.0.9-alpha"
-edition = "2023"
-description = "AMM DEX on RGB Porotocol."
-license = "Apache-2.0"
+version = "1.0.17-alpha"
+edition = "2021"
+description = "AMM DEX on RGB Protocol and Lightning Network"
+license = "Business Source License 1.1"
 
-[package]
-rgb-core = "0.10.7" 
+[memmbers]
+
+swap = "amm, dlc"
+dlc = "message"
+amm_contract = "amm contract"
+ldk = "invoice, paymenthash, rgb_assets"
+
+[dex.dependencies]
+swap = "pairs, ldk"
+bp-core = "tapret, op"
+
+
+[core_functions]
+rgb-core = "0.11.0-beta.4" 
 rust-dlc = "0.4"
-bitswap = "1.0.9"
-rust-aluvm = "0.10.5"
-rust-lighting = "0.0.116"
+bitswap = "1.0.13"
+rust-aluvm = "0.11.0-beta.4"
+rust-lighting = "0.0.118"
 rust-baid58 = "0.4.0"
-rgb-wallet = "0.10.8"
-carbonado ="0.3.3"
-bp-std = "0.11.0"
+bp-std = "0.11.0-beta.4"
+bp-core="v0.11.0-beta.4"
+rgb-std = "0.11.0-beta.4"
+payjoin = "0.13.0"
+rgb-schemata = "0.11.0-beta.4"
+strict_types = "1.6.3"
+rgb-runtime = "0.11.0-beta.4"
+
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[rgb_binary]
+rgb_binary = "src/bin/rgbcore-stl.rs"
 
 [[bin]]
 name = "rgbcore-stl"
 required-features = ["stl"]
 
 [dependencies]
-strict_encoding = "~2.2.1"
 strict_encoding = "~2.3.1"
-strict_types = "~1.2.0"
-strict_types = "~1.3.0"
-bp-core = { version = "~0.10.7" }
-aluvm = { version = "~0.10.5", features = ["std"] }
-commit_verify = { version = "~0.10.2", features = ["rand", "derive"] }
+strict_types = "~1.6.3"
+bp-core = { version = "~0.11.0-alpha.4"}
+aluvm = { version = "~0.11.0-beta.3", features = ["std"] }
 commit_verify = { version = "~0.10.3", features = ["rand", "derive"] }
 single_use_seals = "~0.10.0"
-single_use_seals = "~0.10.0"
-bp-core = { version = "~0.10.4" }
 baid58 = "0.4.0"
+rgb-std = { version = "0.11.0-beta.4", optional = true }
+psbt = { workspace = true }
 
-[dependencies]
-lightning = { version = "0.0.115", features = ["max_level_trace"], path = "./rust-lightning/lightning" }
-lightning-block-sync = { version = "0.0.116", features = [ "rpc-client" ] }
-lightning-invoice = { version = "0.23", path = "./rust-lightning/lightning-invoice" }
-lightning-net-tokio = { version = "0.0.115" }
-lightning-persister = { version = "0.0.115", path = "./rust-lightning/lightning-persister" }
-lightning-background-processor = { version = "0.0.115", features = [ "futures" ] }
-lightning-rapid-gossip-sync = { version = "0.0.115" }
-mplify = "~4.0.0"
-strict_encoding = "~2.2.0"
-strict_types = "~1.2.0"
-aluvm = { version = "~0.10.4", features = ["std"] }
-commit_verify = { version = "~0.10.2", features = ["rand", "derive"] }
-single_use_seals = "~0.10.0"
-bp-core = { version = "~0.10.3" }
-secp256k1-zkp = { version = "0.8.0", features = ["use-rand", "rand-std", "global-context"] }
-baid58 = "~0.3.1"
-mime = "~0.3.16"
+[lihghtning]
+lightning = { version = "0.0.118", path = "../lightning", features = ["_test_utils"] }
+lightning-invoice = { version = "0.27.0", path = "../lightning-invoice" }
+lightning-persister = { version = "0.0.119", path = "../lightning-persister" }
+lightning-block-sync = { version = "0.0.119", features = [ "rpc-client" ] }
+lightning-net-tokio = { version = "0.0.119" }
+lightning-background-processor = { version = "0.0.119", features = [ "futures" ] }
+lightning-rapid-gossip-sync = { version = "0.0.119" }
+
+[rgb_core]
+amplify = "~4.5.0"
+strict_encoding = "~2.6.1"
+strict_types = "~1.6.3"
+aluvm = { version = "~0.11.0-beta.4", features = ["std"] }
+commit_verify = { version = "~0.10.6", features = ["rand", "derive"] }
+single_use_seals = "~0.10.1"
+bp-core = { version = "~0.11.0" }
+secp256k1-zkp = { version = "0.28.0", features = ["rand", "rand-std", "global-context"] }
+baid58 = "~0.4.4"
+mime = "~0.3.17"
 serde_crate = { package = "serde", version = "1", features = ["derive"], optional = true }
 base64 = "0.13.0"
 bitcoin = "0.29.2"
@@ -73,88 +91,79 @@ rand = "0.4"
 serde_json = { version = "1.0" }
 tokio = { version = "1", features = [ "io-util", "macros", "rt", "rt-multi-thread", "sync", "net", "time" ] }
 
-# RGB and related
-amplify = "3.13.0"
-amplify_num = "0.4.1"
-bdk = { version = "0.27", features = ["electrum", "keys-bip39", "sqlite-bundled"] }
-bp-core = { version = "0.10.u", features = ["psbt", "wallet"], path = "./bp-core" }
-futures = "0.3"
-internet2 = "0.9.0"
-lnpbp = "0.9.0"
-lnpbp-invoice = { version = "0.9.0", features = ["rgb"] }
-miniscript = { version = "8.0", features = ["serde"] }
-psbt = "0.9.0"
-reqwest = { version = "0.11", default-features = false, features = ["json", "multipart", "native-tls", "stream"] }
-rgb-std = "0.9.0"
-rgb20 = { version = "0.10.7", path = "./rust-rgb20" }
-rgb_rpc = { version = "0.9.1", path = "./rgb-node/rpc" }
-serde = { version = "^1.0", features = ["derive"] }
-stens = "0.9.0"
-strict_encoding = "0.9.0"
-thiserror = "1.0"
-tokio-util = { version = "0.7.4", features = ["codec"] }
 
-[rgb wallet]
+
+[rgb_core_complement]
+default = []
+all = ["stl", "serde"]
+stl = ["commit_verify/stl", "bp-core/stl", "aluvm/stl"]
+serde = [
+    "serde_crate",
+    "amplify/serde",
+    "strict_encoding/serde",
+    "strict_types/serde",
+    "commit_verify/serde",
+    "bp-core/serde",
+    "aluvm/serde",
+    "secp256k1-zkp/use-serde"
+]
+
+# RGB and related
+features.amplify = ["3.13.0"]
+features.amplify_num = ["0.4.1"]
+features.bdk = { version = "0.27", features = ["electrum", "keys-bip39", "sqlite-bundled"] }
+features.bp-core = { version = "0.10.7", features = ["psbt", "wallet"], path = "./bp-core" }
+features.futures = ["0.3"]
+features.internet2 = ["0.9.0"]
+festures.lnpbp = ["0.9.0"]
+features.lnpbp-invoice = { version = "0.9.0", features = ["rgb"] }
+features.miniscript = { version = "8.0", features = ["serde"] }
+features.psbt = [ "0.9.0"]
+features.reqwest = { version = "0.11", default-features = false, features = ["json", "multipart", "native-tls", "stream"] }
+features.rgb-std = ["0.9.0"]
+features.rgb20 = { version = "0.10.7", path = "./rust-rgb20" }
+features.rgb_rpc = { version = "0.9.1", path = "./rgb-node/rpc" }
+features.stens = ["0.9.0"]
+features.strict_encoding = ["0.9.0"]
+features.thiserror = ["1.0"]
+features.tokio-util = { version = "0.7.4", features = ["codec"] }
+
+[rgb_std]
 
 amplify = "4.0.1"
 baid58 = "0.4.4"
 strict_encoding = "2.5.0"
 strict_types = "1.6.0"
 commit_verify = { version = "0.10.5", features = ["stl"] }
-bp-core = { version = "0.10.8", features = ["stl"] }
-rgb-core = { version = "0.10.7", features = ["stl"] }
-
-[carbonado]
-
-bao = "0.12.1"
-bech32 = "0.9.1"
-bitmask-enum = "2.1.0"
-bytes = "1.4.0"
-ecies = { version = "0.2.3", default-features = false, features = ["pure"] }
-hex = "0.4.3"
-log = "0.4.19"
-nom = "7.1.3"
-pretty_env_logger = "0.5.0"
-secp256k1 = { version = "0.27.0", features = [
-    "global-context",
-    "rand-std",
-    "bitcoin-hashes-std",
-    "serde",
-] }
-serde = "1.0.164"
-snap = "1.1.0"
-thiserror = "1.0"
-zfec-rs = "0.1.0"
-once_cell = "=1.17.0"
+bp-core = { version = "0.11.0-beta.4", features = ["stl"] }
+rgb-core = { version = "0.11.0-beta.4, features = ["stl"] }
 
 [ldk]
 
 tokio = { version = "1.14", features = [ "macros", "rt", "rt-multi-thread", "sync", "time" ] }
-lightning = { version = "0.0.116", path = "../lightning", features = ["_test_utils"] }
+lightning = { version = "0.0.119", path = "../lightning", features = ["_test_utils"] }
 lightning-invoice = { version = "0.24.0", path = "../lightning-invoice" }
-lightning-persister = { version = "0.0.116", path = "../lightning-persister" }
+lightning-persister = { version = "0.0.119", path = "../lightning-persister" }
 
 
 bech32 = { version = "0.9.0", default-features = false }
-lightning = { version = "0.0.116", path = "../lightning", default-features = false }
-secp256k1 = { version = "0.24.0", default-features = false, features = ["recovery", "alloc"] }
+secp256k1 = { version = "0.28.0", default-features = false, features = ["recovery", "alloc"] }
 num-traits = { version = "0.2.8", default-features = false }
 bitcoin_hashes = { version = "0.11", default-features = false }
 hashbrown = { version = "0.8", optional = true }
 serde = { version = "1.0.118", optional = true }
 bitcoin = { version = "0.29.0", default-features = false }
 
-[dlc manager]
+[dlc_manager]
 
 async-trait = "0.1.50"
 bitcoin = {version = "0.29.2"}
 dlc = {version = "0.4.0", path = "../dlc"}
 dlc-messages = {version = "0.4.0", path = "../dlc-messages"}
 dlc-trie = {version = "0.4.0", path = "../dlc-trie"}
-lightning = {version = "0.0.116" }
+lightning = {version = "0.0.119" }
 log = "0.4.14"
 rand_chacha = {version = "0.3.1", optional = true}
-secp256k1-zkp = {version = "0.7.0", features = ["bitcoin_hashes", "rand", "rand-std"]}
 serde = {version = "1.0", optional = true}
 
 
@@ -164,21 +173,19 @@ bitcoincore-rpc = {version = "0.16.0"}
 bitcoincore-rpc-json = {version = "0.16.0"}
 criterion = "0.4.0"
 dlc-manager = {path = ".", features = ["use-serde"]}
-dlc-messages = {path = "../dlc-messages", features = ["serde"]}
 electrs-blockchain-provider = {path = "../electrs-blockchain-provider"}
 env_logger = "0.9.1"
 mocks = {path = "../mocks"}
 secp256k1-zkp = {version = "0.7.0", features = ["bitcoin_hashes", "rand", "rand-std", "global-context", "use-serde"]}
-serde = "1.0"
 serde_json = "1.0"
 simple-wallet = {path = "../simple-wallet"}
 
-[dlc message]
+[dlc_message]
 
 
 bitcoin = {version = "0.29.2"}
 dlc = {version = "0.4.0", path = "../dlc"}
-lightning = {version = "0.0.116" }
+lightning = {version = "0.0.119" }
 secp256k1-zkp = {version = "0.7.0", features = ["bitcoin_hashes", "rand", "rand-std"]}
 serde = {version = "1.0", features = ["derive"], optional = true}
 
@@ -188,7 +195,7 @@ blake3 = "1.4.1"
 mnemonic = "1.0.1"
 sha2 = "0.10.7"
 
-[strict encoding]
+[strict_encoding]
 
 amplify = { version = "4.0.0", features = ["proc_attr"] }
 strict_encoding_derive = { version = "2.0.0", path = "derive" }
@@ -196,7 +203,7 @@ half = { version = "~2.2.0", optional = true } # Required to maintain MSRV
 serde_crate = { package = "serde", version = "1", features = ["derive"], optional = true }
 
 
-[aluvm dependencies]
+[aluvm]
 amplify = { version = "4.0.0", default-features = false, features = ["apfloat", "derive", "hex"] }
 paste = "1"
 strict_encoding = { version = "2.5.0", default-features = false, features = ["float", "derive"] }
@@ -209,7 +216,7 @@ curve25519-dalek = { version = "3.2", optional = true }
 half = "~2.2.0" # Required to maintain MSRV
 serde_crate = { package = "serde", version = "1", optional = true }
 
-[bp-std dependencies]
+[bp_std]
 
 amplify = "4.0.1"
 bitcoin_hashes = "0.12.0"
@@ -218,7 +225,12 @@ bp-primitives = "0.10.7"
 serde_crate = { package = "serde", version = "1", features = ["derive"] }
 serde_with = "3.1.0"
 
-[payjoin dependencies]
+bp-consensus = { version = "0.11.0-beta.1", path = "consensus" }
+bp-dbc = { version = "0.11.0-beta.1", path = "./dbc" }
+bp-seals = { version = "0.11.0-beta.1", path = "./seals" }
+secp256k1 = { version = "0.28.0", features = ["global-context"] }
+
+[payjoin]
 anyhow = "1.0.70"
 base64 = "0.21.2"
 bip21 = "0.3.1"
@@ -230,9 +242,9 @@ log = "0.4.7"
 reqwest = { version = "0.11.4", features = ["blocking"] }
 rcgen = { version = "0.11.1", optional = true }
 serde = { version = "1.0.160", features = ["derive"] }
-payjoin = { version = "0.9.0", features = ["send", "receive", "rand"] }
+payjoin = { version = "0.12.0", features = ["send", "receive", "rand"] }
 
-[lnp dependencies]
+[lnp]
 
 amplify = "3.13.0"
 strict_encoding = "0.9.0"
@@ -250,6 +262,8 @@ serde_with = { version = "1.14", features = ["hex"], optional = true }
 [patch.crates-io]
 bp-core = {  path = "./bp-core" }
 bp-seals = { path = "./bp-core/seals" }
+bp-dbc = { path ="./bp-core/dbc" }
+bp-consensus = { path = "./bp-core/consensus" }
 commit_verify = { path = "./client_side_validation/commit_verify" }
 lightning = { path = "./rust-lightning/lightning" }
 lightning-background-processor = { path = "./rust-lightning/lightning-background-processor"}
@@ -257,13 +271,75 @@ rgb20 = { path = "./rust-rgb20" }
 rgb_core = { package = "rgb-core", path = "./rgb-core" }
 rgb_rpc = { path = "./rgb-node/rpc" }
 
-[bp dependencies]
+[bp_dependencies]
 amplify = "4.0.1"
 bitcoin_hashes = "0.12.0"
 bech32 = "0.9.1"
 bp-primitives = "0.10.7"
 serde_crate = { package = "serde", version = "1", features = ["derive"] }
 serde_with = "3.1.0"
+
+[bp_consensus]
+
+amplify = { workspace = true }
+strict_encoding = { workspace = true }
+strict_types = { workspace = true, optional = true }
+commit_verify = { workspace = true }
+single_use_seals = { workspace = true }
+bp-consensus = { workspace = true }
+bp-dbc = { workspace = true }
+bp-seals = { workspace = true }
+serde_crate = { workspace = true, optional = true }
+
+[strict_type]
+strict_encoding = { version = "2.6.1", features = ["derive", "float"] }
+sha2 = "0.10.8"
+base64 = { version = "0.21.4", optional = true }
+
+[rgb_schemata]
+amplify = "4.5.0"
+strict_encoding = "2.6.1"
+strict_types = "1.6.3"
+aluvm = "0.10.6"
+bp-core = "0.10.11"
+rgb-std = { version = "0.10.9", features = ["serde", "fs"] }
+serde = "1.0"
+serde_json = "1.0"
+sha2 = "0.10.7"
+
+[bifrost]
+amplify = { version = "3.13.0", features = ["hex", "rand"] }
+lnpbp = "0.9.0"
+bp-core = "0.11.0-beta.4"
+strict_encoding = { version = "0.11.0", optional = true, features = ["chrono", "miniscript"] }
+lightning_encoding = { version = "0.9.0", optional = true }
+bitcoin_scripts = "0.9.0"
+psbt = "0.9.0"
+miniscript = "9.0.0"
+bitcoin = "0.29.2"
+secp256k1 = { version = "0.28.0", features = ["global-context"] }
+internet2 = { version = "0.9.0-rc.1", default-features = false, features = ["derive"] }
+serde_crate = { package = "serde", version = "1", features = ["derive"], optional = true }
+serde_with = { version = "1.14", features = ["hex"], optional = true }
+once_cell = "1.12.0"
+chrono = "0.4"
+
+[rust_bitcoin]
+[patch.crates-io.bitcoin]
+path = "bitcoin"
+
+[patch.crates-io.bitcoin_hashes]
+path = "hashes"
+
+[patch.crates-io.bitcoin-internals]
+path = "internals"
+
+
+default = ["bolt", "strict_encoding"]
+all = ['bifrost', "serde"]
+bolt = ["lightning_encoding", "strict_encoding"] # Remove strict encoding requirement
+bifrost = ["strict_encoding", "bolt"]
+serde = ["serde_crate", "serde_with", "amplify/serde", "bitcoin/serde"]
 
 [profile.release]
 panic = "abort"

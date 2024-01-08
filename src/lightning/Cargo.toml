@@ -1,0 +1,11 @@
+[package]
+name = "Bitswap"
+version = "1.14.0-Alpha"
+edition = "2023"
+
+[dependencies]
+
+[features]
+members = ["swap", "ldk"]
+
+

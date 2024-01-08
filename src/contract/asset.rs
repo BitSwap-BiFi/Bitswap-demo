@@ -1,20 +1,48 @@
-use rgb_core::{Consignment, Contract, Error, ExecutionResult, Schema, Value};
+use create::Contract::Asset;
+
+use std::rgb_core;
+use std::baid58;
+use std::amplify;
+
+
+use rgb_core::{Consignment, Contract, Error, ExecutionResult, Schema, Value, State, Tag};
 use baid58::{Baid58ParseError, Chunking, FromBaid58, ToBaid58, CHUNKING_32};
+use aluvm::library::{Lib, LibSite};
+use rgbstd::interface::{rgb20, rgb20_stl, IfaceImpl, NamedField, NamedType, VerNo};
+use rgbstd::schema::{
+    FungibleType, GenesisSchema, GlobalStateSchema, Occurrences, Schema, Script, StateSchema,
+    SubSchema, TransitionSchema,
+};
+use rgbstd::stl::StandardTypes;
+use rgbstd::vm::{AluScript, ContractOp, EntryPoint, RgbIsa};
+use strict_types::{SemId, Ty};
+use amplify::{ByteArray, Bytes32};
+use commit_verify::{CommitEncode, CommitVerify, CommitmentProtocol, Conceal, UntaggedProtocol};
+use rgb::{U8, Bytes32};
+use rgb::{ContractSchema};
+use rgb::mod::{ContractSubSchema};
 use std::collections::HashMap;
 
+// Struct for support RGB20 assets on DEX
 struct RGB20Asset {
     name: String,
     symbol: String,
+    swap: String,
+    lp: String,
+    schema: String,
+    decimal: Number,
+    txid: String,
     total_supply: u64,
     balances: HashMap<String, u64>,
 }
-
+// Implementation around RGB20
 impl RGB20Asset {
     fn new(name: String, symbol: String, total_supply: u64) -> Self {
         RGB20Asset {
             name,
             symbol,
             total_supply,
+            decimal,
             balances: HashMap::new(),
         }
     }
@@ -96,87 +124,5 @@ impl RGB20Contract {
 
 fn main() {
     let mut rgb20_contract = RGB20Contract::new();
-
-    // Create a new RGB20 asset
-    let asset_name = "Tether".to_string();
-    let asset_symbol = "USDT".to_string();
-    let total_supply = 1000000;
-    let asset_creation_result = rgb20_contract.create_asset(asset_name, asset_symbol, total_supply);
-    println!("Asset creation result: {:?}", asset_creation_result);
-
-    // Transfer the asset from one account to another
-    let consignment = Consignment::from_state_json(r#"{"amount": 100}"#).unwrap();
-    let sender = "account1";
-    let receiver = "account2";
-    let transfer_result = rgb20_contract.transfer_asset(&consignment, sender, receiver);
-    println!("Asset transfer result: {:?}", transfer_result);
-
-    // Get the balance of an account for a specific asset
-    let balance_result = rgb20_contract.get_asset_balance("USDT", "account2");
-    println!("Asset balance result: {:?}", balance_result);
 }
 
-fn main() {
-    let mut rgb20_contract = RGB20Contract::new();
-
-    // Create a new RGB20 asset
-    let asset_name = "Wrapped Native BTC".to_string();
-    let asset_symbol = "RGBTC".to_string();
-    let total_supply = 0;
-    let asset_creation_result = rgb20_contract.create_asset(asset_name, asset_symbol, total_supply);
-    println!("Asset creation result: {:?}", asset_creation_result);
-
-    // Transfer the asset from one account to another
-    let consignment = Consignment::from_state_json(r#"{"amount": 0}"#).unwrap();
-    let sender = "account1";
-    let receiver = "account2";
-    let transfer_result = rgb20_contract.transfer_asset(&consignment, sender, receiver);
-    println!("Asset transfer result: {:?}", transfer_result);
-
-    // Get the balance of an account for a specific asset
-    let balance_result = rgb20_contract.get_asset_balance("RGBTC", "account2");
-    println!("Asset balance result: {:?}", balance_result);
-}
-fn main() {
-    let mut rgb20_contract = RGB20Contract::new();
-
-    // Create a new RGB20 asset
-    let asset_name = "Digital Swiss Franc".to_string();
-    let asset_symbol = "dCHF".to_string();
-    let total_supply = 0;
-    let asset_creation_result = rgb20_contract.create_asset(asset_name, asset_symbol, total_supply);
-    println!("Asset creation result: {:?}", asset_creation_result);
-
-    // Transfer the asset from one account to another
-    let consignment = Consignment::from_state_json(r#"{"amount": 0}"#).unwrap();
-    let sender = "account1";
-    let receiver = "account2";
-    let transfer_result = rgb20_contract.transfer_asset(&consignment, sender, receiver);
-    println!("Asset transfer result: {:?}", transfer_result);
-
-    // Get the balance of an account for a specific asset
-    let balance_result = rgb20_contract.get_asset_balance("dCHF", "account2");
-    println!("Asset balance result: {:?}", balance_result);
-}
-
-fn main() {
-    let mut rgb20_contract = RGB20Contract::new();
-
-    // Create a new RGB20 asset
-    let asset_name = " RGBexDAO token".to_string();
-    let asset_symbol = "RGBEX".to_string();
-    let total_supply = 0;
-    let asset_creation_result = rgb20_contract.create_asset(asset_name, asset_symbol, total_supply);
-    println!("Asset creation result: {:?}", asset_creation_result);
-
-    // Transfer the asset from one account to another
-    let consignment = Consignment::from_state_json(r#"{"amount": 0}"#).unwrap();
-    let sender = "account1";
-    let receiver = "account2";
-    let transfer_result = rgb20_contract.transfer_asset(&consignment, sender, receiver);
-    println!("Asset transfer result: {:?}", transfer_result);
-
-    // Get the balance of an account for a specific asset
-    let balance_result = rgb20_contract.get_asset_balance("RGBEX", "account2");
-    println!("Asset balance result: {:?}", balance_result);
-}
