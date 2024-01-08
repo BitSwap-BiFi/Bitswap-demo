@@ -17,7 +17,12 @@ let ByteCode = let ByteCode;
 
 // Functions for OP 
 
-fn op_contract (&self)
+fn op_contract = {
+  let AssignmentType = let AssignmentType;
+  let Reg32 = let Reg32;
+  let GloBalStateType = let GlobaStateType;
+
+const u16 = AssignmentType::u16::Reg32;
 
 fn op_timechain (&self)
 
