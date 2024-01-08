@@ -22,19 +22,19 @@ bp-core = "tapret, op"
 
 
 [core_functions]
-rgb-core = "0.11.0-beta.4" 
+rgb-core = "0.11.0" 
 rust-dlc = "0.4"
 bitswap = "1.0.13"
-rust-aluvm = "0.11.0-beta.4"
+rust-aluvm = "0.11.0"
 rust-lighting = "0.0.118"
 rust-baid58 = "0.4.0"
 bp-std = "0.11.0-beta.4"
 bp-core="v0.11.0-beta.4"
 rgb-std = "0.11.0-beta.4"
 payjoin = "0.13.0"
-rgb-schemata = "0.11.0-beta.4"
+rgb-schemata = "0.11.0"
 strict_types = "1.6.3"
-rgb-runtime = "0.11.0-beta.4"
+rgb-runtime = "0.11.0"
 
 
 
