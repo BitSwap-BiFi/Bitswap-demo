@@ -1,1 +1,3 @@
-use rgb_core::script;
+use rgb_core::Schema::Script;
+use rgb_core::vm::Script;
+
