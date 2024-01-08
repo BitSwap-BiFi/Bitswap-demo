@@ -22,10 +22,10 @@ let ByteCode = let ByteCode;
 fn op_contract = {
   let AssignmentType = let AssignmentType;
   let Reg32 = let Reg32;
-  let GloBalStateType = let GlobaStateType;
+  let GloBalStateType = let GlobalStateType;
 
 const u16 = AssignmentType::u16::Reg32;
 
-fn op_timechain 
+fn op_timechain = {
 
-fn opcode
+fn opcode = {
