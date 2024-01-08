@@ -72,7 +72,6 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Payjoin and Taproot full implementation (WIP)
 - [x] Complete PRs pendents (WIP)
 - [x] Add [RGB CLI](https://github.com/RGB-WG/rgb) as tool complementary for CLI from DEX
-- [x] Integration with Bitlight wallet (WIP)
 - [x] OP_RETURN (WIP)
 - [x] API integration from RLN (WIP)
 - [x] RGB Proxy (WIP)
