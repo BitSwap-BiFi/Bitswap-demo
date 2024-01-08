@@ -11,8 +11,8 @@ use bitcoin::Network;
 use secp256k1::Secp256k1;
 
 fn main() {
-    // Establish connection with RGB Node
-    let node = Node::new("http://rgb-node-url:port");
+    // Establish connection with Oracle
+    let edndpoint = Endpoint::new("http://oracle");
 
     // Create a new DLC contract
     let mut dlc = ContractDescriptor::new();

@@ -28,7 +28,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 - DLC fail
 
-### Swaps
+### Swaps (On-chain and Off-chain)
 
 - Alice create invoice (RGB or LN) for Bob receive USDT
 
@@ -45,7 +45,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 -  P2P Swaps without intermediary with DLCs
 - Taproot
 - LDK and RGB Lightning Node
-- Prime
+- Prime & Liquid
 - Bifrost
 - CLI powered by RGB CLI 
 - BOLT12
@@ -59,11 +59,12 @@ How there's no lunch free, you can lose sats in these scenarios:
 - LSP for RGB20 Assets
 - PTLCs
 - Musig2
-- Contractum 
+- Contractum for complex contracts
+- DCA decentralized thought USDT 
 
 ## Roadmap
 
-- [x] CLI 
+- [x] CLI powered by RGB CLI
 - [x] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
 - [x] RGB PSBT
 - [x] RGB wallet (new version stable)
@@ -71,7 +72,6 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Payjoin and Taproot full implementation (WIP)
 - [x] Complete PRs pendents (WIP)
 - [x] Add [RGB CLI](https://github.com/RGB-WG/rgb) as tool complementary for CLI from DEX
-- [x] Integration with Bitlight wallet (WIP)
 - [x] OP_RETURN (WIP)
 - [x] API integration from RLN (WIP)
 - [x] RGB Proxy (WIP)
@@ -84,24 +84,21 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Prime (WIP)
 - [x] Complete PRs pendents (WIP)
 - [x] WASM (WIP)
-- [ ] RGB Core, STD, BP, AluVM and many more to v0.11 - Part.2
+- [x] RGB Core, STD, BP, AluVM and many more to v0.11 - Part.2 (WIP)
+- [x] AMM lib (WIP)
+- [x] Web server and domain
 - [ ] Liquid integration
 - [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
 - [ ] Taproot Channels by LDK
 - [ ] Mainnet
 - [ ] Beta app
 - [ ] UI/UX
-- [ ] Web server and domain
 - [ ] Official USDT implementation by Bitifinex
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
-- [ ] Bitlight Wallet
+- [ ] [Bitlight Wallet](https://bitlightlabs.com)
 - [ ] [BitMask](https://bitmask.app/)
 - [ ] Storm
 - [ ] Contractrum
-
-## Run BitSwap
-
-Soon
 
 ## Development
 
@@ -126,7 +123,7 @@ The code is licensed under either:
 
 ## Ossification DEX
 
-In this Core, we'll not integrate with Sidechains non built on RGB and altcoins beyond RGB, Bitcoin, Prime, Bifrost, RGB wallets and Lightning Network.
+In this Core, we'll not integrate with Sidechains non built on RGB and altcoins beyond RGB, Bitcoin, Prime, Liquid, Bifrost, RGB wallets and Lightning Network.
 
 ## FAQ
 

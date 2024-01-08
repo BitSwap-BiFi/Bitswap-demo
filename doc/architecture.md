@@ -13,11 +13,12 @@ Discover architecture repository about Bitswap
 - [CLI](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/cli): CLI core commands for DEX by Bitswap team 
 - [Wallet](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/wallet): Compatible sections for allow wallets works with DEX
 - [Payjoin](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/wallet/payjoin): Integration section for input and output into PJ
-- [Web](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/web): Compatible senctions for allow works frontend with backend
+- [Web](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/web): Compatible senctions for allow works frontend with backend using WASM
 - [Script](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/src/script): Scripts based on RGB for DEX
 - Oracle: Main functions of DLCs for DEX
 - OP: Main OP_RETURN functions for DEX
 - Liquid: TBD
 - Prime: TBD
 - Bifrost: TBD
+- Storm: TBD
 
