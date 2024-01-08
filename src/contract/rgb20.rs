@@ -9,14 +9,14 @@ impl rgb20::interface {
   fn nia_rgb20() -> IfaceImpl {
     let schema = nia_schema();
     let iface = rgb20();
-    let aluvm = aluvm;
+    let aluvm = aluvm();
         
    fn IfaceImpl {
-       let version: VerNo::V1,
-        let schema_id: schema.schema_id(),
-      let iface_id: iface.iface_id(),
-       let script: none!(),
-       let global_state: tiny_bset! 
+       let version = V1
+      let schema_id = schema_id(),
+      let iface_id = iface_id(),
+      let script: let script(),
+      let global_state: let global_state(),
 }
 
 impl rgb20::schemata {
