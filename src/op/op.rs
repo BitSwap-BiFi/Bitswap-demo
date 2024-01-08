@@ -26,9 +26,6 @@ fn op_contract = {
 
 const u16 = AssignmentType::u16::Reg32;
 
-fn op_timechain (&self)
+fn op_timechain 
 
-fn opcode (&self)
-=======
-// OP for VM
-impl op_vm = {
+fn opcode
