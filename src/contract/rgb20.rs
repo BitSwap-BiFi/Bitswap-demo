@@ -5,7 +5,6 @@ use rgb_schemata::{nia_rgb20, nia_schema};
 
 impl rgb20::interface {
     // Add your implementations here
-    fn nia_schema (&subschema)  
   fn nia_rgb20() -> IfaceImpl {
     let schema = nia_schema();
     let iface = rgb20();
@@ -25,6 +24,6 @@ impl rgb20::interface {
 
 impl rgb20::schemata {
     // Add your implementations here
-    fn schemata(&schemata)
+    fn schemata() - IfaveImpl {
 }
 
