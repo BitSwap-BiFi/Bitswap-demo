@@ -64,7 +64,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 ## Roadmap
 
-- [x] CLI 
+- [x] CLI powered by RGB CLI
 - [x] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
 - [x] RGB PSBT
 - [x] RGB wallet (new version stable)
@@ -72,7 +72,6 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Payjoin and Taproot full implementation (WIP)
 - [x] Complete PRs pendents (WIP)
 - [x] Add [RGB CLI](https://github.com/RGB-WG/rgb) as tool complementary for CLI from DEX
-- [x] Integration with Bitlight wallet (WIP)
 - [x] OP_RETURN (WIP)
 - [x] API integration from RLN (WIP)
 - [x] RGB Proxy (WIP)
@@ -85,17 +84,18 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Prime (WIP)
 - [x] Complete PRs pendents (WIP)
 - [x] WASM (WIP)
-- [ ] RGB Core, STD, BP, AluVM and many more to v0.11 - Part.2
+- [x] RGB Core, STD, BP, AluVM and many more to v0.11 - Part.2 (WIP)
+- [x] AMM lib (WIP)
+- [x] Web server and domain
 - [ ] Liquid integration
 - [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
 - [ ] Taproot Channels by LDK
 - [ ] Mainnet
 - [ ] Beta app
 - [ ] UI/UX
-- [x] Web server and domain
 - [ ] Official USDT implementation by Bitifinex
 - [ ] Integration with APIs from [RGBex](https://rgbex.io/)
-- [ ] Bitlight Wallet
+- [ ] [Bitlight Wallet](https://bitlightlabs.com)
 - [ ] [BitMask](https://bitmask.app/)
 - [ ] Storm
 - [ ] Contractrum

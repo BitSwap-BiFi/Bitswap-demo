@@ -20,4 +20,5 @@ Discover architecture repository about Bitswap
 - Liquid: TBD
 - Prime: TBD
 - Bifrost: TBD
+- Storm: TBD
 

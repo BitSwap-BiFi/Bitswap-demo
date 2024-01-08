@@ -1,0 +1,30 @@
+name: Publish docs
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  docs:
+    name: Publish docs
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-rust@1
+        with:
+          name: fedimint
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+        continue-on-error: true
+
+      - name: Build docs
+        run: cargo doc --no-deps
+
+      - if: github.repository == 'BiSwap/Bitswap'
+        name: Deploy docs
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./result/
+          cname: https://bitswap-bifi.github.io/Bitswap-core/

@@ -4,9 +4,17 @@ use std::convert::TryInto;
 use std::str::FromStr;
 use dlc::message::Oracle;
 use bp::psbt;
-use lightning::ln::PaymentHash;
+use lightning:::PaymentHash;
 use lightning::OnionMessage;
+use lightning::OnChainSweep;
+use lightning::ChainHash;
+use lightning::Deref;
+use lightning::PeeledOnion;
+use lightning::SocketAddress;
+use lightning::Display;
+use lightning::ChannelManger::BOLT12;
 use rgb::contract::ContractId;
+
 
 
 #[derive(Debug)]
@@ -161,7 +169,15 @@ pub fn get_current_timestamp() -> u64 {
         .unwrap()
         .as_secs()
 }
+pub fn from_be_bytes(mut flags: Vec<u8>) -> Features<T> {
 
+
+impl core::fmt::Display for OutPoint {
+	fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
+		write!(f, "{}:{}", self.txid, self.index)
+	}
+}
+    
 fn main() {
     // Example usage of SwapString parsing
     let swap_string = "123:abc:buy:456:789:def";

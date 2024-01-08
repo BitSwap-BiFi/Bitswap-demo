@@ -1,0 +1,4 @@
+[workspace]
+
+name = "src/web"
+version = "v1.0.17-alpha"

@@ -6,15 +6,15 @@ members = ["rgb-core", "rust-dlc", "bitswap", "payjoin", "aluvm", "baid58"]
 name = "Bitswap-Core"
 version = "1.0.17-alpha"
 edition = "2021"
-description = "AMM DEX on RGB Protocol"
+description = "AMM DEX on RGB Protocol and Lightning Network"
 license = "Business Source License 1.1"
 
 [memmbers]
 
-swap = "algorithm, dlc"
+swap = "amm, dlc"
 dlc = "message"
-algorithm = "amm contract"
-ldk = "invoice"
+amm_contract = "amm contract"
+ldk = "invoice, paymenthash, rgb_assets"
 
 [dex.dependencies]
 swap = "pairs, ldk"
@@ -22,19 +22,19 @@ bp-core = "tapret, op"
 
 
 [core_functions]
-rgb-core = "0.11.0-beta.3" 
+rgb-core = "0.11.0-beta.4" 
 rust-dlc = "0.4"
 bitswap = "1.0.13"
-rust-aluvm = "0.11.0-beta.3"
+rust-aluvm = "0.11.0-beta.4"
 rust-lighting = "0.0.118"
 rust-baid58 = "0.4.0"
-bp-std = "0.11.0-beta.3"
-bp-core="v0.11.0-beta.3"
-rgb-std = "0.11.0-beta.3"
-payjoin = "0.12.0"
-rgb-schemata = "0.11.0-beta.3"
+bp-std = "0.11.0-beta.4"
+bp-core="v0.11.0-beta.4"
+rgb-std = "0.11.0-beta.4"
+payjoin = "0.13.0"
+rgb-schemata = "0.11.0-beta.4"
 strict_types = "1.6.3"
-rgb-runtime = "0.11.0-beta.1"
+rgb-runtime = "0.11.0-beta.4"
 
 
 
@@ -50,12 +50,12 @@ required-features = ["stl"]
 [dependencies]
 strict_encoding = "~2.3.1"
 strict_types = "~1.6.3"
-bp-core = { version = "~0.11.0-alpha.3 }
+bp-core = { version = "~0.11.0-alpha.4"}
 aluvm = { version = "~0.11.0-beta.3", features = ["std"] }
 commit_verify = { version = "~0.10.3", features = ["rand", "derive"] }
 single_use_seals = "~0.10.0"
 baid58 = "0.4.0"
-rgb-std = { version = "0.11.0-beta.3", optional = true }
+rgb-std = { version = "0.11.0-beta.4", optional = true }
 psbt = { workspace = true }
 
 [lihghtning]
@@ -71,10 +71,10 @@ lightning-rapid-gossip-sync = { version = "0.0.119" }
 amplify = "~4.5.0"
 strict_encoding = "~2.6.1"
 strict_types = "~1.6.3"
-aluvm = { version = "~0.11.0-beta.1", features = ["std"] }
+aluvm = { version = "~0.11.0-beta.4", features = ["std"] }
 commit_verify = { version = "~0.10.6", features = ["rand", "derive"] }
 single_use_seals = "~0.10.1"
-bp-core = { version = "~0.10.10" }
+bp-core = { version = "~0.11.0" }
 secp256k1-zkp = { version = "0.28.0", features = ["rand", "rand-std", "global-context"] }
 baid58 = "~0.4.4"
 mime = "~0.3.17"
@@ -135,15 +135,15 @@ baid58 = "0.4.4"
 strict_encoding = "2.5.0"
 strict_types = "1.6.0"
 commit_verify = { version = "0.10.5", features = ["stl"] }
-bp-core = { version = "0.11.0", features = ["stl"] }
-rgb-core = { version = "0.11.0", features = ["stl"] }
+bp-core = { version = "0.11.0-beta.4", features = ["stl"] }
+rgb-core = { version = "0.11.0-beta.4, features = ["stl"] }
 
 [ldk]
 
 tokio = { version = "1.14", features = [ "macros", "rt", "rt-multi-thread", "sync", "time" ] }
-lightning = { version = "0.0.117", path = "../lightning", features = ["_test_utils"] }
+lightning = { version = "0.0.119", path = "../lightning", features = ["_test_utils"] }
 lightning-invoice = { version = "0.24.0", path = "../lightning-invoice" }
-lightning-persister = { version = "0.0.116", path = "../lightning-persister" }
+lightning-persister = { version = "0.0.119", path = "../lightning-persister" }
 
 
 bech32 = { version = "0.9.0", default-features = false }
@@ -161,7 +161,7 @@ bitcoin = {version = "0.29.2"}
 dlc = {version = "0.4.0", path = "../dlc"}
 dlc-messages = {version = "0.4.0", path = "../dlc-messages"}
 dlc-trie = {version = "0.4.0", path = "../dlc-trie"}
-lightning = {version = "0.0.116" }
+lightning = {version = "0.0.119" }
 log = "0.4.14"
 rand_chacha = {version = "0.3.1", optional = true}
 serde = {version = "1.0", optional = true}
@@ -185,7 +185,7 @@ simple-wallet = {path = "../simple-wallet"}
 
 bitcoin = {version = "0.29.2"}
 dlc = {version = "0.4.0", path = "../dlc"}
-lightning = {version = "0.0.116" }
+lightning = {version = "0.0.119" }
 secp256k1-zkp = {version = "0.7.0", features = ["bitcoin_hashes", "rand", "rand-std"]}
 serde = {version = "1.0", features = ["derive"], optional = true}
 
@@ -310,7 +310,7 @@ sha2 = "0.10.7"
 [bifrost]
 amplify = { version = "3.13.0", features = ["hex", "rand"] }
 lnpbp = "0.9.0"
-bp-core = "0.11.0"
+bp-core = "0.11.0-beta.4"
 strict_encoding = { version = "0.11.0", optional = true, features = ["chrono", "miniscript"] }
 lightning_encoding = { version = "0.9.0", optional = true }
 bitcoin_scripts = "0.9.0"
