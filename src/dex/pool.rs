@@ -1,5 +1,8 @@
+use create::POOL;
+
 use rgb_core::{Contract, ExecutionResult};
 use aluvm::{Executor, Value};
+use rgbstd::{Amount, ContractData, DivisibleAssetSpec, StandardTypes, Timestamp};
 
 fn main() {
     // Set up your RGB contract and polling logic

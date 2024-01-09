@@ -1,0 +1,6 @@
+[workspace]
+
+cli = "1.0.17-alpha"
+
+[dev.dependencies]
+src = "cli"

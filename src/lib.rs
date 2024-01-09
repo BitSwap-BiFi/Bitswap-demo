@@ -1,42 +1,36 @@
-//! # Bitswap Core
-//! `bitswap core`integration with DEX on RGB protocol
-/// 
-///
-///```
-/// let arg = 5;
-/// let answer = my_crate::add_one(arg);
-///
-/// assert_eq!(6, answer);
-/// ```
-pub fn add_one(x: i32) -> i32 {
-    x + 1
-}
-//! # Art
-//!
-//! A library for modeling artistic concepts.
+// Bitswap Core
 
-pub mod kinds {
-    /// The primary colors according to the RYB color model.
-    pub enum PrimaryColor {
-        Red,
-        Yellow,
-        Blue,
-    }
+#[macro_use]
+extern crate rgb;
+#[macro_use]
+extern crate bifrost;
+#[macro_use]
+extern crate error;
+#[macro_use]
+extern crate lightning;
+#[macro_use]
+extern crate struct;
+#[macro_use]
+extern crate proxy;
+#[macro_use]
+extern crate bitcoin;
+#[macro_use]
+extern crate util;
+#[macro_use]
+extern crate testnet;
+#[macro_use]
+extern crate validators;
+#[macro_use]
+extern crate web;
+#[macro_use]
+extern crate constants;
 
-    /// The secondary colors according to the RYB color model.
-    pub enum SecondaryColor {
-        Orange,
-        Green,
-        Purple,
-    }
-}
-
-pub mod utils {
-    use crate::kinds::*;
-
-    /// Combines two primary colors in equal amounts to create
-    /// a secondary color.
-    pub fn mix(c1: PrimaryColor, c2: PrimaryColor) -> SecondaryColor {
-        // --snip--
-    }
-}
+mod rgb;
+mod proxy;
+mod bifrost;
+mod testnet;
+mod validators;
+mod util;
+mod constant;
+mod struct;
+mod web;

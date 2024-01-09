@@ -1,15 +1,16 @@
-use ldk::lightning::chain::keysinterface::Sign;
-use ldk::lightning::ln::channelmanager::ChannelManager;
-use ldk::lightning::ln::channelmanager::ChannelManager as LdkChannelManager;
-use ldk::lightning::ln::msgs::{ChannelMessageHandler, RoutingMessageHandler};
-use ldk::lightning::ln::peer_handler::{MessageHandler, PeerManager};
-use ldk::lightning::ln::router::Router;
-use ldk::lightning::util::config::UserConfig;
-use ldk::ln::msgs::ChannelMessage;
-use ldk::ln::msgs::RoutingMessage;
-use ldk::util::events::EventsProvider;
-use ldk::util::logger::Logger;
-use rgb::service::RGB20;
+use lightning::chain::keysinterface::Sign;
+use lightning::ln::channelmanager::ChannelManager;
+use lightning::ln::channelmanager::ChannelManager as LdkChannelManager;
+use lightning::ln::msgs::{ChannelMessageHandler, RoutingMessageHandler};
+use lightning::ln::peer_handler::{MessageHandler, PeerManager};
+use lightning::ln::router::Router;
+use lightning::util::config::UserConfig;
+use lightning::ln::msgs::ChannelMessage;
+use lighting::ln::msgs::RoutingMessage;
+use lightning:util::events::EventsProvider;
+use lightning::util::logger::Logger;
+use lightning::lightning::OnionMessage;
+use rgbstd::interface::RGB20::{ContractIFace, Amount, ContractData, ContractID,DivisibleAsset,StandardType, Timestamp};
 
 fn main() {
     // Initialize LDK components
@@ -29,8 +30,8 @@ fn main() {
     // Initialize RGB20 service for BTC asset
     let btc_service = RGB20::new("BTC");
 
-    // Initialize RGB20 service for USDT asset
-    let usdt_service = RGB20::new("USDT");
+    // Initialize RGB20 service for RGB asset
+    let usdt_service = RGB20::new("RGB");
 
     // Register BTC and USDT services with LDK channel manager
     let mut ldk_channel_manager = LdkChannelManager::new(
@@ -43,15 +44,20 @@ fn main() {
         message_handler,
         channel_message_handler,
         routing_message_handler,
+        onion_message,
     );
 
     ldk_channel_manager.register_channel_message_handler(btc_service);
-    ldk_channel_manager.register_channel_message_handler(usdt_service);
+    ldk_channel_manager.register_channel_message_handler(rgb_asset_service);
 
     // Start LDK channel manager
     ldk_channel_manager.start();
 
     // Perform asset transfers, channel management, etc. using LDK and RGB Core
+    let mut transfers = ChannelTransfer::new;
+    let mut channel_management = ChannelMangament::new;
+    let rgb_channel = RGBChannel::new;
+    
 
     // Clean up and gracefully shut down the LDK channel manager
     ldk_channel_manager.stop();
