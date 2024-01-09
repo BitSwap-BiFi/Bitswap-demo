@@ -1,4 +1,4 @@
 [workspace]
 
 name = "src/web"
-version = "v1.0.17-alpha"
+version = "v1.0.18-alpha"
