@@ -78,7 +78,7 @@ impl Contract<SwapSchema> for SwapContract {
                     }
 
                     // Calculate the exchange rate
-                    let rate = rgb_asser_input.amount / btc_input.amount;
+                    let rate = rgb_asset_input.amount / btc_input.amount;
 
                     // Create BTC and RGB assets outputs with swapped amounts
                     let btc_output = Node {
@@ -88,7 +88,7 @@ impl Contract<SwapSchema> for SwapContract {
                         owner: btc_input.owner.clone(),
                     };
                     let usdt_output = Node {
-                        field_type: "rgb_asser_output".into(),
+                        field_type: "rgb_asset_output".into(),
                         value: Value::from(btc_input.amount),
                         issuer: rgb_asset_input.issuer.clone(),
                         owner: rgb_asset_input.owner.clone(),
