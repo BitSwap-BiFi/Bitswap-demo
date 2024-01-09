@@ -1,4 +1,4 @@
-use rgb::{
+use rgb_core::{
     contract::{
         Contract, Node, Output, Transition, TransitionType,
         Variables,
@@ -18,9 +18,9 @@ use std::convert::TryFrom;
 #[derive(Clone, Debug, PartialEq, Eq)]
 struct SwapSchema {
     btc_input: FieldType,
-    usdt_input: FieldType,
+    rgb_asset_input: FieldType,
     btc_output: FieldType,
-    usdt_output: FieldType,
+    rgb_asset_output: FieldType,
     rate: FieldType,
 }
 
