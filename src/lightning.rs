@@ -1,1 +1,3 @@
-use lightning::
+use std::lightning;
+
+use lightning::PaymentHash;
