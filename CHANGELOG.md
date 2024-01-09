@@ -2,6 +2,16 @@
 
 See last versions and releases around Bitswap development
 
+## Alpha - v1.0.18
+
+**Highlights**
+
+- Fixed dependencies
+- Core functions around CLI
+- RGB20 interface and schemata
+- Fixed AMM lib
+- RGB scripts added
+  
 ## Alpha - v1.0.17
 
 **Highlights**
