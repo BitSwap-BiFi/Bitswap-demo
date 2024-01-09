@@ -1,3 +1,9 @@
+
+use std::rgb_core;
+
+use create::Script;
+
+
 use rgb_core::{
     contract::{
         Contract, Node, Output, Transition, TransitionType,

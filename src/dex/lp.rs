@@ -1,6 +1,8 @@
 use std::rgb_core
 use std::lightning
 
+use crate::LIB_LP;
+
 use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value}
 use liquidity_provider_pool::{LiquidityProviderPool, PoolError};
 use lightning::{PaymentHash};
@@ -17,7 +19,7 @@ impl LiquidityProviderPool for MyPool {
     let liquidity= let liquiditity;
     
 }
-// Define a fuction for add liquidity
+// Define a function for add liquidity
 fn add_asset(rgb20: &mut RGB) -> Result <(), RGBError> {
      let add_fungigle = let add_rgb20;
      let add_bitcoin = let add_bitcoin;

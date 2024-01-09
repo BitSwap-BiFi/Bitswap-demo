@@ -1,9 +1,9 @@
 pub mod lib;
-pub mod amm_mangaer;
+pub mod amm_manager;
 pub mod utils;
 
 
-pub mod funtcions;
+pub mod functions;
 
 use amplify::{From, Wrapper};
 use noisy_float::types::R64;

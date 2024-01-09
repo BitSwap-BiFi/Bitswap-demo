@@ -1,5 +1,7 @@
-use std::rgb_core
-use std::rust_dlc
+use std::rgb_core;
+use std::rust_dlc;
+
+use create::DLCAsset;
 
 use rgb_core::Node;
 use dlc::{ContractOracle, ContractDescriptor};
@@ -9,15 +11,15 @@ use bitcoin::Network;
 use secp256k1::Secp256k1;
 
 fn main() {
-    // Establish connection with RGB Node
-    let node = Node::new("http://rgb-node-url:port");
+    // Establish connection with Oracle
+    let edndpoint = Endpoint::new("http://oracle");
 
     // Create a new DLC contract
     let mut dlc = ContractDescriptor::new();
     dlc.set_oracle(&node);
 
 fn oracle() {
-    let orcale_info = ContractInfo::rgb_assets;
+    let oracle_info = ContractInfo::rgb_assets;
     let oracle_message = Message::price;
     let oracle_pairs = ContractInfo:new:pairs::rgb_assets;
     let swap_pairs = ContractInfo::new::pairs:rgb_assets;
