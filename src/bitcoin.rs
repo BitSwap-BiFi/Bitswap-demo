@@ -10,3 +10,7 @@ extern crate bitcoin;
 extern crate bp;
 extern crate psbt;
 extern crate tapret;
+
+const bitcoin::p2tr;
+const bp::psbt;
+const bp::tapret;
