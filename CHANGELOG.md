@@ -2,7 +2,7 @@
 
 See last versions and releases around Bitswap development
 
-## Alpha v1.0.17
+## Alpha - v1.0.17
 
 **Highlights**
 
@@ -11,14 +11,14 @@ See last versions and releases around Bitswap development
 - OP_RETURN
 - Fixed typos
 
-## Alpha v1.0.16
+## Alpha - v1.0.16
 
 **Highlights**
 
 - Deleted package-lock.json
 - DLC Off-chain for Lightning swaps
 
-## Alpha v1.0.15
+## Alpha - v1.0.15
 
 **Highlights**
 
@@ -28,7 +28,7 @@ See last versions and releases around Bitswap development
 - RGB CLI for DEX
 - Documentation for development
 
-## Alpha v1.0.14
+## Alpha - v1.0.14
 
 **Highlights**
 
@@ -37,7 +37,7 @@ See last versions and releases around Bitswap development
 - Upgrade about AMM algorithm
 - Added testnet dependencies
 
-## Alpha v1.0.13
+## Alpha - v1.0.13
 
 **Highlights**
 
@@ -58,7 +58,7 @@ See last versions and releases around Bitswap development
 - RGB Core v0.10.8
 - Contribution upgrade
 
-## Alpha -v1.0.11
+## Alpha - v1.0.11
 
 **Highlights**
 
@@ -153,7 +153,7 @@ See last versions and releases around Bitswap development
 - API
 - DLC
 
-## Alpha -v1.0.1
+## Alpha - v1.0.1
 
 **Highlights**
 
