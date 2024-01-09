@@ -14,7 +14,7 @@ use rgb_core::{
 };
 use std::convert::TryFrom;
 
-// Define the schema for the BTC/USDT swap contract
+// Define the schema for the BTC/RGB asset swap contract
 #[derive(Clone, Debug, PartialEq, Eq)]
 struct SwapSchema {
     btc_input: FieldType,
@@ -28,9 +28,9 @@ impl SwapSchema {
     fn new() -> Self {
         Self {
             btc_input: "btc_input".into(),
-            usdt_input: "usdt_input".into(),
+            rgb_asset_input: "rgb_asset_input".into(),
             btc_output: "btc_output".into(),
-            usdt_output: "usdt_output".into(),
+            rgb_asset_output: "rgb_asset_output".into(),
             rate: "rate".into(),
         }
     }
