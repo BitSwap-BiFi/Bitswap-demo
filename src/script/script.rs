@@ -58,19 +58,19 @@ impl Contract<SwapSchema> for SwapContract {
         match transition.transition_type {
             TransitionType::Custom(ref action) => match action.as_str() {
                 "swap" => {
-                    // Get the BTC and USDT inputs
+                    // Get the BTC and RGB assets inputs
                     let btc_input = inputs
                         .iter()
                         .find(|n| n.field_type == "btc_input")
                         .ok_or("BTC input not found")?;
                     let usdt_input = inputs
                         .iter()
-                        .find(|n| n.field_type == "usdt_input")
-                        .ok_or("USDT input not found")?;
+                        .find(|n| n.field_type == "rgb_asset_input")
+                        .ok_or("RGB Asset input not found")?;
 
                     // Check that the inputs are valid
                     if btc_input.amount == Value::from(0)
-                        || usdt_input.amount == Value::from(0)
+                        || rgb_asset_input.amount == Value::from(0)
                         || btc_input.issuer != usdt_input.issuer
                         || btc_input.owner == usdt_input.owner
                     {
@@ -78,26 +78,26 @@ impl Contract<SwapSchema> for SwapContract {
                     }
 
                     // Calculate the exchange rate
-                    let rate = usdt_input.amount / btc_input.amount;
+                    let rate = rgb_asser_input.amount / btc_input.amount;
 
-                    // Create BTC and USDT outputs with swapped amounts
+                    // Create BTC and RGB assets outputs with swapped amounts
                     let btc_output = Node {
                         field_type: "btc_output".into(),
-                        value: Value::from(usdt_input.amount),
+                        value: Value::from(rgb_asset_input.amount),
                         issuer: btc_input.issuer.clone(),
                         owner: btc_input.owner.clone(),
                     };
                     let usdt_output = Node {
-                        field_type: "usdt_output".into(),
+                        field_type: "rgb_asser_output".into(),
                         value: Value::from(btc_input.amount),
-                        issuer: usdt_input.issuer.clone(),
-                        owner: usdt_input.owner.clone(),
+                        issuer: rgb_asset_input.issuer.clone(),
+                        owner: rgb_asset_input.owner.clone(),
                     };
 
                     // Return the outputs and the exchange rate
                     Ok(vec![
                         Output::new(btc_output.clone()),
-                        Output::new(usdt_output.clone()),
+                        Output::new(rgb_asset_output.clone()),
                         Output::new(Node {
                             field_type: "rate".into(),
                             value: Value::from(rate),
