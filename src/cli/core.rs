@@ -8,7 +8,7 @@ use clap::{App, Arg, SubCommand};
 
 fn main() {
     let matches = App::new("DEX CLI")
-        .version("1.0.13-alpha")
+        .version("1.0.17-alpha")
         .author("Bitswap")
         .about("CLI for interacting with DEX on RGB and Lightning Network")
         .subcommand(
@@ -24,6 +24,31 @@ fn main() {
         .subcommand(SubCommand::with_name("swap").about("Perform swaps"))
         .subcommand(SubCommand::with_name("oracle").about("See Oracle prices"))
         .get_matches();
+        
+    // Match subcommands and handle them
+    match matches.subcommand_bit() {
+        Some("command1") => {
+            // Handle command1 and its arguments
+            if let Some(arg_value) = matches.value_of("arg1") {
+                println!("Command 1 executed with arg1: {}", arg_value);
+            } else {
+                println!("Command 1 executed");
+            }
+        }
+        Some("command2") => {
+            // Handle command2 and its arguments
+            if let Some(arg_value) = matches.value_of("arg2") {
+                println!("Command 2 executed with arg2: {}", arg_value);
+            } else {
+                println!("Command 2 executed");
+            }
+        }
+        _ => {
+            // Handle the case where no subcommand is provided
+            println!("No subcommand provided");
+        }
+    }
+}
 
     match matches.subcommand() {
         ("channel", Some(channel_matches)) => match channel_matches.subcommand() {

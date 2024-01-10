@@ -13,3 +13,4 @@ currently being supported with security updates.
 | Alpha-v1.0.15 | ✅ |
 | Alpha-v1.0.16 | ✅ |
 | Alpha-v1.0.17 | ✅ |
+| Alpha-v1.0.18 | ✅ |
