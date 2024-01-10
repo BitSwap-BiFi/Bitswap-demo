@@ -2,6 +2,9 @@ use ldk::wallet::Wallet;
 use rgb::core::contract::Contract;
 use rgb::core::fungible::{Mint, OutpointValue, ValueSum};
 use rgb::core::issue::Amount;
+use rgb_contract::cli;
+use lightning::wallet::Wallet;
+use rgbstd::interface::{Mint, OutpointValue, ValueSum, Amount, ContractID};
 use std::error::Error;
 use std::io::{self, Write};
 
@@ -36,10 +39,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         match args[0] {
             "swaps" => {
            let swap = swap::BTC();
-           let swap = swap::USDT();
-            }
-            "mint" => {
-              let mint = mint::USDT();
+           let swap = swap::RGB20();
             }
             "enable_channel" => {
                  let channel = open::new();
@@ -53,13 +53,13 @@ fn main() -> Result<(), Box<dyn Error>> {
             "enter_liquidity" => {
                let mut input = String::new();
                let input = asset::BTC:();
-               let input = asset::USDT();
+               let input = asset::RGB20();
                
             }
             "exit_liquidity" => {
                let mut output = String::new();
                let output = asset::BTC:();
-               let output = asset::USDT();
+               let output = asset::RGB20();
             }
             "exit" => {
                 // Exit the program

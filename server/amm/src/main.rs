@@ -1,9 +1,11 @@
+use create::DLCManager::DLCManger;
+
 use std::rgb_core;
 use std::dlc;
 use std::rgb_std;
 
 use rgb_core::schema;
-use rgb_std::{fungible::Amount, seal::seal_confidential};
+use rgbstd::{fungible::Amount, seal::seal_confidential, ContractData, DivisibleAssetSpec, StandardTypes, Timestamp};
 
 pub(crate) type DlcManager = dlc_manager::manager::Manager<
     Arc<BitcoinCoreProvider>,
@@ -13,7 +15,7 @@ pub(crate) type DlcManager = dlc_manager::manager::Manager<
     Arc<BitcoinCoreProvider>,
     // Add RGB-related fields here
     schema::Schema,
-    schema::SchemaId,
+    schema::Schema,
     schema::Genesis,
     schema::SchemaAnchor,
     Amount,

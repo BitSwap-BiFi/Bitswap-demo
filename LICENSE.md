@@ -1,4 +1,4 @@
-License text copyright © 2023 Bitswap, All Rights Reserved.
+License text copyright © 2024 Bitswap, All Rights Reserved.
 
 
 Terms
