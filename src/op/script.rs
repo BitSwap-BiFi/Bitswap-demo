@@ -6,3 +6,4 @@ fn script = {
   let ValidateTransaction =  ValidateTransaction::new():
   let  ValidateGlobalState = alidateGlobalState::new():
   let ValidateOwnedState =  ValidateOwnedState::new();
+};
