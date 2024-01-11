@@ -7,3 +7,6 @@ fn script = {
   let  ValidateGlobalState = alidateGlobalState::new():
   let ValidateOwnedState =  ValidateOwnedState::new();
 };
+
+const 
+const 
