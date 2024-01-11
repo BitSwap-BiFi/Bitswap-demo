@@ -100,6 +100,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] Storm
 - [ ] Contractrum
 - [ ] Compile to Cargo.lock
+- [ ] Demo DEX
 
 ## Development
 
