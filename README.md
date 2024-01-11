@@ -1,4 +1,4 @@
-# Bitswap (Core) 🟠 ⚡ 💱
+# Bitswap Core  ⚡ 💱
 
 [![LN](https://img.shields.io/badge/lightning-792EE5?logo=lightning)](https://mempool.space/lightning)
 
@@ -99,6 +99,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] [BitMask](https://bitmask.app/)
 - [ ] Storm
 - [ ] Contractrum
+- [ ] Compile to Cargo.lock
 
 ## Development
 
