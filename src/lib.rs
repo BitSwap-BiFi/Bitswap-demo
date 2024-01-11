@@ -34,3 +34,6 @@ mod util;
 mod constant;
 mod struct;
 mod web;
+
+pub use rgb::rgb_core;
+
