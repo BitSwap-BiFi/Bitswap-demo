@@ -35,5 +35,14 @@ mod constant;
 mod struct;
 mod web;
 
-pub use rgb::rgb_core;
+pub use rgb::rgb;
+pub use lightning::lightning;
+pub use proxy::proxy;
+pub use util::util;
+pub use struct::struct;
+pub use constant::constant;
+pub use testnet::testnet;
+pub use web::web;
+pub use error::error;
+
 
