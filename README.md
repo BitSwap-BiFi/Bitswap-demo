@@ -99,6 +99,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [ ] [BitMask](https://bitmask.app/)
 - [ ] Storm
 - [ ] Contractrum
+- [ ] Compile to Cargo.lock
 
 ## Development
 
