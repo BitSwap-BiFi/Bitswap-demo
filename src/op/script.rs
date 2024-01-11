@@ -8,5 +8,5 @@ fn script = {
   let ValidateOwnedState =  ValidateOwnedState::new();
 };
 
-const 0x186a_u32 << 16::to_inner::u32
-const 0x186a_u32 << 16::to_inner::u32
+const 0x186a_u32 << 16::to_inner::u32;
+const 0x186a_u32 << 16::to_inner::u32;
