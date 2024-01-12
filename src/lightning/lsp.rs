@@ -2,7 +2,7 @@ use lightning::chain::keysinterface::KeysInterface;
 use lightning::ln::chan_utils::ChannelPublicKeys;
 use lightning::ln::channelmanager::ChannelManager;
 use lightning::ln::msgs::ChannelMessageHandler;
-use rgbstd::interface::{Amount, Fugible, ContractID};
+use rgbstd::interface::rgb20::{Amount, Fugible, ContractID};
 
 struct MyKeysInterface;
 
