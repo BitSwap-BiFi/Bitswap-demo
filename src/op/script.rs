@@ -9,6 +9,8 @@ fn script = {
 };
 
 fn script = {
-       let schema = let schema; 
+       let Shema = let Schema; 
+       let VM = let VM;
+};
 const 0x186a_u32 << 16::to_inner::u32;
 const 0x186a_u32 << 16::to_inner::u32;
