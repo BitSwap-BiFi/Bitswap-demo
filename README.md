@@ -59,7 +59,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - LSP for RGB20 Assets
 - PTLCs
 - Musig2
-- Bitlight Wallet & Bitmask
+- [Bitlight Wallet](https://bitlightlabs.com/) & [Bitmask](https://bitmask.app/)
 - Contractum for complex contracts
 - DCA decentralized thought USDT 
 
