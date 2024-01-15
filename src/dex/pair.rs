@@ -4,7 +4,7 @@ use create::PAIR;
 
 use rgb::traits::Validate;
 use rgb::value::Value;
-use rgbstd:::{ContractId, Consignment, Schema , Genesis};
+use rgbstd:::{ContractId, Consignment, Schema , Genesis, SubSchema, Fungible, Amount};
 
 #[derive(Clone, Debug, Eq, PartialEq)]
 enum Asset {
