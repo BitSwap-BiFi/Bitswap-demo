@@ -1,4 +1,4 @@
-# Bitswap (Core) ⚡ 💱
+# Bitswap Core  ⚡ 💱
 
 [![LN](https://img.shields.io/badge/lightning-792EE5?logo=lightning)](https://mempool.space/lightning)
 
@@ -59,46 +59,14 @@ How there's no lunch free, you can lose sats in these scenarios:
 - LSP for RGB20 Assets
 - PTLCs
 - Musig2
+- [Bitlight Wallet](https://bitlightlabs.com/) & [Bitmask](https://bitmask.app/)
 - Contractum for complex contracts
 - DCA decentralized thought USDT 
 
 ## Roadmap
 
-- [x] CLI powered by RGB CLI
-- [x] On-Chain RGB Assets with Swap using [Bitcoin Protocol](https://github.com/BP-WG/bp-core)
-- [x] RGB PSBT
-- [x] RGB wallet (new version stable)
-- [x] DLC Off chain thought Lightning swaps
-- [x] Payjoin and Taproot full implementation (WIP)
-- [x] Complete PRs pendents (WIP)
-- [x] Add [RGB CLI](https://github.com/RGB-WG/rgb) as tool complementary for CLI from DEX
-- [x] OP_RETURN (WIP)
-- [x] API integration from RLN (WIP)
-- [x] RGB Proxy (WIP)
-- [x] Complete RGB20 interface and schema (WIP)
-- [x] Mempool (WIP)
-- [x] LSP (WIP)
-- [x] Miniscript (WIP)
-- [x] Musig2 (WIP)
-- [x] Bifrost (WIP)
-- [x] Prime (WIP)
-- [x] Complete PRs pendents (WIP)
-- [x] WASM (WIP)
-- [x] RGB Core, STD, BP, AluVM and many more to v0.11 - Part.2 (WIP)
-- [x] AMM lib (WIP)
-- [x] Web server and domain
-- [ ] Liquid integration
-- [ ] User friendly UI for allow mint tokens, send, receive and swap tokens on Lightning Network and DEX
-- [ ] Taproot Channels by LDK
-- [ ] Mainnet
-- [ ] Beta app
-- [ ] UI/UX
-- [ ] Official USDT implementation by Bitifinex
-- [ ] Integration with APIs from [RGBex](https://rgbex.io/)
-- [ ] [Bitlight Wallet](https://bitlightlabs.com)
-- [ ] [BitMask](https://bitmask.app/)
-- [ ] Storm
-- [ ] Contractrum
+- [ ] Compile to Cargo.lock
+- [ ] Demo DEX (Pre beta version)
 
 ## Development
 

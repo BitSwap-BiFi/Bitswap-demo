@@ -1,7 +1,8 @@
-
 use std::rgb_core;
 
 use create::Script;
+use create::SwapSchema;
+use create::PoolSchema;
 
 
 use rgb_core::{

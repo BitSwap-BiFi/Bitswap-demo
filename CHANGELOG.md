@@ -1,4 +1,4 @@
-# Versions
+# Versions and releases
 
 See last versions and releases around Bitswap development
 
