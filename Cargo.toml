@@ -17,8 +17,7 @@ amm_contract = "amm contract"
 ldk = "invoice, paymenthash, rgb_assets"
 
 [dex.dependencies]
-swap = "pairs, ldk"
-bp-core = "tapret, op"
+swap = "0.1.0"
 
 
 [core_functions]
@@ -29,7 +28,7 @@ rust-aluvm = "0.11.0-beta.4"
 rust-lighting = "0.0.118"
 rust-baid58 = "0.4.0"
 bp-std = "0.11.0-beta.4"
-bp-core="v0.11.0-beta.4"
+bp-core="0.11.0-beta.4"
 rgb-std = "0.11.0-beta.4"
 payjoin = "0.13.0"
 rgb-schemata = "0.11.0-beta.4"
@@ -48,12 +47,12 @@ name = "rgbcore-stl"
 required-features = ["stl"]
 
 [dependencies]
-strict_encoding = "~2.3.1"
+strict_encoding = "~2.6.2"
 strict_types = "~1.6.3"
 bp-core = { version = "~0.11.0-alpha.4"}
 aluvm = { version = "~0.11.0-beta.3", features = ["std"] }
 commit_verify = { version = "~0.10.3", features = ["rand", "derive"] }
-single_use_seals = "~0.10.0"
+single_use_seals = "~0.11.0"
 baid58 = "0.4.0"
 rgb-std = { version = "0.11.0-beta.4", optional = true }
 psbt = { workspace = true }
@@ -273,7 +272,7 @@ rgb_rpc = { path = "./rgb-node/rpc" }
 
 [bp_dependencies]
 amplify = "4.0.1"
-bitcoin_hashes = "0.12.0"
+bitcoin_hashes = "0.13.0"
 bech32 = "0.9.1"
 bp-primitives = "0.10.7"
 serde_crate = { package = "serde", version = "1", features = ["derive"] }
