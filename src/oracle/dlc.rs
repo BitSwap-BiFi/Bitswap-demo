@@ -1,4 +1,4 @@
-use crate::dlc::DlcSwap;
+pub(crate) use crate::dlc::DlcSwap;
 use crate::error::BitswapError;
 use crate::logging::BitswapLogger;
 use crate::storage::BitswapStorage;
