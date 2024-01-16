@@ -53,7 +53,7 @@ bp-core = { version = "~0.11.0-alpha.4"}
 aluvm = { version = "~0.11.0-beta.3", features = ["std"] }
 commit_verify = { version = "~0.10.3", features = ["rand", "derive"] }
 single_use_seals = "~0.11.0"
-baid58 = "0.4.0"
+baid58 = "0.4.4"
 rgb-std = { version = "0.11.0-beta.4", optional = true }
 psbt = { workspace = true }
 
