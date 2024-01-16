@@ -7,7 +7,7 @@ use lightning::ln::router::Router;
 use lightning::util::config::UserConfig;
 use lightning::ln::msgs::ChannelMessage;
 use lighting::ln::msgs::RoutingMessage;
-use lightning:util::events::EventsProvider;
+use lightning::util::events::EventsProvider;
 use lightning::util::logger::Logger;
 use lightning::lightning::OnionMessage;
 use rgbstd::interface::RGB20::{ContractIFace, Amount, ContractData, ContractID,DivisibleAsset,StandardType, Timestamp};

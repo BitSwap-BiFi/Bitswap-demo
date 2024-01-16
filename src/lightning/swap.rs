@@ -3,7 +3,7 @@ use create::swap::swap;
 use std::convert::TryInto;
 use std::str::FromStr;
 use dlc::message::Oracle;
-use bp::psbt;
+use bp::psbt::psbt;
 use lightning:::PaymentHash;
 use lightning::OnionMessage;
 use lightning::OnChainSweep;
