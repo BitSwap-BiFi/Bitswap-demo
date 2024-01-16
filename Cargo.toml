@@ -58,7 +58,7 @@ rgb-std = { version = "0.11.0-beta.4", optional = true }
 psbt = { workspace = true }
 
 [lihghtning]
-lightning = { version = "0.0.118", path = "../lightning", features = ["_test_utils"] }
+lightning = { version = "0.0.119", path = "../lightning", features = ["_test_utils"] }
 lightning-invoice = { version = "0.27.0", path = "../lightning-invoice" }
 lightning-persister = { version = "0.0.119", path = "../lightning-persister" }
 lightning-block-sync = { version = "0.0.119", features = [ "rpc-client" ] }
