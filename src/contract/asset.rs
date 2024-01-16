@@ -28,6 +28,7 @@ struct RGB20Asset {
     name: String,
     symbol: String,
     swap: String,
+    asset_id: String,
     lp: String,
     schema: String,
     decimal: Number,
@@ -45,7 +46,7 @@ impl RGB20Asset {
             symbol,
             total_supply,
             decimal,
-            astet_id,
+            asset_id,
             balances: HashMap::new(),
         }
     }
