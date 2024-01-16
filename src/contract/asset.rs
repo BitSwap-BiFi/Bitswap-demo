@@ -45,7 +45,7 @@ impl RGB20Asset {
             symbol,
             total_supply,
             decimal,
-            aset_id,
+            astet_id,
             balances: HashMap::new(),
         }
     }
