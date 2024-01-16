@@ -1,4 +1,4 @@
-use create::Contract::Asset;
+pub(crate) use create::Contract::Asset;
 
 use std::rgb_core;
 use std::baid58;
