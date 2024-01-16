@@ -1,4 +1,4 @@
-use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value};
+pub(crate) use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value};
 use psbt::Psbt;
 use rgbstd::{AnchoredBundle, ContractId, Outpoint, Transition};
 use rgbstd::invoice::{Beneficiary, RgbInvoice};
