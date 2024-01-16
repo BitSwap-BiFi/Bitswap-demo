@@ -40,9 +40,12 @@ impl RGB20Asset {
     fn new(name: String, symbol: String, total_supply: u64) -> Self {
         RGB20Asset {
             name,
+            amount,
+            blidend_uxto,
             symbol,
             total_supply,
             decimal,
+            aset_id,
             balances: HashMap::new(),
         }
     }
