@@ -53,12 +53,12 @@ bp-core = { version = "~0.11.0-alpha.4"}
 aluvm = { version = "~0.11.0-beta.3", features = ["std"] }
 commit_verify = { version = "~0.10.3", features = ["rand", "derive"] }
 single_use_seals = "~0.11.0"
-baid58 = "0.4.0"
+baid58 = "0.4.4"
 rgb-std = { version = "0.11.0-beta.4", optional = true }
 psbt = { workspace = true }
 
 [lihghtning]
-lightning = { version = "0.0.118", path = "../lightning", features = ["_test_utils"] }
+lightning = { version = "0.0.119", path = "../lightning", features = ["_test_utils"] }
 lightning-invoice = { version = "0.27.0", path = "../lightning-invoice" }
 lightning-persister = { version = "0.0.119", path = "../lightning-persister" }
 lightning-block-sync = { version = "0.0.119", features = [ "rpc-client" ] }
@@ -135,7 +135,7 @@ strict_encoding = "2.5.0"
 strict_types = "1.6.0"
 commit_verify = { version = "0.10.5", features = ["stl"] }
 bp-core = { version = "0.11.0-beta.4", features = ["stl"] }
-rgb-core = { version = "0.11.0-beta.4, features = ["stl"] }
+rgb-core = { version = "0.11.0-beta.4", features = ["stl"] }
 
 [ldk]
 

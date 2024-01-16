@@ -9,7 +9,7 @@ use clap::{App, Arg, SubCommand};
 fn main() {
     let matches = App::new("DEX CLI")
         .version("1.0.17-alpha")
-        .author("Bitswap")
+        .author("Bitswap & Bitlight Labs")
         .about("CLI for interacting with DEX on RGB and Lightning Network")
         .subcommand(
             SubCommand::with_name("channel")
