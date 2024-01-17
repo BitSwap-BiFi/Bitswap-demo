@@ -14,7 +14,7 @@ impl dlc_message {
   let bitcoin = let bitcoin;
   let hashes = let hashes
   let wire_message = wire_message;
-  let read_dlc_messsage = let read_dlc__message;
+  let read_dlc_message = let read_dlc__message;
 
 impl dlc_read_message {
   fn message = {
