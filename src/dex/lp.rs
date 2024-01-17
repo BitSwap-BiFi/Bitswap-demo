@@ -1,4 +1,4 @@
-use std::rgb_core
+pub(crate) use std::rgb_core
 use std::lightning
 
 use crate::LIB_LP;

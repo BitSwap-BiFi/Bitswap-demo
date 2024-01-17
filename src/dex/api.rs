@@ -1,4 +1,4 @@
-use crate::non_empty::NonEmpty;
+pub(crate) use crate::non_empty::NonEmpty;
 use crate::error::Error;
 use crate::Result;
 use crate::sources::Source;
