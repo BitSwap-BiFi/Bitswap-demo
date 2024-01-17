@@ -23,7 +23,7 @@ swap = "0.1.0"
 [core_functions]
 rgb-core = "0.11.0" 
 rust-dlc = "0.4"
-bitswap = "1.0.13"
+bitswap = "1.0.18"
 rust-aluvm = "0.11.0"
 rust-lighting = "0.0.118"
 rust-baid58 = "0.4.0"
@@ -43,7 +43,8 @@ rgb-runtime = "0.11.0"
 rgb_binary = "src/bin/rgbcore-stl.rs"
 
 [[bin]]
-name = "rgbcore-stl"
+name = "main"
+path = "src/bin/main.rs"
 required-features = ["stl"]
 
 [dependencies]

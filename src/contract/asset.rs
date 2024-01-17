@@ -1,4 +1,4 @@
-use create::Contract::Asset;
+pub(crate) use create::Contract::Asset;
 
 use std::rgb_core;
 use std::baid58;
@@ -28,6 +28,7 @@ struct RGB20Asset {
     name: String,
     symbol: String,
     swap: String,
+    asset_id: String,
     lp: String,
     schema: String,
     decimal: Number,
@@ -40,9 +41,12 @@ impl RGB20Asset {
     fn new(name: String, symbol: String, total_supply: u64) -> Self {
         RGB20Asset {
             name,
+            amount,
+            blidend_uxto,
             symbol,
             total_supply,
             decimal,
+            asset_id,
             balances: HashMap::new(),
         }
     }

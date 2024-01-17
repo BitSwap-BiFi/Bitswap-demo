@@ -1,4 +1,4 @@
-use create::DLCManager::DLCManger;
+pub(crate) use create::DLCManager::DLCManger;
 
 use std::rgb_core;
 use std::dlc;

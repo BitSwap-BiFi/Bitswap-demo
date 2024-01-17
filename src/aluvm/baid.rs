@@ -1,3 +1,5 @@
+use aluvm::stl::alpub(crate) 
+pub use bp::bc::{stl::bitcoin_stl};
 use aluvm::stl::aluvm_stl;
 use bp::bc::stl::bitcoin_stl;
 use aluvm::byte;
