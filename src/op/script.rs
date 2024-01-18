@@ -8,7 +8,7 @@ fn script = {
   let ValidateOwnedState =  ValidateOwnedState::new();
 };
 
-fn script = {
+fn script_vm = {
        let Shema = let Schema; 
        let VM = let VM;
 };
