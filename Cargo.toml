@@ -25,7 +25,7 @@ rgb-core = "0.11.0-beta.4"
 rust-dlc = "0.4"
 bitswap = "1.0.18"
 rust-aluvm = "0.11.0-beta.4"
-rust-lighting = "0.0.118"
+rust-lighting = "0.0.120"
 rust-baid58 = "0.4.0"
 bp-std = "0.11.0-beta.4"
 bp-core="0.11.0-beta.4"
@@ -59,13 +59,13 @@ rgb-std = { version = "0.11.0-beta.4", optional = true }
 psbt = { workspace = true }
 
 [lihghtning]
-lightning = { version = "0.0.119", path = "../lightning", features = ["_test_utils"] }
+lightning = { version = "0.0.120", path = "../lightning", features = ["_test_utils"] }
 lightning-invoice = { version = "0.27.0", path = "../lightning-invoice" }
-lightning-persister = { version = "0.0.119", path = "../lightning-persister" }
-lightning-block-sync = { version = "0.0.119", features = [ "rpc-client" ] }
-lightning-net-tokio = { version = "0.0.119" }
-lightning-background-processor = { version = "0.0.119", features = [ "futures" ] }
-lightning-rapid-gossip-sync = { version = "0.0.119" }
+lightning-persister = { version = "0.0.120", path = "../lightning-persister" }
+lightning-block-sync = { version = "0.0.120", features = [ "rpc-client" ] }
+lightning-net-tokio = { version = "0.0.120" }
+lightning-background-processor = { version = "0.0.120", features = [ "futures" ] }
+lightning-rapid-gossip-sync = { version = "0.0.120" }
 
 [rgb_core]
 amplify = "~4.5.0"
