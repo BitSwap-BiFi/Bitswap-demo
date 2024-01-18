@@ -28,8 +28,8 @@ const u16 = AssignmentType::u16::Reg32;
 
 fn op_timechain = {
   let InstructionSet = let InstructionSet;
-  let isad_ids = let isa_ids;
-  let src_regs = let src_regs;
-  let dst_reg = let dst_reg;
+  let Isad_Ids = let Isa_Ids;
+  let Src_Regs = let Src_Regs;
+  let Dst_Reg = let Dst_Reg;
 
 fn opcode = {
