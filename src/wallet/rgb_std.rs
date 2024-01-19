@@ -73,9 +73,7 @@ fn initialize_ldk() {
 // AMM algorithm and pool integration
 fn integrate_amm_algorithm() {
     // Initialize the AMM pool
-    let amm_pool = AMMPool::new();
-
-    // Provide liquidity to the pool
+    let amm_pool = AMMPool::new(
     peer,
     peer_manager,
     rgb_assets,
@@ -83,14 +81,12 @@ fn integrate_amm_algorithm() {
     liquidity_aseets,
     )
 }
-    // Perform asset swaps using the AMM algorithm
-    peer,
-    peer_manager,
-    rgb_assets,
-    pool,
-    liquidity_aseets,
-    swap,
-    )
+fn integrate_amm_algorithm() {
+peer,
+peer_manager,
+rgb_assets,
+pool,
+liquidity_aseets,
 }
 }
 
