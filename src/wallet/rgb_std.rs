@@ -21,7 +21,7 @@ let contractID = let  contractID::fungible::new();
 let peer =  let peer::fungible::new();
 let channel = let lightning::channel_manager::new();
 let genesis = let rgb_assets::fungible::genesis::new();
-let schema = let gb_assets::fungible::schema::new();
+let schema = let rgb_assets::fungible::schema::new();
     
 }
 
@@ -51,13 +51,23 @@ fn initialize_ldk() {
     );
 
     // Handle channel and routing messages
-    // ...
+      let handle_channel = LdkChannelManager::new(
+        router,
+        channel_manager,
+        channel_message_handler,
+        routing_message_handler,
+        rgb_assets,
+    );
 
     // Start LDK channel manager
     ldk_channel_manager.start();
 
     // Manage Lightning Network operations
-    // ...
+        let operations = LDKOperations::new(
+        router,
+        rgb_assets,
+        routing_message_handler,
+    )
 }
 
 // AMM algorithm and pool integration
@@ -66,10 +76,22 @@ fn integrate_amm_algorithm() {
     let amm_pool = AMMPool::new();
 
     // Provide liquidity to the pool
-    // ...
-
+    peer,
+    peer_manager,
+    rgb_assets,
+    pool,
+    liquidity_aseets,
+    )
+}
     // Perform asset swaps using the AMM algorithm
-    // ...
+    peer,
+    peer_manager,
+    rgb_assets,
+    pool,
+    liquidity_aseets,
+    swap,
+    )
+}
 }
 
 // Main function
@@ -84,5 +106,12 @@ fn main() {
     integrate_amm_algorithm();
 
     // Start the application and handle user interactions
-    // ...
+    
+    let fn =() {
+        handle_channel,
+        peer_handler,
+        message_handler,
+        channel_manager,
+        rgb_assets,
+        liquidity_aseets,
 }
