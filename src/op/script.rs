@@ -1,5 +1,6 @@
-use rgb_core::Schema::Script;
-use rgb_core::vm::Script;
+pub(crate) use rgb_core::Schema::Script;
+pub(crate) use rgb_core::vm::Script;
+
 
 fn script = {
   let ValidateGenesis =  ValidateGenesis::new();
