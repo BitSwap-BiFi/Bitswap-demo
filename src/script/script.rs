@@ -118,6 +118,6 @@ impl Contract<SwapSchema> for SwapContract {
 #[derive(Clone, Debug, PartialEq, Eq)]
 struct PoolSchema {
     btc_pool_addr: FieldType,
-    usdt_poo_addr: FieldType,
+    rgb_asset_pool_addr: FieldType,
 
 
