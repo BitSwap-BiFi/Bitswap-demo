@@ -1,3 +1,3 @@
-pub(crate) use crate::peer;
-use dlc_massage::
+pub(crate) use crate::Peer;
+use dlc_massage::Message_Handler;
 
