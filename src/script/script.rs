@@ -121,3 +121,9 @@ struct PoolSchema {
     rgb_asset_pool_addr: FieldType,
 
 
+// Define AluVM to scripting
+
+#[derive(Clone, Debug,RgbIsa, AluLib), OsAssets,]
+let code = [RgbIsa::Contract(ContractOp::PcVs(OS_ASSETS))];
+let alu_lib = Lib::assemble(&code).unwrap();
+let alu_id = alu_lib.id();
