@@ -19,7 +19,9 @@ use rgb_core::{
     validation::{TxBuilder, TxValidator},
     Value,
 };
-use aluvm::Isa
+use aluvm::Isa::ByteCode::{ControlFlow, Move, Put};
+use aluvm::Isa::OpCode::{U8};
+        
 use std::convert::TryFrom;
 
 // Define the schema for the BTC/RGB asset swap contract
