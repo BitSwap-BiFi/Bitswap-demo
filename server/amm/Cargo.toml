@@ -5,19 +5,19 @@ edition = "2021"
 
 [dependencies]
 
-config = { version = "1", features = ["full"] }
-lib  = { version = "1", features = ["full"] }
-api = { version ="1", features = ["full"] }
+config = { version = "0.13.4", features = ["full"] }
+lib  = { version = "0.13.4", features = ["full"] }
+api = { version ="0.2.0", features = ["full"] }
 
 [[bin]]
-name = { "config" }
+name = "config" 
 path = { version = "1" , features = ["src/config.rs"] }
 
 [[bin]]
-name = { "api" }
+name =  "api" 
 path = { version = "1" , features = ["src/api.rs"] }
 
 [[bin]]
-name = { "main" }
+name = "main" 
 path = { version = "1" , features = ["src/main.s"] }
 
