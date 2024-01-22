@@ -60,3 +60,12 @@ pub const SCRIPT = "SCRIPT";
 
 pub const BAID = "BAID";
 pub const STRICT = "STRICT";
+
+// Bitcoin
+
+pub const RBF = "RBF";
+pub const XPUB = "XPUB";
+pub const NETWORK = "NETWORK";
+pub const TAPTREE = "TAPTREE";
+pub const MUSIG2 = "MUSIG2";
+pub const MINISCRIPT = "MINISCRIPT";
