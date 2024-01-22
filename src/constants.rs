@@ -12,6 +12,19 @@ pub const PAIR = "PAIR";
 
 // Oracle
 
+pub const DLC = "DLC";
+pub const PEER = "PEER";
+pub const SERVER = "SERVER";
+
 // Bin
+pub const MAIN = "MAIN";
 
 // Lightning
+
+// CLI
+
+// Contract
+
+// Script
+
+// Wallet
