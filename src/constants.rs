@@ -60,3 +60,10 @@ pub const SCRIPT = "SCRIPT";
 
 pub const BAID = "BAID";
 pub const STRICT = "STRICT";
+
+// Server AMM
+
+pub const API = "API";
+pub const CONFIG = "CONFIG";
+pub const LIB = "LIB";
+pub const MAIN = "MAIN";
