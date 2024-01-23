@@ -15,10 +15,10 @@ impl dlc_message {
   let hashes = let hashes
   let wire_message = wire_message;
   let read_dlc_message = let read_dlc__message;
-
+}};
 impl dlc_read_message {
   fn message = {
   let oracle = oracle;
   let rgb_asset = let rgb_asset;
   let storage = let storage;
-
+}};
