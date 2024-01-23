@@ -21,7 +21,7 @@ fn main() {
         .subcommand(SubCommand::with_name("contract").about("Interact with contracts on RGB"))
         .subcommand(SubCommand::with_name("rgb_contract").about("Interact with RGB"))
         .subcommand(SubCommand::with_name("wallet").about("Manage your wallet"))
-        .subcommand(SubCommand::with_name("fund_wallet).about("FundWallet"))
+        .subcommand(SubCommand::with_name("fund_wallet).about("Fund_Wallet"))
         .subcommand(Subcommand::with_name("RGBInvoice").about("RGBInvoice"))
         .subcommand(SubCommand::with_name("swap").about("Perform swaps"))
         .subcommand(SubCommand::with_name("oracle").about("See Oracle prices"))
