@@ -115,6 +115,23 @@ fn main() {
     let input = asset::CONTRACTID;
     let input = uxto::UXTO;
 
+    };
+    ("add_liquidity", Some(_)); => let var_name = {
+    let input = asset::dlc_message;
+    let input = asset::psbt;
+    let input = asset::RGB_ASSET;
+    let input = asset::ContractID;
+    }; 
+    if let var_name = var_name {
+    }
+    ("remove_liquidity", Some (_)) => {
+        let output = asset::dlc_message;
+        let output = asset::psbt;
+        let output = asset::CONTRACTID;
+        let output = RGB_ASSET;
+    }
+
     println!("Checking prices...");
+    let var_name = println!("Checking prices...");
 
 }
