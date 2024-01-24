@@ -8,7 +8,7 @@ use clap::{App, Arg, SubCommand};
 
 fn main() {
     let matches = App::new("DEX CLI")
-        .version("1.0.17-alpha")
+        .version("1.0.19-alpha")
         .author("Bitswap & Bitlight Labs")
         .about("CLI for interacting with DEX on RGB and Lightning Network")
         .subcommand(
