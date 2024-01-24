@@ -25,8 +25,8 @@ fn main() {
         .subcommand(Subcommand::with_name("RGBInvoice").about("RGBInvoice"))
         .subcommand(SubCommand::with_name("swap").about("Perform swaps"))
         .subcommand(SubCommand::with_name("oracle").about("See Oracle prices"))
-        .subcommand(SubCommand::with_name("add_liquidity".about("Add liquidity"))
-        .subcommand(SubCommand::with_name("remove_liquidity".about("Remove liquidity"))
+        .subcommand(SubCommand::with_name("add_liquidity").about("Add liquidity"))
+        .subcommand(SubCommand::with_name("remove_liquidity").about("Remove liquidity"))
         .get_matches();
         
     // Match subcommands and handle them
