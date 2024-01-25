@@ -40,13 +40,13 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 ### Features
 
-- Payjoin
+- [Payjoin](https://payjoin.org/)
 - Universal swaps, atomic swaps via on-chain and Lightning Network
--  P2P Swaps without intermediary with DLCs
+- P2P Swaps without intermediary with DLCs
 - Taproot
 - LDK and RGB Lightning Node
 - Prime & Liquid
-- Bifrost
+- [Bifrost](https://www.rgbfaq.com/glossary/bifrost)
 - CLI powered by RGB CLI 
 - BOLT12
 - Non custodial via on-chain and Lightning Network
