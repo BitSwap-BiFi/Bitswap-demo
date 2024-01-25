@@ -30,7 +30,6 @@ rust-baid58 = "0.4.0"
 bp-std = "0.11.0-beta.4"
 bp-core="0.11.0-beta.4"
 rgb-std = "0.11.0-beta.4"
-payjoin = "0.13.0"
 rgb-schemata = "0.11.0-beta.4"
 strict_types = "1.6.3"
 rgb-runtime = "0.11.0-beta.4"
@@ -230,19 +229,6 @@ bp-dbc = { version = "0.11.0-beta.1", path = "./dbc" }
 bp-seals = { version = "0.11.0-beta.1", path = "./seals" }
 secp256k1 = { version = "0.28.0", features = ["global-context"] }
 
-[payjoin]
-anyhow = "1.0.70"
-base64 = "0.21.2"
-bip21 = "0.3.1"
-bitcoincore-rpc = "0.17.0"
-clap = "4.1.4"
-config = "0.13.3"
-env_logger = "0.10.0"
-log = "0.4.7"
-reqwest = { version = "0.11.4", features = ["blocking"] }
-rcgen = { version = "0.11.1", optional = true }
-serde = { version = "1.0.160", features = ["derive"] }
-payjoin = { version = "0.12.0", features = ["send", "receive", "rand"] }
 
 [lnp]
 
