@@ -6,6 +6,7 @@ use create::swap;
 use create::pool;
 use create::api;
 
+#[derive]
 use bitswap_core::{
   rgb_core::{
   rgbstd::{
