@@ -91,7 +91,7 @@ The code is licensed under either:
 
 ## Ossification DEX
 
-In this Core, we'll not integrate with Sidechains non built on RGB and altcoins beyond RGB, Bitcoin, Prime, Liquid, Bifrost, RGB wallets and Lightning Network.
+In this Core, we'll not integrate with Sidechains non built on RGB and altcoins beyond RGB, Bitcoin, Prime, Liquid, Bifrost, Payjoin, RGB wallets and Lightning Network.
 
 ## FAQ
 
