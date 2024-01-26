@@ -10,6 +10,8 @@ Welcome to the Documentation around Bitswap
 - RGB Core
 - RGB STD
 - RGB Schemata
+- Strict Type
+- AluVM
 - Rust
 - Rust Lightning
 - Bitcoin Core Node
