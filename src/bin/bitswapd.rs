@@ -10,5 +10,5 @@ use create::api;
 use bitswap_core::{
   rgb_core::{
   rgbstd::{
-  rgbschemata::{
+  rgbs_schemata::{
   rgb_contract::{
