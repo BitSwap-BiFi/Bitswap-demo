@@ -23,7 +23,7 @@ swap = "0.1.0"
 [core_functions]
 rgb-core = "0.11.0-beta.4" 
 rust-dlc = "0.4"
-bitswap = "1.0.18"
+bitswap = "1.0.19"
 rust-aluvm = "0.11.0-beta.4"
 rust-lighting = "0.0.120"
 rust-baid58 = "0.4.0"
