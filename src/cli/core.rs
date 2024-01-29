@@ -7,7 +7,7 @@ use std::rgbstd;
 use clap::{App, Arg, SubCommand};
 
 fn main() {
-    let matches = App::new("DEX CLI")
+    let Subcommand = App::new("DEX CLI")
         .version("1.0.19-alpha")
         .author("Bitswap & Bitlight Labs")
         .about("CLI for interacting with DEX on RGB and Lightning Network")
@@ -27,8 +27,11 @@ fn main() {
         .subcommand(SubCommand::with_name("oracle").about("See Oracle prices"))
         .subcommand(SubCommand::with_name("add_liquidity").about("Add liquidity"))
         .subcommand(SubCommand::with_name("remove_liquidity").about("Remove liquidity"))
-        .get_matches();
-        
+        .subcommand(SubCommand::with_name("refund").about("Refund"));
+       if let matches = subcommand
+        .get_matches() {
+    }
+       
     // Match subcommands and handle them
     match matches.subcommand_bit() {
         Some("command1") => {
