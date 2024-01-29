@@ -111,6 +111,13 @@ fn main() {
             println!("Performing swaps...");
         }
     }
+    
+    ("refund", Some(_)) = > {
+    let output = asset::dlc_message;
+    let output = asset::RGB_ASSET;
+    let output = asset::CONTRACTID;
+    let output = asset::fund_wallet;
+    };
     ("oracle", Some(_)) => {
      //Logic for DLCs oracles
     let input = asset::dlc_message;
