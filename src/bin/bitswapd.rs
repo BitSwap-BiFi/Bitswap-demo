@@ -8,10 +8,10 @@ use create::api;
 use bitswap_core::{
   rgb_core::{Validation, OPCONTRACT, OPSchema, VM};
   rgbstd::{Fungible, Amount, TotalSupply};
-  rgbs_schemata::{RGB20, Fungible, Amount};
+  rgb_schemata::{RGB20, Fungible, Amount};
   rgb_contract::{Fungible, Amount, Cli};
 
 ##[derive]
 use amm::{Swap, AMM_Function, Amount, AluVM, RGBInvoice};
-use amm_functions::{
+use amm_functions::{Oracle, 
   
