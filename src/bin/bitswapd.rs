@@ -12,3 +12,6 @@ use bitswap_core::{
   rgbstd::{Fungible, Amount, TotalSupply};
   rgbs_schemata::{RGB20, Fungible, Amount};
   rgb_contract::{Fungible, Amount, Cli};
+
+##[derive]
+use amm::{Swap, AMM_Function, Amount, AluVM, RGBInvoice};
