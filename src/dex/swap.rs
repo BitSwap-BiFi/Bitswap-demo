@@ -61,6 +61,9 @@ fn swap_accepted() {
     let dlc_accepted = secp256k1_zkp();
     let psbt_accepted = psbt();
     let tapr_accepted = tapr();
+    if let refund = refund ();
+
+}
 }
 // Swap complete
 fn swp_out() {
@@ -69,6 +72,8 @@ fn swp_out() {
     let dlc_out = dlc();
     let invoice_out = invoice();
     let swap_fee_out = 0.05;
+    if let refund = refund (); 
+    }
 }
 
 fn dlc() {
@@ -96,7 +101,7 @@ fn psbt () {
   let public_key = ANYONECANPAY::SIGHASH_DEFAULT::PublicKey::from_secret_key(&ANYONECANPAY::SIGHASH_DEFAULT, &privatekey);
   let message =ANYONECANPAY::SIGHASH_DEFAULT::message::from_slice.unwrap();
   let sig = ANYONECANPAY::SIGHASH_DEFAULT::sign(&message, &privatekey);
-      
+   if let var_name = let refund::new(); 
 
  }
 // Taproot implementation
