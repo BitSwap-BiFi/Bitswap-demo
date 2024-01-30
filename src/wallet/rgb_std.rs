@@ -111,3 +111,4 @@ fn main() {
         rgb_assets,
         liquidity_aseets,
 }
+};
