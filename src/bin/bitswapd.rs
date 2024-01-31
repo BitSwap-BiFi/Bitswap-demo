@@ -27,3 +27,4 @@ use dex::{LP, P2TR, Pair, Pool, AMMManger, Lib , Utils};
 use oracle::{DLC, Mod, Peer, Server};
 use aluvm::{Baid, Strict};
 use server::amm::{API, Config, Main, Lib};
+use contract::{DLC, RGB20, Asset};
