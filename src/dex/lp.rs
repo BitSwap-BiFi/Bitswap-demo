@@ -1,4 +1,5 @@
-pub(crate) use std::rgb_core
+pub(crate) use std::rgb_core;
+pub(crate) use Pool;
 use std::lightning
 
 use crate::LIB_LP;
@@ -8,11 +9,11 @@ use liquidity_provider_pool::{LiquidityProviderPool, PoolError};
 use lightning::{PaymentHash};
 
 // Define a struct for the liquidity provider pool
-struct MyPool {
+struct Pool {
     let pool = let rgb_asset_pool;
     let rgb_asset = let rgb_asset_pool;
     let liquidity= let liquiditity;
-
+}
 impl LiquidityProviderPool for MyPool {
     let pool = let rgb_asset_pool;
     let rgb_asset = let rgb_asset_pool;
