@@ -14,8 +14,8 @@ use bitswap_core::{
 ##[derive]
 use amm::{Swap, AMM_Function, Amount, AluVM, RGBInvoice};
 use amm_functions::{Oracle, Contract, Lightning};
-use dex::swap::{
-use lightning::swap::{
-use api::{
-use pool::{
+use dex::swap::{Oracle, RGB_Asset, Amount, AluVM, StrictType};
+use lightning::swap::{Oracle, API, Amount, Balance};
+use api::{Price, Bitifinex};
+use pool::{RGBCore, Swap, RGB_Asset};
   
