@@ -25,5 +25,5 @@ use cli::{CLI, Command, Cre};
 use bin::bitswapd;
 use dex::{LP, P2TR, Pair, Pool, AMMManger, Lib , Utils};
 use oracle::{DLC, Mod, Peer, Server};
-use alvum::{Baid, Strict};
+use aluvm::{Baid, Strict};
 use server::amm::{API, Config, Main, Lib};
