@@ -3,8 +3,8 @@
 members = ["rgb-core", "rust-dlc", "bitswap", "payjoin", "aluvm", "baid58"]
 
 [package]
-name = "Bitswap-Core"
-version = "1.0.18-alpha"
+name = "Bitswap_Core"
+version = "1.0.19-alpha"
 edition = "2021"
 description = "AMM DEX on RGB Protocol and Lightning Network"
 license = "Business Source License 1.1"
@@ -23,16 +23,16 @@ swap = "0.1.0"
 [core_functions]
 rgb-core = "0.11.0-beta.4" 
 rust-dlc = "0.4"
-bitswap = "1.0.13"
+bitswap = "1.0.19"
 rust-aluvm = "0.11.0-beta.4"
-rust-lighting = "0.0.118"
+rust-lighting = "0.0.120"
 rust-baid58 = "0.4.0"
 bp-std = "0.11.0-beta.4"
 bp-core="0.11.0-beta.4"
 rgb-std = "0.11.0-beta.4"
-payjoin = "0.13.0"
 rgb-schemata = "0.11.0-beta.4"
 strict_types = "1.6.3"
+strict_encoding = "2.6.2"
 rgb-runtime = "0.11.0-beta.4"
 
 
@@ -43,7 +43,8 @@ rgb-runtime = "0.11.0-beta.4"
 rgb_binary = "src/bin/rgbcore-stl.rs"
 
 [[bin]]
-name = "rgbcore-stl"
+name = "main"
+path = "src/bin/main.rs"
 required-features = ["stl"]
 
 [dependencies]
@@ -53,18 +54,18 @@ bp-core = { version = "~0.11.0-alpha.4"}
 aluvm = { version = "~0.11.0-beta.3", features = ["std"] }
 commit_verify = { version = "~0.10.3", features = ["rand", "derive"] }
 single_use_seals = "~0.11.0"
-baid58 = "0.4.0"
+baid58 = "0.4.4"
 rgb-std = { version = "0.11.0-beta.4", optional = true }
 psbt = { workspace = true }
 
 [lihghtning]
-lightning = { version = "0.0.118", path = "../lightning", features = ["_test_utils"] }
+lightning = { version = "0.0.120", path = "../lightning", features = ["_test_utils"] }
 lightning-invoice = { version = "0.27.0", path = "../lightning-invoice" }
-lightning-persister = { version = "0.0.119", path = "../lightning-persister" }
-lightning-block-sync = { version = "0.0.119", features = [ "rpc-client" ] }
-lightning-net-tokio = { version = "0.0.119" }
-lightning-background-processor = { version = "0.0.119", features = [ "futures" ] }
-lightning-rapid-gossip-sync = { version = "0.0.119" }
+lightning-persister = { version = "0.0.120", path = "../lightning-persister" }
+lightning-block-sync = { version = "0.0.120", features = [ "rpc-client" ] }
+lightning-net-tokio = { version = "0.0.120" }
+lightning-background-processor = { version = "0.0.120", features = [ "futures" ] }
+lightning-rapid-gossip-sync = { version = "0.0.120" }
 
 [rgb_core]
 amplify = "~4.5.0"
@@ -135,7 +136,7 @@ strict_encoding = "2.5.0"
 strict_types = "1.6.0"
 commit_verify = { version = "0.10.5", features = ["stl"] }
 bp-core = { version = "0.11.0-beta.4", features = ["stl"] }
-rgb-core = { version = "0.11.0-beta.4, features = ["stl"] }
+rgb-core = { version = "0.11.0-beta.4", features = ["stl"] }
 
 [ldk]
 
@@ -229,19 +230,6 @@ bp-dbc = { version = "0.11.0-beta.1", path = "./dbc" }
 bp-seals = { version = "0.11.0-beta.1", path = "./seals" }
 secp256k1 = { version = "0.28.0", features = ["global-context"] }
 
-[payjoin]
-anyhow = "1.0.70"
-base64 = "0.21.2"
-bip21 = "0.3.1"
-bitcoincore-rpc = "0.17.0"
-clap = "4.1.4"
-config = "0.13.3"
-env_logger = "0.10.0"
-log = "0.4.7"
-reqwest = { version = "0.11.4", features = ["blocking"] }
-rcgen = { version = "0.11.1", optional = true }
-serde = { version = "1.0.160", features = ["derive"] }
-payjoin = { version = "0.12.0", features = ["send", "receive", "rand"] }
 
 [lnp]
 

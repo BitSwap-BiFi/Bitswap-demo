@@ -1,4 +1,4 @@
-pub use aluvm::stl::aluvm_stl;
+pub(crate) use aluvm::stl::aluvm_stl;
 pub use aluvm::vm::{AluScript, EntryPoint, RgbIsa};
 pub use bp::bc::stl::bitcoin_stl;
 pub use bp::stl::bp_core_stl;

@@ -1,4 +1,5 @@
-use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value};
+pub(crate) use rgb_core::{self, fungible::Amount, schema::constants::*, schema::scripts::*, util::Value};
+pub(crate) use swap::Refund;
 use psbt::Psbt;
 use rgbstd::{AnchoredBundle, ContractId, Outpoint, Transition};
 use rgbstd::invoice::{Beneficiary, RgbInvoice};
@@ -7,8 +8,9 @@ use bp::{Bytes32, Wrapper};
 use bp::psbt::dbc::tapret::opret;
 use bp::opret::psbt::raw::ProprietaryKey;
 use bp::tapret:psbt::Output;
-use bp:Vout;
+use bp::Vout;
 use bp::dbc::tapret::TapretPathProof;
+use bp::{Dbc, Mdc, Psbt};
 use bpstd::secp256k1::serde::{Deserialize, Serialize};
 use strict_encoding::{StrictDeserialize, StrictSerialize};
 use std::str::FromStr;
@@ -60,6 +62,9 @@ fn swap_accepted() {
     let dlc_accepted = secp256k1_zkp();
     let psbt_accepted = psbt();
     let tapr_accepted = tapr();
+    if let refund = refund ();
+
+}
 }
 // Swap complete
 fn swp_out() {
@@ -68,6 +73,8 @@ fn swp_out() {
     let dlc_out = dlc();
     let invoice_out = invoice();
     let swap_fee_out = 0.05;
+    if let refund = refund (); 
+    }
 }
 
 fn dlc() {
@@ -95,7 +102,7 @@ fn psbt () {
   let public_key = ANYONECANPAY::SIGHASH_DEFAULT::PublicKey::from_secret_key(&ANYONECANPAY::SIGHASH_DEFAULT, &privatekey);
   let message =ANYONECANPAY::SIGHASH_DEFAULT::message::from_slice.unwrap();
   let sig = ANYONECANPAY::SIGHASH_DEFAULT::sign(&message, &privatekey);
-      
+   if let var_name = let refund::new(); 
 
  }
 // Taproot implementation

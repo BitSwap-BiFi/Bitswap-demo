@@ -19,6 +19,9 @@ use rgb_core::{
     validation::{TxBuilder, TxValidator},
     Value,
 };
+use aluvm::Isa::ByteCode::{ControlFlow, Move, Put};
+use aluvm::Isa::OpCode::{U8};
+        
 use std::convert::TryFrom;
 
 // Define the schema for the BTC/RGB asset swap contract
@@ -118,6 +121,12 @@ impl Contract<SwapSchema> for SwapContract {
 #[derive(Clone, Debug, PartialEq, Eq)]
 struct PoolSchema {
     btc_pool_addr: FieldType,
-    usdt_poo_addr: FieldType,
+    rgb_asset_pool_addr: FieldType,
 
 
+// Define AluVM to scripting
+
+#[derive(Clone, Debug,RgbIsa, AluLib), OsAssets,]
+let code = [RgbIsa::Contract(ContractOp::PcVs(OS_ASSETS))];
+let alu_lib = Lib::assemble(&code).unwrap();
+let alu_id = alu_lib.id();

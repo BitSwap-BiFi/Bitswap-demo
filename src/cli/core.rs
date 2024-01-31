@@ -7,9 +7,9 @@ use std::rgbstd;
 use clap::{App, Arg, SubCommand};
 
 fn main() {
-    let matches = App::new("DEX CLI")
-        .version("1.0.17-alpha")
-        .author("Bitswap")
+    let Subcommand = App::new("DEX CLI")
+        .version("1.0.19-alpha")
+        .author("Bitswap & Bitlight Labs")
         .about("CLI for interacting with DEX on RGB and Lightning Network")
         .subcommand(
             SubCommand::with_name("channel")
@@ -21,10 +21,17 @@ fn main() {
         .subcommand(SubCommand::with_name("contract").about("Interact with contracts on RGB"))
         .subcommand(SubCommand::with_name("rgb_contract").about("Interact with RGB"))
         .subcommand(SubCommand::with_name("wallet").about("Manage your wallet"))
+        .subcommand(SubCommand::with_name("fund_wallet").about("fund_wallet"))
+        .subcommand(Subcommand::with_name("RGBInvoice").about("RGBInvoice"))
         .subcommand(SubCommand::with_name("swap").about("Perform swaps"))
         .subcommand(SubCommand::with_name("oracle").about("See Oracle prices"))
-        .get_matches();
-        
+        .subcommand(SubCommand::with_name("add_liquidity").about("Add liquidity"))
+        .subcommand(SubCommand::with_name("remove_liquidity").about("Remove liquidity"))
+        .subcommand(SubCommand::with_name("refund").about("Refund"));
+       if let matches = subcommand
+        .get_matches() {
+    }
+       
     // Match subcommands and handle them
     match matches.subcommand_bit() {
         Some("command1") => {
@@ -104,6 +111,13 @@ fn main() {
             println!("Performing swaps...");
         }
     }
+    
+    ("refund", Some(_)) = > {
+    let output = asset::dlc_message;
+    let output = asset::RGB_ASSET;
+    let output = asset::CONTRACTID;
+    let output = asset::fund_wallet;
+    };
     ("oracle", Some(_)) => {
      //Logic for DLCs oracles
     let input = asset::dlc_message;
@@ -111,6 +125,23 @@ fn main() {
     let input = asset::CONTRACTID;
     let input = uxto::UXTO;
 
+    };
+    ("add_liquidity", Some(_)); => let var_name = {
+    let input = asset::dlc_message;
+    let input = asset::psbt;
+    let input = asset::RGB_ASSET;
+    let input = asset::ContractID;
+    }; 
+    if let var_name = var_name {
+    }
+    ("remove_liquidity", Some (_)) => {
+        let output = asset::dlc_message;
+        let output = asset::psbt;
+        let output = asset::CONTRACTID;
+        let output = RGB_ASSET;
+    }
+
     println!("Checking prices...");
+    let var_name = println!("Checking prices...");
 
 }

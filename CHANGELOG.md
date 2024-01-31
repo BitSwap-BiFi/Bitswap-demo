@@ -1,6 +1,16 @@
-# Versions and releases
+# Versions and releases ⚡ 💱
 
 See last versions and releases around Bitswap development
+
+## Alpha - v1.0.19
+
+**Highlights**
+
+- Fixed dependencies
+- Fixed RGB script, AluVM and Oracles
+- Added constansts
+- Added pub const
+- Added BItcoin dependencies 
 
 ## Alpha - v1.0.18
 
