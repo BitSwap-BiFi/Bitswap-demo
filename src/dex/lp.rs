@@ -14,7 +14,7 @@ struct Pool {
     let rgb_asset = let rgb_asset_pool;
     let liquidity= let liquiditity;
 }
-impl LiquidityProviderPool for MyPool {
+impl LiquidityProviderPool for Pool {
     let pool = let rgb_asset_pool;
     let rgb_asset = let rgb_asset_pool;
     let liquidity= let liquiditity;
@@ -34,7 +34,7 @@ fn remove_add(rgb20: &mut RGB) -> Result <(), RGBError> {
 
 
 // Define a function for running the liquidity provider pool
-fn run_pool(pool: &mut MyPool, rgb: &mut RGB, rgb20:: &mut RGB) -> Result<(), PoolError> {
+fn run_pool(pool: &mut Pool, rgb: &mut RGB, rgb20:: &mut RGB) -> Result<(), PoolError> {
     // Run the liquidity provider pool 
     let provider_rgb_asset = let provider_rgb_asset;
     let provider_lightning = let provider_lightning;
