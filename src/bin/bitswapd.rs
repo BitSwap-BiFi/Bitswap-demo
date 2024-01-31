@@ -4,7 +4,7 @@ use create::swap;
 use create::pool;
 use create::api;
 
-#[derive]
+##[derive]
 use bitswap_core::{
   rgb_core::{Validation, OPCONTRACT, OPSchema, VM};
   rgbstd::{Fungible, Amount, TotalSupply};
@@ -14,8 +14,8 @@ use bitswap_core::{
 ##[derive]
 use amm::{Swap, AMM_Function, Amount, AluVM, RGBInvoice};
 use amm_functions::{Oracle, Contract, Lightning};
-use dex::swap::{Oracle, RGB_Asset, Amount, AluVM, StrictType};
+use dex::swap::{Oracle, RGBAsset, Amount, AluVM, StrictType};
 use lightning::swap::{Oracle, API, Amount, Balance};
 use api::{Price, Bitifinex};
-use pool::{RGBCore, Swap, RGB_Asset};
+use pool::{RGBCore, Swap, RGBAsset};
   
