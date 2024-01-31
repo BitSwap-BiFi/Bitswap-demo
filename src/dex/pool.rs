@@ -8,8 +8,9 @@ fn main() {
     // Set up your RGB contract and polling logic
     let contract = Contract::new();
 
-    // Simulate a user's choice: BTC or USDT
+    // User's choice: BTC or RGB asset
     let user_choice = "BTC";
+    let user_choice = "RGB_ASSET";
 
     // Execute the contract using AluVM
     let mut executor = Executor::new(&contract);
