@@ -6,7 +6,20 @@ pub (crate)use DLC;
 pub (crate)use Oracle;
 pub (crate)use Lightning;
 
+// Swap function
+async fn swap() {
+    println!("Swap started");
+    sleep(Duration::from_secs(2)).await;
+    println!("Swap function completed after 2 seconds");
+}
 
 /// Swap function
 ##[Derive]
-async fn swap()
+async fn swap() {
+    let swap = swap:spawn(swap());
+
+   handle.await.expect("Failed to await the swap task");
+
+    // Perform other tasks if needed
+    println!("Main function completed");
+}
