@@ -13,12 +13,12 @@ use bpstd::psbt;
 
 fn opret() {
 
-fn tx
+fn tx() {
 
-fn anchor
+fn anchor() {
 
-fn proof
+fn proof() {
 
-fn tapret
+fn tapret() {
 
-fn psbt
+fn psbt() {
