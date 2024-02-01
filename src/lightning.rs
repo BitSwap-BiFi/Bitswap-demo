@@ -1,11 +1,12 @@
-use std::lightning;
+use std::Lightning;
 
-use lightning::PaymentHash;
-pub use (crate)::Swap;
-pub use (crate)::DLC;
-pub use (crate)::Oracle;
-pub use (crate)::Lightning;
+pub use lightning::PaymentHash;
+pub (crate) use Swap;
+pub (crate)use DLC;
+pub (crate)use Oracle;
+pub (crate)use Lightning;
 
 
+/// Swap function
 ##[Derive]
 async fn swap()
