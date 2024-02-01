@@ -23,3 +23,6 @@ async fn swap() {
     // Perform other tasks if needed
     println!("Main function completed");
 }
+async fn lightning() {
+    let lightning = lightning:paymenthash(lightning());
+    let lightning = lightning:Invoice(invoice());
