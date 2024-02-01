@@ -10,3 +10,15 @@ use bp_core::anchor;
 use bp_core::proof;
 use bpstd::tapret;
 use bpstd::psbt;
+
+fn opret() {
+
+fn tx
+
+fn anchor
+
+fn proof
+
+fn tapret
+
+fn psbt
