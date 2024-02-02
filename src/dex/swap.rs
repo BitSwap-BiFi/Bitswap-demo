@@ -43,8 +43,8 @@ let network = bitcoin::network::constants::Network::Testnet;
 // Initial swap
 fn create_swap() {
     // Parameters for swap
-    let amount = 1;
-    let value = 1000;
+    let amount = rgb_asset;
+    let value = 0;
     let swap_fee = 0.05;
     let fee_spread = 0.1;
     let psbt = psbt();
@@ -54,7 +54,7 @@ fn create_swap() {
 // Swap accepted
 fn swap_accepted() {
     // Swap accepted by counterparty
-    let amount_accepted = 1;
+    let amount_accepted = rgb_asset;
     let value_accepted = 1000;
     let fee_accepted = 0.01;
     let swap_fee_accepted = 0.05;
