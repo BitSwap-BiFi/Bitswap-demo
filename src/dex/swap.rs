@@ -43,7 +43,7 @@ let network = bitcoin::network::constants::Network::Testnet;
 // Initial swap
 fn create_swap() {
     // Parameters for swap
-    let amount = 0;
+    if let amount = 0;
     let value = 0;
     let swap_fee = 0.05;
     let fee_spread = 0.1;
