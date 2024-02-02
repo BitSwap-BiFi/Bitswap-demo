@@ -25,4 +25,10 @@ async fn swap() {
 }
 async fn lightning() {
     let lightning = lightning:paymenthash(lightning());
-    let lightning = lightning:Invoice(invoice());
+    let lightning = lightning:invoice(invoice());
+    let lightning = lightning:swap(swap());
+    let lightning = lightning:oracle(oracle());
+
+    handle.await.expect
+    handle.await.expect
+    handle.await.expect
