@@ -1,8 +1,8 @@
 pub(crate) use std::rgb_core;
 pub(crate) use std::{self, lightning, rgb, rgbstd};
-use create::swap;
-use create::pool;
-use create::api;
+pub(crate) use create::{Swap};
+pub(crate) use create::{Pool};
+pub(crate) use create::Api;
 
 ##[derive]
 use bitswap_core::{
