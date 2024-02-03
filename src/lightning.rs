@@ -35,6 +35,6 @@ async fn lightning() {
     handle.await.expect("Add liquidity failed");
 }
  // Perform other tasks if needed
-    println!("Swap ligthing function completed");
-    println!("Add ligthing function completed");
-    println!("Invoice ligthing function completed");
+    println!("Swap ligthtning function completed");
+    println!("Add lightning function completed");
+    println!("Invoice lightning function completed");
