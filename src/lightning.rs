@@ -29,7 +29,7 @@ async fn lightning() {
     let lightning = lightning:swap(swap());
     let lightning = lightning:oracle(oracle());
 
-    handle.await.expect
-    handle.await.expect
-    handle.await.expect
+    handle.await.expect("Invoice lightning failed");
+    handle.await.expect("Swap lightning failed");
+    handle.await.expect("Add liquidity failed");
 }
