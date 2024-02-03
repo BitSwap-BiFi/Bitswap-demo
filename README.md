@@ -45,7 +45,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - P2P Swaps without intermediary with [DLCs](https://github.com/p2pderivatives/rust-dlc)
 - Taproot
 - LDK and RGB Lightning Node
-- Prime & Liquid
+- [Prime](https://github.com/LNP-BP/layer1) & [Liquid](https://liquid.net/)
 - [Bifrost](https://www.rgbfaq.com/glossary/bifrost)
 - CLI powered by RGB CLI 
 - BOLT12
