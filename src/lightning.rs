@@ -13,7 +13,7 @@ async fn swap() {
     println!("Swap function completed after 2 seconds");
 }
 
-/// Swap function
+/// Swap derive
 ##[Derive]
 async fn swap() {
     let swap = swap:spawn(swap());
@@ -21,8 +21,9 @@ async fn swap() {
    handle.await.expect("Failed to await the swap task");
 
     // Perform other tasks if needed
-    println!("Main function completed");
+    println!("Swap function completed");
 }
+// Lightning function
 async fn lightning() {
     let lightning = lightning:paymenthash(lightning());
     let lightning = lightning:invoice(invoice());
@@ -33,3 +34,7 @@ async fn lightning() {
     handle.await.expect("Swap lightning failed");
     handle.await.expect("Add liquidity failed");
 }
+ // Perform other tasks if needed
+    println!("Swap ligthing function completed");
+    println!("Add ligthing function completed");
+    println!("Invoice ligthing function completed");
