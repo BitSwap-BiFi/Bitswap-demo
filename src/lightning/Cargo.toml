@@ -4,8 +4,10 @@ version = "1.0.19-Alpha"
 edition = "2023"
 
 [dependencies]
+rust-lightning = "0.0.121"
+rgb-core = "0.10.8"
 
 [features]
-members = ["swap", "ldk"]
+members = ["swap", "initial_node"]
 
 
