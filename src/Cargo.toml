@@ -13,5 +13,6 @@ rgb-core = { version = "0.11.0-beta.4", features = ["stl"] }
 bp-std = { version = "0.11.0-beta.4", features = ["stl"] }
 rgb-std = { version = "0.11.0-beta.4", features = ["stl"] }
 rgb-schemata = { version = "0.11.0-beta.4", features = ["stl"] }
+rgb-runtime = { version = "0.11.0-beta.3", features = ["cli"] }
 
 
