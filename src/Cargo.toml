@@ -9,11 +9,11 @@ rust-aluvm = "0.11.0-beta.2"
 rust-lightning = "0.0.120"
 rust-dlc = "0.4.0"
 commit_verify = { version = "0.10.5", features = ["stl"] }
-bp-core = { version = "0.11.0-beta.4", features = ["stl"] , features = ["seals"], features = ["dbc"] }
-rgb-core = { version = "0.11.0-beta.4", features = ["stl"] , features = ["contract"] , features = ["vm"], feature = ["schema"], feature = ["validation"] }
-bp-std = { version = "0.11.0-beta.4", features = ["stl"] features = ["psbt"], features = ["invoice"] }
-rgb-std = { version = "0.11.0-beta.4", features = ["stl"] , features = ["scripts"], features = ["invoice"], features = ["interface"] }
-rgb-schemata = { version = "0.11.0-beta.4", features = ["stl"] , features = ["nia"] , features = ["interfaces"] }
-rgb-runtime = { version = "0.11.0-beta.3", features = ["cli"], features = ["psbt"] }
+bp-core = { version = "0.11.0-beta.4", features = ["stl" ,"seals","dbc"] }
+rgb-core = { version = "0.11.0-beta.4", features = ["stl", "contract", "vm" , "schema" , "validation"] }
+bp-std = { version = "0.11.0-beta.4", features = ["stl", "psbt" , "invoice"] }
+rgb-std = { version = "0.11.0-beta.4", features = ["stl" , "scripts" , "invoice" , "interface"] }
+rgb-schemata = { version = "0.11.0-beta.4", features = ["stl", "nia", "interfaces", "rgb20" ] }
+rgb-runtime = { version = "0.11.0-beta.3", features = ["cli", "psbt"] }
 
 
