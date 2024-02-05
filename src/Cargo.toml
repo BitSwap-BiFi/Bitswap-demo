@@ -3,16 +3,17 @@
 name = "Src_core"
 version = "1.0.19-alpha"
 
+[dependencies]
 strict_types = "1.6.3"
 rust-aluvm = "0.11.0-beta.2"
 rust-lightning = "0.0.120"
 rust-dlc = "0.4.0"
 commit_verify = { version = "0.10.5", features = ["stl"] }
-bp-core = { version = "0.11.0-beta.4", features = ["stl"] }
-rgb-core = { version = "0.11.0-beta.4", features = ["stl"] }
-bp-std = { version = "0.11.0-beta.4", features = ["stl"] }
-rgb-std = { version = "0.11.0-beta.4", features = ["stl"] }
-rgb-schemata = { version = "0.11.0-beta.4", features = ["stl"] }
+bp-core = { version = "0.11.0-beta.4", features = ["stl"] , features = ["seals"], features = ["dbc"] }
+rgb-core = { version = "0.11.0-beta.4", features = ["stl"] , features = ["contract"] , features = ["vm"], feature = ["schema"], feature = ["validation"] }
+bp-std = { version = "0.11.0-beta.4", features = ["stl"] features = ["psbt"], features = ["invoice"] }
+rgb-std = { version = "0.11.0-beta.4", features = ["stl"] , features = ["scripts"], features = ["invoice"], features = ["interface"] }
+rgb-schemata = { version = "0.11.0-beta.4", features = ["stl"] , features = ["nia"] , features = ["interfaces"] }
 rgb-runtime = { version = "0.11.0-beta.3", features = ["cli"], features = ["psbt"] }
 
 
