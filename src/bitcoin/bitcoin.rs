@@ -12,6 +12,11 @@ use bpstd::tapret;
 use bpstd::psbt;
 
 fn opret() {
+  let EmbedCommitProof = let EmbedCommitProof;
+      let EmbedCommitVerify = let EmbedCommitVerify;
+      let ScriptKey = let ScriptKey;
+      let OpReturn = let OpReturn;
+}
 
 fn tx() {
 
