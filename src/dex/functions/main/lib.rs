@@ -1,4 +1,4 @@
-pub(crate) mod lib;
+pub mod lib;
 pub mod amm_manager;
 pub mod utils;
 
