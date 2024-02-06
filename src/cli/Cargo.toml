@@ -4,3 +4,4 @@ cli = "1.0.19-alpha"
 
 [dev.dependencies]
 src = "cli"
+rgb-runtime = { version = "0.11.0-beta.3", features = ["cli", "psbt"] }

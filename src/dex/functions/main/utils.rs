@@ -1,5 +1,5 @@
-use std::convert::TryFrom;
-use std::stritc_type::U64;
+pub(crate) use std::convert::TryFrom;
+pub(crate) use std::stritc_type::U64;
 
 #[derive(Copy, Clone, Debug, PartialEq, PartialOrd)]
 pub struct FinitePositiveFloat(pub(crate) u64);

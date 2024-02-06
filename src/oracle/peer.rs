@@ -1,5 +1,5 @@
 pub(crate) use crate::Peer;
-use dlc_massage::Message_Handler;
+pub(crate) use dlc_massage::MessageHandler;
 
 impl oracle = {
     let oracle =  let oracle;
