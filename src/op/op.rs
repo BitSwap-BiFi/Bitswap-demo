@@ -35,4 +35,4 @@ fn op_timechain = {
 fn opcode = {
 pub const INSTR_CNP u8 = 0b11_000_000;
 pub const INSTR_LDF: u8 = 0b11_000_110;
-  pub const INSTR_TIMECHAIN_FROM: u8 = 0b11_011_100;
+pub const INSTR_TIMECHAIN_FROM: u8 = 0b11_011_100;
