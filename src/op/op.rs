@@ -6,11 +6,12 @@ use aluvm::isa::opcodes::INSTR_ISAE_TO;
 // OP code for RGB
 impl opcode = {
   let  INSTR_CNP: u8 = 0b11_000_000;
+}
 
 // OP code for contract
 impl op_contract = { 
   let ContractOp = let ContractOP;
-  
+}
 
 // OP for timestamp 
 impl op_timechain = {
@@ -25,13 +26,13 @@ fn op_contract = {
   let GloBalStateType = let GlobalStateType;
 
 const u16 = AssignmentType::u16::Reg32;
-
+}
 fn op_timechain = {
   let InstructionSet = let InstructionSet;
   let Isad_Ids = let Isa_Ids;
   let Src_Regs = let Src_Regs;
   let Dst_Reg = let Dst_Reg;
-
+}
 fn opcode = {
 pub const INSTR_CNP u8 = 0b11_000_000;
 pub const INSTR_LDF: u8 = 0b11_000_110;
