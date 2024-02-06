@@ -72,11 +72,10 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 Soon
 
-## Documentation for run DEX 
+## Documentation for run DEX
 
-[Coming soon](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/doc)
-
-
+ [Run](https://github.com/BitSwap-BiFi/Bitswap-core/blob/main/doc/run.md)
+ 
 ## Documentation about DEX
 
 [Official Documentation](https://github.com/BitSwap-BiFi/bitswap-docs)
