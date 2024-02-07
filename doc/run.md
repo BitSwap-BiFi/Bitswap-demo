@@ -1,8 +1,9 @@
-# Run Bitswap
+# Run Bitswap 💱
 
-Welcome to the Documentation around Bitswap
+Welcome to the Documentation around Bitswap ⚡
 
-**DEX running on Testnet**
+⚠️**DEX running on Testnet**
+⚠️**Use small amount**
 
 ## Pre Requisite
 
