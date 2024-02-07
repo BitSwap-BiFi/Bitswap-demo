@@ -23,7 +23,7 @@ use crate::{LeafScript, TapNodeHash, TapScript};
 impl TaprootScriptTree {
 
 fn taproot = {
-  let leafversion =
+  let leafversion = let leafversion;
 fn bitcoin = {
-  let leafversion = 
+  let leafversion = let leafversion;
 
