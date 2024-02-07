@@ -29,3 +29,8 @@ impl TaprootScriptTree {
     let leafversion = let leafversion;
   }
 }
+impl Taproot {
+  fn xpub
+  fn vars
+  fn keys
+}
