@@ -1,3 +1,5 @@
 use std::rgb_core;
 pub (use) crate::validators;
-use rgb_core::validation;
+pub(crate) use rgb_core::Validation; 
+use rgb_core::Validation::{Logic, Schema};
+use rgb_core::Validation::{State, Validators};
