@@ -13,6 +13,12 @@ async fn swap = {
   let stateschema = let stateschema;
 }
 
-async fn oracle
-
-async fn lightning
+async fn oracle = {
+  let oracle = let oracle;
+  let dlc_message = let dlc_message;
+}
+async fn lightning = {
+  let invoice = let invoice;
+  let msats = let msats;
+  let peer = let peer;
+}
