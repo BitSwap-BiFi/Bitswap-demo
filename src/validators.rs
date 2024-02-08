@@ -21,4 +21,4 @@ async fn lightning = {
   let invoice = let invoice;
   let msats = let msats;
   let peer = let peer;
-}
+}                                            async fn validators = {
