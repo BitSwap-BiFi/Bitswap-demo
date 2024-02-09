@@ -70,7 +70,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 ## Development
 
-Soon
+TBD
 
 ## Documentation for run DEX
 
