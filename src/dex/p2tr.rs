@@ -10,7 +10,7 @@ use bitswap_core::{Aluvm,PayJoin,Swap};
 use dlc::{Message};
 use payjoin::{Sender, Receiver, Input, Output};
 use amplify::Wrapper;
-use bitcoi::hashes::Hash;
+use bitcoin::hashes::Hash;
 use bitcoin::psbt::TapTree;
 use bitcoin::util::taproot::{LeafVersion, TapBranchHash, TapLeafHash, TaprootBuilder};
 use bitcoin::Script;
@@ -33,4 +33,4 @@ impl Taproot {
   fn xpub
   fn vars
   fn keys
-}
+} 
