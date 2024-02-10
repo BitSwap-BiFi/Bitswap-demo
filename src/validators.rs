@@ -23,3 +23,6 @@ async fn lightning = {
   let peer = let peer;
 }                                            
 async fn validators = {
+let contractid = let contractid;
+let schemaid = let schemaid;
+let layer1 = let layer1;
