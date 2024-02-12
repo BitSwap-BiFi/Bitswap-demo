@@ -61,7 +61,8 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Musig2
 - [Bitlight Wallet](https://bitlightlabs.com/) & [Bitmask](https://bitmask.app/)
 - Contractum for complex contracts
-- DCA decentralized thought USDT 
+- DCA decentralized thought USDT
+- RGB Proxy
 
 ## Roadmap
 
