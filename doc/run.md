@@ -6,7 +6,7 @@ Welcome to the Documentation around Bitswap ⚡
 
 ⚠️**Use small amount**
 
-## Pre Requisite
+### Pre Requisite
 
 - RGB CLI
 - RGB Core
