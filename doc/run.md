@@ -1,10 +1,12 @@
-# Run Bitswap
+# Run Bitswap 💱
 
-Welcome to the Documentation around Bitswap
+Welcome to the Documentation around Bitswap ⚡
 
-**DEX running on Testnet**
+⚠️**DEX running on Testnet**
 
-## Pre Requisite
+⚠️**Use small amount**
+
+### Pre Requisite
 
 - RGB CLI
 - RGB Core

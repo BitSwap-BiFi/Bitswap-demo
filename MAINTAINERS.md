@@ -7,9 +7,9 @@
 ### Rsync25
 
 - Github: @Rsync25
-- Twitter: @Rsync25
+- X: @Rsync25
 
 #### Bitlight Labs
 
 - Gihtub: @BitlightLabs
-- Twitter: @BitlightLabs / @Bitlight_Wallet
+- X: @BitlightLabs / @Bitlight_Wallet
