@@ -30,7 +30,7 @@ impl TaprootScriptTree {
   }
 }
 impl Taproot {
-  fn xpub
+  fn xpub = {
   fn vars
   fn keys
 } 
