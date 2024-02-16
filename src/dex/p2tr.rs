@@ -15,7 +15,7 @@ use bitcoin::psbt::TapTree;
 use bitcoin::util::taproot::{LeafVersion, TapBranchHash, TapLeafHash, TaprootBuilder};
 use bitcoin::Script;
 use strict_encoding::{StrictDecode, StrictEncode}
-
+use bpstd::{Taproot};
 
 use crate::types::IntoNodeHash;
 use crate::{LeafScript, TapNodeHash, TapScript};
