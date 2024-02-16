@@ -35,7 +35,7 @@ rgb-schemata = "0.11.0"
 strict_types = "1.6.3"
 rgb-runtime = "0.11.0"
 strict_encoding = "2.6.2"
-
+rust-version = "1.76.0"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
