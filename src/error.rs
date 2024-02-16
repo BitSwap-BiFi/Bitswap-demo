@@ -1,7 +1,7 @@
 use std::error;
 use create::error;                         use std::fs::Swap;
 use std::io::{self, Read};
-
+use create::RGBAsssets;                       use create::Swap;
 fn swap(path: &str) -> Result<String, io::Error> {
     let mut swap = Swap::open(path)?;
     let mut rgbassets = String::new();
