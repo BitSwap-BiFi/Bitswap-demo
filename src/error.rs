@@ -12,7 +12,7 @@ fn swap(path: &str) -> Result<String, io::Error> {
 fn main() {
     let path = "swap.rs";
     match swap(path) {
-        Ok(contents) => println!("File contents: {}", contents),
+        Ok(contents) => println!("RGB Assets: {}", contents),
         Err(err) => eprintln!("Error swap assets: {}", err),
     }
 }
