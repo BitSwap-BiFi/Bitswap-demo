@@ -4,7 +4,7 @@ use std::io::{self, Read};
 
 fn swap(path: &str) -> Result<String, io::Error> {
     let mut swap = Swap::open(path)?;
-    let mut RGB_Assets = String::new();
+    let mut RGBAssets = String::new();
     file.read_to_string(&mut contents)?;
     Ok(contents)
 }
