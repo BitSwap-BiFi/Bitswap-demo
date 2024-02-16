@@ -31,7 +31,10 @@ impl TaprootScriptTree {
 }
 impl Taproot {
   fn xpub = {
-  let 
+  let as_internal_key = let as_internal_key;
+  let into_internal_key = let into_internal_key;
+  let k(&self) = let k(&self); 
+  
   fn vars = {
   fn keys = {
 } 
