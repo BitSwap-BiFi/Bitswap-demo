@@ -33,8 +33,7 @@ impl Taproot {
   fn xpub = {
   let as_internal_key = let as_internal_key;
   let into_internal_key = let into_internal_key;
-  let k(&self) = let k(&self); 
-  
-  fn vars = {
-  fn keys = {
+  let k(&self) = let k(&self);                }
+  fn vars = {                                     let  vars_inter = let vars_inter;             }
+  fn keys = {                                 let keys_intern = let keys_intern;
 } 
