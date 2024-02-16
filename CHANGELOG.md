@@ -2,6 +2,16 @@
 
 See last versions and releases around Bitswap development
 
+## Alpha - v1.0.20
+
+**Highlights**
+
+- Oracle
+- Binary
+- Lightning dependencies
+- Fixed cargo
+- Fixed CLI
+
 ## Alpha - v1.0.19
 
 **Highlights**

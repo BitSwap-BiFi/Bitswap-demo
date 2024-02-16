@@ -16,7 +16,7 @@
 
 ### How Works?
 
-The user can participate of Pools and earn BTC or USDT like on Uniswap
+The user can participate of Pools and earn BTC, tokens and USDT like on Uniswap
 
 How there's no lunch free, you can lose sats in these scenarios:
 
@@ -61,22 +61,24 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Musig2
 - [Bitlight Wallet](https://bitlightlabs.com/) & [Bitmask](https://bitmask.app/)
 - Contractum for complex contracts
-- DCA decentralized thought USDT 
+- DCA decentralized thought USDT
+- RGB Proxy
+- Support for Tether and other Stablecoins 
 
 ## Roadmap
 
 - [ ] Compile to Cargo.lock
+- [ ] RGB v0.11
 - [ ] Demo DEX via CLI (Beta version - internal tests)
 
 ## Development
 
-Soon
+TBD
 
-## Documentation for run DEX 
+## Documentation for run DEX
 
-[Coming soon](https://github.com/BitSwap-BiFi/Bitswap-core/tree/main/doc)
-
-
+ [Run](https://github.com/BitSwap-BiFi/Bitswap-core/blob/main/doc/run.md)
+ 
 ## Documentation about DEX
 
 [Official Documentation](https://github.com/BitSwap-BiFi/bitswap-docs)

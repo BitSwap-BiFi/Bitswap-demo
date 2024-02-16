@@ -20,7 +20,7 @@ fn main() {
     // Handle the execution result
     match result {
         Ok(ExecutionResult::Value(result)) => {
-            // User has earned either USDT or BTC
+            // User has earned either RGB Asset or BTC
             println!("Earned: {}", result);
         }
         Ok(ExecutionResult::None) => {

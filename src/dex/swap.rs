@@ -45,6 +45,7 @@ fn create_swap() {
     // Parameters for swap
     if let amount = 0;
     let value = 0;
+    let swap_asset:sats = let swap_asset;
     let swap_fee = 0.05;
     let fee_spread = 0.1;
     let psbt = psbt();
@@ -59,6 +60,7 @@ fn swap_accepted() {
     let fee_accepted = 0.0001;
     let swap_fee_accepted = 0.05;
     let fee_spread_accepted = 0.1;
+    let swap_asset:sats = let swap_asset;
     let dlc_accepted = secp256k1_zkp();
     let psbt_accepted = psbt();
     let tapr_accepted = tapr();
@@ -73,6 +75,7 @@ fn swp_out() {
     let dlc_out = dlc();
     let invoice_out = invoice();
     let swap_fee_out = 0.05;
+    let swap_asset:sats = let swap_asset;
     if let refund = refund (); 
     }
 }
