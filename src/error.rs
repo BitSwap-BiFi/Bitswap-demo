@@ -3,8 +3,8 @@ use create::error;                         use std::fs::Swap;
 use std::io::{self, Read};
 
 fn swap(path: &str) -> Result<String, io::Error> {
-    let mut file = File::open(path)?;
-    let mut contents = String::new();
+    let mut swap = Swap::open(path)?;
+    let mut RGB_Assets = String::new();
     file.read_to_string(&mut contents)?;
     Ok(contents)
 }
