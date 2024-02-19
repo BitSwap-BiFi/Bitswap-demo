@@ -1,5 +1,5 @@
-use std::error;
-use create::error;                         
+pub(crate) use std::error;
+pub(crate) use create::error;                          
 use std::fs::Swap;
 use std::io::{self, Read};
 use create::RGBAsssets;                       
