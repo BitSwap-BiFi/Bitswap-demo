@@ -2,6 +2,15 @@
 
 See last versions and releases around Bitswap development
 
+## Alpha - v1.0.21
+
+**Highlights**
+
+- Fixed dependencies
+- OP functions
+- Validators
+- Taproot functions
+
 ## Alpha - v1.0.20
 
 **Highlights**
