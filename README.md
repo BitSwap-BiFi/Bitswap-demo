@@ -73,7 +73,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 ## Development
 
-TBD
+[Run](https://github.com/BitSwap-BiFi/Bitswap-core/blob/main/doc/development.md)
 
 ## Documentation for run DEX
 
