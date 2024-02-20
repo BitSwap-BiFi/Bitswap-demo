@@ -67,8 +67,8 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 ## Roadmap
 
-- [ ] Compile to Cargo.lock
-- [ ] RGB v0.11
+- [x] Compile to Cargo.lock (WIP)
+- [x] RGB v0.11 (WIP)
 - [ ] Demo DEX via CLI (Beta version - internal tests)
 
 ## Development

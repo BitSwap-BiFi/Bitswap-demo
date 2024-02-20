@@ -1,7 +1,7 @@
 [package]
 name = "Bitswap"
-version = "1.0.20-Alpha"
-edition = "2023"
+version = "1.0.21-Alpha"
+edition = "2021"
 
 [dependencies]
 rust-lightning = "0.0.121"
