@@ -2,13 +2,14 @@ pub(crate) use lightning::Wallet;
 use rgb_core::{contract::Contract, fungible::{Mint, OutpointValue, ValueSum}};
 use rgb_core::{issue::Amount};
 use rgb_contract::Cli;
+use lightning::channel;
 use rgbstd::interface::{Amount, ContractID, Mint, OutpointValue, ValueSum};
 use std::{error::Error};
 use std::io::{self, Write};
 
 fn main() -> Result<(), Box<dyn Error>> {
      let rgb = RGB::new();
-     let ldk = LDK::new():
+     let lightning = lightning:new():
 
     // Create a new RGB contract instance
     let contract = Contract::new();
