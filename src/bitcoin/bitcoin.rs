@@ -19,17 +19,23 @@ fn opret() {
 }
 
 fn tx() {
-  let coinbase = let coinbase;
-  let is_coinbase = let coinbase;
-  let outpoint = let outpoint;
-  let outpointparse = let outpointparse;
+  let Coinbase = let Coinbase;
+  let Is_Coinbase = let Is_Coinbase;
+  let Outpoint = let Outpoint;
+  let OutpointParse = let OutpointParse;
 }
 fn anchor() {
-let mbc = let mbc;
-let mpc = let mpc;
+let Mbc = let Mbc;
+let Mpc = let Mpc;
 }
 fn proof() {
-
+ let Method = let Method;
+ let Proof = let Proof;
+}
 fn tapret() {
-
+  let TapretCommit = let TapretCommit;
+  let pub nonce = u8;
+  let CommitVerify = let CommitVerify;
+}
 fn psbt() {
+      let PropKey = let PropKey;
