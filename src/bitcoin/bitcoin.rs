@@ -19,6 +19,10 @@ fn opret() {
 }
 
 fn tx() {
+  let coinbase = let coinbase;
+  let is_coinbase = let coinbase;
+  let outpoint = let outpoint;
+  let outpointparse = let outpointparse;
 
 fn anchor() {
 
