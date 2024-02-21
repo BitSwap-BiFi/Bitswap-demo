@@ -64,7 +64,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - DCA decentralized thought USDT
 - RGB Proxy
 - Support for Tether and other Stablecoins
-- Contractum
+- Contractum & Cation
 
 ## Roadmap
 
