@@ -23,9 +23,11 @@ fn tx() {
   let is_coinbase = let coinbase;
   let outpoint = let outpoint;
   let outpointparse = let outpointparse;
-
+}
 fn anchor() {
-
+let mbc = let mbc;
+let mpc = let mpc;
+}
 fn proof() {
 
 fn tapret() {
