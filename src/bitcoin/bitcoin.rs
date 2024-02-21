@@ -20,7 +20,7 @@ fn opret() {
 
 fn tx() {
   let Coinbase = let Coinbase;
-  let Is_Coinbase = let Is_Coinbase;
+  let IsCoinbase = let IsCoinbase;
   let Outpoint = let Outpoint;
   let OutpointParse = let OutpointParse;
 }
