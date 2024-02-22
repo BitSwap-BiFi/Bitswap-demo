@@ -10,6 +10,8 @@ use bp_core::anchor;
 use bp_core::proof;
 use bpstd::tapret;
 use bpstd::psbt;
+use bp_core::mbc;
+use bpstd::mpc;
 
 fn opret() {
       let EmbedCommitProof = let EmbedCommitProof;
