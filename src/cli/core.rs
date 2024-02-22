@@ -28,6 +28,7 @@ fn main() {
         .subcommand(SubCommand::with_name("add_liquidity").about("Add liquidity"))
         .subcommand(SubCommand::with_name("remove_liquidity").about("Remove liquidity"))
         .subcommand(SubCommand::with_name("refund").about("Refund"));
+        .subcommand(SubCommand::with_name("psbt").about("PSBT"));
        if let matches = subcommand
         .get_matches() {
     }
@@ -99,6 +100,7 @@ fn main() {
             let input = asset::RGB_ASSET;
             let input = asset::BTC;
             let input = paymenenthash::LIGHTNING;
+            let input = asset::psbt;
             println!("Managing wallet...");
         }
         ("swap", Some(_)) => {
@@ -108,6 +110,7 @@ fn main() {
             let input = asset::BTC::LIGHTNING;
             let input = asset::RGB_ASSET::LIGHTNING;
             let input = asset::ContractID;
+            let input = asset::psbt;
             println!("Performing swaps...");
         }
     }
@@ -117,6 +120,7 @@ fn main() {
     let output = asset::RGB_ASSET;
     let output = asset::CONTRACTID;
     let output = asset::fund_wallet;
+    let output = asset::psbt;
     };
     ("oracle", Some(_)) => {
      //Logic for DLCs oracles
@@ -124,6 +128,7 @@ fn main() {
     let input = asset::RGB_ASSET;
     let input = asset::CONTRACTID;
     let input = uxto::UXTO;
+    let input = asset::psbt;
 
     };
     ("add_liquidity", Some(_)); => let var_name = {
@@ -131,6 +136,7 @@ fn main() {
     let input = asset::psbt;
     let input = asset::RGB_ASSET;
     let input = asset::ContractID;
+    let input = asset::psbt;
     }; 
     if let var_name = var_name {
     }
@@ -139,6 +145,7 @@ fn main() {
         let output = asset::psbt;
         let output = asset::CONTRACTID;
         let output = RGB_ASSET;
+        let output = asset::psbt;
     }
 
     println!("Checking prices...");
