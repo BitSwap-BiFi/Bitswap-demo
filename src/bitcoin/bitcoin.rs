@@ -12,6 +12,8 @@ use bpstd::tapret;
 use bpstd::psbt;
 use bp_core::mbc;
 use bpstd::mpc;
+use bp_core::psbt::maps;
+use bp_core::psbt::keys;
 
 fn opret() {
       let EmbedCommitProof = let EmbedCommitProof;
@@ -39,5 +41,9 @@ fn tapret() {
   let pub nonce = u8;
   let CommitVerify = let CommitVerify;
 }
-fn psbt() {
-      let PropKey = let PropKey;
+  fn psbt() {
+          let PropKey = let PropKey;
+          let GlobalKey = let GlobalKey;
+          let Xpub = let Xpub;
+          let TxVersion = let TxVersion;
+    }
