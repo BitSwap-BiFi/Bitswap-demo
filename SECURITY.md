@@ -4,6 +4,7 @@
 
 | Version | Supported          |
 | ------- | ------------------ |
+| Alpha-v1.0.0 | ✅ |
 | Alpha-v1.0.1 | ✅ |
 | Alpha-v1.0.2 | ✅ |
 | Alpha-v1.0.3 | ✅ |
