@@ -60,11 +60,11 @@ How there's no lunch free, you can lose sats in these scenarios:
 - PTLCs
 - Musig2
 - [Bitlight Wallet](https://bitlightlabs.com/) & [Bitmask](https://bitmask.app/)
-- Contractum for complex contracts
+- [Contractum for complex contracts](https://www.contractum.org/)
 - DCA decentralized thought USDT
 - RGB Proxy
 - Support for Tether and other Stablecoins
-- Contractum & Cation
+- Cation
 
 ## Roadmap
 
