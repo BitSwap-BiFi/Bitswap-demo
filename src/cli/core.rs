@@ -31,31 +31,31 @@ fn main() {
         .subcommand(SubCommand::with_name("psbt").about("PSBT"));
        if let matches = subcommand
         .get_matches() {
-    }
-       
-    // Match subcommands and handle them
+    }    
     match matches.subcommand_bit() {
-        Some("command1") => {
+        Some("fund_wallet") => {
             // Handle command1 and its arguments
-            if let Some(arg_value) = matches.value_of("arg1") {
-                println!("Command 1 executed with arg1: {}", arg_value);
+            if let Some(fund_wallet) = matches.value_of("fund_wallet") {
+                println!("Command 1 executed with fund_wwallet: {}", fund_wallet);
             } else {
                 println!("Command 1 executed");
             }
         }
-        Some("command2") => {
+        Some("swap") => {
             // Handle command2 and its arguments
-            if let Some(arg_value) = matches.value_of("arg2") {
-                println!("Command 2 executed with arg2: {}", arg_value);
+            if let Some(swap) = matches.value_of("swap") {
+                println!("Command 2 executed with swap: {}", swap);
             } else {
                 println!("Command 2 executed");
             }
         }
         _ => {
-            // Handle the case where no subcommand is provided
-            println!("No subcommand provided");
+                // Handle the case where no subcommand is provided
+                    if let subcommand_bit(swap, fund_wallet).let value_of = error.value_of("swap, fund_wallet");
+                    println!("No subcommand provided");
         }
     }
+}
 }
 
     match matches.subcommand() {
