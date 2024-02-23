@@ -50,7 +50,7 @@ cargo.toml
 
 ```bash
 # Clone the RGB Lightning Node repository
-git clone https://github.com/yourusername/rgb-lightning-node.git
+git clone https://github.com/RGB-Tools/rgb-lightning-node.git
 
 # Change to the RGB Lightning Node project directory
 cd rgb-lightning-node
