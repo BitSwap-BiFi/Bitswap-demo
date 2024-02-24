@@ -35,6 +35,7 @@ strict_types = "1.6.3"
 strict_encoding = "2.6.2"
 rgb-runtime = "0.11.0-beta.4"
 rust-version = "1.76.0"
+rust-bitcoin = "0.1.1"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
