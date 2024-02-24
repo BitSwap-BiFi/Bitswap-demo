@@ -39,12 +39,10 @@ rust-version = "1.76.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[rgb_binary]
-rgb_binary = "src/bin/rgbcore-stl.rs"
 
 [[bin]]
-name = "main"
-path = "src/bin/main.rs"
+name = "bitswapd"
+path = "src/bin/bitswapd.rs"
 required-features = ["stl"]
 
 [dependencies]
