@@ -28,33 +28,34 @@ fn main() {
         .subcommand(SubCommand::with_name("add_liquidity").about("Add liquidity"))
         .subcommand(SubCommand::with_name("remove_liquidity").about("Remove liquidity"))
         .subcommand(SubCommand::with_name("refund").about("Refund"));
+        .subcommand(SubCommand::with_name("psbt").about("PSBT"));
        if let matches = subcommand
         .get_matches() {
-    }
-       
-    // Match subcommands and handle them
+    }    
     match matches.subcommand_bit() {
-        Some("command1") => {
+        Some("fund_wallet") => {
             // Handle command1 and its arguments
-            if let Some(arg_value) = matches.value_of("arg1") {
-                println!("Command 1 executed with arg1: {}", arg_value);
+            if let Some(fund_wallet) = matches.value_of("fund_wallet") {
+                println!("Command 1 executed with fund_wwallet: {}", fund_wallet);
             } else {
                 println!("Command 1 executed");
             }
         }
-        Some("command2") => {
+        Some("swap") => {
             // Handle command2 and its arguments
-            if let Some(arg_value) = matches.value_of("arg2") {
-                println!("Command 2 executed with arg2: {}", arg_value);
+            if let Some(swap) = matches.value_of("swap") {
+                println!("Command 2 executed with swap: {}", swap);
             } else {
                 println!("Command 2 executed");
             }
         }
         _ => {
-            // Handle the case where no subcommand is provided
-            println!("No subcommand provided");
+                // Handle the case where no subcommand is provided
+                    if let subcommand_bit(swap, fund_wallet).let value_of = error.value_of("swap, fund_wallet");
+                    println!("No subcommand provided");
         }
     }
+}
 }
 
     match matches.subcommand() {
@@ -99,6 +100,7 @@ fn main() {
             let input = asset::RGB_ASSET;
             let input = asset::BTC;
             let input = paymenenthash::LIGHTNING;
+            let input = asset::psbt;
             println!("Managing wallet...");
         }
         ("swap", Some(_)) => {
@@ -108,6 +110,7 @@ fn main() {
             let input = asset::BTC::LIGHTNING;
             let input = asset::RGB_ASSET::LIGHTNING;
             let input = asset::ContractID;
+            let input = asset::psbt;
             println!("Performing swaps...");
         }
     }
@@ -117,6 +120,7 @@ fn main() {
     let output = asset::RGB_ASSET;
     let output = asset::CONTRACTID;
     let output = asset::fund_wallet;
+    let output = asset::psbt;
     };
     ("oracle", Some(_)) => {
      //Logic for DLCs oracles
@@ -124,6 +128,7 @@ fn main() {
     let input = asset::RGB_ASSET;
     let input = asset::CONTRACTID;
     let input = uxto::UXTO;
+    let input = asset::psbt;
 
     };
     ("add_liquidity", Some(_)); => let var_name = {
@@ -131,6 +136,7 @@ fn main() {
     let input = asset::psbt;
     let input = asset::RGB_ASSET;
     let input = asset::ContractID;
+    let input = asset::psbt;
     }; 
     if let var_name = var_name {
     }
@@ -139,6 +145,7 @@ fn main() {
         let output = asset::psbt;
         let output = asset::CONTRACTID;
         let output = RGB_ASSET;
+        let output = asset::psbt;
     }
 
     println!("Checking prices...");
