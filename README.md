@@ -64,7 +64,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - DCA decentralized thought USDT
 - [RGB Proxy](https://github.com/RGB-Tools/rgb-proxy-server)
 - Support for Tether and other Stablecoins
-- Cation
+- [Cation](https://beta.cation-lang.org/)
 
 ## Roadmap
 
