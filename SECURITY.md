@@ -1,5 +1,7 @@
 # Security Policy
 
+See last security versions and releases around Bitswap development
+
 ## Supported Versions
 
 | Version | Supported          |
