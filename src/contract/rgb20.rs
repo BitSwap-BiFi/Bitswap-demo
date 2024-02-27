@@ -6,6 +6,7 @@ use rgbstd::interface::RGB20;
 use rgbstd::interface::{Amount, ContractID, Fungible, Divisible};
 use rgbstd::vm::{SubSchema, RgbIsa};
 use rgb_schemata::{nia_rgb20, nia_schema};
+use rgb_core::contract::commit::{Assign, TransactionType, GlobalStateType, SHA256}
 
 impl rgb20::interface {
     // Add your implementations here
