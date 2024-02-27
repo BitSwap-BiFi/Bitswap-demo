@@ -1,1 +1,1 @@
-use bp_core::descripotrs::Taproot;
+use bp_core::descriptors::Taproot;
