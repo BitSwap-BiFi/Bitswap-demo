@@ -16,5 +16,6 @@ rgb-std = { version = "0.11.0-beta.4", features = ["stl" , "scripts" , "invoice"
 rgb-schemata = { version = "0.11.0-beta.4", features = ["stl", "nia", "interfaces", "rgb20" ] }
 rgb-runtime = { version = "0.11.0-beta.3", features = ["cli", "psbt"] }
 rust-dlc = { version = "0.4.0", features = ["dlc-message" , "dlc-manager", "p2pd-oracle-client", "bitcoin-rpc-provider"]}
+bp-esplora = "0.11.0-beta.4"
 
 
