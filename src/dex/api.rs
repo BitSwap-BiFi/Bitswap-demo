@@ -6,6 +6,9 @@ use crate::data::{Response, Ticker, BuildRequest, PreparedRequest, Pair};
 
 use serde_json::Value;
 
+use bp_esplora_client::api::{BlockHash, LockTime, Outpoint, ScriptPubkey, SeqNo, SigScript, Tx as Transaction, TxIn, TxOut,
+    TxVer, Txid, Witness};
+
 pub struct Bitfinex {
     endpoint: String
 }
