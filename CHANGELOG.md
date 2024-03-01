@@ -1,6 +1,15 @@
-# Versions and releases ⚡ 💱
+# Versions & releases ⚡ 💱
 
 See last versions and releases around Bitswap development
+
+## Alpha - v1.0.22
+
+**Highlights**
+
+- Fixed dependencies
+- Initial RGB v0.11 integration
+- Fixed bugs
+- Initial Musig2 and Esplora API integration
 
 ## Alpha - v1.0.21
 
@@ -177,7 +186,7 @@ See last versions and releases around Bitswap development
 
 ## Alpha - v1.0.3
 
-**Highlights**
+**"Highlights**
 
 - Web Rocket
 - Initial script

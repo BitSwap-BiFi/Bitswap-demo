@@ -6,6 +6,7 @@ use crate::data::{Response, Ticker, BuildRequest, PreparedRequest, Pair};
 
 use serde_json::Value;
 
+
 pub struct Bitfinex {
     endpoint: String
 }
@@ -148,3 +149,4 @@ mod test_bitfinex {
         // println!("{:?}", parsed);
         assert!(parsed.is_ok());
     }
+

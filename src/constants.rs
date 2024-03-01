@@ -60,6 +60,8 @@ pub const SCRIPT = "SCRIPT";
 
 pub const BAID = "BAID";
 pub const STRICT = "STRICT";
+pub const ALUVM = "ALUVM";
+
 
 // Bitcoin
 

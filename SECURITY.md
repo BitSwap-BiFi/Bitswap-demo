@@ -1,5 +1,7 @@
 # Security Policy
 
+See last security versions and releases around Bitswap development
+
 ## Supported Versions
 
 | Version | Supported          |
@@ -26,4 +28,5 @@
 | Alpha-v1.0.19 | ✅ |
 | Alpha-v1.0.20 | ✅ |
 | Alpha-v1.0.21 | ✅ |
+| Alpha-v1.0.22 | ✅ |
 

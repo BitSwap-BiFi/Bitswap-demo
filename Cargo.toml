@@ -4,7 +4,7 @@ members = ["rgb-core", "rust-dlc", "bitswap", "payjoin", "aluvm", "baid58"]
 
 [package]
 name = "Bitswap_Core"
-version = "1.0.21-alpha"
+version = "1.0.22-alpha"
 edition = "2021"
 description = "AMM DEX on RGB Protocol and Lightning Network"
 license = "Business Source License 1.1"
@@ -24,19 +24,23 @@ swap = "0.1.0"
 rgb-core = "0.11.0-beta.4" 
 rust-dlc = "0.4"
 bitswap = "1.0.19"
-rust-aluvm = "0.11.0-beta.4"
-rust-lighting = "0.0.120"
+strict_encoding = "~2.7.0-beta.1"
+strict_types = "~2.7.0-beta.1"
+rust-aluvm = "0.11.0-beta.3"
+rust-lighting = "0.0.121"
 rust-baid58 = "0.4.0"
 bp-std = "0.11.0-beta.4"
 bp-core="0.11.0-beta.4"
 rgb-std = "0.11.0-beta.4"
-rgb-schemata = "0.11.0-beta.4"
+rgb-schemata = "0.11.0"
 strict_types = "1.6.3"
-strict_encoding = "2.6.2"
 rgb-runtime = "0.11.0-beta.4"
+strict_encoding = "~2.6.7"
 rust-version = "1.76.0"
 rust-bitcoin = "0.1.1"
-musig2 = "0.0.4"
+musig2 = "0.0.5"
+bp-esplora = "0.11.0-beta.4"
+
 
 
 
@@ -49,9 +53,9 @@ path = "src/bin/bitswapd.rs"
 required-features = ["stl"]
 
 [dependencies]
-strict_encoding = "~2.6.2"
+strict_encoding = "~2.6.7"
 strict_types = "~1.6.3"
-bp-core = { version = "~0.11.0-alpha.4"}
+bp-core = { version = "~0.11.0-beta.4"}
 aluvm = { version = "~0.11.0-beta.3", features = ["std"] }
 commit_verify = { version = "~0.10.3", features = ["rand", "derive"] }
 single_use_seals = "~0.11.0"
@@ -70,11 +74,11 @@ lightning-rapid-gossip-sync = { version = "0.0.120" }
 
 [rgb_core]
 amplify = "~4.5.0"
-strict_encoding = "~2.6.1"
+strict_encoding = "~2.6.7"
 strict_types = "~1.6.3"
 aluvm = { version = "~0.11.0-beta.4", features = ["std"] }
 commit_verify = { version = "~0.10.6", features = ["rand", "derive"] }
-single_use_seals = "~0.10.1"
+single_use_seals = "~0.11.0-beta.4"
 bp-core = { version = "~0.11.0" }
 secp256k1-zkp = { version = "0.28.0", features = ["rand", "rand-std", "global-context"] }
 baid58 = "~0.4.4"
