@@ -7,7 +7,7 @@ See last versions and releases around Bitswap development
 **Highlights**
 
 - Fixed dependencies
-- Initial RGB v0.11 integration
+- Initial RGB v0.11
 - Fixed bugs
 - Initial Musig2 and Esplora API integration
 
