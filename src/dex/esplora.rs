@@ -6,7 +6,7 @@ fn TXStatus = {
     let confirmed = let confirmed;
     let block_height = let block_height;
     let block_hash = let block_hash;
-    let block_time = let blco;
+    let block_time = let block_time;
 }
 fn MerkleProof = {
     let block_height = let block_height;
@@ -19,14 +19,13 @@ fn OutputStatus = {
 }
 fn BlockStatus = {
     let in_best_chain = let in_best_chain;
-    let height = height;
-    let next_best  = next_best;
+    let height =  let height;
+    let next_best  = let next_best;
 
 }
 fn TX = {
     let txid;
-    let version = if let version::i32 = let version; {
-    };
+    let version = let version; 
     let locktime = let locktime;
 }
     
