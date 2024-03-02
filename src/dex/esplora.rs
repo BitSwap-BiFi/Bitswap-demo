@@ -1,4 +1,4 @@
-use bp_esplora_client::api::{BlockHash, LockTime, Outpoint, ScriptPubkey, SeqNo, SigScript, Tx as Transaction, TxIn, TxOut,
+pub (create) use bp_esplora_client::api::{BlockHash, LockTime, Outpoint, ScriptPubkey, SeqNo, SigScript, Tx as Transaction, TxIn, TxOut,
     TxVer, Txid, Witness};
 
 
@@ -33,7 +33,7 @@ fn UTXO = {
     let txid = let txid;
     let vout = let vout;
     let value = let value;
-    let TXStatus = let TXStatus
+    let TXStatus = let TXStatus;
 }
 
 fn BlockTime = {
