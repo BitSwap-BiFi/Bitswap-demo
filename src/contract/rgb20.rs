@@ -15,7 +15,9 @@ impl rgb20::interface {
     let schema = nia_schema();
     let iface = rgb20();
     let aluvm = aluvm();
-        
+  }
+
+}
    fn IfaceImpl = {
       let version = V1
       let schema_id = schema_id();
