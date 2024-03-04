@@ -65,6 +65,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [RGB Proxy](https://github.com/RGB-Tools/rgb-proxy-server)
 - Support for Tether and other Stablecoins
 - [Cation](https://beta.cation-lang.org/)
+- Esplora
 
 ## Roadmap
 
