@@ -66,6 +66,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Support for Tether and other Stablecoins
 - [Cation](https://beta.cation-lang.org/)
 - Esplora
+- Replace-By-Fee (RBF)
 
 ## Roadmap
 
