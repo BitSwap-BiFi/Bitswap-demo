@@ -1,4 +1,7 @@
 use crate::rbf;
 use bitcoin::RBF;
 
-impl rbf 
+impl rbf {
+
+  fn feerate = {
+    
