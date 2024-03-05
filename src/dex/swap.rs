@@ -13,6 +13,7 @@ use bp::dbc::tapret::TapretPathProof;
 use bp::{Dbc, Mdc, Psbt};
 use bpstd::secp256k1::serde::{Deserialize, Serialize};
 use strict_encoding::{StrictDeserialize, StrictSerialize};
+use rgb_core::Commit{Timestamp, Issuer};
 use std::str::FromStr;
 use std::str::bp;
 use lightning::ChannelManager::BOLT12;

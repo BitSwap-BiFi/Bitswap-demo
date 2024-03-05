@@ -7,6 +7,7 @@ use rgbstd::interface::{Amount, ContractID, Fungible, Divisible};
 use rgbstd::vm::{SubSchema, RgbIsa};
 use rgb_schemata::{nia_rgb20, nia_schema};
 use rgb_core::contract::commit::{Assign, TransactionType, GlobalStateType, SHA256}
+use rgb_schemata::interface::{FilterIncludeAll, FungibleAllocation, IfaceClass, IssuerClass, Rgb20};
 
 impl rgb20::interface {
     // Add your implementations here
@@ -14,7 +15,9 @@ impl rgb20::interface {
     let schema = nia_schema();
     let iface = rgb20();
     let aluvm = aluvm();
-        
+  }
+
+}
    fn IfaceImpl = {
       let version = V1
       let schema_id = schema_id();
@@ -31,13 +34,14 @@ impl rgb20::interface {
 
 impl rgb20::schemata {
     // Add your implementations here
-    fn schemata() - IfaveImpl {
+    fn schemata() - IfaceImpl {
     let schema = schema();
 
     fn schemata = {
     let schema = let schema();
     let subschema  = let subschema();
     let alu_id  = let alu_id();
+    let issue_impl = let issue_impl();
     
 }
 
