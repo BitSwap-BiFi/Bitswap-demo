@@ -63,6 +63,13 @@ pub const STRICT = "STRICT";
 pub const ALUVM = "ALUVM";
 
 
+// Bitcoin
+
+pub const RBF = "RBF";
+pub const XPUB = "XPUB";
+pub const NETWORK = "NETWORK";
+pub const TAPTREE = "TAPTREE";
+
 // Server AMM
 
 pub const API = "API";
