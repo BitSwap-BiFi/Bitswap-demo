@@ -3,8 +3,6 @@
 #[macro_use]
 extern crate rgb;
 #[macro_use]
-extern crate bifrost;
-#[macro_use]
 extern crate error;
 #[macro_use]
 extern crate lightning;
@@ -27,7 +25,6 @@ extern crate constants;
 
 mod rgb;
 mod proxy;
-mod bifrost;
 mod testnet;
 mod validators;
 mod util;
