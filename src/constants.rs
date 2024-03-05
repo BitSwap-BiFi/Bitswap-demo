@@ -69,8 +69,6 @@ pub const RBF = "RBF";
 pub const XPUB = "XPUB";
 pub const NETWORK = "NETWORK";
 pub const TAPTREE = "TAPTREE";
-pub const MUSIG2 = "MUSIG2";
-pub const MINISCRIPT = "MINISCRIPT";
 
 // Server AMM
 
