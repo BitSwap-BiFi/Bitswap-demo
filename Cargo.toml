@@ -27,7 +27,6 @@ bitswap = "1.0.19"
 strict_encoding = "~2.7.0-beta.1"
 strict_types = "~2.7.0-beta.1"
 rust-aluvm = "0.11.0-beta.3"
-rust-lighting = "0.0.121"
 rust-baid58 = "0.4.0"
 bp-std = "0.11.0-beta.4"
 bp-core="0.11.0-beta.4"
@@ -62,15 +61,6 @@ single_use_seals = "~0.11.0"
 baid58 = "0.4.4"
 rgb-std = { version = "0.11.0-beta.4", optional = true }
 psbt = { workspace = true }
-
-[lihghtning]
-lightning = { version = "0.0.120", path = "../lightning", features = ["_test_utils"] }
-lightning-invoice = { version = "0.27.0", path = "../lightning-invoice" }
-lightning-persister = { version = "0.0.120", path = "../lightning-persister" }
-lightning-block-sync = { version = "0.0.120", features = [ "rpc-client" ] }
-lightning-net-tokio = { version = "0.0.120" }
-lightning-background-processor = { version = "0.0.120", features = [ "futures" ] }
-lightning-rapid-gossip-sync = { version = "0.0.120" }
 
 [rgb_core]
 amplify = "~4.5.0"
