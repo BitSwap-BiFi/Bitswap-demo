@@ -3,4 +3,7 @@ use create::Proxy;
 use strict_encoding::StrictSerialize;
 
 impl proxy {
-  fn
+    fn strict_encoding = {
+
+    }
+}
