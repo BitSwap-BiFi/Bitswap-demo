@@ -1080,7 +1080,18 @@ version = "0.11.0-beta.4"
 [[package]]
 name = "strict-type" 
 version = "2.7.0-beta.1"
-
 [[package]]
 name = "bp-esplora"
 version = "0.11.0-beta.4"
+[[package]]
+name = "automerge"
+version = "0.5.2"
+[[package]]
+name = "autosurgeon"
+version = "0.8"
+[[package]]
+name = "baid58"
+version = "0.4.4"
+[[package]]
+name = "dlc"
+version = "0.4.0"
