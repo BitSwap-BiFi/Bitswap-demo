@@ -39,6 +39,9 @@ rust-version = "1.76.0"
 rust-bitcoin = "0.1.1"
 musig2 = "0.0.5"
 bp-esplora = "0.11.0-beta.4"
+automerge = "0.5.2"
+autosurgeon = "0.8"
+baid58 = "0.4.4"
 
 
 
