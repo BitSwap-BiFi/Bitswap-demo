@@ -17,5 +17,7 @@ rgb-schemata = { version = "0.11.0-beta.4", features = ["stl", "nia", "interface
 rgb-runtime = { version = "0.11.0-beta.3", features = ["cli", "psbt"] }
 rust-dlc = { version = "0.4.0", features = ["dlc-message" , "dlc-manager", "p2pd-oracle-client", "bitcoin-rpc-provider"]}
 bp-esplora = { version = "0.11.0-beta.4", features = ["api"] }
-
+automerge = "0.5.2"
+autosurgeon = "0.8"
+baid58 = "0.4.4"
 
