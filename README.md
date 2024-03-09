@@ -47,7 +47,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [LDK](https://github.com/lightningdevkit/rust-lightning) and RGB Lightning Node
 - [Prime](https://github.com/LNP-BP/layer1) & [Liquid](https://liquid.net/)
 - [Bifrost](https://www.rgbfaq.com/glossary/bifrost)
-- CLI powered by RGB CLI 
+- CLI powered by [RGB CLI](https://github.com/RGB-WG/rgb)
 - BOLT12
 - Non custodial via on-chain and Lightning Network
 - Privacy
@@ -73,7 +73,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Compile to Cargo.lock (WIP)
 - [x] RGB v0.11 (WIP)
 - [ ] Contractum - Basic version
-- [ ] Demo DEX via CLI (Beta version - internal tests)
+- [ ] Demo DEX via CLI (Beta version - internal tests)                              - [ ] Mainnet
 
 ## Development
 
