@@ -73,7 +73,9 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [x] Compile to Cargo.lock (WIP)
 - [x] RGB v0.11 (WIP)
 - [ ] Contractum - Basic version
-- [ ] Demo DEX via CLI (Beta version - internal tests)                              - [ ] Mainnet
+- [ ] Demo DEX via CLI (Beta version - internal tests)
+- [ ] Mainnet
+- [x] Testnet
 
 ## Development
 
