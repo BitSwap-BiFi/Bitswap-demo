@@ -107,7 +107,7 @@ Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
 
 ## BITP (Bitswap Improvement Proposal - Similar BIPs to the Bitcoin)
 
-- [Official Specs](https://github.com/BitSwap-BiFi/BITP)
+[Official Specs](https://github.com/BitSwap-BiFi/BITP)
   
 ## Contributors
 
