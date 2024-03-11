@@ -16,6 +16,7 @@ Welcome to the Documentation around Bitswap ⚡
 - AluVM
 - Rust
 - Rust Lightning
+- Rust DLC
 - Bitcoin Core Node
 - Electrum Node
 - Lightning Node (testnet)
