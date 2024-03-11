@@ -105,7 +105,10 @@ In this Core, we'll not integrate with Sidechains non built on RGB and altcoins 
 
 Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
 
+## BITP (Bitswap Improvement Proposal - Similar BIPs to the Bitcoin)
 
+[Official Specs](https://github.com/BitSwap-BiFi/BITP)
+  
 ## Contributors
 
 <a align="center" href="https://github.com/BitSwap-BiFi/Bitswap-core/graphs/contributors">
