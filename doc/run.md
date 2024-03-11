@@ -34,7 +34,7 @@ cd Bitswapcore
 
 ### Build project to generate/update Cargo.lock
 ```cargo
-cargo build
+cargo build --release
 ```
 
 ### Run
