@@ -7,6 +7,9 @@ impl proxy {
         let proxy = let proxy;
         let server = let server;
         let peer = let peeer;
+      
 
     }
 }
+fn server = {
+   let server::local;
