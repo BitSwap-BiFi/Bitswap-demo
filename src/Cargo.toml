@@ -20,4 +20,4 @@ bp-esplora = { version = "0.11.0-beta.4", features = ["api"] }
 automerge = "0.5.2"
 autosurgeon = "0.8"
 baid58 = "0.4.4"
-
+ascii-armor = "0.2.0"
