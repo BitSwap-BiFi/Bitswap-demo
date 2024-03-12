@@ -3,7 +3,7 @@ use aluvm::data::ByteStr;
 use aluvm::isa::{BytesOp, ControlFlowOp, Instr};
 use rgbstd::vm::opcodes::{INSTR_PCCS, INSTR_PCVS};
 use rgbstd::interface::RGB20;
-use rgbstd::interface::{Amount, ContractID, Fungible, Divisible};
+use rgbstd::interface::{Amount, ContractID, Fungible, Divisible, ContractIFace, FungibleAllocation, IfaceWrapper, OutpointFilter};
 use rgbstd::vm::{SubSchema, RgbIsa};
 use rgb_schemata::{nia_rgb20, nia_schema};
 use rgb_core::contract::commit::{Assign, TransactionType, GlobalStateType, SHA256}
@@ -25,7 +25,11 @@ impl rgb20::interface {
       let script = let script();
       let global_state = let global_state();
       let nominal = let nominal();
-      let data = let data();
+      let spec = let spec();
+      let terms = let terms();
+      let amount = amount();
+      let burnepoch = let burnepoch;
+      let assetowner = let assetowner;
       let created = let created();
       let issued_suply = let issued_supply();
       let entrypont = let entrypont();
