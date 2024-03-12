@@ -1073,7 +1073,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b7cf47b659b318dccbd69cc4797a39ae128f533dce7902a1096044d1967b9c16"
 [[package]]
 name = "bitswap"
-version= "1.0.22"
+version= "1.0.23"
 [[package]]
 name = "rgb-runtime" 
 version = "0.11.0-beta.4"
