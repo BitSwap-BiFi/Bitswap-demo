@@ -1,3 +1,3 @@
 [workspace]
 name = "src/dex"
-version = "1.0.21-alpha"
+version = "1.0.23-alpha"
