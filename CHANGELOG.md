@@ -2,6 +2,14 @@
 
 See last versions and releases around Bitswap development
 
+## Alpha - v1.0.23
+
+**Highlights**
+
+- Fixed dependencies
+- RGB20 interface update
+- Bitcoin functions
+
 ## Alpha - v1.0.22
 
 **Highlights**
