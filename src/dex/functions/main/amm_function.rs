@@ -3,11 +3,11 @@
 // SPDX-License-Identifier: 
 Business Source License 1.1
 //
-// Written in 2023 by 22388O and Rsync25
+// Written in 2024 by 22388O and Rsync25
 //
-// Copyright (C) 2023 Bitswap. All rights reserved.
-// Copyright (C) 2023 22388O. All rights reserved.
-// Copyright (C) 2023 Rsync. All rights reserved.
+// Copyright (C) 2024 Bitswap. All rights reserved.
+// Copyright (C) 2024 22388O. All rights reserved.
+// Copyright (C) 2024 Rsync. All rights reserved.
 //
 // Licensed under the 
 Business Source License, 1.1(the "License");
@@ -19,7 +19,7 @@ Business Source License, 1.1(the "License");
 // This License does not grant you any right in any trademark or logo of Licensor or its affiliates (provided that you may use a trademark or logo of Licensor as expressly required by this License).TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE. MariaDB hereby grants you permission to use this License’s text to license your works, and to refer to it using the trademark “Business Source License”, as long as you comply with the Covenants of Licensor below
 
 use crate::LIBAMMFUNCTION;                 
-use crate::{Swap, AMMContract,Swap, AddLiquidity,CaculateSwap,AMM,OracleInfo,ContractInfo}
+use crate::{Swap, AMMContract,Swap, AddLiquidity,CaculateSwap,AMM,OracleInfo,ContractInfo};
 
 use rgb_core::{Contract, ExecutionResult};
 use aluvm::{Executor, Value, Baid68,SetFailure};
