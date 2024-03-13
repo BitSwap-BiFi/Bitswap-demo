@@ -1,6 +1,6 @@
 pub(crate) use std::rgb_core;
 
-use crate::{Pool, AddAsset, RemoveAdd, RunPool, LiquidityProviderPool};
+use create::{Pair, Validate, Genesis};
 
 use rgb::traits::Validate;
 use rgb::value::Value;
