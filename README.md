@@ -7,10 +7,6 @@
 
 ⚠️**Alpha Software and WIP**
 
-⚠️**Unstable Software**
-
-⚠️**Isn't ready to compile via Cargo.lock for while**
-
 
 **Contributions are welcome**
 
@@ -55,7 +51,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Multipeer channel
 - Taproot Channels
 - DLC Off chain thought Lightning swaps
-- AMM like Uniswap
+- AMM as Uniswap
 - LSP for RGB20 Assets
 - PTLCs
 - Musig2
@@ -66,7 +62,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Support for Tether and other Stablecoins
 - [Cation](https://beta.cation-lang.org/)
 - Esplora
-- Replace-By-Fee (RBF)
+- [Replace-By-Fee (RBF)](https://bitcoinops.org/en/topics/replace-by-fee/)
 
 ## Roadmap
 
