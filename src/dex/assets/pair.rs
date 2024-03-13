@@ -1,6 +1,6 @@
 pub(crate) use std::rgb_core;
 
-use create::PAIR;
+use create::{Pair, Validate, Genesis};
 
 use rgb::traits::Validate;
 use rgb::value::Value;

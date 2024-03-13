@@ -1,5 +1,4 @@
-use create::POOL;
-
+use create::{Pool, Contract, UserChoice};
 use rgb_core::{Contract, ExecutionResult};
 use aluvm::{Executor, Value};
 use rgbstd::{Amount, ContractData, DivisibleAssetSpec, StandardTypes, Timestamp};
