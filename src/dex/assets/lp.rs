@@ -1,5 +1,6 @@
 pub(crate) use std::rgb_core;
 pub(crate) use Pool;
+use crate::{Pool, AddAsset, RemoveAdd, RunPool, LiquidityProviderPool};
 use std::lightning
 
 use crate::LIB_LP;
