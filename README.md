@@ -7,10 +7,6 @@
 
 ⚠️**Alpha Software and WIP**
 
-⚠️**Unstable Software**
-
-⚠️**Isn't ready to compile via Cargo.lock for while**
-
 
 **Contributions are welcome**
 
