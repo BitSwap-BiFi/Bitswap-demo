@@ -3,7 +3,7 @@ version = 3
 
 [[package]]
 name = "aluvm"
-version = "0.11.0-beta.3"
+version = "0.11.0-beta.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e624a600eaf54f24da48e42604ffb0fbd543808a078e5081a9441243077233df"
 dependencies = [
@@ -1079,7 +1079,7 @@ name = "rgb-runtime"
 version = "0.11.0-beta.4"
 [[package]]
 name = "strict-type" 
-version = "2.7.0-beta.1"
+version = "2.7.0-beta.2"
 [[package]]
 name = "bp-esplora"
 version = "0.11.0-beta.4"
