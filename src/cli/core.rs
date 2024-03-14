@@ -5,7 +5,7 @@ use std::rgb_contract;
 use std::rgbstd;
 
 use clap::{App, Arg, SubCommand};
-use crate::Core::{SubCommand,Subcommand_bit};
+use crate::Core::{Cli, SubCommand,Subcommand_bit};
 use crate::Core::{Contract, RGBContract, Refund, RemoveLiquidity, Oracle, FundWallet, PSBT, AddLiquidity, Swap, RGBInvoice, Wallet};
 
 
