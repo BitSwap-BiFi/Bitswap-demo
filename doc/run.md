@@ -35,6 +35,7 @@ cd Bitswapcore
 
 ### Build project to generate/update Cargo.lock
 ```cargo
+cargo build
 cargo build --release
 ```
 
@@ -43,7 +44,11 @@ cargo build --release
 ```cargo
 cargo run
 ```
+## Rustup update
 
+```rustup
+rustup update
+```
 ## Use CLI
 
 Use ``app`` for see options and run DEX
