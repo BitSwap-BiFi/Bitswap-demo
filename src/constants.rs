@@ -32,6 +32,7 @@ pub const SWAP = "SWAP";
 
 pub const CLI = "CLI";
 pub const CORE = "CORE";
+pub const MAIN = "MAIN";
 
 // Contract
 
