@@ -12,4 +12,4 @@
 #### Bitlight Labs
 
 - Gihtub: @BitlightLabs
-- X: @BitlightLabs / @Bitlight_Wallet
+- X: @BitlightLabs / @Bitlight_Wallet / @BitlightLabsFoundation
