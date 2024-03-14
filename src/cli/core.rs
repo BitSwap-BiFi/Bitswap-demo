@@ -5,6 +5,7 @@ use std::rgb_contract;
 use std::rgbstd;
 
 use clap::{App, Arg, SubCommand};
+use create::Core::{SubCommand,Subcommand_bit};
 
 fn main() {
     let Subcommand = App::new("DEX CLI")
