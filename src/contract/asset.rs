@@ -1,4 +1,5 @@
-pub(crate) use create::Contract::Asset;
+pub(crate) use crate::Contract::Asset;
+use crate::{RGBAsset, TransferAsset, GetBalance};
 
 use std::rgb_core;
 use std::baid58;

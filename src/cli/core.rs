@@ -5,10 +5,13 @@ use std::rgb_contract;
 use std::rgbstd;
 
 use clap::{App, Arg, SubCommand};
+use crate::Core::{Cli, SubCommand,Subcommand_bit};
+use crate::Core::{Contract, RGBContract, Refund, RemoveLiquidity, Oracle, FundWallet, PSBT, AddLiquidity, Swap, RGBInvoice, Wallet};
+
 
 fn main() {
     let Subcommand = App::new("DEX CLI")
-        .version("1.0.21-alpha")
+        .version("1.0.23-alpha")
         .author("Bitswap & Bitlight Labs")
         .about("CLI for interacting with DEX on RGB and Lightning Network")
         .subcommand(
