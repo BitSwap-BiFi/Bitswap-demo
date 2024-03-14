@@ -3,6 +3,7 @@ use rgb_core::{contract::Contract, fungible::{Mint, OutpointValue, ValueSum}};
 use rgb_core::{issue::Amount};
 use rgb_contract::Cli;
 use lightning::channel;
+use crate::Cli;
 use rgbstd::interface::{Amount, ContractID, Mint, OutpointValue, ValueSum};
 use std::{error::Error};
 use std::io::{self, Write};
