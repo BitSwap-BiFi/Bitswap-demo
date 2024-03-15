@@ -12,7 +12,7 @@
 
 ### How Works?
 
-The user can participate of Pools and earn BTC, tokens and USDT like on Uniswap
+The user can participate of Pools for earn BTC, tokens and USDT like on Uniswap
 
 How there's no lunch free, you can lose sats in these scenarios:
 
