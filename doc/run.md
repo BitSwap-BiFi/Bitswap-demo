@@ -67,3 +67,6 @@ $app - for bitswap management
 -close_channel
 
 ```
+## Run via Docker
+
+TBD
