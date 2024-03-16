@@ -7,7 +7,6 @@
 
 ⚠️**Alpha Software and WIP**
 
-
 **Contributions are welcome**
 
 ### How Works?
