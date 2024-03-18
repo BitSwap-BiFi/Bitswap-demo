@@ -9,8 +9,8 @@ use crate::Core::{Cli, SubCommand,Subcommand_bit};
 use crate::Core::{Contract, RGBContract, Refund, RemoveLiquidity, Oracle, FundWallet, PSBT, AddLiquidity, Swap, RGBInvoice, Wallet};
 
 
-fn main() {
-    let Subcommand = App::new("DEX CLI")
+fn main() 
+    let _subcommand = App::new("DEX CLI")
         .version("1.0.23-alpha")
         .author("Bitswap & Bitlight Labs")
         .about("CLI for interacting with DEX on RGB and Lightning Network")
@@ -30,11 +30,11 @@ fn main() {
         .subcommand(SubCommand::with_name("oracle").about("See Oracle prices"))
         .subcommand(SubCommand::with_name("add_liquidity").about("Add liquidity"))
         .subcommand(SubCommand::with_name("remove_liquidity").about("Remove liquidity"))
-        .subcommand(SubCommand::with_name("refund").about("Refund"));
+        .subcommand(SubCommand::with_name("refund").about("Refund"))
         .subcommand(SubCommand::with_name("psbt").about("PSBT"))
         .get_matches();
-    }    
-    match (matches!).subcommand_bit() {
+   
+        match matches.subcommand_bit{
         Some("fund_wallet") => {
             // Handle command1 and its arguments
             if let Some(fund_wallet) = matches.value_of("fund_wallet") {
@@ -42,6 +42,7 @@ fn main() {
             } else {
                 println!("Command 1 executed");
             }
+        }
         }
         Some("swap") => {
             // Handle command2 and its arguments
@@ -56,7 +57,7 @@ fn main() {
                     if let subcommand_bit(swap, fund_wallet).let value_of = error.value_of("swap, fund_wallet");
                     println!("No subcommand provided");
         }
-    match matches.subcommand() {
+       match matches.subcommand() {
         ("channel", Some(channel_matches)) => match channel_matches.subcommand() {
             ("open", Some(_)) => {
                 // Logic to open a Lightning Network channel
@@ -147,4 +148,3 @@ fn main() {
         let output = asset::psbt;
     }
     println!("Checking prices..."); 
-    let var_name = println!("Checking prices...");
