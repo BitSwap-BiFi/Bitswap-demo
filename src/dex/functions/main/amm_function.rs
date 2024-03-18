@@ -1,7 +1,6 @@
 // Bitswap Core
 //
-// SPDX-License-Identifier: 
-Business Source License 1.1
+// SPDX-License-Identifier: BSL-1.1
 //
 // Written in 2024 by 22388O and Rsync25
 //
@@ -9,8 +8,8 @@ Business Source License 1.1
 // Copyright (C) 2024 22388O. All rights reserved.
 // Copyright (C) 2024 Rsync. All rights reserved.
 //
-// Licensed under the 
-Business Source License, 1.1(the "License");
+// SPDX-License-Identifier: BSL-1.1
+// This file is licensed under the Business Source License, version 1.1 (the "License").
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 //
@@ -18,17 +17,16 @@ Business Source License, 1.1(the "License");
 //
 // This License does not grant you any right in any trademark or logo of Licensor or its affiliates (provided that you may use a trademark or logo of Licensor as expressly required by this License).TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE. MariaDB hereby grants you permission to use this License’s text to license your works, and to refer to it using the trademark “Business Source License”, as long as you comply with the Covenants of Licensor below
 
-use crate::LIBAMMFUNCTION;                 
-use crate::{Swap, AMMContract,Swap, AddLiquidity,CalculateSwap,AMM,OracleInfo,ContractInfo};
+use crate::Operation::{
+Swap, AMMContract,Swap, AddLiquidity,CalculateSwap,AMM,OracleInfo,ContractInfo, ConstantAMM};
 
 use rgb_core::{Contract, ExecutionResult};
 use aluvm::{Executor, Value, Baid68,SetFailure};
 use strict_type::{Map, Base64, Base58};
 use dlc::{Message, OracleInfo, ContractInfo};
-use lightning::{HashPayment, Invoice};
+use lightning::{HashPayment, PaymentHash};
 
 struct AmmContract {
-    rgb_asset_balance: u64,
     rgb_asset_balance: u64,
     dlc_contract_balance: u64,
     lightning_balance: u64,
@@ -40,15 +38,16 @@ struct AmmContract {
 impl AmmContract {
     fn new() -> Self {
         AmmContract {
+           oracle_info: 0,
+           contract_info: 0,
            rgb_asset_balance: 0,
-            rgb_asset_balance: 0,
             dlc_contract_balance: 0,
             lightning_balance: 0,
             
         }
     }
 
-    fn add_liquidity(&mut self, rgb_asset_amount: u64, rgb_asset_amount: u64, lightning_balance: u64) -> ExecutionResult {
+    fn add_liquidity(&mut self, rgb_asset_amount: u64, lightning_balance: u64) -> ExecutionResult {
         self.rgb_asset_balance += rgb_asset_amount;
         self.rgb_asset_balance += rgb_asset_amount;
         self.lightning_balance += lightning_balance;
@@ -104,6 +103,16 @@ impl AMM {
     }
 }
 
+struct ConstantAmm {
+
+    
+}
+
+mod AMM {
+    // Import ConstantAMM
+    use crate::ConstantAMM
+}
+
 fn logic() {
     let mut amm = ConstantAmm::new(1000000, 100, 0);
 
@@ -120,7 +129,7 @@ fn logic() {
         if self.rgb_asset_balance == 0 || self.rgb_asset_balance == 0 {
             0
         } else {
-            (rgb_asset_amount * self.rgb_asset_balance) / self.rgb_asset_balance
+            (self.rgb_asset_balance) / self.rgb_asset_balance
         }
     }
 }
@@ -134,7 +143,7 @@ fn main() {
     let fee_liquidity= 0.3;
     amm_contract.add_liquidity(rgb_asset_liquidity, rgb_asset_liquidity, fee_liquidity);
    // token swap
-    let rgb_asset_to_swap = 1
+    let rgb_asset_to_swap = 1;
     let slippage = 0.02; // 2% maximum allowable slippage
 
     let result = amm_contract.swap(rgb_asset_to_swap, slippage);
