@@ -71,7 +71,7 @@ impl AmmContract {
         }
     }
 
-    fn calculate_swap(&self, btc_amount: u64) -> u64 {
+    fn calculate_swap(&self, _btc_amount: u64) -> u64 {
         //Logic AMM
        struct AMM{
     k: u64,
@@ -110,7 +110,7 @@ struct ConstantAmm {
 
 mod AMM {
     // Import ConstantAMM
-    use crate::ConstantAMM
+    use crate::ConstantAMM;
 }
 
 fn logic() {
