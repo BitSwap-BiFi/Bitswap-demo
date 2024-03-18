@@ -110,7 +110,7 @@ struct ConstantAmm {
 
 mod AMM {
     // Import ConstantAMM
-    use crate::ConstantAMM
+    use crate::ConstantAMM;
 }
 
 fn logic() {
