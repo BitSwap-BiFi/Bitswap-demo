@@ -7,12 +7,11 @@
 
 ⚠️**Alpha Software and WIP**
 
-
 **Contributions are welcome**
 
 ### How Works?
 
-The user can participate of Pools for earn BTC, tokens and USDT like on Uniswap
+The user can participate of Pools for earn BTC, tokens and USDT how on Uniswap
 
 How there's no lunch free, you can lose sats in these scenarios:
 
@@ -67,7 +66,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 ## Roadmap
 
 - [x] Compile to Cargo.lock (WIP)
-- [x] RGB v0.11 (WIP)
+- [x] RGB v0.11
 - [ ] Contractum - Basic version
 - [ ] Demo DEX via CLI (Beta version - internal tests)
 - [ ] Mainnet
