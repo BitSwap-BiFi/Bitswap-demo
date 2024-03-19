@@ -10,29 +10,32 @@ use dlc::{Contract, OracleInfo, Party};
 use bitcoin::util::address::Address;
 use bitcoin::Network;
 use secp256k1::Secp256k1;
+use memoffset::__priv::mem::swap;
+
 
 fn main() {
     // Establish connection with Oracle
-    let edndpoint = Endpoint::new("http://oracle");
+    let edndpoint = Endpoint::new("http://localhost::3001");
 
     // Create a new DLC contract
     let mut dlc = ContractDescriptor::new();
     dlc.set_oracle(&node);
+}
 
 fn oracle() {
     let oracle_info = ContractInfo::rgb_assets;
     let oracle_message = Message::price;
-    let oracle_pairs = ContractInfo:new:pairs::rgb_assets;
-    let swap_pairs = ContractInfo::new::pairs:rgb_assets;
-        
+    let oracle_pairs = ContractInfo:new:oracle_pairs;
+    let swap_pairs = ContractInfo::new::swap_pairs;
+}
     
-async fn main() {
+async fn contract() {
     // Initialize your Oracle
-    let oracle_info = OracleInfo::new(/Price/);
+    let oracle_info = OracleInfo::new(OracleInfo);
 
     // Create a Contract
-    let party_a = Party::new(/rgb_assets/);
-    let party_b = Party::new(/rgb_assets/);
+    let party_a = Party::new(rgb_assets);
+    let party_b = Party::new(rgb_assets);
     let contract = Contract::new(party_a.clone(), party_b.clone(), oracle_info);
 
     // Generate Contract Offer
@@ -60,3 +63,4 @@ async fn main() {
         &pairs,
         oracle_sig,
         &secp,
+   ) }
