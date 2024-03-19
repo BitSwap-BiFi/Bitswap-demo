@@ -6,6 +6,9 @@
 *Decentralized Exchange for RGB assets (RGB20)*
 
 ⚠️**Alpha Software and WIP**
+⚠️**This repo will be archived and read-only**
+⚠️**All development was moved to Internal**
+
 
 **Contributions are welcome**
 
@@ -62,16 +65,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 - [Cation](https://beta.cation-lang.org/)
 - Esplora
 - [Replace-By-Fee (RBF)](https://bitcoinops.org/en/topics/replace-by-fee/)
-
-## Roadmap
-
-- [x] Compile to Cargo.lock (WIP)
-- [x] RGB v0.11
-- [ ] Contractum - Basic version
-- [ ] Demo DEX via CLI (Beta version - internal tests)
-- [ ] Mainnet
-- [x] Testnet
-
+  
 ## Development
 
 [Run](https://github.com/BitSwap-BiFi/Bitswap-core/blob/main/doc/development.md)
