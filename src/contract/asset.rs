@@ -4,6 +4,7 @@ use crate::{RGBAsset, TransferAsset, GetBalance};
 use std::rgb_core;
 use std::baid58;
 use std::amplify;
+use std::collections::HashMap;
 
 
 use rgb_core::{Consignment, Contract, Error, ExecutionResult, Schema, Value, State, Tag};
@@ -21,8 +22,11 @@ use amplify::{ByteArray, Bytes32};
 use commit_verify::{CommitEncode, CommitVerify, CommitmentProtocol, Conceal, UntaggedProtocol};
 use rgb::{U8, Bytes32};
 use rgb::{ContractSchema};
-use rgb::mod::{ContractSubSchema};
-use std::collections::HashMap;
+use core::num::dec2flt::number::Number;
+use memoffset::__priv::mem::swap;
+
+
+
 
 // Struct for support RGB20 assets on DEX
 struct RGB20Asset {
@@ -32,7 +36,6 @@ struct RGB20Asset {
     asset_id: String,
     lp: String,
     schema: String,
-    decimal: Number,
     txid: String,
     total_supply: u64,
     balances: HashMap<String, u64>,
@@ -42,12 +45,13 @@ impl RGB20Asset {
     fn new(name: String, symbol: String, total_supply: u64) -> Self {
         RGB20Asset {
             name,
-            amount,
-            blidend_uxto,
             symbol,
             total_supply,
-            decimal,
             asset_id,
+            schema,
+            swap,
+            lp,
+            txid,
             balances: HashMap::new(),
         }
     }
@@ -128,6 +132,6 @@ impl RGB20Contract {
 }
 
 fn main() {
-    let mut rgb20_contract = RGB20Contract::new();
+    let mut rgb20contract = RGB20Contract::new();
 }
 

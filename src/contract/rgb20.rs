@@ -49,3 +49,7 @@ impl rgb20::schemata {
     
 }
 
+fn main() {
+    println!("RGB 20 Interface");
+}
+
