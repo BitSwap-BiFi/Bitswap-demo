@@ -2,7 +2,7 @@ pub(crate) use std::rgb_core;
 use std::dlc;
 
 pub(crate) use create::DLCAsset;
-use crate::{DLCAsset, OracleInfo, Party, Contrat, ContractTX};
+use crate::{DLCAsset, OracleInfo, Party, Contract};
 
 use rgb_core::Node;
 use dlc::{ContractOracle, ContractDescriptor};
