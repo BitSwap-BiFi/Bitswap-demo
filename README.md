@@ -7,8 +7,6 @@
 
 ⚠️**Alpha Software and WIP**
 
-⚠️**This repo will be archived and read-only**
-
 ⚠️**All development was moved to Internal**
 
 
