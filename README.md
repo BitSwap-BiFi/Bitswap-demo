@@ -5,8 +5,6 @@
 
 *Decentralized Exchange for RGB assets (RGB20)*
 
-⚠️**Alpha Software and WIP**
-
 ⚠️**All development was moved to Internal**
 
 
