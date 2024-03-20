@@ -5,12 +5,11 @@
 
 *Decentralized Exchange for RGB assets (RGB20)*
 
-⚠️**All development was moved to Internal**
+⚠️**We moved our development to our Core internal**
 
+⚠️**This repo haven't maintained**
 
-**Contributions are welcome**
-
-### How Works?
+## How Works?
 
 The user can participate of Pools for earn BTC, tokens and USDT how on Uniswap
 
