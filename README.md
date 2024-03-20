@@ -7,9 +7,9 @@
 
 ⚠️**We moved our development to our Core internal**
 
-⚠️**This repo haven't maintained**
+⚠️**This repository is not maintained** 
 
-## How Works?
+### How Works?
 
 The user can participate of Pools for earn BTC, tokens and USDT how on Uniswap
 
