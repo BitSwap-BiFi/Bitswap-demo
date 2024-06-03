@@ -1,4 +1,4 @@
-# Bitswap Core Demo ⚡ 💱
+# Bitswap Demo ⚡ 💱
 
 [![LN](https://img.shields.io/badge/lightning-792EE5?logo=lightning)](https://mempool.space/lightning)
 
