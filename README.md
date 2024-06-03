@@ -3,7 +3,7 @@
 [![LN](https://img.shields.io/badge/lightning-792EE5?logo=lightning)](https://mempool.space/lightning)
 
 
-*Decentralized Exchange for RGB assets (RGB20)*
+*Decentralized Exchange Demo for RGB assets (RGB20)*
 
 ⚠️**We moved our development to our Core internal**
 
