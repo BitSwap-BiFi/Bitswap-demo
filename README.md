@@ -32,36 +32,6 @@ How there's no lunch free, you can lose sats in these scenarios:
 - Alice receive BTC of Bob
 
 - DLCs verify price settled and solve 2-of-2 pairs
-
-### Features
-
-- [Payjoin](https://payjoin.org/)
-- Universal swaps, atomic swaps via on-chain and Lightning Network
-- P2P Swaps without intermediary with [DLCs](https://github.com/p2pderivatives/rust-dlc)
-- [Taproot](https://bitcoinops.org/en/topics/taproot/)
-- [LDK](https://github.com/lightningdevkit/rust-lightning) and RGB Lightning Node
-- [Prime](https://github.com/LNP-BP/layer1) & [Liquid](https://liquid.net/)
-- [Bifrost](https://www.rgbfaq.com/glossary/bifrost)
-- CLI powered by [RGB CLI](https://github.com/RGB-WG/rgb)
-- BOLT12
-- Non custodial via on-chain and Lightning Network
-- Privacy
-- Non KYC
-- Multipeer channel
-- Taproot Channels
-- DLC Off chain thought Lightning swaps
-- AMM as Uniswap
-- LSP for RGB20 Assets
-- PTLCs
-- Musig2
-- [Bitlight Wallet](https://bitlightlabs.com/) & [Bitmask](https://bitmask.app/)
-- [Contractum for complex contracts](https://www.contractum.org/)
-- DCA decentralized thought USDT
-- [RGB Proxy](https://github.com/RGB-Tools/rgb-proxy-server)
-- Support for Tether and other Stablecoins
-- [Cation](https://beta.cation-lang.org/)
-- Esplora
-- [Replace-By-Fee (RBF)](https://bitcoinops.org/en/topics/replace-by-fee/)
   
 ## Development
 
