@@ -7,7 +7,7 @@
 
 ⚠️**We moved our development to our Core internal**
 
-⚠️**This repository is not maintained** 
+⚠️**Demo DEX for tests on the testnet**
 
 ### How Works?
 
