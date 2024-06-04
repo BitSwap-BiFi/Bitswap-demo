@@ -45,14 +45,6 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 [Official Documentation](https://github.com/BitSwap-BiFi/bitswap-docs)
 
-## License ⚠️
-
-The code is licensed under either:
-
--  [Business Source License 1.1](https://github.com/BitSwap-BiFi/Bitswap-core/blob/main/LICENSE.md)
--  This licensed under [BSL 1.1](https://mariadb.com/bsl11/), a "source available" license which automatically turns into an open source license after 4 years, see [LICENSE](https://github.com/BitSwap-BiFi/Bitswap-core/blob/main/LICENSE.md) and [BSL FAQs](https://mariadb.com/bsl-faq-mariadb/) for details. 
-
-
 ## Ossification DEX
 
 In this Core, we'll not integrate with Sidechains non built on RGB and altcoins beyond RGB, Bitcoin, Prime, Liquid, Bifrost, Payjoin, RGB wallets and Lightning Network.
