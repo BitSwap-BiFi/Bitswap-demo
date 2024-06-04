@@ -18,7 +18,7 @@ use crate::Core::{Contract, RGBContract, Refund, RemoveLiquidity, Oracle, FundWa
 
 fn main() 
     let _subcommand = App::new("DEX CLI")
-        .version("1.0.31-alpha")
+        .version("1.0.23-alpha")
         .author("Bitswap")
         .about("CLI for interacting with DEX on RGB and Lightning Network")
         .subcommand(
