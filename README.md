@@ -7,7 +7,7 @@
 
 ⚠️**We moved our development to our Core internal**
 
-⚠️**Demo DEX for tests on the testnet**
+⚠️**Demo DEX for users test on the testnet**
 
 ### How Works?
 
