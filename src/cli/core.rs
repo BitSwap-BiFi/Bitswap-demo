@@ -13,7 +13,7 @@ use bitcoin::constants::Network::Signet;
 
 use clap::{App, Arg, SubCommand};
 use crate::Core::{Cli, SubCommand,Subcommand_bit};
-use crate::Core::{Contract, RGBContract, Refund, RemoveLiquidity, Oracle, FundWallet, PSBT, AddLiquidity, Swap, RGBInvoice, Wallet, Network};
+use crate::Core::{Contract, RGBContract, Refund, RemoveLiquidity, Oracle, FundWallet, PSBT, AddLiquidity, Swap, RGBInvoice, Wallet, Network, AMM, Layer1, Liquid, Liquid_deposit, Liquid_swap};
 
 
 fn main() 
@@ -44,7 +44,8 @@ fn main()
         .subcommand(subcommand::with_name("liquid_redeem").about("Liquid Redeem"))
         .subcommand(subcommand::with_name("liquid_withdraw").about("Liquid Withdraw"))
         .subcommand(subcommand::with_name("liquid_deposit").about("Liquid Deposit"))
-        .subcommand(subcommand::with_name("nerwork").about("Network")
+        .subcommand(subcommand::with_name("network").about("Network"))
+        .subcommand(subcommand::with_name("amm").about("AMM"))
         .get_matches();
    
         match matches.subcommand_bit{
@@ -164,5 +165,13 @@ fn main()
         let network = Testnet;
         let network = Signet;
 
+    )}
+    ("amm", Some(_)) => {
+        // Logic to handle AMM functions
+        let x = 100.0; // Replace with actual value
+        let y = 200.0; // Replace with actual value
+        let k = x * y;
+        println!("Handling AMM functions with x: {}, y: {}, k: {}", x, y, k);
     }
+
     println!("Checking prices..."); 
