@@ -9,28 +9,20 @@ Welcome to the Documentation around Bitswap ⚡
 ### Pre Requisite
 
 - RGB CLI
-- RGB Core
-- RGB STD
-- RGB Schemata
-- Strict Type
-- AluVM
 - Rust
 - Rust Lightning
 - Rust DLC
-- Bitcoin Core Node
-- Electrum Node
-- Lightning Node (testnet)
 - Sats for fund wallet allow send, receive and swap RGB Assets
 
 ### Clone the Git repository
 
 ```git
-git clone https://github.com/Bitswap-BiFi/Bitswap-core.git
+git clone https://github.com/Bitswap-BiFi/Bitswap-demo.git
 ```
 
 ### Navigate to the project directory
 ```cd
-cd Bitswapcore
+cd Bitswapdemo
 ```
 
 ### Build project to generate/update Cargo.lock
