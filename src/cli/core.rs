@@ -1,18 +1,25 @@
-use std::rgb_core;
-use std::lightning;
-use std::dlc;
-use std::rgb_contract;
-use std::rgbstd;
+use std::Rgb_core;
+use std::Lightning;
+use std::Dlc;
+use std::rgb_contract::{UnsupportedLayer1, Layer1, Liquid, PSBT};
+use std::rgbstd::interface::{Rgb20, Iface};
+use std::rgbstd::persistence::{Stock, State, Stash};
+use std::rgbstd::invoice::{Amount, Data, Invoice};
+use bitcoin::constants::Network;
+use bitcoin::constants::Network::Testnet;
+use bitcoin::constants::Network::Regtest;
+use bitcoin::constants::Network::Signet;
+
 
 use clap::{App, Arg, SubCommand};
 use crate::Core::{Cli, SubCommand,Subcommand_bit};
-use crate::Core::{Contract, RGBContract, Refund, RemoveLiquidity, Oracle, FundWallet, PSBT, AddLiquidity, Swap, RGBInvoice, Wallet};
+use crate::Core::{Contract, RGBContract, Refund, RemoveLiquidity, Oracle, FundWallet, PSBT, AddLiquidity, Swap, RGBInvoice, Wallet, Network};
 
 
 fn main() 
     let _subcommand = App::new("DEX CLI")
-        .version("1.0.23-alpha")
-        .author("Bitswap & Bitlight Labs")
+        .version("1.0.31-alpha")
+        .author("Bitswap")
         .about("CLI for interacting with DEX on RGB and Lightning Network")
         .subcommand(
             SubCommand::with_name("channel")
@@ -32,6 +39,12 @@ fn main()
         .subcommand(SubCommand::with_name("remove_liquidity").about("Remove liquidity"))
         .subcommand(SubCommand::with_name("refund").about("Refund"))
         .subcommand(SubCommand::with_name("psbt").about("PSBT"))
+        .subcommand(subcommand::with_name("liquid").about("Liquid"))
+        .subcommand(subcommand::with_name("liquid_swap").about("Liquid Swap"))
+        .subcommand(subcommand::with_name("liquid_redeem").about("Liquid Redeem"))
+        .subcommand(subcommand::with_name("liquid_withdraw").about("Liquid Withdraw"))
+        .subcommand(subcommand::with_name("liquid_deposit").about("Liquid Deposit"))
+        .subcommand(subcommand::with_name("nerwork").about("Network")
         .get_matches();
    
         match matches.subcommand_bit{
@@ -146,5 +159,10 @@ fn main()
         let output = asset::CONTRACTID;
         let output = RGB_ASSET;
         let output = asset::psbt;
+    }
+    ("network", Some(_) = > {
+        let network = Testnet;
+        let network = Signet;
+
     }
     println!("Checking prices..."); 
