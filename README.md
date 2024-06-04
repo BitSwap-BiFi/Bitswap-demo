@@ -7,7 +7,7 @@
 
 ⚠️**We moved our development to our Core internal**
 
-⚠️**Demo DEX for users test on the testnet, Signet & Regtest**
+⚠️**Demo DEX for users test on the Testnet, Signet & Regtest**
 
 ⚠️**Contributions are welcome**
 
@@ -33,7 +33,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 - Alice receive BTC of Bob
 
-- DLCs verify price settled and solve 2-of-2 pairs
+- DLCs verify preice settled and solve 2-of-2 pairs
   
 ## Development
 
