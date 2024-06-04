@@ -2,7 +2,7 @@
 
 Welcome to the Documentation around Bitswap ⚡
 
-⚠️**DEX running on Testnet**
+⚠️**DEX running on Testne, Signet & Regtest**
 
 ⚠️**Use small amount**
 
