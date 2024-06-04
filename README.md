@@ -33,7 +33,7 @@ How there's no lunch free, you can lose sats in these scenarios:
 
 - Alice receive BTC of Bob
 
-- DLCs verify preice settled and solve 2-of-2 pairs
+- DLCs verify price settled and solve 2-of-2 pairs
   
 ## Development
 
