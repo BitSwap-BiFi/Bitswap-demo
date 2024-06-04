@@ -7,7 +7,9 @@
 
 ⚠️**We moved our development to our Core internal**
 
-⚠️**Demo DEX for users test on the testnet**
+⚠️**Demo DEX for users test on the testnet, Signet & Regtest**
+
+⚠️**Contributions are welcome**
 
 ### How Works?
 
