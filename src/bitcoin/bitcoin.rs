@@ -1,4 +1,4 @@
-use crate::bitcoin;
+use crate::Bitcoin;
 
 use bp_core::opret;
 use bp_core::spk;
