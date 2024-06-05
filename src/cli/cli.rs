@@ -1,8 +1,8 @@
-pub(crate) use lightning::Wallet;
+use lightning::Wallet;
 use rgb_core::{contract::Contract, fungible::{Mint, OutpointValue, ValueSum}};
 use rgb_core::{issue::Amount};
 use rgb_contract::Cli;
-use lightning::channel;
+use lightning::Channel;
 use crate::Cli;
 use rgbstd::interface::{Amount, ContractID, Mint, OutpointValue, ValueSum};
 use std::{error::Error};
