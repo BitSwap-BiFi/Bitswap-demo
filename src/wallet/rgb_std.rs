@@ -1,9 +1,9 @@
 use rgbstd::Wallet;
-pub(crate) use rgbstd::Chain;
+use rgbstd::Chain;
 use rgb_core::ContractID;
 use rgbstd::Invoice::InvoiceState;
 use lightning::chain::keysinterface::Sign;
-pub(crate) use lightning::channelmanager::ChannelManager;
+use lightning::channelmanager::ChannelManager;
 use lightning::channelmanager::ChannelManager as LdkChannelManager;
 use lightning::msgs::{ChannelMessageHandler, RoutingMessageHandler};
 use lightning::peer_handler::{MessageHandler, PeerManager};
