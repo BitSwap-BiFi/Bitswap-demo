@@ -5,7 +5,7 @@
 
 *Decentralized Exchange Demo for RGB assets (RGB20)*
 
-⚠️**We moved our development to our Core internal**
+⚠️**We moved our development to our Core internal for Web app**
 
 ⚠️**Demo DEX for users test on the Testnet, Signet & Regtest**
 
