@@ -6,8 +6,10 @@
 ![Crates](https://img.shields.io/badge/crates-passing-brightgreen)
 ![Bitcoin Passing](https://img.shields.io/badge/bitcoin-passing-orange)
 ![Lightning Passing](https://img.shields.io/badge/lightning-passing-orange)
-![RGB Passing](https://img.shields.io/badge/rgb-passing-rgb)                                
-*Decentralized Exchange Demo for RGB assets (RGB20)*
+![RGB Passing](https://img.shields.io/badge/rgb-passing-rgb) 
+
+
+*Demo Decentralized Exchange for RGB assets (RGB20)*
 
 ⚠️**We moved our development to our Core internal for Web app**
 
