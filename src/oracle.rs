@@ -41,5 +41,5 @@ use std::collections::hash_map::Entry::{Occupied, Vacant};
 
 use dlc::Orcle_Info;
 
-[#derive]
+#[Derive]
 const oralce_info;
