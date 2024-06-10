@@ -1,8 +1,12 @@
 # Bitswap Demo ⚡ 💱
 
+[![Bitcoin-only](https://img.shields.io/badge/bitcoin-only-FF9900?logo=bitcoin)](https://twentyone.world)
 [![LN](https://img.shields.io/badge/lightning-792EE5?logo=lightning)](https://mempool.space/lightning)
-
-
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+![Crates](https://img.shields.io/badge/crates-passing-brightgreen)
+![Bitcoin Passing](https://img.shields.io/badge/bitcoin-passing-orange)
+![Lightning Passing](https://img.shields.io/badge/lightning-passing-orange)
+![RGB Passing](https://img.shields.io/badge/rgb-passing-rgb)                                
 *Decentralized Exchange Demo for RGB assets (RGB20)*
 
 ⚠️**We moved our development to our Core internal for Web app**
