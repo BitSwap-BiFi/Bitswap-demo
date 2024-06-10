@@ -9,6 +9,8 @@
 
 ⚠️**Demo DEX for users test on the Testnet, Signet & Regtest**
 
+⚠️**Don't use this demo software for mainnet**
+
 ⚠️**Contributions are welcome**
 
 ### How Works?
