@@ -1,4 +1,4 @@
 [toolchain]
 name = "bitswap"
-version = "1.0.22-alpha"
+version = "1.0.24-alpha"
 channel = "stable"

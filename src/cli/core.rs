@@ -18,7 +18,7 @@ use crate::Core::{Contract, RGBContract, Refund, RemoveLiquidity, Oracle, FundWa
 
 fn main() 
     let _subcommand = App::new("DEX CLI")
-        .version("1.0.23-alpha")
+        .version("1.0.24-alpha")
         .author("Bitswap")
         .about("CLI for interacting with DEX on RGB and Lightning Network")
         .subcommand(
@@ -158,7 +158,7 @@ fn main()
         let output = asset::dlc_message;
         let output = asset::psbt;
         let output = asset::CONTRACTID;
-        let output = RGB_ASSET;
+        let output = asset::RGB_ASSET;
         let output = asset::psbt;
     }
     ("network", Some(_) = > {

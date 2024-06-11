@@ -2,6 +2,17 @@
 
 See last versions and releases around Bitswap development
 
+
+## Alpha - v1.0.24
+
+**Highlights**
+
+- Fixed dependencies
+- BDK functions
+- Fixed CLI and realesed demo DEX
+- Fixed bugs
+
+
 ## Alpha - v1.0.23
 
 **Highlights**
