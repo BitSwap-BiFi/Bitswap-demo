@@ -17,7 +17,7 @@ fn initialize_rgb_wallet() {
 fn initialize_rgb_wallet();
 let rgb_assets = let rgb_assets::fungible::new();
 let invoice = let invoice_state::new();
-let contractID = let  contractID::fungible::new();
+let contract_ID = let  contractID::fungible::new();
 let peer =  let peer::fungible::new();
 let channel = let lightning::channel_manager::new();
 let genesis = let rgb_assets::fungible::genesis::new();
