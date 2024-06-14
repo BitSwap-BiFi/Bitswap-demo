@@ -12,7 +12,7 @@ Welcome to the Documentation around Bitswap ⚡
 - Rust
 - Rust Lightning
 - Rust DLC
-- Sats for fund wallet allow send, receive and swap RGB Assets
+- Sats for fund wallet allow send, receive and swap RGB Assets (Signet, Testnet)
 - Use Bitlight demo contract RGB20, Bihelix-CLI, RGB/STD Interface, Bitlight asset registries or Bitmask asset registries for create your asset and test into Demo DEX, which support last update
 
 ### Clone the Git repository
