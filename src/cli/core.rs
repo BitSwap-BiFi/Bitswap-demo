@@ -1,10 +1,10 @@
 use std::Rgb_core;
 use std::Lightning;
 use std::Dlc;
-use std::rgb_contract::{UnsupportedLayer1, Layer1, Liquid, PSBT};
-use std::rgbstd::interface::{Rgb20, Iface};
-use std::rgbstd::persistence::{Stock, State, Stash};
-use std::rgbstd::invoice::{Amount, Data, Invoice};
+use rgb::Rgb_contract::{UnsupportedLayer1, Layer1, Liquid, PSBT};
+use rgbstd::interface::{Rgb20, Iface};
+use rgbstd::persistence::{Stock, State, Stash};
+use rgbstd::invoice::{Amount, Data, Invoice};
 use bitcoin::constants::Network;
 use bitcoin::constants::Network::{Testnet, Regtest, Signet};
 
