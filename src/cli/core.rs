@@ -1,4 +1,4 @@
-use rgb::contract::{UnsupportedLayer1, Layer1, Liquid, PSBT};
+use rgb::command::{UnsupportedLayer1, Layer1, Liquid, PSBT};
 use rgbstd::interface::{Rgb20, Iface};
 use rgbstd::persistence::{Stock, State, Stash};
 use rgbstd::invoice::{Amount, Data, Invoice};
