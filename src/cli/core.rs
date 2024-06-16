@@ -1,7 +1,4 @@
-use std::Rgb_core;
-use std::Lightning;
-use std::Dlc;
-use rgb::Rgb_contract::{UnsupportedLayer1, Layer1, Liquid, PSBT};
+use rgb::contract::{UnsupportedLayer1, Layer1, Liquid, PSBT};
 use rgbstd::interface::{Rgb20, Iface};
 use rgbstd::persistence::{Stock, State, Stash};
 use rgbstd::invoice::{Amount, Data, Invoice};
