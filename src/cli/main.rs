@@ -59,20 +59,40 @@ fn main() {
         ("channel", Some(channel_matches)) => match channel_matches.subcommand() {
             ("open", Some(_)) => {
                 // Logic to open a Lightning Network channel
+                Opening a new channel...
+                let mut rgb = Rgb20::new();
+                let mut state = State::new();
+                let mut stash = Stash::new();
+                let mut stock = Stock::new();
+                let mut iface = Iface::new();
+                let mut invoice = Invoice::new();
+                let mut data = Data::new();
                 println!("Opening a new channel...");
             }
             ("close", Some(_)) => {
                 // Logic to close a Lightning Network channel
+                Closing a channel...
+                let mut rgb = Rgb20::new();
+                let mut state = State::new();
+                let mut stash = Stash::new();
+                let mut stock = Stock::new();
+                let mut iface = Iface::new();
+                let mut invoice = Invoice::new();
+                let mut data = Data::new();
                 println!("Closing a channel...");
             }
             ("rebalance", Some(_)) => {
                 // Logic to rebalance a Lightning Network channel
+                Rebalancing a channel...
                 println!("Rebalancing a channel...");
             }
             _ => unreachable!(),
         },
         ("contract", Some(_)) => {
             // Logic to interact with RGB Core contracts
+            let mut rgb = Rgb20::new();
+            let mut state = State::new();
+            let mut stash = Stash::new();
             println!("Interacting with contracts...");
         }
         ("rgb_contract", Some(_)) => {
@@ -85,6 +105,11 @@ fn main() {
         }
         ("swap", Some(_)) => {
             // Logic to perform swaps
+            performing swaps...
+            let mut rgb = Rgb20::new();
+            let mut state = State::new();
+            let rgb_contract = rgb.get_contract();
+            let mut data = Data::new();
             println!("Performing swaps...");
         }
         ("refund", Some(_)) => {
@@ -105,6 +130,11 @@ fn main() {
         }
         ("network", Some(_)) => {
             // Logic for network
+            Network::new();
+            Network::get_network_info();
+            Network::Testnet();
+            Network::Regtest();
+            Network::Signet();
             println!("Handling network...");
         }
         ("amm", Some(_)) => {
