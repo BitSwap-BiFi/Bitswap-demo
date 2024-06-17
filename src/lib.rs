@@ -27,19 +27,13 @@ mod rgb;
 mod proxy;
 mod testnet;
 mod validators;
-mod util;
-mod constant;
-mod struct;
-mod web;
+mode cli;
 
 pub use rgb::rgb;
 pub use lightning::lightning;
-pub use proxy::proxy;
-pub use util::util;
-pub use struct::struct;
 pub use constant::constant;
 pub use testnet::testnet;
 pub use web::web;
-pub use error::error;
+pub use cli::Cli;
 
 
