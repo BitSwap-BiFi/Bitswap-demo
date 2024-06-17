@@ -1,6 +1,6 @@
 // CLI
-mod cli;
+mod Cli;
 // Commands
-mod command;
-// Core
-mod core;
+mod Command;
+// Main
+mod Main;
