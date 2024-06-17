@@ -84,23 +84,63 @@ fn main() {
             ("rebalance", Some(_)) => {
                 // Logic to rebalance a Lightning Network channel
                 Rebalancing a channel...
+                let mut rgb = Rgb20::new();
+                let mut state = State::new();
+                let mut stash = Stash::new();
+                let mut stock = Stock::new();
+                let mut iface = Iface::new();
+                let mut invoice = Invoice::new();
+                let mut data = Data::new();
                 println!("Rebalancing a channel...");
             }
             _ => unreachable!(),
         },
         ("contract", Some(_)) => {
-            // Logic to interact with RGB Core contracts
+            // Logic to interact with RGB20 contracts
+            Interacting with contracts...
             let mut rgb = Rgb20::new();
             let mut state = State::new();
             let mut stash = Stash::new();
+            let mut stock = Stock::new();
+            let mut iface = Iface::new();
+            let mut invoice = Invoice::new();
+            let mut data = Data::new();
+            let mut contract = Contract::new();
+            let mut contract_info = ContractInfo::new();
+            get_contract_info...
+            get_contract_state...
+            get_contract_state_field...
+            get_contract_state_field_info...
+            get_contract_state_field_info_by_name...
+            get_contract_state_field_info_by_index...
             println!("Interacting with contracts...");
         }
         ("rgb_contract", Some(_)) => {
             // Logic to manage contract
+            performing RGB contract operations...
+            let get_contract = rgb.get_contract();
+            let mut contract = Contract::new();
+            let mut contract_info = ContractInfo::new();
+            let mut contract_state = ContractState::new();
+            let mut contract_state_field = ContractStateField::new();
+            let mut contract_state_field_info = ContractStateFieldInfo::new();
             println!("Managing RGB contract...");
         }
         ("wallet", Some(_)) => {
             // Logic to manage wallet
+            performing wallet operations...
+            let wallet = Wallet::new();
+            let mut wallet_info = WalletInfo::new();
+            let generate_wallet = wallet.generate();
+            let get_wallet_info = wallet.get_info();
+            let get_wallet_balance = wallet.get_balance();
+            let get_wallet_utxos = wallet.get_utxos();
+            let get_wallet_txs = wallet.get_txs();
+            let get_wallet_tx_info = wallet.get_tx_info();
+            let get_wallet_tx_hex = wallet.get_tx_hex();
+            let get_wallet_balance_by_asset = wallet.get_balance_by_asset();
+            let get_wallet_utxos_by_asset = wallet.get_utxos_by_asset();
+            let get_wallet_funding_info = wallet.get_funding_info();
             println!("Managing wallet...");
         }
         ("swap", Some(_)) => {
@@ -114,18 +154,50 @@ fn main() {
         }
         ("refund", Some(_)) => {
             // Logic to handle refunds
+            performing refunds...
+            let mut rgb = Rgb20::new();
+            let mut refund = Refund::new();
+            let mut data = Data::new();
             println!("Handling refund...");
         }
         ("oracle", Some(_)) => {
             // Logic for DLCs oracles
+            performing oracle operations...
+            let oracle = Oracle::new();
+            let mut oracle_info = OracleInfo::new();
+            let mut oracle_event = OracleEvent::new();
+            let mut oracle_peer_info = OraclePeerInfo::new();
+            let mut oracle_registered_contract = OracleRegisteredContract::new();
+            let mut oracle_registered_asset = OracleRegisteredAsset::new();
+            let mut oracle_registered_price = OracleRegisteredPrice::new();
+            let mut oracle_data = OracleData::new();
+            let mut oracle_request = OracleRequest::new();
+            let mut oracle_response = OracleResponse::new();
             println!("Handling oracle...");
         }
         ("add_liquidity", Some(_)) => {
             // Logic to add liquidity
+            performing add liquidity...
+            let mut get_liquity = GetLiquidity::new();
+            let mut liquidity = Liquidity::new();
+            let mut data = Data::new();
+            let mut rgb = Rgb20::new();
+            let mut state = State::new();
+            let rgb_contract = rgb.get_contract();
+            let mut contract = Contract::new();
+            let mut contract_info = ContractInfo::new();
+            let mut contract_state = ContractState::new();
+            let mut contract_state_field = ContractStateField::new();
+            let mut contract_state_field_info = ContractStateFieldInfo::new();
             println!("Adding liquidity...");
         }
         ("remove_liquidity", Some(_)) => {
             // Logic to remove liquidity
+            performing remove liquidity...
+            let remove_liquidity = RemoveLiquidity::new();
+            let mut data = Data::new();
+            let mut rgb = Rgb20::new();
+            let mut state = State::new();
             println!("Removing liquidity...");
         }
         ("network", Some(_)) => {
