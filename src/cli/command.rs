@@ -289,7 +289,7 @@ mod tests {
   // RGB20 test token
   fn create_contract() {
     let beneficiary_txid =
-        Txid::from_hex("311ec7d43f0f33cda5a0c515a737b5e0bbce3896e6eb32e67db0e868a58f4150").unwrap();
+        Txid::from_hex("b6f6991d7b54d6e5d6c01b05f3b6f6991d7b54d6").unwrap();
     let beneficiary = Outpoint::new(beneficiary_txid, 1);
 
     let contract = Rgb20::testnet::<NonInflatableAsset>(
