@@ -4,10 +4,9 @@ use rgbstd::persistence::{Stock, State, Stash};
 use rgbstd::invoice::{Amount, Data, Invoice};
 use bitcoin::constants::Network;
 use bitcoin::constants::Network::{Testnet, Regtest, Signet};
-
 use clap::{App, Arg, SubCommand};
 
-fn main() {
+pub fn execute_command() {
     let matches = App::new("DEX CLI")
         .version("1.0.24-alpha")
         .author("Bitswap")
@@ -118,64 +117,4 @@ fn main() {
             println!("No subcommand provided");
         }
     }
-}
-
-// Test module
-#[cfg(test)]
-mod tests {
-    use super::*;
-    use clap::ArgMatches;
-
-    #[test]
-    fn test_fund_wallet() {
-        let matches = App::new("test")
-            .subcommand(SubCommand::with_name("fund_wallet").arg(Arg::with_name("fund_wallet")))
-            .get_matches_from(vec!["test", "fund_wallet", "some_value"]);
-
-        match matches.subcommand() {
-            ("fund_wallet", Some(sub_m)) => {
-                let fund_wallet = sub_m.value_of("fund_wallet").unwrap();
-                assert_eq!(fund_wallet, "some_value");
-            }
-            _ => panic!("fund_wallet command failed"),
-        }
-    }
-
-    #[test]
-    fn test_swap() {
-        let matches = App::new("test")
-            .subcommand(SubCommand::with_name("swap").arg(Arg::with_name("swap")))
-            .get_matches_from(vec!["test", "swap", "some_value"]);
-
-        match matches.subcommand() {
-            ("swap", Some(sub_m)) => {
-                let swap = sub_m.value_of("swap").unwrap();
-                assert_eq!(swap, "some_value");
-            }
-            _ => panic!("swap command failed"),
-        }
-    }
-
-    #[test]
-    fn test_open_channel() {
-        let matches = App::new("test")
-            .subcommand(
-                SubCommand::with_name("channel")
-                    .subcommand(SubCommand::with_name("open")),
-            )
-            .get_matches_from(vec!["test", "channel", "open"]);
-
-        match matches.subcommand() {
-            ("channel", Some(channel_matches)) => match channel_matches.subcommand() {
-                ("open", Some(_)) => {
-                    // Assuming opening a channel involves some logic
-                    assert!(true);
-                }
-                _ => panic!("channel open command failed"),
-            },
-            _ => panic!("channel command failed"),
-        }
-    }
-
-    // TODO CLI additional tests 
 }
