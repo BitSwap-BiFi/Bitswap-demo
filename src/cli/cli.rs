@@ -1,16 +1,13 @@
-use lightning::Wallet;
 use rgb_core::{contract::Contract, fungible::{Mint, OutpointValue, ValueSum}};
-use rgb_core::{issue::Amount};
-use rgb_contract::Cli;
-use lightning::Channel;
-use crate::Cli;
-use rgbstd::interface::{Amount, ContractID, Mint, OutpointValue, ValueSum};
-use std::{error::Error};
+use rgb_core::issue::Amount;
+use lightning::Wallet;
+use std::error::Error;
 use std::io::{self, Write};
 
 fn main() -> Result<(), Box<dyn Error>> {
-     let rgb = RGB::new();
-     let lightning = lightning:new():
+    // Assuming RGB and lightning are correctly defined structs
+    // let rgb = RGB::new();
+    let lightning = lightning::Wallet::new();
 
     // Create a new RGB contract instance
     let contract = Contract::new();
@@ -18,10 +15,8 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Create a new wallet instance
     let mut wallet = Wallet::new();
 
-     
-    /// Network to use
-    #[arg(short, long, default_value = "testnet")]
-    network: String;
+    // Network to use
+    let network = "testnet";
 
     loop {
         // Display the command prompt
@@ -38,28 +33,27 @@ fn main() -> Result<(), Box<dyn Error>> {
         // Check the command and execute the corresponding action
         match args[0] {
             "swaps" => {
-           let swap = swap::BTC();
-           let swap = swap::RGB20();
+                // Assuming swap::BTC() and swap::RGB20() are valid functions
+                let btc_swap = swap::BTC();
+                let rgb20_swap = swap::RGB20();
             }
             "enable_channel" => {
-                 let channel = open::new();
-               
+                // Assuming open::new() is a valid function
+                let channel = open::new();
             }
             "disable_channel" => {
-               let channel = close::new();
-
-               
+                // Assuming close::new() is a valid function
+                let channel = close::new();
             }
             "enter_liquidity" => {
-               let mut input = String::new();
-               let input = asset::BTC:();
-               let input = asset::RGB20();
-               
+                // Assuming asset::BTC() and asset::RGB20() are valid functions
+                let btc_input = asset::BTC();
+                let rgb20_input = asset::RGB20();
             }
             "exit_liquidity" => {
-               let mut output = String::new();
-               let output = asset::BTC:();
-               let output = asset::RGB20();
+                // Assuming asset::BTC() and asset::RGB20() are valid functions
+                let btc_output = asset::BTC();
+                let rgb20_output = asset::RGB20();
             }
             "exit" => {
                 // Exit the program
@@ -71,6 +65,5 @@ fn main() -> Result<(), Box<dyn Error>> {
             }
         }
     }
-
     Ok(())
 }
