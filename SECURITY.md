@@ -30,4 +30,6 @@ See last security versions and releases around Bitswap development
 | Alpha-v1.0.21 | ✅ |
 | Alpha-v1.0.22 | ✅ |
 | Alpha-v1.0.23 | ✅ |
+| Alpha-v1.0.24 | ✅ |
+| Alpha-v1.0.25 | ✅ |
 
