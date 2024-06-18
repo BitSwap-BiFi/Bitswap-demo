@@ -5,7 +5,7 @@
 
 version: 2
 updates:
-  - package-ecosystem: "rust" # See documentation for possible values
-    directory: "/cargo" # Location of package manifests
+  - package-ecosystem: "cargo" # See documentation for possible values
+    directory: "/cargo.toml" # Location of package manifests
     schedule:
       interval: "daily"
