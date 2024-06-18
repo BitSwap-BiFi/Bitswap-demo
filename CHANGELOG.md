@@ -3,6 +3,16 @@
 See last versions and releases around Bitswap development
 
 
+
+## Alpha - v1.0.25
+
+**Highlights**
+
+- Fixed dependencies
+- Added command functions
+- Added RGB20 functions
+- Added Dockerfile
+
 ## Alpha - v1.0.24
 
 **Highlights**
