@@ -62,4 +62,18 @@ $app - for bitswap management
 ```
 ## Run via Docker
 
-TBD
+```docker
+docker run -it --rm -v $(pwd):/app -w /app rust:latest bash
+```
+
+## Run via Docker Compose
+
+```docker
+docker-compose up
+```
+
+## Run via Docker Compose with RGB CLI
+
+```docker
+docker-compose -f docker-compose-cli.yml up
+```
