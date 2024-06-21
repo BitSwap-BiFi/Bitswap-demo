@@ -43,3 +43,4 @@ use dlc::Orcle_Info;
 
 #[Derive]
 const oralce_info;
+const oralce_info: Orcle_Info = Orcle_Info;
