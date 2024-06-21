@@ -19,7 +19,13 @@
 
 ⚠️**Contributions are welcome**
 
-### How Works?
+## About Bitswap Demo
+
+Bitswap demo is a project designed to show users and potentital investors about a DEX built on the top of Bitcoin using RGB with Client-Side-Validation.
+
+Initially, we released the first PoC, which showed how would work only swaps via BTC<>USDT
+
+### How Works
 
 The user can participate of Pools for earn BTC, tokens and USDT how on Uniswap
 
