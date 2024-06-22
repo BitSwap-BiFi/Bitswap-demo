@@ -1,4 +1,4 @@
-use std::rgb_core;
+use std::rgb_core::{Validation, Swap, DLC, Oracle, Lightning};
 pub (use) crate::validators;
 pub(crate) use rgb_core::Validation; 
 pub (crate) use Swap;
