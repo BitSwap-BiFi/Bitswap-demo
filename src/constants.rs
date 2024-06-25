@@ -29,9 +29,7 @@ pub const SENDER = "SENDER";
 // Bitcoin
 
 pub const RBF = "RBF";
-pub const XPUB = "XPUB";
 pub const NETWORK = "NETWORK";
-pub const TAPTREE = "TAPTREE";
 pub const TESTNET = "TESTNET";
 pub const SIGNET = "SIGNET";
 pub const REGTEST = "REGTEST";
