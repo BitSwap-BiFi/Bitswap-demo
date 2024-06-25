@@ -21,7 +21,7 @@
 
 ### About Bitswap Demo
 
-Bitswap demo is a project designed to show users and potentital investors about a DEX built on the top of Bitcoin using RGB with Client-Side-Validation.
+Bitswap demo is a project designed to show users, developers and potentital investors about a DEX built on the top of Bitcoin using RGB with Client-Side-Validation.
 
 Initially, we released the first [PoC](https://bitswap-bifi.github.io/Bitswap-PoC/), which showed how would work only swaps via BTC<>USDT
 
