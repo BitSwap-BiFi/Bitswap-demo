@@ -29,7 +29,7 @@ mod rgb;
 mod proxy;
 mod testnet;
 mod validators;
-mode cli;
+mod cli;
 
 pub use rgb::rgb;
 pub use lightning::lightning;
