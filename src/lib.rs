@@ -1,5 +1,7 @@
 // Bitswap Core
 
+extern crate r#struct;
+
 #[macro_use]
 extern crate rgb;
 #[macro_use]
