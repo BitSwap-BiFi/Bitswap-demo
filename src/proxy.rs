@@ -1,18 +1,20 @@
 use create::Proxy;
 
 use strict_encoding::StrictSerialize;
-   
-#[derive(Debug, Clone, Eq, PartialEq, Display, From, Error)]
-#[display(doc_comments)]
+
+use reqwest::multipart::{self, Part};
+use tokio::fs;
+use crate::info;
+use thiserror::Error;
+use std::fs::File;
+
+#[derive(Debug, Clone, Eq, PartialEq, Error)]
+#[error("Proxy Server Error: {0}")]
 pub enum ProxyServerError {
-    /// I/O or connectivity error. {0}
-    IO(String),
-    /// Server connectivity error. {0}
+    #[error("Server error: {0}")]
     Server(String),
-    /// JSON RPC Parse error. {0}
-    Parse(String),
-    /// All endpoints failed error
-    AllEndpointsFailed,
+    #[error("IO error: {0}")]
+    IO(String),
 }
 
 #[cfg(not(target_arch = "wasm32"))]

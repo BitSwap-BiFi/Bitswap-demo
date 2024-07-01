@@ -1,1 +1,1 @@
-pub const = "RGB_ASSETS";
+pub const RGB_ASSETS: &str = "RGB_ASSETS";

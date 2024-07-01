@@ -1,6 +1,12 @@
 use std::Env;
 use std::CLI;
 use std::path::Path;
+use std::fs::File;
+
+fn main() {
+    let path = "some_path";
+    let mut file = File::open(path).unwrap();
+}
 
 fn main() {
     let args = CLI::from_args();

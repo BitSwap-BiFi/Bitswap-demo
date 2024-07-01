@@ -1,10 +1,10 @@
 use std::rgb_core::{Validation, Swap, DLC, Oracle, Lightning};
-pub (use) crate::validators;
-pub(crate) use rgb_core::Validation; 
-pub (crate) use Swap;
-pub (crate)use DLC;
-pub (crate)use Oracle;
-pub (crate)use Lightning;
+use extern crate rgb_core::validators;
+use extern rgb_core::Validation; 
+use crate Swap;
+use extern crate DLC;
+use  extern crate Oracle;
+use extern crate Lightning;
 use rgb_core::Validation::{Logic, Schema};
 use rgb_core::Validation::{State, Validators};
 

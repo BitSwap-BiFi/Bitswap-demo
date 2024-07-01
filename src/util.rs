@@ -1,4 +1,4 @@
-use mempool;
+use extern crate mempool;
 use bitcoin::miniscirpt;
 use rgb_core::fungible;
 
