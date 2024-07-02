@@ -1,4 +1,4 @@
-use std::bitcoin::{Networ};
+use std::bitcoin::{Network};
 
 use bitcoin::network::constants::Network;
 use bitcoin::network::constants::Network::Bitcoin;
