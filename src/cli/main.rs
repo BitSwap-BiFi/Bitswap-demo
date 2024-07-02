@@ -1,8 +1,9 @@
 use rgb::command::{UnsupportedLayer1, Layer1, Liquid, PSBT};
-use rgbstd::interface::{Rgb20, Iface};
+use rgbstd::interface::{Rgb20, Iface, Filters, Contract, Iimpl, Inheritance, Builder, Resolver};
 use rgbstd::persistence::{Stock, State, Stash};
 use rgbstd::invoice::{Amount, Data, Invoice};
-use rgb_core::xchain::contract::{Liquid, Bitcoin}
+use rgb_core::xchain::contract::{Liquid, Bitcoin};
+use rgbstd::contract::{Assignment, Bundle, Merge_Reveal};
 use bitcoin::constants::Network;
 use bitcoin::constants::Network::{Testnet, Regtest, Signet};
 
