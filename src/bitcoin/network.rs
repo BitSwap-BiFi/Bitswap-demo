@@ -1,10 +1,7 @@
 use std::bitcoin::{Network};
 
 use bitcoin::network::constants::Network;
-use bitcoin::network::constants::Network::Bitcoin;
-use bitcoin::network::constants::Network::Testnet;
-use bitcoin::network::constants::Network::Signet;
-use bitcoin::network::constants::Network::Regtest;
+use bitcoin::network::constants::Network::{Bitcoin, Testnet, Signet, Regtest};
 use bitcoin::network::constants::Network::Default::{Testnet, Regtest, Signet};
 
 impl network {
