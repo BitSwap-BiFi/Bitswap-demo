@@ -1,6 +1,6 @@
 [workspace]
 
-cli = "1.0.25-alpha"
+cli = "1.0.26-alpha"
 
 [dev.dependencies]
 src = "cli"

@@ -4,6 +4,13 @@ See last versions and releases around Bitswap development
 
 
 
+## Alpha - v1.0.26
+
+**Highlights**
+
+- Fixed dependencies
+- Fixed lib.rs
+
 ## Alpha - v1.0.25
 
 **Highlights**
