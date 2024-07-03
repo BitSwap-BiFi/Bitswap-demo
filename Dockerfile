@@ -4,6 +4,6 @@ RUN apt-get update && apt-get install -y \ git \
 RUN git clone https://github.com/Bitswap-BiFi-Bitswap-demo.git /path/to/clone
 WORKDIR /app/Bitswap-BiFi-Bitswap-demo
 RUN cd Bitswap-BiFi-Bitswap-demo && cargo build 
-RUN --releasCOPY --from=builder /Bitswap-BiFi-Bitswap-demo/target/release/main.
+RUN --releaseCOPY --from=builder /Bitswap-BiFi-Bitswap-demo/target/release/main.
 RUN --releaseCMD ["./main"]
 CMD ["main.rs", "command.rs"]
