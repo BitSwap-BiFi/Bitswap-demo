@@ -1,5 +1,5 @@
-pub(crate) use std::self;
-pub(crate) use bitswap_core::{Swap, Pool, Api};
+pub(crate) use std::{self, lightning, rgb, rgbstd};
+pub(crate) use create::{Swap, Pool, Api};
 
 use bitswap_core::{
     rgb_core::{Validation, OPCONTRACT, OPSchema, VM},
@@ -10,3 +10,7 @@ use bitswap_core::{
 
 use cli::{CLI, Command, Core};
 use bin::Bitswapd;
+
+fn main() {
+    // Your main logic here
+}
