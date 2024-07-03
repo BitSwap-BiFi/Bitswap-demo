@@ -1,5 +1,4 @@
-pub(crate) use std::{self, lightning, rgb, rgbstd};
-pub(crate) use create::{Swap, Pool, Api};
+ use crate::{Cli, Command, Main};
 
 use bitswap_core::{
     rgb_core::{Validation, OPCONTRACT, OPSchema, VM},
@@ -8,7 +7,7 @@ use bitswap_core::{
     rgb_contract::{Fungible, Amount, Cli},
 };
 
-use cli::{CLI, Command, Core};
+use cli::{CLI, Command, Main};
 use bin::Bitswapd;
 
 fn main() {
