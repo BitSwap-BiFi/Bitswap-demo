@@ -1,4 +1,4 @@
-use bitswap_core::{
+use bitswap_demo::{
     rgb_core::{Validation, OPCONTRACT, OPSchema, VM},
     rgbstd::{Fungible, Amount, TotalSupply},
     rgb_schemata::{Rgb20, Fungible, Amount},
