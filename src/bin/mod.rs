@@ -1,1 +1,3 @@
-pub struct Bitswapd;
+pub struct bitswapd;
+
+pub mod bitswapd;
