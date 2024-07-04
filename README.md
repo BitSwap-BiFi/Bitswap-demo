@@ -72,6 +72,11 @@ Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
 ## BITP (Bitswap Improvement Proposal - Similar BIPs to the Bitcoin)
 
 [Official Specs](https://github.com/BitSwap-BiFi/BITP)
+
+## Roadmap
+
+- [ ] Release crates
+- [ ] Testnet4
   
 ## Contributors
 
