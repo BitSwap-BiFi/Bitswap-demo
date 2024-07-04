@@ -1,3 +1,8 @@
+use std::env;
+use std::path::PathBuf;
+
+mod cli;
+
 use cli::{
     Command,
     Main,
@@ -17,7 +22,7 @@ fn main() {
             // Your logic here
             println!("{:?}", args);
             println!("Starting bitswapd");
-            
+
         }
     }  
 }
