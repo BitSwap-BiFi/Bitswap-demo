@@ -1,6 +1,6 @@
-pub mod Bitswapd;
+pub mod bitswapd;
 
-pub struct Bitswapd;
+pub use bitswapd::Bitswapd;
 
 fn main() {
     println!("Bitswapd running!");
