@@ -5,7 +5,7 @@ use bitswap_demo::{
     rgb_contract::{Fungible, Amount, Cli},
 };
 
-use cli::{Cli, Command, Main};
+use cli::{Cli, Command, Main, Mod };
 use bin::Bitswapd;
 
 fn main() {
