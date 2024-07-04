@@ -1,3 +1,5 @@
+pub mod Bitswapd;
+
 pub struct Bitswapd;
 
 fn main() {
