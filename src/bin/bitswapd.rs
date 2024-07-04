@@ -3,8 +3,6 @@ use cli::{
     Main,
     Mod,
     Cli
-
-
 };
 
 use cli::{Cli, Command, Main, Mod};
@@ -17,14 +15,9 @@ fn main() {
     match command {
         Command::Main(Main::Bitswapd(Bitswapd::Start(mut args))) => {
             // Your logic here
-            let mut vm = VM::new();
-            vm.start(args);
+            println!("{:?}", args);
+            println!("Starting bitswapd");
+            
         }
     }  
-}
-
-// #[cfg(test)]
-fn test() {
-    let mut vm = VM::new();
-    vm.start();
 }
