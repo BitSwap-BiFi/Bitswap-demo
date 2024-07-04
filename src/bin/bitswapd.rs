@@ -1,6 +1,3 @@
-use std::env;
-use std::path::PathBuf;
-
 mod cli;
 
 use cli::{
@@ -10,8 +7,13 @@ use cli::{
     Cli
 };
 
-use cli::{Cli, Command, Main, Mod};
+use cli::Mod;
+use cli::Command;
+use cli::Main;
+use cli::Cli;
 use bin::Bitswapd;
+
+pub struct Bitswapd;
 
 fn main() {
     // Your main logic here
