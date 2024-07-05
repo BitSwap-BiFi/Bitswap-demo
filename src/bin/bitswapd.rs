@@ -7,9 +7,6 @@ use cli::{
     Cli
 };
 
-use command::Command;
-use main::Main;
-use cli::Cli;
 use bin::Bitswapd;
 
 pub struct Bitswapd;
