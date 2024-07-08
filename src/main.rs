@@ -1,9 +1,15 @@
 
-mod bin;
+use std::env;
 
-use bin::bitswapd::Bitswapd;
+struct Bitswapd;
+
+impl Bitswapd {
+    pub fn start(args: Vec<String>) {
+        println!("Starting bitswapd with args: {:?}", args);
+    }
+}
 
 fn main() {
-    let args = vec!["arg1".to_string(), "arg2".to_string()];
+    let args: Vec<String> = env::args().collect();
     Bitswapd::start(args);
 }
