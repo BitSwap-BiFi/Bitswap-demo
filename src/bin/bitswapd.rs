@@ -1,4 +1,6 @@
-// src/bin/bitswapd.rs
+
+use bin::bitswapd::Bitswapd;
+use std::env;
 
 pub struct Bitswapd;
 
@@ -7,8 +9,7 @@ impl Bitswapd {
         println!("Starting bitswapd with args: {:?}", args);
     }
 }
-fn main() {
-    let args: Vec<String> = .env::args().collect();
-    Bitswapd::start(args);
-}
-
+    fn main() {
+        let args: Vec<String> = env::args().collect();
+        Bitswapd::start(args);
+    }
