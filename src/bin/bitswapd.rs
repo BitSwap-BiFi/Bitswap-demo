@@ -1,3 +1,5 @@
+// src/bin/bitswapd.rs
+
 pub struct Bitswapd;
 
 impl Bitswapd {
@@ -5,3 +7,4 @@ impl Bitswapd {
         println!("Starting bitswapd with args: {:?}", args);
     }
 }
+
