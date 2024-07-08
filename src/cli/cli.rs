@@ -16,7 +16,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let mut wallet = Wallet::new();
 
     // Network to use
-    let network = "testnet";
+    let network = "testnet"; // Switch to "signet", "regtest"
 
     loop {
         // Display the command prompt
