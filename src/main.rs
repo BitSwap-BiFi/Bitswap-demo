@@ -1,4 +1,3 @@
-
 use std::env;
 
 struct Bitswapd;
