@@ -1,5 +1,6 @@
+extern crate bitswapd;
 
- pub struct Bitswapd;
+pub struct Bitswapd;
 
 impl Bitswapd {
     pub fn start(args: Vec<String>) {

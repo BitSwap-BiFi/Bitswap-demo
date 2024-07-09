@@ -3,6 +3,9 @@ name = "bitswapd"
 version = "0.1.0"
 edition = "2018"
 
+[dependencies]
+bitswapd = { path = "../path/to/bitswapd" }
+
 [[bin]]
 name = "bitswapd"
 path = "src/bin/bitswapd.rs"
