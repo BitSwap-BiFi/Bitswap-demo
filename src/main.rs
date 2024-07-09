@@ -9,6 +9,10 @@ impl Bitswapd {
 }
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    Bitswapd::start(args);
+    let args: Vec<String> = bitswapd::args().collect();
+    // rest of the code
+}
+
+pub fn args() -> impl Iterator<Item = String> {
+    std::env::args()
 }
