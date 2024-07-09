@@ -1,4 +1,4 @@
-extern crate bitswapd;
+use crate::bitswapd;
 
 pub struct Bitswapd;
 
