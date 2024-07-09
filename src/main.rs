@@ -1,6 +1,5 @@
-use std::env;
 
-struct Bitswapd;
+ pub struct Bitswapd;
 
 impl Bitswapd {
     pub fn start(args: Vec<String>) {
@@ -10,7 +9,8 @@ impl Bitswapd {
 
 fn main() {
     let args: Vec<String> = bitswapd::args().collect();
-    // rest of the code
+    println!("{:?}", args);
+    Bitswapd::start(args);
 }
 
 pub fn args() -> impl Iterator<Item = String> {
