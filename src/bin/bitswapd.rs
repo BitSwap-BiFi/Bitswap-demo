@@ -1,5 +1,4 @@
 
-use bin::bitswapd::Bitswapd;
 use std::env;
 
 pub struct Bitswapd;
