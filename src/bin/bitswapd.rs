@@ -8,6 +8,6 @@ impl Bitswapd {
 }
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
+    let args: Vec<String> = args::args().collect();
     Bitswapd::start(args);
 }
