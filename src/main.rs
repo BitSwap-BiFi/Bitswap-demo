@@ -1,5 +1,3 @@
-use crate::bitswapd;
-
 pub struct Bitswapd;
 
 impl Bitswapd {
