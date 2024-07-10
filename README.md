@@ -76,6 +76,7 @@ Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
 ## Roadmap
 
 - [ ] Release crates
+- [ ] Full CLI
 - [ ] Testnet4
 - [ ] Fix bugs
   
