@@ -7,6 +7,6 @@ impl Bitswapd {
 }
 
 fn main() {
-    let bitswapd: Vec<String> = bitswapd::bitswapd().collect();
+    let bin: Vec<String> = bitswapd::bin().collect();
     Bitswapd::start(args);
 }
