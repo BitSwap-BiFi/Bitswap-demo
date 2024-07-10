@@ -1,4 +1,3 @@
-
 pub struct Bitswapd;
 
 impl Bitswapd {
@@ -8,6 +7,6 @@ impl Bitswapd {
 }
 
 fn main() {
-    let args: Vec<String> = bitswapd::args().collect();
+    let bitswapd: Vec<String> = bitswapd::bitswapd().collect();
     Bitswapd::start(args);
 }
