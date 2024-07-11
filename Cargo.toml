@@ -4,8 +4,8 @@ members = ["rgb-core", "rust-dlc", "bitswap", "payjoin", "aluvm", "baid58"]
 
 [package]
 name = "bitswap_demo_cli"
-version = "1.0.26-alpha"
-authors = ["22388o"]
+version = "1.0.27-alpha"
+authors = ["22388o", "Rsync25"]
 documentation = "https://github.com/Bitswap-demo"
 repository = "https://github.com/Bitswa-demo"
 edition = "2021"
