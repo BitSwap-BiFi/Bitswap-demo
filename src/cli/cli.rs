@@ -1,4 +1,3 @@
-// src/cli/CLI.rs
 use rgb_core::{contract::Contract, fungible::{Mint, OutpointValue, ValueSum}};
 use rgb_core::issue::Amount;
 use lightning::Wallet;
