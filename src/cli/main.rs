@@ -3,6 +3,7 @@ use rgbstd::interface::{Rgb20, Iface, Filters, Contract, Iimpl, Inheritance, Bui
 use rgbstd::persistence::{Stock, State, Stash, Memory};
 use rgbstd::invoice::{Amount, Data, Invoice};
 use rgb_core::xchain::contract::{Liquid, Bitcoin};
+use rgb_core::xchain::{BitcoinTestnet, LiquidTestnet};
 use rgbstd::contract::{Assignment, Bundle, Merge_Reveal};
 use bitcoin::constants::Network;
 use bitcoin::constants::Network::{Testnet, Regtest, Signet};
@@ -11,7 +12,7 @@ use clap::{App, Arg, SubCommand};
 
 fn main() {
     let matches = App::new("DEX CLI")
-        .version("1.0.26-alpha")
+        .version("1.0.27-alpha")
         .author("Bitswap")
         .about("CLI for interacting with DEX on RGB and Lightning Network by Bitswap")
         .subcommand(

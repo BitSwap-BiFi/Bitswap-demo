@@ -3,6 +3,12 @@
 See last versions and releases around Bitswap development
 
 
+## Alpha - v1.0.26
+
+**Highlights**
+
+- Fixed dependencies
+- Core functions around CLI
 
 ## Alpha - v1.0.26
 
