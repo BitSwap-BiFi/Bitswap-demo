@@ -84,6 +84,6 @@ Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
   
 ## Contributors
 
-<a align="center" href="https://github.com/BitSwap-BiFi/Bitswap-core/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=BitSwap-BiFi/Bitswap-core" />
+<a align="center" href="https://github.com/BitSwap-BiFi/Bitswap-demo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=BitSwap-BiFi/Bitswap-demo" />
 </a>
