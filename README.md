@@ -81,6 +81,9 @@ Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
 - [ ] Liquid support to CLI
 - [ ] Testnet4
 
+- [x] Full GUI by rust
+- [ ] Liquid support to CLI
+- [x] Testnet4
 - [ ] Fix bugs
   
 ## Contributors

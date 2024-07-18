@@ -1,4 +1,5 @@
 use rgb::command::{UnsupportedLayer1, Layer1, Liquid, PSBT};
+use rgb::command::{Testnet3, Testnet4, Regtest, Signet};
 use rgbstd::interface::{Rgb20, Iface, Filters, Contract, Iimpl, Inheritance, Builder, Resolver};
 use rgbstd::persistence::{Stock, State, Stash, Memory};
 use rgbstd::invoice::{Amount, Data, Invoice};
@@ -7,6 +8,7 @@ use rgb_core::xchain::{BitcoinTestnet, LiquidTestnet};
 use rgbstd::contract::{Assignment, Bundle, Merge_Reveal};
 use bitcoin::constants::Network;
 use bitcoin::constants::Network::{Testnet, Regtest, Signet};
+use mempool::MempoolBlocking;
 
 use clap::{App, Arg, SubCommand};
 
@@ -207,7 +209,8 @@ fn main() {
             // Logic for network
             Network::new();
             Network::get_network_info();
-            Network::Testnet();
+            Network::Testnet3();
+            Network::Testnet4();
             Network::Regtest();
             Network::Signet();
             println!("Handling network...");
