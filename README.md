@@ -79,7 +79,7 @@ Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
 - [ ] Full CLI
 - [ ] Full GUI by rust
 - [ ] Liquid support to CLI
-- [ ] Testnet4
+- [x] Testnet4
 - [ ] Fix bugs
   
 ## Contributors
