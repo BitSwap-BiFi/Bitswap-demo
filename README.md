@@ -77,6 +77,7 @@ Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
 
 - [ ] Release crates
 - [ ] Full CLI
+- [x] Cross-platform 
 - [x] Full GUI by rust
 - [ ] Liquid support to CLI
 - [x] Testnet4
