@@ -7,3 +7,4 @@ cargo install rgb
 cargo install rust
 cargo install rustdlc
 cargo install rustlightning
+cargo install rgbcore
