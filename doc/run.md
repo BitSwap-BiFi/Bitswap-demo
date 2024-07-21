@@ -43,6 +43,9 @@ cargo install bpstd
 cargo install rust
 cargo install rustdlc
 cargo install rustlightning
+cargo install rustbitcoin
+cargo install bdk
+cargo install bdk-cli
 ```
 ### Run
 
