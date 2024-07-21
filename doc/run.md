@@ -43,7 +43,7 @@ cargo install bpstd
 cargo install rust
 cargo install rustdlc
 cargo install rustlightning
-``
+```
 ### Run
 
 ```cargo
