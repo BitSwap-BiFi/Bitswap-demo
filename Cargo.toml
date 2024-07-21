@@ -31,6 +31,7 @@ rgb-core = "0.11.0-beta.6"
 rgb-std = "0.11.0-beta.6"
 rgb-schemata = "0.11.0-beta.6"
 rgb-runtime = "0.11.0-beta.6"
+bp-std = "0.11.0-beta.6"
 rust = "1.79.0"
 automerge = "0.5.2"
 autosurgeon = "0.8"
@@ -56,7 +57,6 @@ error = "0.1"
 gtk = "0.10.1" # Check for the latest version
 glib = "0.10.2"
 gio = "0.10.2"
-
 
 
 [profile.release]

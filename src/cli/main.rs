@@ -1,3 +1,5 @@
+use bp::dbc::Method;
+use bp::{Outpoint, Txid};
 use rgb::command::{UnsupportedLayer1, Layer1, Liquid, PSBT};
 use rgb::command::{Testnet3, Testnet4, Regtest, Signet};
 use rgbstd::interface::{Rgb20, Iface, Filters, Contract, Iimpl, Inheritance, Builder, Resolver};
