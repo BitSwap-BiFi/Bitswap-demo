@@ -26,7 +26,6 @@ swap = "0.1.0"
 [core_functions]
 dlc = "0.4"
 bitswap = "1.0.25"
-bp-std = "0.11.0-beta.6"
 rgb-core = "0.11.0-beta.6"
 rgb-std = "0.11.0-beta.6"
 rgb-schemata = "0.11.0-beta.6"
