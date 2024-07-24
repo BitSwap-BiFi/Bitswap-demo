@@ -1,12 +1,13 @@
-// ! Bitswap core testnet
+use bitcoin::{Network, network::params::Params};
 
-pub const MEMPOOL = "MEMPOOL&str";
-pub const BITCOIN_TESTNET = "BITCOIN_TESTNET&str";
-pub const TX = "TX&str";
-pub const XPUB = "XPUB";
-pub const RGB_ASSETS = "RGB_ASSETS&str";
-pub const BITCOIN_SIGNET = "BITCOIN_SIGNET&str";
-pub const BITCOIN_REGTEST = "BITCOIN_REGTEST&str";
+trait Testnet {
+    fn testnet_params() -> &'static Params;
+}
 
-
+impl testnet for Network {
+    fn testnet_params() -> &'static Params {
+        // Replace this with the actual Testnet parameters for your case
+        &Params::Testnet
+    }
+}
 
