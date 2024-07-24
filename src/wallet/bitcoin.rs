@@ -1,8 +1,8 @@
 use bdk::bitcoin::Network;
 use bdk::blockchain::{ElectrumBlockchain, Blockchain};
 use bdk::database::MemoryDatabase;
-use bdk::{Wallet, SyncOptions};
-use bdk::electrum_client::Client;
+use bdk::wallet::{Wallet, SyncOptions};
+use bdk::electrum::electrum_client::Client;
 use std::process::Command;
 
 fn main() {
