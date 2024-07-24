@@ -82,7 +82,6 @@ Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
 - [x] Testnet4
 - [ ] Release crates
 - [ ] Liquid support to CLI
-- [ ] Fix bugs
   
 ## Contributors
 
