@@ -75,14 +75,13 @@ Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
 
 ## Roadmap
 
-- [ ] Release crates
 - [x] Full CLI
 - [x] Cross-platform 
 - [x] Full GUI by rust
-- [ ] Liquid support to CLI
-- [ ] Testnet4
-- [x] Full GUI by rust
+- [x] Fix bugs
 - [x] Testnet4
+- [ ] Release crates
+- [ ] Liquid support to CLI
 - [ ] Fix bugs
   
 ## Contributors
