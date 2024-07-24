@@ -11,7 +11,12 @@ fn main() {
 
     // Set up the database and wallet configuration
     let database = MemoryDatabase::new();
-    let wallet = Wallet::new("wpkh([84'/1'/0'/0]tpubD6NzVbkrYhZ4YM4Wsor1cQtv3kJvMeLFx1MRz7Jc81t4UPR2xNnt3oLhRLtfTBLGmQEdk1nVJpr5YTGscdLQR1Jz8yHoDeQ8RyYAGDzFEXD/*)", None, Network::Testnet, database).unwrap();
+    let wallet = Wallet::new(
+        "wpkh([84'/1'/0'/0]tpubD6NzVbkrYhZ4YM4Wsor1cQtv3kJvMeLFx1MRz7Jc81t4UPR2xNnt3oLhRLtfTBLGmQEdk1nVJpr5YTGscdLQR1Jz8yHoDeQ8RyYAGDzFEXD/*)", 
+        None, 
+        Network::Testnet, 
+        database
+    ).unwrap();
 
     // Set up the blockchain client
     let client = Client::new(electrum_url).unwrap();

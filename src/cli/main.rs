@@ -10,6 +10,12 @@ use rgb_core::xchain::{BitcoinTestnet, LiquidTestnet};
 use rgbstd::contract::{Assignment, Bundle, Merge_Reveal};
 use bitcoin::constants::Network;
 use bitcoin::constants::Network::{Testnet, Regtest, Signet};
+use bdk::keys::bip39::{Mnemonic, Language};
+use bdk::keys::{ExtendedKey, DerivableKey};
+use bdk::wallet::Wallet;
+use bdk::blockchain::electrum::ElectrumBlockchain;
+use bdk::database::MemoryDatabase;
+use electrum_client::Client;
 use mempool::MempoolBlocking;
 
 use clap::{App, Arg, SubCommand};
@@ -45,6 +51,44 @@ fn main() {
         .subcommand(SubCommand::with_name("network").about("Network"))
         .subcommand(SubCommand::with_name("amm").about("AMM"))
         .get_matches();
+
+        match matches.subcommand() {
+            ("wallet", Some(wallet_matches)) => match wallet_matches.subcommand() {
+                ("generate", Some(_)) => {
+                    // Generate a new wallet
+                    let mnemonic = Mnemonic::generate_in(Language::English, 12).unwrap();
+                    let xkey: ExtendedKey = mnemonic.clone().into_extended_key().unwrap();
+                    println!("Generated Mnemonic: {}", mnemonic);
+                    println!("Generated xPub: {}", xkey.to_string());
+                }
+                ("balance", Some(_)) => {
+                    // Check wallet balance using Electrum
+                    let client = Client::new("ssl://electrum.blockstream.info:60002").unwrap();
+                    let blockchain = ElectrumBlockchain::from(client);
+                    let wallet = Wallet::new("descriptor", None, Network::Testnet, MemoryDatabase::default()).unwrap();
+                    let balance = wallet.get_balance().unwrap();
+                    println!("Wallet balance: {}", balance);
+                }
+                _ => println!("Unknown wallet subcommand"),
+            },
+            ("channel", Some(channel_matches)) => match channel_matches.subcommand() {
+                ("open", Some(_)) => {
+                    println!("Opening a new channel...");
+                    // Logic to open a Lightning Network channel
+                }
+                ("close", Some(_)) => {
+                    println!("Closing a channel...");
+                    // Logic to close a Lightning Network channel
+                }
+                ("rebalance", Some(_)) => {
+                    println!("Rebalancing a channel...");
+                    // Logic to rebalance a Lightning Network channel
+                }
+                _ => unreachable!(),
+            },
+            _ => println!("No subcommand provided"),
+        }
+    }
 
     match matches.subcommand() {
         ("fund_wallet", Some(sub_m)) => {
@@ -287,5 +331,25 @@ mod tests {
         }
     }
 
-    // TODO CLI additional tests 
+    #[cfg(test)]
+    mod tests {
+        use super::*;
+        use clap::ArgMatches;
+    
+        #[test]
+        fn test_fund_wallet() {
+            let matches = App::new("test")
+                .subcommand(SubCommand::with_name("fund_wallet").arg(Arg::with_name("fund_wallet")))
+                .get_matches_from(vec!["test", "fund_wallet", "some_value"]);
+    
+            match matches.subcommand() {
+                ("fund_wallet", Some(sub_m)) => {
+                    let fund_wallet = sub_m.value_of("fund_wallet").unwrap();
+                    assert_eq!(fund_wallet, "some_value");
+                }
+                _ => panic!("fund_wallet command failed"),
+            }
+        }
+    
+
 }
