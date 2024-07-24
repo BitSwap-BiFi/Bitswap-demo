@@ -2,6 +2,7 @@ use rgbstd::Wallet;
 use rgbstd::Chain;
 use rgb_core::ContractID;
 use rgbstd::Invoice::InvoiceState;
+use rgbstd::contract::{RGB20, ContractID};
 use lightning::chain::keysinterface::Sign;
 use lightning::channelmanager::ChannelManager;
 use lightning::channelmanager::ChannelManager as LdkChannelManager;
