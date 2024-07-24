@@ -18,4 +18,8 @@ WORKDIR /app
 
 COPY --from=builder /app/Bitswap-BiFi-Bitswap-demo/target/x86_64-pc-windows-gnu/release/main.exe .
 
-CMD ["./main.exe", "main.rs", "command.rs"]
+CMD ["/.bin.windows"./main.exe", "main.rs", "command.rs"]
+RUN cd Bitswap-BiFi-Bitswap-demo && cargo build 
+RUN --releaseCOPY --from=builder /Bitswap-BiFi-Bitswap-demo/target/release/main.
+RUN --releaseCMD ["./main"]
+CMD ["main.rs", "command.rs"]

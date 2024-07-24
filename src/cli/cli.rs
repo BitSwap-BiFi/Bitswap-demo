@@ -4,6 +4,32 @@ use lightning::Wallet;
 use std::error::Error;
 use std::io::{self, Write};
 
+
+pub struct Cli;
+
+impl Cli {
+    pub fn new() -> Self {
+        Cli
+    }
+
+    pub fn parse(&self) -> Command {
+        // Replace with actual parsing logic
+        Command::Main(Main::Bitswapd(BitswapdCommand::Start(vec!["arg1".to_string(), "arg2".to_string()])))
+    }
+}
+
+pub enum Command {
+    Main(Main),
+}
+
+pub enum Main {
+    Bitswapd(BitswapdCommand),
+}
+
+pub enum BitswapdCommand {
+    Start(Vec<String>),
+}
+
 fn main() -> Result<(), Box<dyn Error>> {
     // Assuming RGB and lightning are correctly defined structs
     // let rgb = RGB::new();

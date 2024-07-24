@@ -80,6 +80,8 @@ Check [here](https://github.com/BitSwap-BiFi/Bitswap-FAQ/)
 - [x] Cross-platform 
 - [x] Full GUI by rust
 - [ ] Liquid support to CLI
+- [ ] Testnet4
+- [x] Full GUI by rust
 - [x] Testnet4
 - [ ] Fix bugs
   

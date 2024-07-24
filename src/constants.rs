@@ -3,13 +3,6 @@
 // Bin
 pub const MAIN = "MAIN";
 
-// Lightning
-
-pub const LSP = "LSP";
-pub const NODE = "NODE";
-pub const NODE_INITIAL = "NODE_INITIAL";
-pub const SERVER = "SERVER";
-pub const SWAP = "SWAP";
 
 // CLI
 
