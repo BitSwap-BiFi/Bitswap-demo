@@ -60,6 +60,7 @@ cargo run
 ```rustup
 rustup update
 ```
+
 ## Use CLI
 
 Use ``app`` for see options and run DEX
@@ -77,6 +78,32 @@ $app - for bitswap management
 -opeen_channel
 -close_channel
 
+```
+
+## Generate private keys using BDK
+
+```rust
+bdk-cli generate-keys
+```
+## Deposit bitcoin via signet or testnet
+```rust
+appcli  sendtoaddress <address> <amount>
+```
+## Create a wallet
+```rust
+appcli createwallet <wallet_name>
+```
+**Use BDK**
+```rust
+bdk-cli create-wallet <wallet_name>
+```
+## Create a contract
+```rust
+appcli createcontract <contract_name> <wallet_name> <amount> <asset_name>
+```
+## Swap
+```rust
+appcli swap <wallet_name> <amount> <asset_name> <contract_name>
 ```
 ## Run via Docker
 
