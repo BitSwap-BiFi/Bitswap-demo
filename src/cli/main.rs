@@ -70,24 +70,7 @@ fn main() {
                     println!("Wallet balance: {}", balance);
                 }
                 _ => println!("Unknown wallet subcommand"),
-            },
-            ("channel", Some(channel_matches)) => match channel_matches.subcommand() {
-                ("open", Some(_)) => {
-                    println!("Opening a new channel...");
-                    // Logic to open a Lightning Network channel
-                }
-                ("close", Some(_)) => {
-                    println!("Closing a channel...");
-                    // Logic to close a Lightning Network channel
-                }
-                ("rebalance", Some(_)) => {
-                    println!("Rebalancing a channel...");
-                    // Logic to rebalance a Lightning Network channel
-                }
-                _ => unreachable!(),
-            },
-            _ => println!("No subcommand provided"),
-        }
+
     }
 
     match matches.subcommand() {
@@ -102,6 +85,10 @@ fn main() {
         ("swap", Some(sub_m)) => {
             // Handle command for swaps
             if let Some(swap) = sub_m.value_of("swap") {
+                let mut rgb = Rgb20::new();
+                let mut state = State::new();
+                let mut swap = Swap::new();
+                
                 println!("Command executed with swap: {}", swap);
             } else {
                 println!("Command executed");
