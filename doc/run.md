@@ -26,6 +26,24 @@ git clone https://github.com/Bitswap-BiFi/Bitswap-demo.git
 cd Bitswapdemo
 ```
 
+
+### Cargo install packages
+
+```shell
+curl -sSf https://sh.rustup.rs | sh
+
+cargo install rgbstd
+cargo install rgb
+cargo install rgbcore
+cargo install bpstd
+cargo install rust
+cargo install rustdlc
+cargo install rustlightning
+cargo install rustbitcoin
+cargo install bdk
+cargo install bdk-cli
+```
+
 ### Build project to generate/update Cargo.lock
 ```cargo
 cargo build
