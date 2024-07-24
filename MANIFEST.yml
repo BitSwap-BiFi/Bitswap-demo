@@ -1,9 +1,9 @@
-Name: bitswap core
+Name: bitswap demo
 Type: Binary
 Kind: Open source 
 Network: Bitcoin Testnet, Bitcoin Signet
-Version: 1.0.27-alpha
-License: Business Source License 1.1
+Version: 1.0.0-beta
+License: MIT
 Language: Rust
 Compiler: 1.79.0
 Author: 22388o and Rsync25

@@ -4,7 +4,7 @@ members = ["rgb-core", "rust-dlc", "bitswap", "payjoin", "aluvm", "baid58"]
 
 [package]
 name = "bitswap_demo_cli"
-version = "1.0.27-alpha"
+version = "1.0.0-beta"
 authors = ["22388o", "Rsync25"]
 documentation = "https://github.com/Bitswap-demo"
 repository = "https://github.com/Bitswa-demo"
@@ -25,7 +25,7 @@ swap = "0.1.0"
 
 [core_functions]
 dlc = "0.4"
-bitswap = "1.0.25"
+bitswap = "1.0.0"
 rgb-core = "0.11.0-beta.6"
 rgb-std = "0.11.0-beta.6"
 rgb-schemata = "0.11.0-beta.6"

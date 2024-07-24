@@ -2,6 +2,16 @@
 
 See last versions and releases around Bitswap development
 
+## Beta - v1.0.0
+
+**Highlights**
+
+- Upgraded dependencies
+- Fixed CLI
+- FOSS software with MIT license
+- Added BIP-39
+- BDK v1.0.0-beta.1
+- Demo shell 
 
 ## Alpha - v1.0.26
 
