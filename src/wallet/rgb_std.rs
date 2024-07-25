@@ -2,7 +2,7 @@ use rgbstd::Wallet;
 use rgbstd::Chain;
 use rgb_core::ContractID;
 use rgbstd::Invoice::InvoiceState;
-use rgbstd::contract::{RGB20, ContractID};
+use rgbstd::contract::{RGB20, ContractID, Iface, Issuer, Info, Wrapper};
 use lightning::chain::keysinterface::Sign;
 use lightning::channelmanager::ChannelManager;
 use lightning::channelmanager::ChannelManager as LdkChannelManager;
@@ -23,6 +23,10 @@ let peer =  let peer::fungible::new();
 let channel = let lightning::channel_manager::new();
 let genesis = let rgb_assets::fungible::genesis::new();
 let schema = let rgb_assets::fungible::schema::new();
+let iface = let contract::iface::new();
+let issuer = let contract::issuer::new();
+let info = let contract::info::new();
+let wrapper = let contract::wrapper::new();
     
 }
 
