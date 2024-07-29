@@ -4,7 +4,7 @@ use std::path::Path;
 use std::fs::File;
 
 fn main() {
-    let path = "some_path";
+    let path = "cli.rs";
     let mut file = File::open(path).unwrap();
 }
 
