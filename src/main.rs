@@ -7,7 +7,7 @@ impl Bitswapd {
 }
 
 fn main() {
-    let args: Vec<String> = bitswapd::args().collect();
+    let args: Vec<String> = Bitswapd::args().collect();
     println!("{:?}", args);
     Bitswapd::start(args);
 }

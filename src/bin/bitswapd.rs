@@ -1,8 +1,8 @@
 pub struct Bitswapd;
-pub struct cli
+pub struct Cli;
     
-impl Bitswapd {
-    pub fn start(args: Vec<String>) {
+impl Bitswapd for Bitswapd {
+    fn start(args: Vec<String>) {
         println!("Starting bitswapd with args: {:?}", args);
     }
 }
