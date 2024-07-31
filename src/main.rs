@@ -1,5 +1,5 @@
 pub struct Bitswapd;
-pub struct args;
+pub struct Args;
 
 impl Bitswapd {
     pub fn start(args: Vec<String>) {
