@@ -1,5 +1,4 @@
-use std::env;
-use std::process;
+use std::{Env, Process}
 use std::env::args;
 pub struct Bitswapd;
 pub struct Cli;
