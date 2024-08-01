@@ -4,4 +4,4 @@ version = 3
 
 [[package]]
 name = "bitswap_demo_cli"
-version = "1.0.0-beta"
+version = "1.0.1-beta"
