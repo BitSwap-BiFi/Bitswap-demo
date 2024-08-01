@@ -2,6 +2,15 @@
 
 See last versions and releases around Bitswap development
 
+
+## Beta - v1.0.1
+
+**Highlights**
+
+- Upgraded dependencies
+- Added Cargo.lock
+
+
 ## Beta - v1.0.0
 
 **Highlights**
