@@ -34,7 +34,7 @@ rust = "1.80.0"
 automerge = "0.5.2"
 autosurgeon = "0.8"
 ascii-armor = "0.2.0"
-bdk = "1.0.0-beta.1"
+bdk = "1.0.0-alpha.11"
 bdk-cli = "0.27.1"
 bdk-macros = "0.27.1"
 bdk-wallet = "1.0.0-beta.1"
@@ -58,5 +58,9 @@ panic = "abort"
 
 [profile.dev]
 panic = "abort"
+
+[dependencies]
+bdk = "=1.0.0-alpha.11"
+rgb-std = "=0.11.0-beta.6"
 
 
