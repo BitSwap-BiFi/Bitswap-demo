@@ -1,9 +1,9 @@
 use std::{Env, Process}
-use std::env::args;
+use std::env::Args;
 pub struct Bitswapd;
 pub struct Cli;
     
-impl Bitswapd for Bitswapd {
+impl Bitswapd {
     fn start(args: Vec<String>) {
         println!("Starting bitswapd with args: {:?}", args);
     }
