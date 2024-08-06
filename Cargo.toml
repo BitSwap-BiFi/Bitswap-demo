@@ -64,5 +64,3 @@ bdk = "=1.0.0-alpha.11"
 dlc = "0.5.0"
 lightning = "=0.0.123"
 rgb-std = "=0.11.0-beta.6"
-
-
